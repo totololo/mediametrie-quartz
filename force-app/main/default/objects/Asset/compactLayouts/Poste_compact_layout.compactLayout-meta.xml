@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Poste_compact_layout</fullName>
+    <fields>Name</fields>
+    <fields>AccountId</fields>
+    <fields>Audimetre__c</fields>
+    <fields>Audimetre_poste__c</fields>
+    <fields>Type_d_audimetre__c</fields>
+    <fields>Emplacement_tele__c</fields>
+    <label>Poste compact layout</label>
+</CompactLayout>

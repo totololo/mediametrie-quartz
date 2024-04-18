@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foyers_pan_listes_AIP_recrut_s</fullName>
+    <columns>Foyer__c</columns>
+    <columns>Nom_pilote__c</columns>
+    <columns>NAME</columns>
+    <columns>Date_de_creation__c</columns>
+    <columns>Statut_Foyer_paneliste__c</columns>
+    <columns>Statut_Audimetrique__c</columns>
+    <columns>Nombre_de_set_meters__c</columns>
+    <columns>Foyer_equipe__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Referentiel_Panel__c</field>
+        <operation>contains</operation>
+        <value>AIP</value>
+    </filters>
+    <filters>
+        <field>Foyer__c</field>
+        <operation>notContain</operation>
+        <value>anonymi</value>
+    </filters>
+    <filters>
+        <field>Statut_Foyer_paneliste__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Nom_pilote__c</field>
+        <operation>notContain</operation>
+        <value>Roa</value>
+    </filters>
+    <filters>
+        <field>Vague_de_l_etude__c</field>
+        <operation>contains</operation>
+        <value>24v1</value>
+    </filters>
+    <label>Foyers panélistes AIP recrutés</label>
+</ListView>

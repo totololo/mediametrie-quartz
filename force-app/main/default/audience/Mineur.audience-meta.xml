@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Mineur</audienceName>
+    <container>M%26VOUS</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>Contact.$Contact.Age__c</entityField>
+                <entityType>User</entityType>
+                <fieldValue>18</fieldValue>
+            </criterionValue>
+            <operator>LessThan</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>d690fdad-5d76-4a00-b79b-bdf915e99a59$#$edb48e9e-0aa0-4973-9f5e-d3d00368fd60</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Default_Theme_Navigation_Menu_2_Component_Properties</targetValue>
+        </target>
+        <target>
+            <groupName>537dc58c-6581-4ec2-97ac-f9c11e021ca2$#$7574c06a-d831-4441-9803-2d2391d3c252</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Login_Theme_Navigation_Menu_Component_Properties</targetValue>
+        </target>
+    </targets>
+</Audience>

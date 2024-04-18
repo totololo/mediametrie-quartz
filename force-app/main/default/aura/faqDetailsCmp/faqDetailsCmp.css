@@ -1,0 +1,7 @@
+.THIS .titre-categorie {
+    font-weight: bold;
+    color: #629d00;
+    margin: 30px 0;
+    cursor: pointer;
+    padding-bottom: 30px !important;
+}

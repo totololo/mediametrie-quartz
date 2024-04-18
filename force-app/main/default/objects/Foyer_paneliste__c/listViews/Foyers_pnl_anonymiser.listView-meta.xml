@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foyers_pnl_anonymiser</fullName>
+    <columns>NAME</columns>
+    <columns>Date_de_chute__c</columns>
+    <columns>A_anonymiser__c</columns>
+    <columns>Date_d_anonymisation__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>A_anonymiser__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Foyers pnl à anonymiser</label>
+</ListView>

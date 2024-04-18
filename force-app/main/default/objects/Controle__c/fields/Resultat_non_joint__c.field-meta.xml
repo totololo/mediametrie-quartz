@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resultat_non_joint__c</fullName>
+    <externalId>false</externalId>
+    <label>Résultat non joint</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sous_type_de_controle__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abonnement au cable compris dans les charges</fullName>
+                <default>false</default>
+                <label>Abonnement au cable compris dans les charges</label>
+            </value>
+            <value>
+                <fullName>Appel entrant / sortant récent hors contrôle</fullName>
+                <default>false</default>
+                <label>Appel entrant / sortant récent hors contrôle</label>
+            </value>
+            <value>
+                <fullName>Appel récent</fullName>
+                <default>false</default>
+                <label>Appel récent</label>
+            </value>
+            <value>
+                <fullName>Appel récent pour autre type de contrôle</fullName>
+                <default>false</default>
+                <label>Appel récent pour autre type de contrôle</label>
+            </value>
+            <value>
+                <fullName>Appel sur même type de contrôle</fullName>
+                <default>false</default>
+                <label>Appel sur même type de contrôle</label>
+            </value>
+            <value>
+                <fullName>Attente télecommande</fullName>
+                <default>false</default>
+                <label>Attente télecommande</label>
+            </value>
+            <value>
+                <fullName>Aud. s&apos;est reconnecté tt seul</fullName>
+                <default>false</default>
+                <label>Aud. s&apos;est reconnecté tt seul</label>
+            </value>
+            <value>
+                <fullName>Autre usage longue durée confirmé</fullName>
+                <default>false</default>
+                <label>Autre usage longue durée confirmé</label>
+            </value>
+            <value>
+                <fullName>Autres bouquet que &quot;&quot;csat&quot;&quot;</fullName>
+                <default>false</default>
+                <label>Autres bouquet que &quot;&quot;csat&quot;&quot;</label>
+            </value>
+            <value>
+                <fullName>Chaines canal + regardées en clair</fullName>
+                <default>false</default>
+                <label>Chaines canal + regardées en clair</label>
+            </value>
+            <value>
+                <fullName>Changement FAI</fullName>
+                <default>false</default>
+                <label>Changement FAI</label>
+            </value>
+            <value>
+                <fullName>Cumul NC + aud</fullName>
+                <default>false</default>
+                <label>Cumul NC + aud</label>
+            </value>
+            <value>
+                <fullName>Déménagement en cours</fullName>
+                <default>false</default>
+                <label>Déménagement en cours</label>
+            </value>
+            <value>
+                <fullName>Déménagement/travaux</fullName>
+                <default>false</default>
+                <label>Déménagement/travaux</label>
+            </value>
+            <value>
+                <fullName>DMD non relié au routeur</fullName>
+                <default>false</default>
+                <label>DMD non relié au routeur</label>
+            </value>
+            <value>
+                <fullName>Email envoyé</fullName>
+                <default>false</default>
+                <label>Email envoyé</label>
+            </value>
+            <value>
+                <fullName>En attente de solution</fullName>
+                <default>false</default>
+                <label>En attente de solution</label>
+            </value>
+            <value>
+                <fullName>F. vac./abs</fullName>
+                <default>false</default>
+                <label>F. vac./abs</label>
+            </value>
+            <value>
+                <fullName>Foyer en vacances</fullName>
+                <default>false</default>
+                <label>Foyer en vacances</label>
+            </value>
+            <value>
+                <fullName>Foyer générant svt des audiences trop longues</fullName>
+                <default>false</default>
+                <label>Foyer générant svt des audiences trop longues</label>
+            </value>
+            <value>
+                <fullName>Foyer regardant bcp de chaines étrangères</fullName>
+                <default>false</default>
+                <label>Foyer regardant bcp de chaines étrangères</label>
+            </value>
+            <value>
+                <fullName>Ind abs la semaine</fullName>
+                <default>false</default>
+                <label>Ind abs la semaine</label>
+            </value>
+            <value>
+                <fullName>Ind avec peu d&apos;audience</fullName>
+                <default>false</default>
+                <label>Ind avec peu d&apos;audience</label>
+            </value>
+            <value>
+                <fullName>Ind ne se connecte pas ou peu</fullName>
+                <default>false</default>
+                <label>Ind ne se connecte pas ou peu</label>
+            </value>
+            <value>
+                <fullName>Ind ou foyer en vacances</fullName>
+                <default>false</default>
+                <label>Ind ou foyer en vacances</label>
+            </value>
+            <value>
+                <fullName>Ind utilise un pc non configuré</fullName>
+                <default>false</default>
+                <label>Ind utilise un pc non configuré</label>
+            </value>
+            <value>
+                <fullName>Ind. concerné absent</fullName>
+                <default>false</default>
+                <label>Ind. concerné absent</label>
+            </value>
+            <value>
+                <fullName>Inter ctrl. Aud.  en cours</fullName>
+                <default>false</default>
+                <label>Inter ctrl. Aud.  en cours</label>
+            </value>
+            <value>
+                <fullName>Inter en cours</fullName>
+                <default>false</default>
+                <label>Inter en cours</label>
+            </value>
+            <value>
+                <fullName>Inter récente</fullName>
+                <default>false</default>
+                <label>Inter récente</label>
+            </value>
+            <value>
+                <fullName>Manip récente</fullName>
+                <default>false</default>
+                <label>Manip récente</label>
+            </value>
+            <value>
+                <fullName>Mén. Abs. Avec message</fullName>
+                <default>false</default>
+                <label>Mén. Abs. Avec message</label>
+            </value>
+            <value>
+                <fullName>Mén. Abs. sans message</fullName>
+                <default>false</default>
+                <label>Mén. Abs. sans message</label>
+            </value>
+            <value>
+                <fullName>Ménage abs avec message</fullName>
+                <default>false</default>
+                <label>Ménage abs avec message</label>
+            </value>
+            <value>
+                <fullName>Ménage abs sans message</fullName>
+                <default>false</default>
+                <label>Ménage abs sans message</label>
+            </value>
+            <value>
+                <fullName>N&apos;a plus internet / pbm avec internet</fullName>
+                <default>false</default>
+                <label>N&apos;a plus internet / pbm avec internet</label>
+            </value>
+            <value>
+                <fullName>Ne justifiant pas d&apos;action</fullName>
+                <default>false</default>
+                <label>Ne justifiant pas d&apos;action</label>
+            </value>
+            <value>
+                <fullName>Page en &quot;&quot;mono user&quot;&quot;</fullName>
+                <default>false</default>
+                <label>Page en &quot;&quot;mono user&quot;&quot;</label>
+            </value>
+            <value>
+                <fullName>Pan pas regardé chaines identifiées</fullName>
+                <default>false</default>
+                <label>Pan pas regardé chaines identifiées</label>
+            </value>
+            <value>
+                <fullName>Pb électrique</fullName>
+                <default>false</default>
+                <label>Pb électrique</label>
+            </value>
+            <value>
+                <fullName>Pbm de ligne internet</fullName>
+                <default>false</default>
+                <label>Pbm de ligne internet</label>
+            </value>
+            <value>
+                <fullName>Pbm de routeur</fullName>
+                <default>false</default>
+                <label>Pbm de routeur</label>
+            </value>
+            <value>
+                <fullName>Pbm routeur/pbm box</fullName>
+                <default>false</default>
+                <label>Pbm routeur/pbm box</label>
+            </value>
+            <value>
+                <fullName>Pc en panne /changement de pc</fullName>
+                <default>false</default>
+                <label>Pc en panne /changement de pc</label>
+            </value>
+            <value>
+                <fullName>Personne non concernée</fullName>
+                <default>false</default>
+                <label>Personne non concernée</label>
+            </value>
+            <value>
+                <fullName>PNC</fullName>
+                <default>false</default>
+                <label>PNC</label>
+            </value>
+            <value>
+                <fullName>Poste suspendu</fullName>
+                <default>false</default>
+                <label>Poste suspendu</label>
+            </value>
+            <value>
+                <fullName>Remonté à  la DTSI</fullName>
+                <default>false</default>
+                <label>Remonté à  la DTSI</label>
+            </value>
+            <value>
+                <fullName>Réparation - Changement - Attente nouveau TV</fullName>
+                <default>false</default>
+                <label>Réparation - Changement - Attente nouveau TV</label>
+            </value>
+            <value>
+                <fullName>SMS de rappel envoyé</fullName>
+                <default>false</default>
+                <label>SMS de rappel envoyé</label>
+            </value>
+            <value>
+                <fullName>SMS envoyé</fullName>
+                <default>false</default>
+                <label>SMS envoyé</label>
+            </value>
+            <value>
+                <fullName>Télécommande en attente</fullName>
+                <default>false</default>
+                <label>Télécommande en attente</label>
+            </value>
+            <value>
+                <fullName>Tous Ind. Prés. &lt;25j</fullName>
+                <default>false</default>
+                <label>Tous Ind. Prés. &lt;25j</label>
+            </value>
+            <value>
+                <fullName>Transmetteur vidéo/abonnement multi ecran</fullName>
+                <default>false</default>
+                <label>Transmetteur vidéo/abonnement multi ecran</label>
+            </value>
+            <value>
+                <fullName>Travaux en cours, audim. Débranché</fullName>
+                <default>false</default>
+                <label>Travaux en cours, audim. Débranché</label>
+            </value>
+            <value>
+                <fullName>Trop jeune, oublie sa lettre</fullName>
+                <default>false</default>
+                <label>Trop jeune, oublie sa lettre</label>
+            </value>
+            <value>
+                <fullName>TV regardée Ind.</fullName>
+                <default>false</default>
+                <label>TV regardée Ind.</label>
+            </value>
+            <value>
+                <fullName>utilisation ird (bonne mauvaise audience)</fullName>
+                <default>false</default>
+                <label>utilisation ird (bonne mauvaise audience)</label>
+            </value>
+            <value>
+                <fullName>Vacanciers</fullName>
+                <default>false</default>
+                <label>Vacanciers</label>
+            </value>
+            <value>
+                <fullName>Raisons diverses</fullName>
+                <default>false</default>
+                <label>Raisons diverses</label>
+            </value>
+            <value>
+                <fullName>Remonté à la DTSI</fullName>
+                <default>false</default>
+                <label>Remonté à la DTSI</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>11</controllingFieldValue>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>14</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>12</controllingFieldValue>
+            <controllingFieldValue>17</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>13</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <controllingFieldValue>22</controllingFieldValue>
+            <controllingFieldValue>21</controllingFieldValue>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Email envoyé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>11</controllingFieldValue>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>14</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>12</controllingFieldValue>
+            <controllingFieldValue>17</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>13</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <controllingFieldValue>22</controllingFieldValue>
+            <controllingFieldValue>21</controllingFieldValue>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Ne justifiant pas d&apos;action</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>11</controllingFieldValue>
+            <controllingFieldValue>14</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>12</controllingFieldValue>
+            <controllingFieldValue>17</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>13</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>22</controllingFieldValue>
+            <controllingFieldValue>21</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Raisons diverses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Appel récent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Changement FAI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Déménagement/travaux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <valueName>DMD non relié au routeur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>En attente de solution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Ind ne se connecte pas ou peu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Ind ou foyer en vacances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Ind utilise un pc non configuré</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>12</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <controllingFieldValue>22</controllingFieldValue>
+            <controllingFieldValue>21</controllingFieldValue>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Inter en cours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Ménage abs avec message</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Ménage abs sans message</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>N&apos;a plus internet / pbm avec internet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Page en &quot;&quot;mono user&quot;&quot;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Pbm de routeur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Pc en panne /changement de pc</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Personne non concernée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>14</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>12</controllingFieldValue>
+            <controllingFieldValue>17</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>13</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <controllingFieldValue>22</controllingFieldValue>
+            <controllingFieldValue>21</controllingFieldValue>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>SMS envoyé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>13</controllingFieldValue>
+            <valueName>Remonté à  la DTSI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <valueName>Autre usage longue durée confirmé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Cumul NC + aud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>12</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <controllingFieldValue>22</controllingFieldValue>
+            <controllingFieldValue>21</controllingFieldValue>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Mén. Abs. Avec message</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>12</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <controllingFieldValue>22</controllingFieldValue>
+            <controllingFieldValue>21</controllingFieldValue>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Mén. Abs. sans message</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <valueName>PNC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>12</controllingFieldValue>
+            <valueName>Appel entrant / sortant récent hors contrôle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>12</controllingFieldValue>
+            <valueName>Appel récent pour autre type de contrôle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>12</controllingFieldValue>
+            <valueName>Appel sur même type de contrôle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>12</controllingFieldValue>
+            <valueName>Foyer regardant bcp de chaines étrangères</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>17</controllingFieldValue>
+            <valueName>Remonté à la DTSI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Aud. s&apos;est reconnecté tt seul</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Déménagement en cours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>F. vac./abs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <valueName>Inter récente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Manip récente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <valueName>Pb électrique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Pbm de ligne internet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Pbm routeur/pbm box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Poste suspendu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Réparation - Changement - Attente nouveau TV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Télécommande en attente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Travaux en cours, audim. Débranché</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Attente télecommande</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Foyer générant svt des audiences trop longues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>TV regardée Ind.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Vacanciers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>22</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Ind. concerné absent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Trop jeune, oublie sa lettre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>utilisation ird (bonne mauvaise audience)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>22</controllingFieldValue>
+            <valueName>Foyer en vacances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>22</controllingFieldValue>
+            <valueName>Ind abs la semaine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>22</controllingFieldValue>
+            <controllingFieldValue>21</controllingFieldValue>
+            <valueName>Ind avec peu d&apos;audience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>22</controllingFieldValue>
+            <controllingFieldValue>21</controllingFieldValue>
+            <valueName>Inter ctrl. Aud.  en cours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>21</controllingFieldValue>
+            <valueName>SMS de rappel envoyé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>21</controllingFieldValue>
+            <valueName>Tous Ind. Prés. &lt;25j</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Abonnement au cable compris dans les charges</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Autres bouquet que &quot;&quot;csat&quot;&quot;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Chaines canal + regardées en clair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Pan pas regardé chaines identifiées</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Transmetteur vidéo/abonnement multi ecran</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

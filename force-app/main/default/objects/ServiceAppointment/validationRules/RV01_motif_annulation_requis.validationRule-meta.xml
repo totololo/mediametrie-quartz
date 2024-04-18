@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV01_motif_annulation_requis</fullName>
+    <active>true</active>
+    <description>Règle qui oblige à renseigner le motif d&apos;annulation si le rendez-vous est au statut &quot;Annulé&quot;</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				TEXT(Status) = $Label.RDV_Statut_Annule,
+				ISBLANK(TEXT(Motif_d_annulation__c))
+)</errorConditionFormula>
+    <errorDisplayField>Motif_d_annulation__c</errorDisplayField>
+    <errorMessage>Il faut renseigner le motif d&apos;annulation lors de l&apos;annulation d&apos;un rendez-vous</errorMessage>
+</ValidationRule>

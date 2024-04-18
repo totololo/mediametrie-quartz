@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV04_verification_date_de_debut</fullName>
+    <active>true</active>
+    <description>Règle qui vérifie que la date de début n&apos;est pas inférieure à aujourd&apos;hui.</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				!$User.Bypass_RDD__c,
+				OR( 
+				    Date_de_debut__c &lt; DATEVALUE(CreatedDate),
+								AND(
+								    ISNEW(),
+								    Date_de_debut__c &lt; TODAY()
+								)
+				)
+)</errorConditionFormula>
+    <errorDisplayField>Date_de_debut__c</errorDisplayField>
+    <errorMessage>La date de début ne peut pas être inférieure à la date de création</errorMessage>
+</ValidationRule>

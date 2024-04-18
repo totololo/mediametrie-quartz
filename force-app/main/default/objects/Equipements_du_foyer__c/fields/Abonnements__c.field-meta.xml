@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Abonnements__c</fullName>
+    <externalId>false</externalId>
+    <label>Abonnements</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>Canal +</label>
+            </value>
+            <value>
+                <fullName>10</fullName>
+                <default>false</default>
+                <label>Disney +</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <label>Netflix</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>C+ 1 à 5 chaines</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>C+ 6 chaines</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>Csat/Essentiel Famille</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>Numéricable</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>Canal Sat</label>
+            </value>
+            <value>
+                <fullName>9</fullName>
+                <default>false</default>
+                <label>Amazon</label>
+            </value>
+            <value>
+                <fullName>11</fullName>
+                <default>false</default>
+                <label>Salto</label>
+            </value>
+            <value>
+                <fullName>12</fullName>
+                <default>false</default>
+                <label>Autres</label>
+            </value>
+            <value>
+                <fullName>Bein Sport</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bein Sport</label>
+            </value>
+            <value>
+                <fullName>Canal Cinéma</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Canal Cinéma</label>
+            </value>
+            <value>
+                <fullName>Canal Series</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Canal Series</label>
+            </value>
+            <value>
+                <fullName>Canal Sport</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Canal Sport</label>
+            </value>
+            <value>
+                <fullName>OSC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OSC</label>
+            </value>
+            <value>
+                <fullName>Prime Vidéo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Prime Vidéo</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TNT payante</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV17_TVActivecontrole</fullName>
+    <active>true</active>
+    <errorConditionFormula>VALUE(TEXT(Nombre_TV__c))   &gt;   VALUE(TEXT(Nombre_tv_total__c))</errorConditionFormula>
+    <errorDisplayField>Nombre_TV__c</errorDisplayField>
+    <errorMessage>Le nombre de TV active ne peut être qu&apos;égal ou inférieur au champ nombre TV total dans le foyer</errorMessage>
+</ValidationRule>

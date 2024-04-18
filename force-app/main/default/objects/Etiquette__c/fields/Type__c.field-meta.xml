@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+				AND(
+								NOT(ISBLANK(Foyer__c)),
+								TEXT(Foyer__r.Type_de_foyer__c) = $Label.ACC_Type_de_panel_Mediamat
+				),
+				$Label.ACC_Type_de_panel_Mediamat_Label,
+				IF(
+								AND(
+								    NOT(ISBLANK(Foyer__c)),
+								    TEXT(Foyer__r.Type_de_foyer__c) = $Label.ACC_Type_de_panel_Pame
+				    ),
+								$Label.ACC_Type_de_panel_Pame_Label,
+								IF(
+								    AND(
+								        NOT(ISBLANK(Membre_du_foyer__c)),
+								        TEXT(Membre_du_foyer__r.Account.Type_de_foyer__c) = $Label.ACC_Type_de_panel_Pame
+				        ),
+								    $Label.ACC_Type_de_panel_Pame_Label,
+												IF(
+																AND(
+								            NOT(ISBLANK(Membre_du_foyer__c)),
+								            TEXT(Membre_du_foyer__r.Account.Type_de_foyer__c) = $Label.ACC_Type_de_panel_Mediamat
+				            ),
+								        $Label.ACC_Type_de_panel_Mediamat_Label,
+																IF(
+																    AND(
+								                NOT(ISBLANK(Poste__c)),
+								                TEXT(Poste__r.Account.Type_de_foyer__c) = $Label.ACC_Type_de_panel_Mediamat
+				                ),
+								            $Label.ACC_Type_de_panel_Mediamat_Label,
+																				IF(
+																        AND(
+								                    NOT(ISBLANK(Poste__c)),
+								                    TEXT(Poste__r.Account.Type_de_foyer__c) = $Label.ACC_Type_de_panel_Pame
+				                    ),
+								                $Label.ACC_Type_de_panel_Pame_Label,
+																								&quot;&quot;
+																				)
+																)
+												)
+								)
+				)
+)</formula>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

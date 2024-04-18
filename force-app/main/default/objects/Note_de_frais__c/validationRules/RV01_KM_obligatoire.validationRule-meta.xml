@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV01_KM_obligatoire</fullName>
+    <active>true</active>
+    <description>Si le Type de frais correspond à KM, alors la saisie du KM est obligatoire : RV01_KM_obligatoire</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( Type_de_frais__c , &apos;KM&apos;),
+ISBLANK(Km__c)
+)</errorConditionFormula>
+    <errorDisplayField>Km__c</errorDisplayField>
+    <errorMessage>Veuillez saisir le champ Km</errorMessage>
+</ValidationRule>

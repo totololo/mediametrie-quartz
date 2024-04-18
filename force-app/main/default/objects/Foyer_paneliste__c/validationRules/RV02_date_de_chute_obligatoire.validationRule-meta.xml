@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV02_date_de_chute_obligatoire</fullName>
+    <active>true</active>
+    <description>Règle qui oblige la saisie du champ Date de chute si le statut du panel est Chute définitive.</description>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+				! $User.Bypass_RDD__c, 
+ISCHANGED(Statut_Foyer_paneliste__c),
+TEXT(Statut_Foyer_paneliste__c) = $Label.PAN_Statut_Panel_Chute_definitive,
+  OR (
+ISBLANK(Date_de_chute__c),
+Date_de_chute__c &lt; TODAY() 
+)
+)</errorConditionFormula>
+    <errorDisplayField>Date_de_chute__c</errorDisplayField>
+    <errorMessage>Lorsque le statut du foyer panéliste passe à &quot;Chute définitive&quot;, la date de chute est obligatoire et doit être supérieure ou égale à la date du jour</errorMessage>
+</ValidationRule>

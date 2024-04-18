@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1</fullName>
+        <default>false</default>
+        <label>Tous les jours</label>
+    </customValue>
+    <customValue>
+        <fullName>2</fullName>
+        <default>false</default>
+        <label>Presque tous les jours</label>
+    </customValue>
+    <customValue>
+        <fullName>3</fullName>
+        <default>false</default>
+        <label>1 à 2 fois par semaine</label>
+    </customValue>
+    <customValue>
+        <fullName>4</fullName>
+        <default>false</default>
+        <label>1 à 3 fois par mois</label>
+    </customValue>
+    <customValue>
+        <fullName>5</fullName>
+        <default>false</default>
+        <label>Moins souvent</label>
+    </customValue>
+    <customValue>
+        <fullName>6</fullName>
+        <default>false</default>
+        <label>Jamais</label>
+    </customValue>
+    <customValue>
+        <fullName>7</fullName>
+        <default>false</default>
+        <label>NSP/Refus</label>
+    </customValue>
+    <masterLabel>Fréquence d&apos;utilisation</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CallStartTime__c</fullName>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Date et heure du début de l&apos;appel</inlineHelpText>
+    <label>Début de l&apos;appel</label>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

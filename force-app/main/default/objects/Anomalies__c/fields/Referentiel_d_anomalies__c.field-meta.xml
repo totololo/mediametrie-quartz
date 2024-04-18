@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referentiel_d_anomalies__c</fullName>
+    <externalId>false</externalId>
+    <label>Référentiel d&apos;anomalies</label>
+    <referenceTo>Referentiel_d_anomalies__c</referenceTo>
+    <relationshipLabel>Anomalies</relationshipLabel>
+    <relationshipName>Anomalies</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flux_entr_e__c</fullName>
+    <externalId>false</externalId>
+    <label>Flux entrée</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Stock général</fullName>
+                <default>false</default>
+                <label>Stock général</label>
+            </value>
+            <value>
+                <fullName>Retour SAV</fullName>
+                <default>false</default>
+                <label>Retour SAV</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

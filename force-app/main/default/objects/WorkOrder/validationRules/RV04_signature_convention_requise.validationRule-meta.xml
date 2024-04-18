@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV04_signature_convention_requise</fullName>
+    <active>false</active>
+    <description>Impossibilité de clôturer une requête de sous-type nouveau foyer tant que la convention n&apos;est pas signée</description>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+ISCHANGED(Status),
+TEXT(Status) = $Label.WOR_Status_Terminee,
+TEXT(Sous_type_d_intervention__c) = $Label.WOR_Sous_type_d_intervention_Nouveau_foyer,
+AND(ISBLANK(Account.Date_de_signature_de_la_convention__c),ISBLANK( Account.Date_de_reception_de_la_convention__c ))
+)</errorConditionFormula>
+    <errorMessage>La date de signature ou la date de réception de la convention doit être renseignée pour pouvoir clôturer ce type d&apos;intervention</errorMessage>
+</ValidationRule>

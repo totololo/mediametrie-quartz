@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origine_de_la_commande__c</fullName>
+    <externalId>false</externalId>
+    <label>Origine de la commande</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Courrier entrant</fullName>
+                <default>false</default>
+                <label>Courrier entrant</label>
+            </value>
+            <value>
+                <fullName>Web formulaire</fullName>
+                <default>false</default>
+                <label>Web formulaire</label>
+            </value>
+            <value>
+                <fullName>Email entrant</fullName>
+                <default>false</default>
+                <label>Email entrant</label>
+            </value>
+            <value>
+                <fullName>Application M&amp;MOI</fullName>
+                <default>false</default>
+                <label>Application M&amp;MOI</label>
+            </value>
+            <value>
+                <fullName>Adresse e-mail</fullName>
+                <default>false</default>
+                <label>Adresse e-mail</label>
+            </value>
+            <value>
+                <fullName>Appel entrant</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Appel entrant</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

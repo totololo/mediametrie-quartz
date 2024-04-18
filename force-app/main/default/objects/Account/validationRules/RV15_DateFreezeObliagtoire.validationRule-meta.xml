@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV15_DateFreezeObliagtoire</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+$User.Bypass_validation_rules__c = false, Freeze__c =true,ISBLANK( Date_de_Freeze__c ))</errorConditionFormula>
+    <errorDisplayField>Date_de_Freeze__c</errorDisplayField>
+    <errorMessage>La date de freeze est obligatoire si la freeze est cochée.</errorMessage>
+</ValidationRule>

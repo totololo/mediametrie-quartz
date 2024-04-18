@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_Device_Equipement_de_Mesure_Compacte</fullName>
+    <fields>Name</fields>
+    <fields>ExtID_partenaire__c</fields>
+    <label>Statut Device Equipement de Mesure Compacte</label>
+</CompactLayout>

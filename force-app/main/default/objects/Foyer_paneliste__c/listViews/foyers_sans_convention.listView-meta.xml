@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>foyers_sans_convention</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Convention_a_jour__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Statut_Foyer_paneliste__c</field>
+        <operation>notEqual</operation>
+        <value>4,6,5</value>
+    </filters>
+    <filters>
+        <field>A_anonymiser__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>foyers sans convention</label>
+</ListView>

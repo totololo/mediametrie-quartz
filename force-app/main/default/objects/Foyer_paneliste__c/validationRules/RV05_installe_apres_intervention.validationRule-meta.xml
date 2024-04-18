@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV05_installe_apres_intervention</fullName>
+    <active>true</active>
+    <description>Règle qui empêche le foyer panéliste de passer au statut Installé s&apos;il n&apos;y a pas eu d&apos;intervention de type &apos;installation&apos; et que la date d&apos;installation n&apos;est pas renseignée.</description>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+				! $User.Bypass_RDD__c,
+  RecordType.Name = $Label.PAN_recordType_mediamatpame , 
+ISCHANGED(Statut_Foyer_paneliste__c),  
+TEXT(Statut_Foyer_paneliste__c) = $Label.PAN_Statut_Panel_Installe,
+				
+OR(
+TEXT(Type_d_intervention__c) &lt;&gt; $Label.WOR_Type_d_intervention_Installation,
+				
+AND(
+TEXT(Type_d_intervention__c) = $Label.WOR_Type_d_intervention_Installation,ISBLANK(Date_d_installation__c)
+)
+
+)
+)</errorConditionFormula>
+    <errorMessage>Un foyer panéliste ne peut passer au statut Installé que si une intervention de type « Installation » est présente et que le champ « Date d&apos;installation » est renseigné.</errorMessage>
+</ValidationRule>

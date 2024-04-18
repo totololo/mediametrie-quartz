@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV01_verification_du_statut</fullName>
+    <active>false</active>
+    <description>Règle qui empêche de sélectionner un statut précédent.</description>
+    <errorConditionFormula>AND(
+$User.Bypass_validation_rules__c = false,
+OR(
+IF(TEXT(Statut_du_foyer__c) = $Label.ACC_Statut_du_foyer_Installe, 1,
+IF(TEXT(Statut_du_foyer__c) = $Label.ACC_Statut_du_foyer_Equipe, 2,
+IF(TEXT(Statut_du_foyer__c) = $Label.ACC_Statut_du_foyer_Integre, 3,
+IF(TEXT(Statut_du_foyer__c) = $Label.ACC_Statut_du_foyer_Desinstalle, 4,
+IF(TEXT(Statut_du_foyer__c) = $Label.ACC_Statut_du_foyer_Chute_definitive, 5,
+0
+)
+)
+)
+)
+)
+&lt;
+IF(TEXT(PRIORVALUE(Statut_du_foyer__c)) = $Label.ACC_Statut_du_foyer_Installe, 1,
+IF(TEXT(PRIORVALUE(Statut_du_foyer__c)) = $Label.ACC_Statut_du_foyer_Equipe, 2,
+IF(TEXT(PRIORVALUE(Statut_du_foyer__c)) = $Label.ACC_Statut_du_foyer_Integre, 3,
+IF(TEXT(PRIORVALUE(Statut_du_foyer__c)) = $Label.ACC_Statut_du_foyer_Desinstalle, 4,
+IF(TEXT(PRIORVALUE(Statut_du_foyer__c)) = $Label.ACC_Statut_du_foyer_Chute_definitive, 5,
+0
+)
+)
+)
+)
+),
+AND(
+!ISBLANK(TEXT(PRIORVALUE(Statut_du_foyer__c))),
+ISBLANK(TEXT(Statut_du_foyer__c))
+)
+),AND(NOT(TEXT(PRIORVALUE(Statut_du_foyer__c)) = $Label.ACC_Statut_du_foyer_Equipe),NOT(TEXT(Statut_du_foyer__c) = $Label.ACC_Statut_du_foyer_Installe))
+)</errorConditionFormula>
+    <errorDisplayField>Statut_du_foyer__c</errorDisplayField>
+    <errorMessage>Le statut du foyer sélectionné ne peut pas être un statut antérieur à celui modifié</errorMessage>
+</ValidationRule>

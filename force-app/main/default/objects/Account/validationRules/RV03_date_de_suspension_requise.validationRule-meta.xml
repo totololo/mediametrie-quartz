@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV03_date_de_suspension_requise</fullName>
+    <active>false</active>
+    <description>Règle qui vérifie que la date de suspension est bien remplie si le champ Suspendu est coché</description>
+    <errorConditionFormula>AND(
+    !$User.Bypass_validation_rules__c,
+				$User.Username&lt;&gt;$Label.Mulesoft_integrationUser_username,
+    Suspendu__c,
+    OR(
+       ISCHANGED(Suspendu__c),
+       ISCHANGED( Date_de_suspension__c )
+    ),
+    OR(
+       ISBLANK(Date_de_suspension__c),
+       Date_de_suspension__c &lt;&gt; TODAY()
+      )
+)</errorConditionFormula>
+    <errorDisplayField>Date_de_suspension__c</errorDisplayField>
+    <errorMessage>Lorsque le foyer est suspendu, la date de suspension doit être renseignée à la date du jour</errorMessage>
+</ValidationRule>

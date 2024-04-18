@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PresenceUserConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>Admin</profile>
+            <profile>Ambassadeur</profile>
+            <profile>Data managers</profile>
+            <profile>Hotliner technique</profile>
+            <profile>Pilotage de panel</profile>
+            <profile>pôle prm agenda</profile>
+            <profile>pôle prm contrôle france</profile>
+            <profile>pôle prm contrôle offshore</profile>
+            <profile>pôle logistique</profile>
+            <profile>Superviseur PRM</profile>
+            <profile>Techs externes</profile>
+        </profiles>
+        <users>
+            <user>admin-mm@force.com</user>
+            <user>admin-requete@mediametrie.fr</user>
+            <user>ahirondar@mediametrie.fr</user>
+            <user>aauquiere@mediametrie.fr</user>
+            <user>adefer@mediametrie.fr</user>
+            <user>ccressent@mediametrie.fr</user>
+            <user>dlepron@mediametrie.fr</user>
+            <user>dhaddad@mediametrie.fr</user>
+            <user>edouay@mediametrie.fr</user>
+            <user>ftophin@mediametrie.fr</user>
+            <user>fhebert@mediametrie.fr</user>
+            <user>jldarroux@mediametrie.fr</user>
+            <user>lcoldefy@mediametrie.fr</user>
+            <user>msdouay@mediametrie.fr</user>
+            <user>mmenant@mediametrie.fr</user>
+            <user>mcapon@mediametrie.fr</user>
+            <user>npoquet@mediametrie.fr</user>
+            <user>pamarzio@mediametrie.fr</user>
+            <user>rchoquet@mediametrie.fr</user>
+            <user>rhamadou@mediametrie.fr</user>
+            <user>sbeddiar@mediametrie.fr</user>
+            <user>sbleschet@mediametrie.fr</user>
+            <user>vboubet@mediametrie.fr</user>
+            <user>utilisateur.integration@mediametrie.com</user>
+        </users>
+    </assignments>
+    <capacity>7</capacity>
+    <enableAutoAccept>false</enableAutoAccept>
+    <enableDecline>false</enableDecline>
+    <enableDeclineReason>false</enableDeclineReason>
+    <enableDisconnectSound>true</enableDisconnectSound>
+    <enableRequestSound>true</enableRequestSound>
+    <label>cases_configuration</label>
+</PresenceUserConfig>

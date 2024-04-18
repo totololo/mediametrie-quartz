@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV02_date_fin_passe_non_possible</fullName>
+    <active>true</active>
+    <description>Bloquer la saisie des date de fin dans le passé.</description>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+!$User.Bypass_RDD__c,
+AND(
+Date_de_fin__c &lt; TODAY (),
+OR(
+ISNEW(),
+ISCHANGED( Date_de_fin__c )
+)
+)
+)</errorConditionFormula>
+    <errorDisplayField>Date_de_fin__c</errorDisplayField>
+    <errorMessage>Il n&apos;est pas possible de saisir des dates de fin dans le passé.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HW_Foyers_chut_s_defAIP</fullName>
+    <columns>NAME</columns>
+    <columns>Date_de_creation__c</columns>
+    <columns>Motif_de_chute__c</columns>
+    <columns>Statut_Foyer_paneliste__c</columns>
+    <columns>Date_de_chute__c</columns>
+    <columns>Statut_Audimetrique__c</columns>
+    <columns>Solde_de_points_fid__c</columns>
+    <columns>Date_de_derni_re_commande__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Foyer_paneliste__c.AIP</value>
+    </filters>
+    <filters>
+        <field>Referentiel_Panel__c</field>
+        <operation>contains</operation>
+        <value>aip</value>
+    </filters>
+    <filters>
+        <field>Statut_Foyer_paneliste__c</field>
+        <operation>equals</operation>
+        <value>5</value>
+    </filters>
+    <filters>
+        <field>Date_de_chute__c</field>
+        <operation>lessOrEqual</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Foyers chutés def AIP</label>
+</ListView>

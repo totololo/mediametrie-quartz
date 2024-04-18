@@ -1,0 +1,68 @@
+{
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "1ee7dede-163a-48c4-b27d-e5697115150e",
+  "label" : "profile",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "59c0dd19-421f-4562-a2fe-05a1312317ab",
+          "columns" : [ {
+            "UUID" : "f41530d3-094d-4510-9c7f-27141292bb1c",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "59c0dd19-421f-4562-a2fe-05a1312317ab",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:MonProfile",
+          "id" : "5093ba00-a935-4627-9d81-bdeb69f68d19",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "f41530d3-094d-4510-9c7f-27141292bb1c",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "bce45ec3-eca1-459e-a0b8-69844fa87632",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "M&VOUS - Mon profil"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "dba32baf-4330-4633-8693-abdd2573acb7",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "91afa94f-044b-4b4a-9de4-474913db4dff",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-profile"
+}

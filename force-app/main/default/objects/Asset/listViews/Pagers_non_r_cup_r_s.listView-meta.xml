@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pagers_non_r_cup_r_s</fullName>
+    <columns>ASSET.NAME</columns>
+    <columns>ASSET.SERIAL_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>ASSET.STATUS</columns>
+    <columns>Date_d_affectation__c</columns>
+    <columns>Date_de_desaffectation__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ASSET.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Asset.Dispositifs_de_mesure_d_audience_AIP</value>
+    </filters>
+    <filters>
+        <field>ASSET.NAME</field>
+        <operation>contains</operation>
+        <value>pager</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>Cordon</value>
+    </filters>
+    <filters>
+        <field>Date_de_desaffectation__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Pagers non récupérés</label>
+</ListView>

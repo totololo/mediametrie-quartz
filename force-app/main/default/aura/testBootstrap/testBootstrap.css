@@ -1,0 +1,31 @@
+.THIS .type:focus {
+    outline: none;
+} 
+
+.THIS .slds-file-selector__button{
+    color: #c71300;
+}
+
+.THIS .startDate{
+    margin-right: 10px;
+}
+
+.THIS #date_fin{
+    border-radius: 0;
+    border: solid 1px #bfbfbf;
+    padding: 0.5vh;
+    font-family: Mediametrie, sans-serif;
+}
+.THIS #date_debut {
+    border-radius: 0;
+    border: solid 1px #bfbfbf;
+    padding: 0.5vh;
+    font-family: Mediametrie, sans-serif;
+}
+
+
+@media screen and (max-width: 1023px) {    
+    .THIS .startDate{
+        margin-right: 0 !important;
+    }
+}

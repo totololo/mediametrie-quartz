@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Règle d%27attribution 2</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>Pole_agenda</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Contrôle,Demande Panéliste</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Nouveau foyer OK CATI 2</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Demande panéliste AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Appel Entrant</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Demande panéliste AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Application panéliste</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>startsWith</operation>
+                <value>Demande</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nouveau,Hiérarchisé</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Contrôle AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Contrôle</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Contrôle Beacon</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sous_type__c</field>
+                <operation>equals</operation>
+                <value>Tous beacons inactifs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nouveau</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Contrôle AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Contrôle Beacon</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sous_type__c</field>
+                <operation>equals</operation>
+                <value>Tous beacons &lt; 20%</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nouveau</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Contrôle</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Contrôle AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Contrôle Beacon</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sous_type__c</field>
+                <operation>equals</operation>
+                <value>Au moins 1 beacon inactif</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nouveau</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Demande panéliste AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email entrant,Email AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Déclaration d&apos;absence</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nouveau</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>contains</operation>
+                <value>Absen,vacan,cong,hospi</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Demande panéliste AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Application panéliste</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Déclaration d&apos;absence,Déclaration d&apos;absence en France,Déclaration d&apos;absence hors France</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sous_type__c</field>
+                <operation>equals</operation>
+                <value>Vacances,Vacances hors zone de mesure</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nouveau</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 4 AND 5 AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Demande panéliste AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>startsWith</operation>
+                <value>Email</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nouveau</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>notEqual</operation>
+                <value>Déclaration d&apos;absence,Déclaration d&apos;absence en France,Déclaration d&apos;absence hors France</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>notContain</operation>
+                <value>Absen,Vacan,cong,hospi</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Demande panéliste AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Application panéliste</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>notEqual</operation>
+                <value>Déclaration d&apos;absence,Déclaration d&apos;absence en France,Déclaration d&apos;absence hors France</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nouveau</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Demande panéliste AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Recruté</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sous_type__c</field>
+                <operation>equals</operation>
+                <value>Welcome call</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nouveau</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Contrôle AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Non-répondant</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Jour_de_traitement__c</field>
+                <operation>greaterOrEqual</operation>
+                <value>4</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Jour_de_traitement__c</field>
+                <operation>greaterOrEqual</operation>
+                <value>10</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sous_type__c</field>
+                <operation>equals</operation>
+                <value>Pager : OFF,Pager OFF</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Contrôle AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Contrôle</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Telephone_fixe__c</field>
+                <operation>equals</operation>
+                <value>Non-répondant</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Jour_de_traitement__c</field>
+                <operation>greaterOrEqual</operation>
+                <value>4</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Jour_de_traitement__c</field>
+                <operation>lessOrEqual</operation>
+                <value>10</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sous_type__c</field>
+                <operation>equals</operation>
+                <value>Absence collecte</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Contrôle AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Non-répondant</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Jour_de_traitement__c</field>
+                <operation>lessOrEqual</operation>
+                <value>4</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Jour_de_traitement__c</field>
+                <operation>greaterOrEqual</operation>
+                <value>10</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sous_type__c</field>
+                <operation>equals</operation>
+                <value>Pager éteint trop longtemps</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Contrôle AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Non-répondant</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sous_type__c</field>
+                <operation>equals</operation>
+                <value>Absence mouvement</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Jour_de_traitement__c</field>
+                <operation>greaterOrEqual</operation>
+                <value>4</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Jour_de_traitement__c</field>
+                <operation>greaterOrEqual</operation>
+                <value>10</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Contrôle AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Non-répondant SetMeter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Nouveau,Hiérarchisé</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Contrôle AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Non-répondant</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sous_type__c</field>
+                <operation>equals</operation>
+                <value>Pager : OFF</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Jour_de_traitement__c</field>
+                <operation>greaterOrEqual</operation>
+                <value>14</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Jour_de_traitement__c</field>
+                <operation>lessOrEqual</operation>
+                <value>20</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Contrôle AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Non-répondant</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sous_type__c</field>
+                <operation>equals</operation>
+                <value>Absence collecte</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Jour_de_traitement__c</field>
+                <operation>greaterOrEqual</operation>
+                <value>14</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Jour_de_traitement__c</field>
+                <operation>lessOrEqual</operation>
+                <value>20</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Contrôle AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Non-répondant</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sous_type__c</field>
+                <operation>equals</operation>
+                <value>Pager éteint trop longtemps</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Jour_de_traitement__c</field>
+                <operation>greaterOrEqual</operation>
+                <value>14</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Jour_de_traitement__c</field>
+                <operation>lessOrEqual</operation>
+                <value>20</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Contrôle AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Non-répondant</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sous_type__c</field>
+                <operation>equals</operation>
+                <value>Absence mouvement</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Jour_de_traitement__c</field>
+                <operation>greaterOrEqual</operation>
+                <value>14</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Jour_de_traitement__c</field>
+                <operation>lessOrEqual</operation>
+                <value>20</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Demande Panéliste</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>notEqual</operation>
+                <value>Nouveau foyer OK CATI 2</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>File_d_attente_AIP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Demande panéliste AIP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Suivi retour matériel (Chute)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sous_type__c</field>
+                <operation>equals</operation>
+                <value>Restitution du matériel</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Jour_de_traitement__c</field>
+                <operation>equals</operation>
+                <value>45</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>Règles d%27attribution 1</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Pole_agenda</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Nouveau foyer OK CATI 2</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Demande Panéliste</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>notEqual</operation>
+                <value>Nouveau foyer OK CATI 2</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Demande Panéliste</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

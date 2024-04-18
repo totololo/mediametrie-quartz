@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rendez_vous_PaME</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>LatestEndTime</columns>
+    <columns>SchedStartTime</columns>
+    <columns>SchedEndTime</columns>
+    <columns>Status</columns>
+    <columns>EstDuration</columns>
+    <columns>CITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type_de_panel__c</field>
+        <operation>equals</operation>
+        <value>PAME</value>
+    </filters>
+    <label>Rendez-vous PaME</label>
+</ListView>

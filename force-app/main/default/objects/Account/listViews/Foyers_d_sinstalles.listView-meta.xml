@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foyers_d_sinstalles</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Departement__c</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>Numero_de_telephone_fixe__c</columns>
+    <columns>Type_de_foyer__c</columns>
+    <columns>Nombre_de_points_cumules__c</columns>
+    <columns>Date_de_chute_temporaire__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Statut_du_foyer__c</field>
+        <operation>equals</operation>
+        <value>4</value>
+    </filters>
+    <label>Foyers désinstallés</label>
+</ListView>

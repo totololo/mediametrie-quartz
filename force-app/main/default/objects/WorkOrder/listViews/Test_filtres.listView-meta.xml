@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_filtres</fullName>
+    <columns>Foyer_paneliste__c</columns>
+    <columns>StartDate</columns>
+    <columns>Type_de_l_intervention__c</columns>
+    <columns>Actions__c</columns>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>Status</columns>
+    <columns>EndDate</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>CreatedDate</columns>
+    <columns>LastModifiedDate</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Nouvelle,En cours</value>
+    </filters>
+    <filters>
+        <field>Type_de_l_intervention__c</field>
+        <operation>equals</operation>
+        <value>3</value>
+    </filters>
+    <filters>
+        <field>Type_de_panel__c</field>
+        <operation>notContain</operation>
+        <value>pame</value>
+    </filters>
+    <filters>
+        <field>Actions__c</field>
+        <operation>equals</operation>
+        <value>32</value>
+    </filters>
+    <label>Inter à cloturer</label>
+</ListView>

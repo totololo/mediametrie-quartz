@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foyers_PaME</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Statut_du_foyer_picto__c</columns>
+    <columns>Date_OK_CATI2__c</columns>
+    <columns>Date_d_installation__c</columns>
+    <columns>Date_d_integration__c</columns>
+    <columns>Date_de_reception_de_la_convention__c</columns>
+    <columns>Type_de_foyer__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type_de_foyer__c</field>
+        <operation>equals</operation>
+        <value>2,13</value>
+    </filters>
+    <filters>
+        <field>Statut_du_foyer__c</field>
+        <operation>equals</operation>
+        <value>3</value>
+    </filters>
+    <label>Foyers PaME</label>
+</ListView>

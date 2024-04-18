@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>Foyer__c</field>
+        <formula>WorkOrder.AccountId</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Foyer_Paneliste__c</field>
+        <formula>WorkOrder.Foyer_paneliste__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>WorkOrderId</field>
+        <formula>WorkOrder.Id</formula>
+    </fieldOverrides>
+    <label>Nouvelle Action Supplémentaire</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>WorkOrderId</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Equipement_du_foyer__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Actions__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Categorie_d_action_realisee__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Type_d_action_realisee__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Description</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <successMessage>you have created an Action !</successMessage>
+    <targetObject>WorkOrderLineItem</targetObject>
+    <targetParentField>WorkOrder</targetParentField>
+    <type>Create</type>
+</QuickAction>

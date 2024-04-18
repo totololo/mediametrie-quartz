@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV03_date_fin_avant_debut_non_possible</fullName>
+    <active>true</active>
+    <description>Bloquer la saisie d&apos;une date de fin antérieur à la date de début</description>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+Date_de_fin__c  &lt;  Date_de_debut__c
+)</errorConditionFormula>
+    <errorMessage>La date de la fin du congé ne peut être antérieur à la date du début du congé.</errorMessage>
+</ValidationRule>

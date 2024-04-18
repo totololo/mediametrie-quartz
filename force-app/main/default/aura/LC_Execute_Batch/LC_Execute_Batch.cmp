@@ -1,0 +1,125 @@
+<aura:component controller="AP1_ExecuteBatch" implements="force:appHostable"   >
+   
+    
+
+<table class="tg">
+<thead>
+    <!--ligne1-->
+  <tr>
+    <th class="tab ">Batchs Journaliers Matin</th>
+    <th class="tab ">Batchs Mensuels</th>
+    <th class="tab ">Batchs Annuels</th>
+  </tr>
+</thead>
+<tbody>
+    <!--ligne2-->
+  <tr>
+    <td class="tabb "><lightning:button label="Batch002_PrecodageControle" title="précodage" onclick="{! c.handleClick1 }"/> </td>
+    <td class="tabb "><lightning:button label="Batch016_CreditAutomatique" title="credit" onclick="{! c.handleClick8}"/></td>
+    <td class="tabb "></td>
+  </tr>
+    <!--ligne3-->
+  <tr>
+    <td class="tabb "><lightning:button label="Batch003_CreationRequeteControle" title="création requete" onclick="{! c.handleClick2 }"/></td>
+	<td class="tabb "><lightning:button label="Batch0013_Delete_Evenement" title="del event" onclick="{! c.handleClick10}" /></td>    <td class="tabb "></td>
+    
+  </tr>
+
+  <!--ligne4-->
+  <tr>
+    <td class="tabb "><lightning:button label="Batch008_SMSviaNP6" title="sms" onclick="{! c.handleClick3 }"/></td>
+    <td class="tabb "></td>
+    <td class="tabb "></td>
+
+  </tr>
+   <!--ligne5-->
+    <tr>
+        <td class="tabb "><lightning:button label="Batch021_RequeteSuiviSetMeter" title="setmeter" onclick="{! c.handleClick12 }"/></td>
+        <td class="tabb "></td>
+        <td class="tabb "></td>
+    </tr>
+    
+    <!--ligne6-->
+    <tr>
+        <td class="tabb "><lightning:button label="Batch009_ClotureRequeteAutomatique" title="cloture" onclick="{! c.handleClick13 }"/></td>
+        <td class="tabb "></td>
+        <td class="tabb "></td>
+    </tr>
+    <!--ligne7-->
+    <tr>
+        <td class="tabb "><lightning:button label="Batch017_InstallControlesSoftMeters" title="crtlspftmet" onclick="{! c.handleClick14 }"/></td>
+        <td class="tabb "></td>
+        <td class="tabb "></td>
+    </tr>
+    <!--ligne7-->
+    <tr>
+        <td class="tabb "><lightning:button label="Batch022_CreationRequete_RetourMateriel" title="RETOUR" onclick="{! c.handleClick16 }"/></td>
+        <td class="tabb "></td>
+        <td class="tabb "></td>
+    </tr>
+    
+    <tr>
+        <td class="tabb "><lightning:button label="Batch010_RequeteProcessusRestitution45j" title="RESTIT" onclick="{! c.handleClick20 }"/></td>
+        <td class="tabb "></td>
+        <td class="tabb "></td>
+    </tr>
+    <tr>
+        <td class="tabb "><lightning:button label="Batch0018_MajCtrl_Precode_RS" title="RS" onclick="{! c.handleClick21 }"/></td>
+        <td class="tabb "></td>
+        <td class="tabb "></td>
+    </tr>
+    
+    <!--ligne6-->
+  <tr>
+    <td class="tab "><B>Batchs Journaliers Soir</B></td>
+    <td class="tabb "></td>
+    <td class="tabb "></td>
+
+  </tr>
+    <!--ligne6-->
+  <tr>
+    <td class="tabb "><lightning:button label="Batch0017_ShareNote" title="note" onclick="{! c.handleClick4}"/></td>
+    <td class="tabb "></td>
+    <td class="tabb "></td>
+  </tr>
+
+  <!--ligne7-->
+  <tr>
+    <td class="tabb "><lightning:button label="Batch001_ControleAbandone" title="ctrl abnd" onclick="{! c.handleClick5}" /></td>
+    <td class="tabb "></td>
+    <td class="tabb "></td>
+  </tr>
+
+  <!--ligne8-->
+  <tr>
+    <td class="tabb "><lightning:button label="Batch009_Debit_RemiseSoldeAZero" title="solde" onclick="{! c.handleClick6}" /></td>
+    <td class="tabb "></td>
+    <td class="tabb "></td>
+  </tr>
+    <!--ligne8-->
+<tr>
+    <td class="tabb "><lightning:button label="Batch014_CreateCaseForBattery" title="bEACON" onclick="{! c.handleClick15}" /></td>
+    <td class="tabb "></td>
+    <td class="tabb "></td>
+  </tr>
+    
+    <!--ligne8-->
+<tr>
+    <td class="tabb "><lightning:button label="Batch025_ClotureAuto_CaseInactifMeter" title="INACTIF" onclick="{! c.handleClick17}" /></td>
+    <td class="tabb "></td>
+    <td class="tabb "></td>
+  </tr>
+  
+    <tr>
+    <td class="tabb "><lightning:button label="Batch025_MAJ_Etiquette" title="MAJETIQ" onclick="{! c.handleClick18}" /></td>
+    <td class="tabb "></td>
+    <td class="tabb "></td>
+  </tr>
+    <tr>
+    <td class="tabb "><lightning:button label="Batch026_ClotureCaseSansControle" title="REQUSC" onclick="{! c.handleClick19}" /></td>
+    <td class="tabb "></td>
+    <td class="tabb "></td>
+  </tr>
+</tbody>
+</table>
+</aura:component>

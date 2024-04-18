@@ -1,0 +1,54 @@
+{
+  "forgotPasswordRouteId" : "cdef5a5a-ad51-4ba4-9d24-6b7cd22bf85b",
+  "isAvailableToGuests" : false,
+  "isFilteredComponentsView" : true,
+  "isProgressiveRenderingEnabled" : true,
+  "loginAppPageId" : "bef91401-38d4-4b0c-8141-ff63da806f97",
+  "mainAppPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "preferredDomain" : "none",
+  "selfRegistrationRouteId" : "ee01cd37-1304-4e8e-bfb2-d45dceb7a29d",
+  "trustedSitesForScript" : [ {
+    "id" : "b7a93880-718a-4120-9dfc-791279a6079b",
+    "isActive" : true,
+    "trustedSiteName" : "Sales Prospecting Bot",
+    "trustedSiteUrl" : "https://d.la2-c2-fra.salesforceliveagent.com/chat/rest/",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "8874f2de-3be2-4056-a1b1-54344bdae829",
+    "isActive" : true,
+    "trustedSiteName" : "platform.twitter.com",
+    "trustedSiteUrl" : "https://platform.twitter.com/widgets.js",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "f2780fa7-ffc1-44e6-b753-d22d02906778",
+    "isActive" : true,
+    "trustedSiteName" : "mediametrie--c.vf.force.com",
+    "trustedSiteUrl" : "https://mediametrie--c.vf.force.com/resource/1695040083000/cookieConsent",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "9e4ab992-dd88-4cd2-ab57-aeccde46a0fa",
+    "isActive" : true,
+    "trustedSiteName" : "mediametrie--c.vf.force.com1",
+    "trustedSiteUrl" : "https://mediametrie--c.vf.force.com/resource/1695040083000/clientFingerprint",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "a61bcbbf-4ada-404d-b75c-0666fa674853",
+    "isActive" : true,
+    "trustedSiteName" : "d.la1-core1.sfdc-urlt2q.salesforceliveagent.com",
+    "trustedSiteUrl" : "https://d.la1-core1.sfdc-urlt2q.salesforceliveagent.com/chat/rest/EmbeddedService/EmbeddedServiceConfig.jsonp",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "fb19f0f0-22b9-487b-bee3-be5b4e865c4a",
+    "isActive" : true,
+    "trustedSiteName" : "d.la1-core1.sfdc-urlt2q.salesforceliveagent.com1",
+    "trustedSiteUrl" : "https://d.la1-core1.sfdc-urlt2q.salesforceliveagent.com/chat/rest/Visitor/Settings.jsonp",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "a12d2472-8b3a-413c-b423-83a458b2f382",
+    "isActive" : true,
+    "trustedSiteName" : "d.la1-core1.sfdc-urlt2q.salesforceliveagent.com2",
+    "trustedSiteUrl" : "https://d.la1-core1.sfdc-urlt2q.salesforceliveagent.com/chat/rest/Visitor/Availability.jsonp",
+    "type" : "trustedSitesForScripts"
+  } ],
+  "type" : "site"
+}

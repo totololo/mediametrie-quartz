@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Carte_sim__c</fullName>
+    <encryptionScheme>CaseInsensitiveDeterministicEncryption</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Carte SIM</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

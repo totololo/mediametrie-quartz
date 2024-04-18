@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipement_du_foyer__c</fullName>
+    <externalId>false</externalId>
+    <label>Équipement du foyer</label>
+    <referenceTo>Equipements_du_foyer__c</referenceTo>
+    <relationshipLabel>Équipements du foyer des individus</relationshipLabel>
+    <relationshipName>Equipements_du_foyer_des_individus</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

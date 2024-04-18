@@ -1,0 +1,60 @@
+{
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "2b0dfc3a-c8ba-4e35-b631-01a8624d98ec",
+  "label" : "Top Articles",
+  "regions" : [ {
+    "id" : "ea235217-205e-470e-89b9-4b0ae40c580b",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "             <h1 style=\"text-align: center;\">                 <b style=\"font-size: 20px; color: #1e2443;\">Top Articles</b>             </h1>             "
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "4942d6c6-e607-4db3-84bb-660232a535ab",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "numberOfArticles" : 5,
+        "showTitle" : true,
+        "title" : "Articles",
+        "topicList" : [ ]
+      },
+      "componentName" : "forceCommunity:topArticleList",
+      "id" : "80b0bd31-b1a9-48e2-b78b-ed16efebc97c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9bdb8daf-aab8-4dfa-80c5-3bd422d91f0c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "aab8b722-39a2-4e2a-b378-78b93a2ea527",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "M&VOUS - Top Articles"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f9f15f71-5ce2-4639-b2c4-d33b655d4338",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2f348994-3ef7-4d9b-9f2c-be5dd79aa760",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "top-articles"
+}

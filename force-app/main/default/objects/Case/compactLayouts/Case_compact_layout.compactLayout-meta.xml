@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_compact_layout</fullName>
+    <fields>Foyer_paneliste__c</fields>
+    <fields>Type</fields>
+    <fields>Sous_type__c</fields>
+    <fields>Status</fields>
+    <fields>Source_Requetes__c</fields>
+    <fields>Jour_de_traitement__c</fields>
+    <label>Case compact layout</label>
+</CompactLayout>

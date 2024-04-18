@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1</fullName>
+        <default>false</default>
+        <label>Tout à fait</label>
+    </customValue>
+    <customValue>
+        <fullName>2</fullName>
+        <default>false</default>
+        <label>Plutôt</label>
+    </customValue>
+    <customValue>
+        <fullName>3</fullName>
+        <default>false</default>
+        <label>Plutôt pas</label>
+    </customValue>
+    <customValue>
+        <fullName>4</fullName>
+        <default>false</default>
+        <label>Pas du tout</label>
+    </customValue>
+    <customValue>
+        <fullName>5</fullName>
+        <default>false</default>
+        <label>Non abonné</label>
+    </customValue>
+    <customValue>
+        <fullName>0</fullName>
+        <default>false</default>
+        <label>Non réponse</label>
+    </customValue>
+    <masterLabel>Abonnement Canal +</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

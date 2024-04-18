@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMCGP1__AMC_Appointments_SLA__c</fullName>
+    <deprecated>false</deprecated>
+    <description>It is used in Assessment Reports</description>
+    <externalId>false</externalId>
+    <formula>IF (  AMCGP1__AMC_Sch_Start_and_Arr_End_Diff_Mins__c  &gt; 0, &apos;Missed SLA&apos;, &apos;Within SLA&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Appointments SLA</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_de_chute__c</fullName>
+    <externalId>false</externalId>
+    <label>Motif de chute</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acquisition d’une TV</fullName>
+                <default>false</default>
+                <label>Acquisition d’une TV</label>
+            </value>
+            <value>
+                <fullName>A l’initiative de MM</fullName>
+                <default>false</default>
+                <label>A l’initiative de MM</label>
+            </value>
+            <value>
+                <fullName>A l’initiative du panéliste</fullName>
+                <default>false</default>
+                <label>A l’initiative du panéliste</label>
+            </value>
+            <value>
+                <fullName>Aucun accès Internet</fullName>
+                <default>false</default>
+                <label>Aucun accès Internet</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

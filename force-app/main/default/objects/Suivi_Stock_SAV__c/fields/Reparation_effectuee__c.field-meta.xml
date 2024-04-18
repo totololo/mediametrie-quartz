@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reparation_effectuee__c</fullName>
+    <externalId>false</externalId>
+    <label>Réparation effectuée</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Changement afficheur LCD</fullName>
+                <default>false</default>
+                <label>Changement afficheur LCD</label>
+            </value>
+            <value>
+                <fullName>Changement Batterie</fullName>
+                <default>false</default>
+                <label>Changement Batterie</label>
+            </value>
+            <value>
+                <fullName>Changement Bouton M/A</fullName>
+                <default>false</default>
+                <label>Changement Bouton M/A</label>
+            </value>
+            <value>
+                <fullName>Changement bouton ON/OFF</fullName>
+                <default>false</default>
+                <label>Changement bouton ON/OFF</label>
+            </value>
+            <value>
+                <fullName>Changement Carte alim</fullName>
+                <default>false</default>
+                <label>Changement Carte alim</label>
+            </value>
+            <value>
+                <fullName>Changement Carte Audio-USB</fullName>
+                <default>false</default>
+                <label>Changement Carte Audio-USB</label>
+            </value>
+            <value>
+                <fullName>Changement Carte Mère</fullName>
+                <default>false</default>
+                <label>Changement Carte Mère</label>
+            </value>
+            <value>
+                <fullName>Changement Carte wifi</fullName>
+                <default>false</default>
+                <label>Changement Carte wifi</label>
+            </value>
+            <value>
+                <fullName>Changement Compact Flash</fullName>
+                <default>false</default>
+                <label>Changement Compact Flash</label>
+            </value>
+            <value>
+                <fullName>Changement Coque arrière</fullName>
+                <default>false</default>
+                <label>Changement Coque arrière</label>
+            </value>
+            <value>
+                <fullName>Changement coque inférieure</fullName>
+                <default>false</default>
+                <label>Changement coque inférieure</label>
+            </value>
+            <value>
+                <fullName>Changement coque supérieure équipée</fullName>
+                <default>false</default>
+                <label>Changement coque supérieure équipée</label>
+            </value>
+            <value>
+                <fullName>Changement DDR</fullName>
+                <default>false</default>
+                <label>Changement DDR</label>
+            </value>
+            <value>
+                <fullName>Changement du connecteur wifi</fullName>
+                <default>false</default>
+                <label>Changement du connecteur wifi</label>
+            </value>
+            <value>
+                <fullName>Changement écran tactil</fullName>
+                <default>false</default>
+                <label>Changement écran tactil</label>
+            </value>
+            <value>
+                <fullName>Changement Lecteur Flash</fullName>
+                <default>false</default>
+                <label>Changement Lecteur Flash</label>
+            </value>
+            <value>
+                <fullName>Changement mère</fullName>
+                <default>false</default>
+                <label>Changement mère</label>
+            </value>
+            <value>
+                <fullName>Changement Nappe IDE</fullName>
+                <default>false</default>
+                <label>Changement Nappe IDE</label>
+            </value>
+            <value>
+                <fullName>Changement Nappes</fullName>
+                <default>false</default>
+                <label>Changement Nappes</label>
+            </value>
+            <value>
+                <fullName>Changement Pile mémoire</fullName>
+                <default>false</default>
+                <label>Changement Pile mémoire</label>
+            </value>
+            <value>
+                <fullName>Flashage Meter</fullName>
+                <default>false</default>
+                <label>Flashage Meter</label>
+            </value>
+            <value>
+                <fullName>Injection IMEI</fullName>
+                <default>false</default>
+                <label>Injection IMEI</label>
+            </value>
+            <value>
+                <fullName>Màj bios</fullName>
+                <default>false</default>
+                <label>Màj bios</label>
+            </value>
+            <value>
+                <fullName>Màj Version</fullName>
+                <default>false</default>
+                <label>Màj Version</label>
+            </value>
+            <value>
+                <fullName>Reétiquettage code barre</fullName>
+                <default>false</default>
+                <label>Reétiquettage code barre</label>
+            </value>
+            <value>
+                <fullName>Remplacement antenne GSM</fullName>
+                <default>false</default>
+                <label>Remplacement antenne GSM</label>
+            </value>
+            <value>
+                <fullName>Remplacement Antenne Wifi</fullName>
+                <default>false</default>
+                <label>Remplacement Antenne Wifi</label>
+            </value>
+            <value>
+                <fullName>Remplacement batterie 880 mAh / 3,8V</fullName>
+                <default>false</default>
+                <label>Remplacement batterie 880 mAh / 3,8V</label>
+            </value>
+            <value>
+                <fullName>Remplacement Carte Electronique</fullName>
+                <default>false</default>
+                <label>Remplacement Carte Electronique</label>
+            </value>
+            <value>
+                <fullName>Remplacement écran tactile</fullName>
+                <default>false</default>
+                <label>Remplacement écran tactile</label>
+            </value>
+            <value>
+                <fullName>Remplacement pile CR2032</fullName>
+                <default>false</default>
+                <label>Remplacement pile CR2032</label>
+            </value>
+            <value>
+                <fullName>Soudure connecteur alim</fullName>
+                <default>false</default>
+                <label>Soudure connecteur alim</label>
+            </value>
+            <value>
+                <fullName>Soudure support pile</fullName>
+                <default>false</default>
+                <label>Soudure support pile</label>
+            </value>
+            <value>
+                <fullName>Autres</fullName>
+                <default>false</default>
+                <label>Autres</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

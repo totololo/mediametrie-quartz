@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV05_FoyerPaneliste_Obligatoire</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(!$User.Bypass_validation_rules__c,
+Foyer_paneliste__c = null,
+Date_de_chute_de_l_individu__c = null
+)</errorConditionFormula>
+    <errorDisplayField>Foyer_paneliste__c</errorDisplayField>
+    <errorMessage>Le foyer Panéliste est obligatoire pour un individu panéliste non chuté.</errorMessage>
+</ValidationRule>

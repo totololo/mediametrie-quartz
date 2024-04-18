@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Suivi_stock_sav</fullName>
+    <fields>Reference_de_suivi_RMA__c</fields>
+    <fields>Date_entree__c</fields>
+    <fields>Date_sortie__c</fields>
+    <label>Suivi stock/sav</label>
+</CompactLayout>

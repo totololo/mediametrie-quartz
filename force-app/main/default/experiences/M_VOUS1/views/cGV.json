@@ -1,0 +1,46 @@
+{
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "596afd7c-353d-4235-b03f-b9608dd3cb5e",
+  "label" : "CGV",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:CGV",
+      "id" : "5d1160a3-34c7-464f-b223-b011abb693ac",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e255c4f0-07bd-4a0e-bf99-b25180dbc908",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "471b97c2-ec05-473c-a586-499525577a9f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "a9567496-d4d5-4fc5-a834-97c5716e879b",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "M&Vous - CGU"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "eacde27c-d21a-47ea-8133-689675eee840",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d4bb3fc5-9e0a-46c1-adba-a1661e2a6098",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-cgv"
+}

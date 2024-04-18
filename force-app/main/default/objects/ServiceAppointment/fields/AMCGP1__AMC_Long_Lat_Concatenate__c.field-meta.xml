@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMCGP1__AMC_Long_Lat_Concatenate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Concatenates Latitude and Longitude fields for same site reporting</description>
+    <externalId>false</externalId>
+    <formula>TEXT( Latitude ) &amp;  TEXT( Longitude )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Long Lat Concatenate</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

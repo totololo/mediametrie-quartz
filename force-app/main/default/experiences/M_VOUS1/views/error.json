@@ -1,0 +1,48 @@
+{
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "17db9fa5-cceb-4b51-92a7-23add91576ce",
+  "label" : "Error",
+  "regions" : [ {
+    "id" : "92064e37-0fc5-427e-a8c3-255b41b1c360",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div style='text-align: center;'>Invalid Page</div>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "6ca4d63d-799c-4bba-bb41-6171e72ed937",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c75f5e44-a12c-4361-bd61-d263726ccd4d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "ffa153ed-39eb-469c-afd4-17fdfb2020ff",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "M&VOUS - Erreur"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "75f4afb4-9f2d-4d18-9705-4ce132dad891",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a54313d5-8054-495a-acbc-6cf3b7f388b6",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "error"
+}

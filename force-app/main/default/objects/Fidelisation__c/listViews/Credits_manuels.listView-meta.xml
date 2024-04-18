@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credits_manuels</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Points_credites__c</columns>
+    <columns>Motif_de_credit__c</columns>
+    <columns>Foyer__c</columns>
+    <columns>Composition_du_foyer__c</columns>
+    <columns>Requete__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Fidelisation__c.Credit</value>
+    </filters>
+    <filters>
+        <field>Type_de_mouvement__c</field>
+        <operation>equals</operation>
+        <value>Crédit manuel</value>
+    </filters>
+    <label>Crédits manuels</label>
+</ListView>

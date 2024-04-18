@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>x015</label>
+    <protected>false</protected>
+    <values>
+        <field>Description__c</field>
+        <value xsi:type="xsd:string">Activation du basculement d&apos;utilisateur :  fait référence à la capacité de changer d&apos;utilisateur sur une plateforme, &lt;br/&gt;un système ou une application sans avoir à se déconnecter et à se reconnecter. Le site offre une fonctionnalité&lt;br/&gt; qui permet à un utilisateur actuellement connecté de passer rapidement à un autre compte ou profil &lt;br/&gt;sans avoir à effectuer une nouvelle connexion.</value>
+    </values>
+    <values>
+        <field>Duree_de_conservation__c</field>
+        <value xsi:type="xsd:string">Expire à la fin de la session</value>
+    </values>
+    <values>
+        <field>Name__c</field>
+        <value xsi:type="xsd:string">csssid_Client</value>
+    </values>
+    <values>
+        <field>Type__c</field>
+        <value xsi:type="xsd:string">Obligatoire</value>
+    </values>
+</CustomMetadata>

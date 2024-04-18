@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV17_CSP4_Entre_1_et_4</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    !$User.Bypass_process_builders__c,
+				!$User.Bypass_validation_rules__c,
+				VALUE(CSP4__c) != 1,
+				VALUE(CSP4__c) != 2,
+				VALUE(CSP4__c) != 3,
+				VALUE(CSP4__c) != 4
+)</errorConditionFormula>
+    <errorDisplayField>CSP4__c</errorDisplayField>
+    <errorMessage>La valeur saisie n’est pas pas un nombre compris entre 1 et 4 inclus</errorMessage>
+</ValidationRule>

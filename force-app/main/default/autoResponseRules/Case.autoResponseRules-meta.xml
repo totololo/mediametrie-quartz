@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Web to case</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Web</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <senderEmail>metvous@mediametrie.fr</senderEmail>
+            <senderName>Support Mediametrie</senderName>
+            <template>Mails_Pan_listes_PRM/Accuse_reception_requete</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

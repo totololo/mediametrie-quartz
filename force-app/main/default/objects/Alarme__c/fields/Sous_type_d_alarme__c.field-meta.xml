@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sous_type_d_alarme__c</fullName>
+    <externalId>false</externalId>
+    <label>Sous-type d&apos;alarme</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Anomalie des données en base panel</fullName>
+                <default>false</default>
+                <label>Anomalie des données en base panel</label>
+            </value>
+            <value>
+                <fullName>Anomalie lors du traitement des données d&apos;audience</fullName>
+                <default>false</default>
+                <label>Anomalie lors du traitement des données d&apos;audience</label>
+            </value>
+            <value>
+                <fullName>Audience individuelle &gt; 9h</fullName>
+                <default>false</default>
+                <label>Audience individuelle &gt; 9h</label>
+            </value>
+            <value>
+                <fullName>Individu sans activité Web cohérente</fullName>
+                <default>false</default>
+                <label>Individu sans activité Web cohérente</label>
+            </value>
+            <value>
+                <fullName>Individus sans audience depuis 28 jours ou plus</fullName>
+                <default>false</default>
+                <label>Individus sans audience depuis 28 jours ou plus</label>
+            </value>
+            <value>
+                <fullName>Foyers sans audience depuis 6 jours ou plus</fullName>
+                <default>false</default>
+                <label>Foyers sans audience depuis 6 jours ou plus</label>
+            </value>
+            <value>
+                <fullName>Foyer avec audience sans abo</fullName>
+                <default>false</default>
+                <label>Foyer avec audience sans abo</label>
+            </value>
+            <value>
+                <fullName>Foyer avec abo C+ sans audience</fullName>
+                <default>false</default>
+                <label>Foyer avec abo C+ sans audience</label>
+            </value>
+            <value>
+                <fullName>Foyer sans activité routeur</fullName>
+                <default>false</default>
+                <label>Foyer sans activité routeur</label>
+            </value>
+            <value>
+                <fullName>Foyer sans activité Web cohérente</fullName>
+                <default>false</default>
+                <label>Foyer sans activité Web cohérente</label>
+            </value>
+            <value>
+                <fullName>Non envoyé au Médiamat</fullName>
+                <default>false</default>
+                <label>Non envoyé au Médiamat</label>
+            </value>
+            <value>
+                <fullName>Rejeté Médiamat</fullName>
+                <default>false</default>
+                <label>Rejeté Médiamat</label>
+            </value>
+            <value>
+                <fullName>TV On &gt; 12h</fullName>
+                <default>false</default>
+                <label>TV On &gt; 12h</label>
+            </value>
+            <value>
+                <fullName>Autres usages</fullName>
+                <default>false</default>
+                <label>Autres usages</label>
+            </value>
+            <value>
+                <fullName>Autre cause technique</fullName>
+                <default>false</default>
+                <label>Autre cause technique</label>
+            </value>
+            <value>
+                <fullName>Foyer vacancier longue durée</fullName>
+                <default>false</default>
+                <label>Foyer vacancier longue durée</label>
+            </value>
+            <value>
+                <fullName>Audimètre non connecté</fullName>
+                <default>false</default>
+                <label>Audimètre non connecté</label>
+            </value>
+            <value>
+                <fullName>Audience individuelle &gt; 7h</fullName>
+                <default>false</default>
+                <label>Audience individuelle &gt; 7h</label>
+            </value>
+            <value>
+                <fullName>Inconnu</fullName>
+                <default>false</default>
+                <label>Inconnu</label>
+            </value>
+            <value>
+                <fullName>Foyers sans audience depuis 4 jours</fullName>
+                <default>false</default>
+                <label>Foyers sans audience depuis 4 jours</label>
+            </value>
+            <value>
+                <fullName>Foyers sans audience depuis plus de 4 jours</fullName>
+                <default>false</default>
+                <label>Foyers sans audience depuis plus de 4 jours</label>
+            </value>
+            <value>
+                <fullName>Individus sans audience depuis 4 jours</fullName>
+                <default>false</default>
+                <label>Individus sans audience depuis 4 jours</label>
+            </value>
+            <value>
+                <fullName>Individus sans audience depuis plus de 4 jours</fullName>
+                <default>false</default>
+                <label>Individus sans audience depuis plus de 4 jours</label>
+            </value>
+            <value>
+                <fullName>Statut audim. sans date</fullName>
+                <default>false</default>
+                <label>Statut audim. sans date</label>
+            </value>
+            <value>
+                <fullName>Foyers sans audience depuis plus de 90 jours</fullName>
+                <default>false</default>
+                <label>Foyers sans audience depuis plus de 90 jours</label>
+            </value>
+            <value>
+                <fullName>Foyers sans audience depuis plus de 180 jours</fullName>
+                <default>false</default>
+                <label>Foyers sans audience depuis plus de 180 jours</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

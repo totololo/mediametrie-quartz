@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Presentation_Compact_FID_cr_dit</fullName>
+    <fields>Name</fields>
+    <fields>Type_de_mouvement__c</fields>
+    <fields>Points_credites__c</fields>
+    <fields>Type_de_panel__c</fields>
+    <fields>Individu_paneliste__c</fields>
+    <fields>Foyer_paneliste__c</fields>
+    <label>Presentation Compact FID crédit</label>
+</CompactLayout>

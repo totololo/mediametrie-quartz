@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fournisseur__c</fullName>
+    <externalId>false</externalId>
+    <label>Fournisseur</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>10</fullName>
+                <default>false</default>
+                <label>Alice</label>
+            </value>
+            <value>
+                <fullName>12</fullName>
+                <default>false</default>
+                <label>Autre fournisseur ADSL</label>
+            </value>
+            <value>
+                <fullName>13</fullName>
+                <default>false</default>
+                <label>Autre fournisseur Fibre optique</label>
+            </value>
+            <value>
+                <fullName>20</fullName>
+                <default>false</default>
+                <label>Autre Satellite</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>Bouygues / B&amp;You</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <label>Darty</label>
+            </value>
+            <value>
+                <fullName>16</fullName>
+                <default>false</default>
+                <label>FRANSAT</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>Free</label>
+            </value>
+            <value>
+                <fullName>11</fullName>
+                <default>false</default>
+                <label>Numéricâble / Noos / etc (fibre)</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>Orange / Sosh</label>
+            </value>
+            <value>
+                <fullName>18</fullName>
+                <default>false</default>
+                <label>Orange SAT</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>SFR / Red / Numéricable</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>TNT payante</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>TNT Simple</label>
+            </value>
+            <value>
+                <fullName>17</fullName>
+                <default>false</default>
+                <label>TNTSAT</label>
+            </value>
+            <value>
+                <fullName>9</fullName>
+                <default>false</default>
+                <label>Virgin</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>Canal / C+</label>
+            </value>
+            <value>
+                <fullName>15</fullName>
+                <default>false</default>
+                <label>Canal / Csat</label>
+            </value>
+            <value>
+                <fullName>14</fullName>
+                <default>false</default>
+                <label>Numéricâble / Noos / etc. (câble)</label>
+            </value>
+            <value>
+                <fullName>ADSL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ADSL</label>
+            </value>
+            <value>
+                <fullName>Cable</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cable</label>
+            </value>
+            <value>
+                <fullName>Canal / C+ / Csat</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Canal / C+ / Csat</label>
+            </value>
+            <value>
+                <fullName>Hertzien</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hertzien</label>
+            </value>
+            <value>
+                <fullName>Satellite</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Satellite</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

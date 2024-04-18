@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foyer_pnl_AIP_non_rep</fullName>
+    <columns>NAME</columns>
+    <columns>Date_d_installation__c</columns>
+    <columns>Date_de_descente__c</columns>
+    <columns>Date_dernier_changement__c</columns>
+    <columns>Date_de_chute_temporaire__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Referentiel_Panel__c</field>
+        <operation>contains</operation>
+        <value>aip</value>
+    </filters>
+    <filters>
+        <field>A_anonymiser__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Statut_Audimetrique__c</field>
+        <operation>equals</operation>
+        <value>4</value>
+    </filters>
+    <filters>
+        <field>Suspendu__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Statut_Foyer_paneliste__c</field>
+        <operation>notEqual</operation>
+        <value>6,5</value>
+    </filters>
+    <filters>
+        <field>Date_dernier_changement__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Date_dernier_changement__c</field>
+        <operation>lessOrEqual</operation>
+        <value>N_DAYS_AGO:45</value>
+    </filters>
+    <label>Foyer pnl AIP non rep</label>
+</ListView>

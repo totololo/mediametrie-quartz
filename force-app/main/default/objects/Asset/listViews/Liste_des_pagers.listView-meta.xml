@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Liste_des_pagers</fullName>
+    <columns>Foyer_paneliste__c</columns>
+    <columns>ASSET.NAME</columns>
+    <columns>ASSET.SERIAL_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>ASSET.STATUS</columns>
+    <columns>Date_de_premiere_installation__c</columns>
+    <columns>Date_de_premiere_collecte_d_audience__c</columns>
+    <columns>Date_d_affectation__c</columns>
+    <columns>Date_de_desaffectation__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ASSET.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Asset.Dispositifs_de_mesure_d_audience_AIP</value>
+    </filters>
+    <filters>
+        <field>ASSET.NAME</field>
+        <operation>contains</operation>
+        <value>pager</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>contains</operation>
+        <value>Cordon</value>
+    </filters>
+    <filters>
+        <field>Localisation__c</field>
+        <operation>equals</operation>
+        <value>5,Prestataire logistique</value>
+    </filters>
+    <label>Liste des pagers</label>
+</ListView>

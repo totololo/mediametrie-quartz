@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sous_type_de_controle__c</fullName>
+    <externalId>false</externalId>
+    <label>Sous type de contrôle</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>13</fullName>
+                <default>false</default>
+                <label>Anomalie des données en base panel</label>
+            </value>
+            <value>
+                <fullName>16</fullName>
+                <default>false</default>
+                <label>Anomalie lors du traitement des données d&apos;audience</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>Audience individuelle &gt; 9h</label>
+            </value>
+            <value>
+                <fullName>Audimètre non connecté</fullName>
+                <default>false</default>
+                <label>Audimètre non connecté</label>
+            </value>
+            <value>
+                <fullName>18</fullName>
+                <default>false</default>
+                <label>Individu sans activité Web cohérente</label>
+            </value>
+            <value>
+                <fullName>22</fullName>
+                <default>false</default>
+                <label>Individus sans audience depuis 28 jours ou plus</label>
+            </value>
+            <value>
+                <fullName>21</fullName>
+                <default>false</default>
+                <label>Foyers sans audience depuis 6 jours ou plus</label>
+            </value>
+            <value>
+                <fullName>Foyer avec audience sans abo</fullName>
+                <default>false</default>
+                <label>Foyer avec audience sans abo</label>
+            </value>
+            <value>
+                <fullName>Foyer avec abo C+ sans audience</fullName>
+                <default>false</default>
+                <label>Foyer avec abo C+ sans audience</label>
+            </value>
+            <value>
+                <fullName>19</fullName>
+                <default>false</default>
+                <label>Foyer sans activité routeur</label>
+            </value>
+            <value>
+                <fullName>20</fullName>
+                <default>false</default>
+                <label>Foyer sans activité Web cohérente</label>
+            </value>
+            <value>
+                <fullName>14</fullName>
+                <default>false</default>
+                <label>Non envoyé au Médiamat</label>
+            </value>
+            <value>
+                <fullName>15</fullName>
+                <default>false</default>
+                <label>Rejeté Médiamat</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <label>TV On &gt; 12h</label>
+            </value>
+            <value>
+                <fullName>12</fullName>
+                <default>false</default>
+                <label>Autres usages</label>
+            </value>
+            <value>
+                <fullName>9</fullName>
+                <default>false</default>
+                <label>Audience incohérente</label>
+            </value>
+            <value>
+                <fullName>17</fullName>
+                <default>false</default>
+                <label>Autre CauseTechnique</label>
+            </value>
+            <value>
+                <fullName>23</fullName>
+                <default>false</default>
+                <label>Foyer vacancier longue durée</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>Foyers non connectés</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>Participation Audience Individuelle 6h-9h</label>
+            </value>
+            <value>
+                <fullName>10</fullName>
+                <default>false</default>
+                <label>Perte abonnement</label>
+            </value>
+            <value>
+                <fullName>26</fullName>
+                <default>false</default>
+                <label>Absence mouvement</label>
+            </value>
+            <value>
+                <fullName>27</fullName>
+                <default>false</default>
+                <label>Absence collecte</label>
+            </value>
+            <value>
+                <fullName>28</fullName>
+                <default>false</default>
+                <label>Pager OFF</label>
+            </value>
+            <value>
+                <fullName>29</fullName>
+                <default>false</default>
+                <label>Pager éteint trop longtemps</label>
+            </value>
+            <value>
+                <fullName>30</fullName>
+                <default>false</default>
+                <label>Autres</label>
+            </value>
+            <value>
+                <fullName>31</fullName>
+                <default>false</default>
+                <label>Tous beacons inactifs</label>
+            </value>
+            <value>
+                <fullName>32</fullName>
+                <default>false</default>
+                <label>Tous beacons &lt;20%</label>
+            </value>
+            <value>
+                <fullName>33</fullName>
+                <default>false</default>
+                <label>Au moins 1 beacon inactif</label>
+            </value>
+            <value>
+                <fullName>38</fullName>
+                <default>false</default>
+                <label>Indice de qualité faible</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

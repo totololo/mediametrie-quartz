@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_de_panel_Old__c</fullName>
+    <externalId>false</externalId>
+    <label>Type de panel Old</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MMAT</fullName>
+                <default>false</default>
+                <label>MMAT</label>
+            </value>
+            <value>
+                <fullName>PaME</fullName>
+                <default>false</default>
+                <label>PaME</label>
+            </value>
+            <value>
+                <fullName>AIP</fullName>
+                <default>false</default>
+                <label>AIP</label>
+            </value>
+            <value>
+                <fullName>Globale</fullName>
+                <default>false</default>
+                <label>Globale</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

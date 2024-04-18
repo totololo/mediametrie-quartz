@@ -1,0 +1,16 @@
+<!--
+  @description       : 
+  @author            : Anes BOUZOUINA
+  @group             : 
+  @last modified on  : 01-12-2023
+  @last modified by  : Anes BOUZOUINA
+-->
+<aura:component  implements="forceCommunity:themeLayout,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable,force:appHostable"
+                access="global" controller ='ContactFormulaire'>
+    <aura:attribute name="mentionslegalesText" type="string" default=""/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <div class="divPrincipal">
+        <aura:unescapedHtml value="{!v.mentionslegalesText}" />
+    </div>
+    
+</aura:component>

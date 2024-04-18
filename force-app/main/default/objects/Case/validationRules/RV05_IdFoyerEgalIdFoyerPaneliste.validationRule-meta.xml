@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV05_IdFoyerEgalIdFoyerPaneliste</fullName>
+    <active>true</active>
+    <description>Vérifier que le foyer panéliste et le foyer correspondent</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				 Account.Id !=  Foyer_paneliste__r.Foyer__r.Id)</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>Le foyer sélectionné n&apos;est pas celui du foyer panéliste</errorMessage>
+</ValidationRule>

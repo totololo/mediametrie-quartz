@@ -1,0 +1,41 @@
+.THIS.footer{
+    padding:15px 0 ;
+    display: grid;
+    background: #629d00;
+    
+}
+
+.THIS .footer2{
+    color: white;
+    font-size : 10px;
+    font-family: Mediametrie, sans-serif;
+    text-align-last: center;
+    
+}
+
+.THIS .principal {
+    margin: 10px 0;
+}
+
+.THIS .footerImg {
+    margin: auto auto;
+    width: 6%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .THIS.footer{
+        padding:10px 0;
+        margin: 0 auto;
+        width: 100%;
+        display: grid;
+        
+        background: #629d00;
+        
+    }
+    
+    
+    
+}

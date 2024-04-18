@@ -1,0 +1,42 @@
+{
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "57fc87c3-50ec-4e01-9875-17fcc4e6672a",
+  "label" : "detailArticle",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:InfoArticleAura",
+      "id" : "8e013510-bb64-4fdc-b419-fb20594188da",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e9a4dfcb-43fe-446f-87b6-ada4ed10b269",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "7220e1d1-2188-478d-8856-58dc7db007eb",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "M&VOUS - Article"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "a19e82b6-fba3-4599-abe1-43ae415eec4a",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e593c604-cf5e-48ec-b4ff-cc29af7b826f",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-detailarticle"
+}

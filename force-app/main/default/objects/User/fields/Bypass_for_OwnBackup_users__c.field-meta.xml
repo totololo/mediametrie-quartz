@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bypass_for_OwnBackup_users__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>ByPass fourni aux utilisateurs devant utiliser les fonctionnalités d&apos;archivage d&apos;OwnBackup afin de contourner certaines règles de validation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>ByPass fourni aux utilisateurs devant utiliser les fonctionnalités d&apos;archivage d&apos;OwnBackup afin de contourner certaines règles de validation</inlineHelpText>
+    <label>Bypass for OwnBackup users</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

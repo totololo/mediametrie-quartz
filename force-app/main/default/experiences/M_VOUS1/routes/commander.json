@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "bc8d259f-63c3-4587-92a7-6763f4113b97",
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "configurationTags" : [ ],
+  "id" : "723e5a00-162f-41c5-a621-efbed9f90532",
+  "label" : "Commander",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-commander",
+  "type" : "route",
+  "urlPrefix" : "commander"
+}

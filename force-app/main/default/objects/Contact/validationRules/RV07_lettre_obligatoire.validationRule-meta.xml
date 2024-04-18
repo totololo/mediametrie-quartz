@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV07_lettre_obligatoire</fullName>
+    <active>false</active>
+    <description>Le champ lettre est obligatoire si le membre de foyer n&apos;est pas chuté</description>
+    <errorConditionFormula>AND(
+     !$User.Bypass_validation_rules__c,
+     ISBLANK(  Text(Lettre__c)  ),
+     ISBLANK( Date_de_chute_individu__c )
+)</errorConditionFormula>
+    <errorDisplayField>Lettre__c</errorDisplayField>
+    <errorMessage>Le champ lettre est obligatoire.</errorMessage>
+</ValidationRule>

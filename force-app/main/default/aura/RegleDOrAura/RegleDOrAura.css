@@ -1,0 +1,51 @@
+.THIS {
+    margin: 0; 
+    padding: 0; 
+    max-height: 100%; 
+}
+.THIS.pageTitle{
+    margin-bottom: 20px;
+}
+
+.THIS .iframeDiv{
+    place-items: center;
+    margin-top: 1%;
+    position: relative;
+   max-height: 3% !important;
+        max-width: auto !important ;
+
+
+
+}
+
+.THIS .cb-section_column:only-child{
+    padding: 0px !important;
+}
+
+.THIS .imageOr{
+   max-height: 2000px !important;
+    max-width: auto  ;
+    display: block;
+	margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+
+
+@media screen and (max-width: 600px) {    
+    .THIS .iframeDiv{
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden;
+    }
+.THIS .imageOr{
+   max-height: 800px ;
+    max-width: 100%  ;
+        
+}
+    
+.THIS.pageTitle{
+    margin-bottom: 20px;
+
+}
+}

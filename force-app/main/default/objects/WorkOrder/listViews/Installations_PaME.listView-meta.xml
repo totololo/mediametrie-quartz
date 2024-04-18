@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Installations_PaME</fullName>
+    <columns>CreatedDate</columns>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>Type_de_l_intervention__c</columns>
+    <columns>Sous_type_d_intervention__c</columns>
+    <columns>Nombre_d_equipements__c</columns>
+    <columns>Status</columns>
+    <columns>Priority</columns>
+    <columns>Debut_Planifie__c</columns>
+    <columns>ServiceTerritory</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type_de_l_intervention__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Type_de_panel__c</field>
+        <operation>contains</operation>
+        <value>PaME</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Terminée</value>
+    </filters>
+    <label>Installations nouveaux foyers PaME</label>
+</ListView>

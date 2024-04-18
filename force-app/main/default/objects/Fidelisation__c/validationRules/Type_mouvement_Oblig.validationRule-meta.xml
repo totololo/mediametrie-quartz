@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_mouvement_Oblig</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+RecordType.Name = $Label.FID_Type_d_enregistrement_Credit,
+				ISPICKVAL(	Type_de_mouvement__c ,&apos;&apos;) 
+				)</errorConditionFormula>
+    <errorDisplayField>Type_de_mouvement__c</errorDisplayField>
+    <errorMessage>Le type de mouvement est obligatoire</errorMessage>
+</ValidationRule>

@@ -1,0 +1,79 @@
+.THIS.articles {
+    /*display: grid;
+    place-items: center;*/
+    padding-top:30px;
+    margin: 0 auto;
+    width: 50%;
+} 
+.THIS p{
+    margin-bottom: 20px !important; 
+}
+
+.THIS .message {
+    width: 100% !important;
+    padding-bottom: 10%;
+} 
+
+.THIS .titre {
+    font-family: Mediametrie, sans-serif;
+    font-weight: bold;
+    font-size: 2vW;
+    color: #B03892;
+    padding: 2px 0;
+}
+
+.THIS .dateArticle {
+    font-family: Mediametrie, sans-serif;
+    opacity: 0.6;
+    font-size: 0.75vw;
+    padding:1.2vw 0 0.50vw  ;
+}
+
+.THIS .imageArticle {
+    width: 100%;
+    height: auto;
+}
+
+.THIS .heart{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.THIS .heartIcon{
+    width: 20px;
+  }
+
+
+@media screen and (max-width: 600px) {
+    .THIS.articles {
+        /*display: grid;
+        place-items: center;*/
+        padding-top:30px;
+        width: 100%;
+
+            } 
+    
+    .THIS .message {
+        /*display: grid;
+        place-items: center;*/
+        width: 90%;
+    } 
+    
+    .THIS .titre {
+        font-family: Mediametrie, sans-serif;
+        font-weight: bold;
+        font-size: 3vW;
+        color: #B03892;
+        padding: 1vw ;
+    }
+    
+    .THIS .dateArticle {
+        font-family: Mediametrie, sans-serif;
+        opacity: 0.6;
+        font-size: 2vw;
+        padding:1.2vw 0 0.50vw  ;
+    }
+    
+}

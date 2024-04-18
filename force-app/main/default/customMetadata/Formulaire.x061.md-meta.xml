@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>X061</label>
+    <protected>false</protected>
+    <values>
+        <field>Formulaire__c</field>
+        <value xsi:type="xsd:string">Nous contacter</value>
+    </values>
+    <values>
+        <field>Sous_type_SF__c</field>
+        <value xsi:type="xsd:string">Audimètre</value>
+    </values>
+    <values>
+        <field>Sous_type_portail__c</field>
+        <value xsi:type="xsd:string">Mon audimètre</value>
+    </values>
+    <values>
+        <field>Type_SF__c</field>
+        <value xsi:type="xsd:string">Problème équipement Médiamétrie</value>
+    </values>
+    <values>
+        <field>Type_portail__c</field>
+        <value xsi:type="xsd:string">Déclarer un problème sur mon équipement Médiamétrie</value>
+    </values>
+    <values>
+        <field>user_type__c</field>
+        <value xsi:type="xsd:string">MMAT/PaME</value>
+    </values>
+</CustomMetadata>

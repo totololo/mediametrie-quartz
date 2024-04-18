@@ -1,0 +1,23 @@
+<!-- WelcomeEmailComponent -->
+<apex:component access="global" controller="WelcomeEmailController">
+    <apex:attribute name="newContactId" assignTo="{!contactId}" type="Id" description="Contact Id "/>
+    
+    <div style="font-family: Mediametrie, sans-serif;
+                font-size: 18px;
+                color: #629d00;
+                text-align: right;
+                margin: 20px 7% 20px 0;">
+        <div>
+            N° {!UserInfo.NumeroPanel}
+        </div>
+        <div>
+            {!UserInfo.SoldeDePoints} points
+        </div>
+    </div>
+	<apex:outputText value="{!UserInfo.mailText}" escape="false"/>
+    <br/><br/>
+    <apex:outputText value="{!$Label.EXP_WelcomeMailText1}" style=""/> <a href="{!UserInfo.linkQuest}">lien</a> svp.
+    <br/><br/>
+    <apex:outputText value="{!$Label.EXP_WelcomeMailText2}" escape="false"/>
+    
+</apex:component>

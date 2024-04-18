@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Web Support</name>
+    <queueMembers>
+        <users>
+            <user>anes.bouzouina@cognizant.com.mm</user>
+            <user>arondongarcia@mediametrie.fr</user>
+            <user>afacon@mediametrie.fr</user>
+            <user>bastien.pinard@cognizant.com.mm</user>
+            <user>dchretien@mediametrie.fr</user>
+            <user>hwaendendries@mediametrie.fr</user>
+            <user>ielouafi@mediametrie.fr</user>
+            <user>jnoblet@mediametrie.fr</user>
+            <user>lamiaa.aamoum@cognizant.com.mm</user>
+            <user>mbecar@mediametrie.fr</user>
+            <user>msdouay@mediametrie.fr</user>
+            <user>mgoulouzelle@mediametrie.fr</user>
+            <user>mcapon@mediametrie.fr</user>
+            <user>tteggin@mediametrie.fr</user>
+            <user>tbouchain@mediametrie.fr</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Web_Support</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>LiveChatTranscript</sobjectType>
+    </queueSobject>
+</Queue>

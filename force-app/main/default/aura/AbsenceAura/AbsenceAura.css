@@ -1,0 +1,126 @@
+.THIS#titre {
+    font-weight: bold;
+    font-family: Mediametrie, sans-serif;
+    font-size: 1.45vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.THIS .form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.THIS .label {
+    color: black;
+    font-weight: bold;
+    font-size: 1vw;
+    font-family: Mediametrie, sans-serif;
+}
+
+.THIS .type{
+    background-color: white;
+    width: 50vw;
+    margin-top: 0.25%;;
+    padding: 0.25%;
+    font-family: Mediametrie, sans-serif;
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 1px #bfbfbf;
+    font-size: 2vh;
+    height: 5vh;
+}
+.THIS .textarea {
+    background-color: white;
+    width: 50vw;
+    margin-top: 0.25%;;
+    padding: 0.25%;
+    font-family: Mediametrie, sans-serif;
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 1px #bfbfbf;
+    font-size: 2vh;
+    height: 5vh;
+}
+
+.THIS .type:focus {
+    outline: none;
+} 
+
+.THIS .textarea {
+    width: 49.5vw;
+}
+
+.THIS .option {
+    color: white !important;
+    font-family: Mediametrie, sans-serif;
+}
+
+.THIS #type{
+    margin-bottom: 1%;
+}
+.THIS #sous-type{
+    margin-bottom: 1%;
+}
+.THIS #description{
+    margin-bottom: 1%;
+} 
+.THIS #motif {
+    margin-bottom: 1%;
+}
+
+.THIS #date_debut  {
+    margin-bottom: 1vh;
+}
+.THIS #date_fin  {
+    margin-bottom: 1vh;
+}
+.THIS #fichier {
+    margin-bottom: 1vh;
+}
+
+.THIS #soumettre {
+    background-color: #629D00;
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Mediametrie, sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1vw;
+    transition: all 0.2s;
+
+    margin-top: 5%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.THIS #soumettre:hover {
+    background-color: white;
+    border: 0.1em solid #629D00;
+    color: #629D00;
+}
+
+.THIS #date_fin{
+    border-radius: 0;
+    border: solid 1px #bfbfbf;
+    padding: 0.5vh;
+    font-family: Mediametrie, sans-serif;
+}
+.THIS #date_debut {
+    border-radius: 0;
+    border: solid 1px #bfbfbf;
+    padding: 0.5vh;
+    font-family: Mediametrie, sans-serif;
+}
+
+.THIS #fichier {
+    border: solid 1px #bfbfbf;
+    padding: 0.75vh;
+}

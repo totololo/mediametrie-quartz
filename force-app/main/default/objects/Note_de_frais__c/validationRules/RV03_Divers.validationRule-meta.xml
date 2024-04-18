@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV03_Divers</fullName>
+    <active>true</active>
+    <description>Si le type de frais correspond à Divers alors ajouter une description obligatoirement
+Ajouter la règle de gestion : RV03_Divers</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( Type_de_frais__c , &apos;Divers&apos;),
+ISBLANK( Description__c )
+)</errorConditionFormula>
+    <errorDisplayField>Description__c</errorDisplayField>
+    <errorMessage>Veuillez saisir le champ Description</errorMessage>
+</ValidationRule>

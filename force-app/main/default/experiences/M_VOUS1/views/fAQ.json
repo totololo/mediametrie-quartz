@@ -1,0 +1,97 @@
+{
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "c7ca13e8-7f65-4548-abb3-e4bcf77b7c21",
+  "label" : "FAQ",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "7aff5bb4-2e61-45c0-a428-808efdcf5cb8",
+          "columns" : [ {
+            "UUID" : "4090d4a1-1c99-4213-a76c-5e15fccf6d3a",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 400
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "7aff5bb4-2e61-45c0-a428-808efdcf5cb8",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:FAQ",
+          "id" : "d0d240e7-4d32-4414-b985-fb1add1975b4",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "4090d4a1-1c99-4213-a76c-5e15fccf6d3a",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "d5a91a57-d95e-4e6c-a811-6bb9b47bd658",
+          "columns" : [ {
+            "UUID" : "7399012d-bb9a-4ddc-9af8-da51ae3e1a77",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 180
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "d5a91a57-d95e-4e6c-a811-6bb9b47bd658",
+      "regions" : [ {
+        "id" : "7399012d-bb9a-4ddc-9af8-da51ae3e1a77",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c35960fb-3a9a-4882-bd56-7db17e406828",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "M&VOUS - FAQ"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "be395adb-0849-4c3a-bd3f-78025254de95",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "aee7be0e-f14e-4104-b955-3162b5d96d3a",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-faq"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV02_verification_longueur_telephone</fullName>
+    <active>true</active>
+    <description>Règle qui vérifie que les champs de téléphone ait exactement un certain nombre de caractère</description>
+    <errorConditionFormula>AND(
+				$User.Bypass_validation_rules__c = false,
+    OR(
+								AND(
+												NOT(ISBLANK(Numero_de_portable__c)),
+    				    LEN(Numero_de_portable__c) &lt;&gt; VALUE($Label.RV_Limitation_telephone)												
+								),
+								AND(
+												NOT(ISBLANK(Numero_de_telephone_fixe__c)),
+											 LEN(Numero_de_telephone_fixe__c) &lt;&gt; VALUE($Label.RV_Limitation_telephone)
+        ),
+								AND(
+												NOT(ISBLANK(Numero_du_conjoint__c)),
+											 LEN(Numero_du_conjoint__c) &lt;&gt; VALUE($Label.RV_Limitation_telephone)
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>Le numéro de téléphone doit obligatoirement être composé de 10 chiffres</errorMessage>
+</ValidationRule>

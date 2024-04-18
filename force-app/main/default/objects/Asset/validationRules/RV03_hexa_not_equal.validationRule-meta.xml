@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV03_hexa_not_equal</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+Product2.ProductCode !=$Label.Product_REF_WAT07V1,
+!CONTAINS(SerialNumber ,TEXT(CASE(MID(Audimetre__c, 1, 1),&quot;0&quot;,0,&quot;1&quot;,1,&quot;2&quot;,2,&quot;3&quot;,3,&quot;4&quot;,4,&quot;5&quot;,5,&quot;6&quot;,6,&quot;7&quot;,7,&quot;8&quot;,8,&quot;9&quot;,9,&quot;A&quot;,10,&quot;B&quot;,11,&quot;C&quot;,12,&quot;D&quot;,13,&quot;E&quot;,14,&quot;F&quot;,15,1)*268435456 +
+CASE(MID(Audimetre__c, 2, 1),&quot;0&quot;,0,&quot;1&quot;,1,&quot;2&quot;,2,&quot;3&quot;,3,&quot;4&quot;,4,&quot;5&quot;,5,&quot;6&quot;,6,&quot;7&quot;,7,&quot;8&quot;,8,&quot;9&quot;,9,&quot;A&quot;,10,&quot;B&quot;,11,&quot;C&quot;,12,&quot;D&quot;,13,&quot;E&quot;,14,&quot;F&quot;,15,1)*16777216 +
+CASE(MID(Audimetre__c, 3, 1),&quot;0&quot;,0,&quot;1&quot;,1,&quot;2&quot;,2,&quot;3&quot;,3,&quot;4&quot;,4,&quot;5&quot;,5,&quot;6&quot;,6,&quot;7&quot;,7,&quot;8&quot;,8,&quot;9&quot;,9,&quot;A&quot;,10,&quot;B&quot;,11,&quot;C&quot;,12,&quot;D&quot;,13,&quot;E&quot;,14,&quot;F&quot;,15,1)*1048576 +
+CASE(MID(Audimetre__c, 4, 1),&quot;0&quot;,0,&quot;1&quot;,1,&quot;2&quot;,2,&quot;3&quot;,3,&quot;4&quot;,4,&quot;5&quot;,5,&quot;6&quot;,6,&quot;7&quot;,7,&quot;8&quot;,8,&quot;9&quot;,9,&quot;A&quot;,10,&quot;B&quot;,11,&quot;C&quot;,12,&quot;D&quot;,13,&quot;E&quot;,14,&quot;F&quot;,15,1)*65536 +
+CASE(MID(Audimetre__c, 5, 1),&quot;0&quot;,0,&quot;1&quot;,1,&quot;2&quot;,2,&quot;3&quot;,3,&quot;4&quot;,4,&quot;5&quot;,5,&quot;6&quot;,6,&quot;7&quot;,7,&quot;8&quot;,8,&quot;9&quot;,9,&quot;A&quot;,10,&quot;B&quot;,11,&quot;C&quot;,12,&quot;D&quot;,13,&quot;E&quot;,14,&quot;F&quot;,15,1)*4096 +
+CASE(MID(Audimetre__c, 6, 1),&quot;0&quot;,0,&quot;1&quot;,1,&quot;2&quot;,2,&quot;3&quot;,3,&quot;4&quot;,4,&quot;5&quot;,5,&quot;6&quot;,6,&quot;7&quot;,7,&quot;8&quot;,8,&quot;9&quot;,9,&quot;A&quot;,10,&quot;B&quot;,11,&quot;C&quot;,12,&quot;D&quot;,13,&quot;E&quot;,14,&quot;F&quot;,15,1)*256 +
+CASE(MID(Audimetre__c, 7, 1),&quot;0&quot;,0,&quot;1&quot;,1,&quot;2&quot;,2,&quot;3&quot;,3,&quot;4&quot;,4,&quot;5&quot;,5,&quot;6&quot;,6,&quot;7&quot;,7,&quot;8&quot;,8,&quot;9&quot;,9,&quot;A&quot;,10,&quot;B&quot;,11,&quot;C&quot;,12,&quot;D&quot;,13,&quot;E&quot;,14,&quot;F&quot;,15,1)*16 +
+CASE(MID(Audimetre__c, 8, 1),&quot;0&quot;,0,&quot;1&quot;,1,&quot;2&quot;,2,&quot;3&quot;,3,&quot;4&quot;,4,&quot;5&quot;,5,&quot;6&quot;,6,&quot;7&quot;,7,&quot;8&quot;,8,&quot;9&quot;,9,&quot;A&quot;,10,&quot;B&quot;,11,&quot;C&quot;,12,&quot;D&quot;,13,&quot;E&quot;,14,&quot;F&quot;,15,1)*1)
+),
+OR(ISPICKVAL(Type_de_materiel__c, &apos;30&apos;), ISPICKVAL(Type_de_materiel__c, &apos;34&apos;) )
+)</errorConditionFormula>
+    <errorMessage>La valeur du champ Audimetre__c ne correspond pas a la valeur du HexaDecimal partie du champ SerialNumber</errorMessage>
+</ValidationRule>

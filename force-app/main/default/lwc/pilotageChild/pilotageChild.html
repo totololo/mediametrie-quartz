@@ -1,0 +1,59 @@
+<!--
+  @description       : 
+  @author            : Anes BOUZOUINA
+  @group             : 
+  @last modified on  : 10-26-2022
+  @last modified by  : Anes BOUZOUINA
+-->
+<template>
+<lightning-layout>
+    <lightning-layout-item size="7"> 
+        <lightning-card title="Vues de liste de l'objet selectioné : " icon-name="utility:task">   
+
+             
+            <lightning-datatable  
+            show-row-number-column data={listview.data} columns={cols} key-field="Id">  
+            </lightning-datatable>  
+            
+        </lightning-card> 
+    </lightning-layout-item>
+
+
+
+        <lightning-layout-item size="5"> 
+
+            <lightning-card >  
+                <div class="slds-box">  
+                    <lightning-button-group>
+            <lightning-button onclick={AddListView} variant="brand" icon-name="utility:add" label="Ajouter">
+            </lightning-button>
+            <lightning-button onclick={DeleteListView} variant="destructive"  icon-name="utility:delete" label="Supprimer">
+            </lightning-button>
+            <!-- <lightning-button onclick={AZZA} variant="text-destructive"  label="Annuler la campaign">
+            </lightning-button> -->
+            <lightning-button onclick={CreateAppels} variant="Success" disabled={disableButton} label="Lancer le batch manuellement">
+            </lightning-button>
+        </lightning-button-group>
+                </div>
+                 <div class="slds-box">  
+            <lightning-combobox
+            name="une file d'attente"
+            label="Merci de choisir une file d'attente"
+            value={value}
+            options={options}
+            onchange={handleChange} ></lightning-combobox>
+
+        <!-- <p>Selected value is: <strong>{value}</strong></p> -->
+
+        </div>
+         </lightning-card>
+         <template if:true={value}>
+            <template if:true={object}>
+            <c-pilotage-queues queue={value} obj={object}></c-pilotage-queues>   
+         </template >
+        </template >
+    </lightning-layout-item>
+
+
+</lightning-layout>
+</template>

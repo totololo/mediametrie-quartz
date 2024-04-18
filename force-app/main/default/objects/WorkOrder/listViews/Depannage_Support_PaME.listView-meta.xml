@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Depannage_Support_PaME</fullName>
+    <columns>CreatedDate</columns>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>Type_de_l_intervention__c</columns>
+    <columns>Sous_type_d_intervention__c</columns>
+    <columns>Status</columns>
+    <columns>Priority</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>Nombre_d_equipements__c</columns>
+    <columns>Debut_Planifie__c</columns>
+    <columns>Motifs_de_chute__c</columns>
+    <columns>Etapes_de_chute__c</columns>
+    <columns>Etat__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type_de_l_intervention__c</field>
+        <operation>equals</operation>
+        <value>3</value>
+    </filters>
+    <filters>
+        <field>Type_de_panel__c</field>
+        <operation>contains</operation>
+        <value>PAME</value>
+    </filters>
+    <label>Dépannage/Support PaME</label>
+</ListView>

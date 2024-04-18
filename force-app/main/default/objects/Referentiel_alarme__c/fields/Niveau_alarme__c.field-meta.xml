@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Niveau_alarme__c</fullName>
+    <externalId>false</externalId>
+    <label>Niveau alarme</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>HOUSEHOLD</fullName>
+                <default>false</default>
+                <label>HOUSEHOLD</label>
+            </value>
+            <value>
+                <fullName>MEMBER</fullName>
+                <default>false</default>
+                <label>MEMBER</label>
+            </value>
+            <value>
+                <fullName>METER</fullName>
+                <default>false</default>
+                <label>METER</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

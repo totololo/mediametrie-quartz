@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_de_l_import__c</fullName>
+    <externalId>false</externalId>
+    <label>Statut de l&apos;import</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>Validée</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>Rejetée</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>Partiellement Validée</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>Partiellement rejetée</label>
+            </value>
+            <value>
+                <fullName>A activer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>A activer</label>
+            </value>
+            <value>
+                <fullName>A contrôler</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>A contrôler</label>
+            </value>
+            <value>
+                <fullName>A valider</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>A valider</label>
+            </value>
+            <value>
+                <fullName>Accepté</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Accepté</label>
+            </value>
+            <value>
+                <fullName>Rejeté Import</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rejeté Import</label>
+            </value>
+            <value>
+                <fullName>Rejeté QA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rejeté QA</label>
+            </value>
+            <value>
+                <fullName>Rejeté Validation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rejeté Validation</label>
+            </value>
+            <value>
+                <fullName>Validé/Rejeté</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Validé/Rejeté</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

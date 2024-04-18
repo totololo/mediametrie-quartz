@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Acces_territoires</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Acces territoires</label>
+        <sharedTo>
+            <group>acces_territoire</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>IsActive</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

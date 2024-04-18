@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Controles_actifs_du_jour</fullName>
+    <columns>NAME</columns>
+    <columns>Date_de_controle__c</columns>
+    <columns>Foyer__c</columns>
+    <columns>Type_de_controle__c</columns>
+    <columns>Sous_type_de_controle__c</columns>
+    <columns>Libelle_de_pre_codage__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>Cause_de_controle__c</columns>
+    <columns>Type_de_panel__c</columns>
+    <columns>Statut__c</columns>
+    <columns>Rep_ou_non_rep__c</columns>
+    <columns>Requete__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Controle__c.Controle_Mediamat_PaME</value>
+    </filters>
+    <filters>
+        <field>Date_de_controle__c</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Contrôles actifs du jour MMAT/PaME</label>
+</ListView>

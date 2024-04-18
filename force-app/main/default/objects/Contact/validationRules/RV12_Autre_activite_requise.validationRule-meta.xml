@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV12_Autre_activite_requise</fullName>
+    <active>false</active>
+    <description>Activité requise si l&apos;Activité actuelle est &quot;Autre cas&quot;</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				TEXT(Type__c) != $Label.CON_Type_Invite,
+				TEXT(Activite_actuelle__c) = $Label.CON_ActiviteActuelle_Autre_cas,
+				ISBLANK(Autre_activite__c)
+)</errorConditionFormula>
+    <errorDisplayField>Autre_activite__c</errorDisplayField>
+    <errorMessage>Le champ Autre activité est requis si l&apos;Activité actuelle est &quot;Autre cas&quot;</errorMessage>
+</ValidationRule>

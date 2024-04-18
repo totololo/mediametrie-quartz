@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Code_QR__c</fullName>
+    <externalId>false</externalId>
+    <formula>Name + &apos;,&apos; +  Audimetre__c + &apos;,&apos; +  TEXT(Numero_IMEI__c) + &apos;,&apos;  + TEXT(DAY( Date_de_production__c )) +  TEXT(MONTH(Date_de_production__c )) +  RIGHT(TEXT(YEAR(Date_de_production__c )), 2)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Code QR</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

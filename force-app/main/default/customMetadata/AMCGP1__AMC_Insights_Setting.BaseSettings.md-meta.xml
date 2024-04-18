@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>BaseSettings</label>
+    <protected>false</protected>
+    <values>
+        <field>AMCGP1__After_Metrics_Capture_Status__c</field>
+        <value xsi:type="xsd:string">Completed</value>
+    </values>
+    <values>
+        <field>AMCGP1__Approval_Required_For_Resource_Absences__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>AMCGP1__Automatic_Insights_Enabled__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>AMCGP1__Before_Metrics_Capture_Status__c</field>
+        <value xsi:type="xsd:string">Queued</value>
+    </values>
+    <values>
+        <field>AMCGP1__CriticalZoneValueForApps__c</field>
+        <value xsi:type="xsd:string">30</value>
+    </values>
+    <values>
+        <field>AMCGP1__CustomMetricClasses__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>AMCGP1__Detailed_Log__c</field>
+        <value xsi:type="xsd:string">Record</value>
+    </values>
+    <values>
+        <field>AMCGP1__Email_Notification__c</field>
+        <value xsi:type="xsd:string">youssef.hamrouni@cognizant.com</value>
+    </values>
+    <values>
+        <field>AMCGP1__SafeZoneValueForApps__c</field>
+        <value xsi:type="xsd:string">30</value>
+    </values>
+    <values>
+        <field>AMCGP1__SystemLogsEnabled__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

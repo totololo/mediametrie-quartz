@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV01_verification_du_statut</fullName>
+    <active>true</active>
+    <description>Règle qui empêche de rouvrir une requête.</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				ISCHANGED(Status),
+				OR(
+								TEXT(PRIORVALUE(Status)) = $Label.CAS_Statut_Cloture,
+								TEXT(PRIORVALUE(Status)) = $Label.CASE_Statut_CloturePartiel,
+								TEXT(PRIORVALUE(Status)) = $Label.CASE_Statut_ClotureNonTraite
+				)
+)</errorConditionFormula>
+    <errorMessage>Vous ne pouvez plus modifier le statut de la requête une fois la requête clôturée.
+Merci de créer une nouvelle requête</errorMessage>
+</ValidationRule>

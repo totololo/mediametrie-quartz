@@ -1,0 +1,10 @@
+{
+  "activeViewId" : "486f357d-fdd1-413e-a978-9707793963de",
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "configurationTags" : [ ],
+  "id" : "883a7ece-b3dd-4ed5-9dae-4de2f5e2d63a",
+  "label" : "Flux Related List",
+  "routeType" : "relatedlist-0Fq",
+  "type" : "route",
+  "urlPrefix" : "streams"
+}

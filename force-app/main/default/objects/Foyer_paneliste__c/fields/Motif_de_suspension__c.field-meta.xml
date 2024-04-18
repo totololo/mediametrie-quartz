@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_de_suspension__c</fullName>
+    <externalId>false</externalId>
+    <label>Motif de suspension</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>202</fullName>
+                <default>false</default>
+                <label>Mauvaise audience</label>
+            </value>
+            <value>
+                <fullName>41</fullName>
+                <default>false</default>
+                <label>Chute</label>
+            </value>
+            <value>
+                <fullName>21</fullName>
+                <default>false</default>
+                <label>Déménagement / travaux en cours</label>
+            </value>
+            <value>
+                <fullName>104</fullName>
+                <default>false</default>
+                <label>En attente matériel MM</label>
+            </value>
+            <value>
+                <fullName>101</fullName>
+                <default>false</default>
+                <label>Pilote</label>
+            </value>
+            <value>
+                <fullName>111</fullName>
+                <default>false</default>
+                <label>TV non relié à l’audimètre</label>
+            </value>
+            <value>
+                <fullName>105</fullName>
+                <default>false</default>
+                <label>Audience différée sans equipement</label>
+            </value>
+            <value>
+                <fullName>52</fullName>
+                <default>false</default>
+                <label>Autre audience incorrecte (hors bagotement / autre usage anormal)</label>
+            </value>
+            <value>
+                <fullName>89</fullName>
+                <default>false</default>
+                <label>Autre usage anormal, dont bagotement</label>
+            </value>
+            <value>
+                <fullName>11</fullName>
+                <default>false</default>
+                <label>Chgt / Inst TV / TV temporaire non installé</label>
+            </value>
+            <value>
+                <fullName>14</fullName>
+                <default>false</default>
+                <label>Chgt / Inst décodeur num</label>
+            </value>
+            <value>
+                <fullName>102</fullName>
+                <default>false</default>
+                <label>KO DTV audience hors norme (impactant les résultats)</label>
+            </value>
+            <value>
+                <fullName>103</fullName>
+                <default>false</default>
+                <label>KO DTV pour investigation</label>
+            </value>
+            <value>
+                <fullName>200</fullName>
+                <default>false</default>
+                <label>En attente de chute</label>
+            </value>
+            <value>
+                <fullName>201</fullName>
+                <default>false</default>
+                <label>Audience incohérente</label>
+            </value>
+            <value>
+                <fullName>203</fullName>
+                <default>false</default>
+                <label>En attente matériel</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Contrainte du casque (filaire ou bluetooth)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contrainte du casque (filaire ou bluetooth)</label>
+            </value>
+            <value>
+                <fullName>Déménagement hors zone de mesure</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Déménagement hors zone de mesure</label>
+            </value>
+            <value>
+                <fullName>Etude trop longue</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Etude trop longue</label>
+            </value>
+            <value>
+                <fullName>Mauvaise participation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mauvaise participation</label>
+            </value>
+            <value>
+                <fullName>Ondes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ondes</label>
+            </value>
+            <value>
+                <fullName>Oubli trop régulier</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Oubli trop régulier</label>
+            </value>
+            <value>
+                <fullName>Pager trop gros, inesthétique, indiscret...</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pager trop gros, inesthétique, indiscret...</label>
+            </value>
+            <value>
+                <fullName>Pas de motif précisé</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pas de motif précisé</label>
+            </value>
+            <value>
+                <fullName>Profession inadaptée</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Profession inadaptée</label>
+            </value>
+            <value>
+                <fullName>Programme de fid peu motivant</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Programme de fid peu motivant</label>
+            </value>
+            <value>
+                <fullName>Raisons personnelles</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Raisons personnelles</label>
+            </value>
+            <value>
+                <fullName>Set meter : problèmes techniques</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Set meter : problèmes techniques</label>
+            </value>
+            <value>
+                <fullName>Set meter : refus installation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Set meter : refus installation</label>
+            </value>
+            <value>
+                <fullName>Set meter : utilisation trop contraignante</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Set meter : utilisation trop contraignante</label>
+            </value>
+            <value>
+                <fullName>Structure du panel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Structure du panel</label>
+            </value>
+            <value>
+                <fullName>Sursollicitation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sursollicitation</label>
+            </value>
+            <value>
+                <fullName>Trop contraignant port et chargement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Trop contraignant port et chargement</label>
+            </value>
+            <value>
+                <fullName>Trop contraignant sans précision</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Trop contraignant sans précision</label>
+            </value>
+            <value>
+                <fullName>Trop contraignant à charger</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Trop contraignant à charger</label>
+            </value>
+            <value>
+                <fullName>Trop contraignant à porter</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Trop contraignant à porter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

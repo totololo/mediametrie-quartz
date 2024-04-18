@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SortOrder</fullName>
+    <inlineHelpText>Définit la priorité qui détermine la méthode de génération d&apos;interventions quand un plan de maintenance ou un actif de maintenance a deux règles de travail de maintenance ou plus générant une intervention à la même date. La valeur d&apos;ordre de tri inférieure est prioritaire.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

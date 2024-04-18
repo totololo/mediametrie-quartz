@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_d_alarme__c</fullName>
+    <externalId>false</externalId>
+    <label>Type d&apos;alarme</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Présence</fullName>
+                <default>false</default>
+                <label>Présence</label>
+            </value>
+            <value>
+                <fullName>Autres usages</fullName>
+                <default>false</default>
+                <label>Autres usages</label>
+            </value>
+            <value>
+                <fullName>Connexion</fullName>
+                <default>false</default>
+                <label>Connexion</label>
+            </value>
+            <value>
+                <fullName>Participation</fullName>
+                <default>false</default>
+                <label>Participation</label>
+            </value>
+            <value>
+                <fullName>Réception/abonnement</fullName>
+                <default>false</default>
+                <label>Réception/abonnement</label>
+            </value>
+            <value>
+                <fullName>Non Répondant</fullName>
+                <default>false</default>
+                <label>Non Répondant</label>
+            </value>
+            <value>
+                <fullName>Participation Web</fullName>
+                <default>false</default>
+                <label>Participation Web</label>
+            </value>
+            <value>
+                <fullName>Foyer vacancier longue durée</fullName>
+                <default>false</default>
+                <label>Foyer vacancier longue durée</label>
+            </value>
+            <value>
+                <fullName>Inconnu</fullName>
+                <default>false</default>
+                <label>Inconnu</label>
+            </value>
+            <value>
+                <fullName>Foyer vacancier</fullName>
+                <default>false</default>
+                <label>Foyer vacancier</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

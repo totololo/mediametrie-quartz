@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Controle_Mediamat_PaME</fullName>
+    <active>true</active>
+    <label>Contrôle Mediamat/PaME</label>
+    <picklistValues>
+        <picklist>Duree_du_controle__c</picklist>
+        <values>
+            <fullName>Entre 10mn et 1 heure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moins de 10mn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plus d%27une heure</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rep_ou_non_rep__c</picklist>
+        <values>
+            <fullName>Non répondant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Répondant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resultat_d_appel__c</picklist>
+        <values>
+            <fullName>Non Joint</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resultat_joint__c</picklist>
+        <values>
+            <fullName>Abonnement au cable compris dans les charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attente télécommande</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aud inf 10min %28séquence d%27audience %3C 10 mins%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audim%2E débranché par le foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre usage confirmé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre usage longue durée confirmé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres bouquet que %22%22csat%22%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaines canal %2B regardées en clair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changement FAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changement IRD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changement de fréquence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaîne%28s%29 non signée%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaîne%28s%29 étrangère%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaînes constatées dans les audiences %3A Fausse incohérence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaînes faisant parties de l%27abonnement de base adsl</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configuration ok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confirme audience autre usage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Console de jeux%2C Pan a oublié sa lettre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMD non relié au routeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déménagement en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Désabonné</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enregistrement vu et réalisé hors foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer a regardé tv</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer a utilisé TV sans regarder les chaînes signées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer en vacances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer joint%2E N%27a pas regardé de chaine signée %28autre usage%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer pas regardé TV%2C pbm déc%2Fbox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer pas regardé TV%2C pbm réception tv</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer pas regardé TV%2C pbm sonde dmd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer s%27est abonné</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ind ne se connecte pas ou peu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ind ou foyer en vacances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ind utilise un pc non configuré</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ind%2Ffoyer ne s%27est pas connecté temporairement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individu a utilisé TV sans regarder les chaînes signées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inter en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jamais abonné</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manip KO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manip OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%27a plus internet %2F pbm avec internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offre promotionnelle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PNC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Page en %22%22mono user%22%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pan a laissé tv en AV %28écran noir%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pan a oublié sa déclaration%2F utilisé une autre lettre du foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pan a oublié sa déclaration%2Futilisé une lettre invité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pan a regardé%2Futilisé tv %28autre usage%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pan pas regardé TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pan pas regardé tv%2C Pan absent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pan pas regardé tv%2C pbm déc%2Fbox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pan pas regardé tv%2C pbm sonde dmd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pan va faire la manip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pan%2E a oublié de retirer sa lettre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pan%2E n%27a pas regardé les chaînes en abonnement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pan%2E n%27a pas regardé les chaînes identifiées %3A Fausse incohérence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pan%2E pas regardé TV%2C pb réception TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas de page de déclaration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pb DMD%2Fsonde %3A pas d%27inter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pb technique %3A transmis pour inter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pb électrique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pbm de ligne internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pbm de routeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pbm dmd %3D inter tech ouverte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pbm fournisseurs électricité %2F téléphone du foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pbm liaison cpl%2Fwifi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pbm routeur%2Fpbm box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pc en panne %2Fchangement de pc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personne non concernée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Périphériques%2C Pan endormi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Périphériques%2FChaine radio%2C Oubli de lettre Pan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RAS pour le foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raisons diverses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remonté à la DTSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Récept possibles par plateforme changé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réparation - Changement - Attente nouveau TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV non regardée F%2E %2C mais foyer présent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV non regardée F%2E%2C car foyer absent non déclaré</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV non regardée F%2E%2C car ind%2E absent pdt la période</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV non regardée Ind%2C mais ind%2E présent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV regardée F%2E Autre usage longue durée confirmé%22%22 %28Audience justifiée%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV regardée Ind%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tjrs abonné%2C aud inf 10 min</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transmetteur vidéo%2Fabonnement multi ecran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travaux en cours%2C audim%2E Débranché</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trop jeune%2C oublie sa lettre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Télécommande en attente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Va vérifier l%27installation%2F envoi de process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacanciers</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resultat_non_joint__c</picklist>
+        <values>
+            <fullName>Abonnement au cable compris dans les charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appel entrant %2F sortant récent hors contrôle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appel récent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appel récent pour autre type de contrôle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appel sur même type de contrôle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attente télecommande</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aud%2E s%27est reconnecté tt seul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre usage longue durée confirmé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres bouquet que %22%22csat%22%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaines canal %2B regardées en clair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changement FAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cumul NC %2B aud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMD non relié au routeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déménagement en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déménagement%2Ftravaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email envoyé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En attente de solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F%2E vac%2E%2Fabs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer en vacances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer générant svt des audiences trop longues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer regardant bcp de chaines étrangères</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ind abs la semaine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ind avec peu d%27audience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ind ne se connecte pas ou peu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ind ou foyer en vacances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ind utilise un pc non configuré</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ind%2E concerné absent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inter ctrl%2E Aud%2E  en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inter en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inter récente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manip récente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mén%2E Abs%2E Avec message</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mén%2E Abs%2E sans message</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ménage abs avec message</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ménage abs sans message</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%27a plus internet %2F pbm avec internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ne justifiant pas d%27action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PNC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Page en %22%22mono user%22%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pan pas regardé chaines identifiées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pb électrique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pbm de ligne internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pbm de routeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pbm routeur%2Fpbm box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pc en panne %2Fchangement de pc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personne non concernée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poste suspendu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raisons diverses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remonté à la DTSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remonté à%C2%A0 la DTSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réparation - Changement - Attente nouveau TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS de rappel envoyé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS envoyé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV regardée Ind%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tous Ind%2E Prés%2E %3C25j</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transmetteur vidéo%2Fabonnement multi ecran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travaux en cours%2C audim%2E Débranché</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trop jeune%2C oublie sa lettre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Télécommande en attente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacanciers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>utilisation ird %28bonne mauvaise audience%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sous_type_de_controle__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut__c</picklist>
+        <values>
+            <fullName>Abandonné</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Actif</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Annulé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pré-codé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traité</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tech_Priority__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_controle__c</picklist>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_origine__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

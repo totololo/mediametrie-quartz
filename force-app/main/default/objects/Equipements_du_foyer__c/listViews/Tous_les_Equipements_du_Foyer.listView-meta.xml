@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tous_les_Equipements_du_Foyer</fullName>
+    <columns>NAME</columns>
+    <columns>Foyer__c</columns>
+    <columns>Foyer_paneliste__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Usage_Principal__c</field>
+        <operation>equals</operation>
+        <value>Professionnel</value>
+    </filters>
+    <label>Tous les Equipements du Foyer</label>
+</ListView>

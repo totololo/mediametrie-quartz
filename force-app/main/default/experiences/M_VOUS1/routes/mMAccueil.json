@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "45bdfb43-7b40-4945-9d8e-4bd9f0d3f942",
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "configurationTags" : [ ],
+  "id" : "9d20a445-a446-4666-bd3e-6d746488168f",
+  "label" : "MM-Accueil",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-accueil",
+  "type" : "route",
+  "urlPrefix" : "accueil"
+}

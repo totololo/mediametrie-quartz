@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Station_externe__c</fullName>
+    <externalId>false</externalId>
+    <formula>ServiceResource.Station_externe__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Station externe</label>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV01_Modification_Statut_Mapping</fullName>
+    <active>true</active>
+    <description>Seul l&apos;utilisateur d&apos;intégration peu modifier le champ statut de mapping</description>
+    <errorConditionFormula>AND(
+				 !$User.Bypass_validation_rules__c,
+				 !$User.Bypass_RDD__c,
+				 ISCHANGED(Statut_de_mapping__c),
+				 $User.Username != $Label.Mulesoft_integrationUser_username
+				)</errorConditionFormula>
+    <errorDisplayField>Statut_de_mapping__c</errorDisplayField>
+    <errorMessage>Seul l&apos;utilisateur d&apos;intégration peu modifier le champ statut de mapping</errorMessage>
+</ValidationRule>

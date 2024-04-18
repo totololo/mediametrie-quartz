@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accessoires_reprise_audio__c</fullName>
+    <externalId>false</externalId>
+    <label>Accessoires reprise audio</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dydac Optique</fullName>
+                <default>false</default>
+                <label>Dydac Optique</label>
+            </value>
+            <value>
+                <fullName>Dydac Spdif</fullName>
+                <default>false</default>
+                <label>Dydac Spdif</label>
+            </value>
+            <value>
+                <fullName>Convertisseur non Dolby</fullName>
+                <default>false</default>
+                <label>Convertisseur non Dolby</label>
+            </value>
+            <value>
+                <fullName>Micro Externe</fullName>
+                <default>false</default>
+                <label>Micro Externe</label>
+            </value>
+            <value>
+                <fullName>Micro Interne</fullName>
+                <default>false</default>
+                <label>Micro Interne</label>
+            </value>
+            <value>
+                <fullName>Bobine</fullName>
+                <default>false</default>
+                <label>Bobine</label>
+            </value>
+            <value>
+                <fullName>Casque</fullName>
+                <default>false</default>
+                <label>Casque</label>
+            </value>
+            <value>
+                <fullName>Barre de son</fullName>
+                <default>false</default>
+                <label>Barre de son</label>
+            </value>
+            <value>
+                <fullName>Câble audio</fullName>
+                <default>false</default>
+                <label>Câble audio</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

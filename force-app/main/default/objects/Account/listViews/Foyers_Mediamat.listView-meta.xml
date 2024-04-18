@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foyers_Mediamat</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Departement__c</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>Statut_du_foyer__c</columns>
+    <columns>Type_de_foyer__c</columns>
+    <columns>Suspendu__c</columns>
+    <columns>Intervention_en_cours__c</columns>
+    <columns>Motif_de_suspension__c</columns>
+    <columns>Date_de_descente__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Foyers MMAT</label>
+</ListView>

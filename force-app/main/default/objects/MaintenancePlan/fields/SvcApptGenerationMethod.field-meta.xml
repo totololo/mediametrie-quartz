@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SvcApptGenerationMethod</fullName>
+    <inlineHelpText>Specify how service appointments are generated when more than one asset is associated with the maintenance plan and intervention generation method is One intervention line item per asset.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

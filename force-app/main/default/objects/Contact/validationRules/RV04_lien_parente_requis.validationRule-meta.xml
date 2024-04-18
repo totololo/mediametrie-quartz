@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV04_lien_parente_requis</fullName>
+    <active>false</active>
+    <description>Règle qui oblige la saisie du champs lien parenté si l&apos;individu n&apos;est pas chuté</description>
+    <errorConditionFormula>AND(
+    !$User.Bypass_validation_rules__c,
+    ISBLANK(Date_de_chute_individu__c), 
+    ISBLANK(TEXT(Lien_parente__c))			
+)</errorConditionFormula>
+    <errorMessage>Le champs Lien de parenté est obligatoire.</errorMessage>
+</ValidationRule>

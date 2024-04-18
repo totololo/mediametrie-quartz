@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resultat_joint__c</fullName>
+    <externalId>false</externalId>
+    <label>Résultat joint</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sous_type_de_controle__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abonnement au cable compris dans les charges</fullName>
+                <default>false</default>
+                <label>Abonnement au cable compris dans les charges</label>
+            </value>
+            <value>
+                <fullName>Attente télécommande</fullName>
+                <default>false</default>
+                <label>Attente télécommande</label>
+            </value>
+            <value>
+                <fullName>Aud inf 10min (séquence d&apos;audience &lt; 10 mins)</fullName>
+                <default>false</default>
+                <label>Aud inf 10min (séquence d&apos;audience &lt; 10 mins)</label>
+            </value>
+            <value>
+                <fullName>Audim. débranché par le foyer</fullName>
+                <default>false</default>
+                <label>Audim. débranché par le foyer</label>
+            </value>
+            <value>
+                <fullName>Autre usage confirmé</fullName>
+                <default>false</default>
+                <label>Autre usage confirmé</label>
+            </value>
+            <value>
+                <fullName>Autre usage longue durée confirmé</fullName>
+                <default>false</default>
+                <label>Autre usage longue durée confirmé</label>
+            </value>
+            <value>
+                <fullName>Autres bouquet que &quot;&quot;csat&quot;&quot;</fullName>
+                <default>false</default>
+                <label>Autres bouquet que &quot;&quot;csat&quot;&quot;</label>
+            </value>
+            <value>
+                <fullName>Chaîne(s) étrangère(s)</fullName>
+                <default>false</default>
+                <label>Chaîne(s) étrangère(s)</label>
+            </value>
+            <value>
+                <fullName>Chaîne(s) non signée(s)</fullName>
+                <default>false</default>
+                <label>Chaîne(s) non signée(s)</label>
+            </value>
+            <value>
+                <fullName>Chaines canal + regardées en clair</fullName>
+                <default>false</default>
+                <label>Chaines canal + regardées en clair</label>
+            </value>
+            <value>
+                <fullName>Chaînes constatées dans les audiences : Fausse incohérence</fullName>
+                <default>false</default>
+                <label>Chaînes constatées dans les audiences : Fausse incohérence</label>
+            </value>
+            <value>
+                <fullName>Chaînes faisant parties de l&apos;abonnement de base adsl</fullName>
+                <default>false</default>
+                <label>Chaînes faisant parties de l&apos;abonnement de base adsl</label>
+            </value>
+            <value>
+                <fullName>Changement de fréquence</fullName>
+                <default>false</default>
+                <label>Changement de fréquence</label>
+            </value>
+            <value>
+                <fullName>Changement FAI</fullName>
+                <default>false</default>
+                <label>Changement FAI</label>
+            </value>
+            <value>
+                <fullName>Changement IRD</fullName>
+                <default>false</default>
+                <label>Changement IRD</label>
+            </value>
+            <value>
+                <fullName>Configuration ok</fullName>
+                <default>false</default>
+                <label>Configuration ok</label>
+            </value>
+            <value>
+                <fullName>Confirme audience autre usage</fullName>
+                <default>false</default>
+                <label>Confirme audience autre usage</label>
+            </value>
+            <value>
+                <fullName>Console de jeux, Pan a oublié sa lettre</fullName>
+                <default>false</default>
+                <label>Console de jeux, Pan a oublié sa lettre</label>
+            </value>
+            <value>
+                <fullName>Déménagement en cours</fullName>
+                <default>false</default>
+                <label>Déménagement en cours</label>
+            </value>
+            <value>
+                <fullName>Désabonné</fullName>
+                <default>false</default>
+                <label>Désabonné</label>
+            </value>
+            <value>
+                <fullName>DMD non relié au routeur</fullName>
+                <default>false</default>
+                <label>DMD non relié au routeur</label>
+            </value>
+            <value>
+                <fullName>Enregistrement vu et réalisé hors foyer</fullName>
+                <default>false</default>
+                <label>Enregistrement vu et réalisé hors foyer</label>
+            </value>
+            <value>
+                <fullName>Foyer a regardé tv</fullName>
+                <default>false</default>
+                <label>Foyer a regardé tv</label>
+            </value>
+            <value>
+                <fullName>Foyer a utilisé TV sans regarder les chaînes signées</fullName>
+                <default>false</default>
+                <label>Foyer a utilisé TV sans regarder les chaînes signées</label>
+            </value>
+            <value>
+                <fullName>Foyer en vacances</fullName>
+                <default>false</default>
+                <label>Foyer en vacances</label>
+            </value>
+            <value>
+                <fullName>Foyer joint. N&apos;a pas regardé de chaine signée (autre usage)</fullName>
+                <default>false</default>
+                <label>Foyer joint. N&apos;a pas regardé de chaine signée (autre usage)</label>
+            </value>
+            <value>
+                <fullName>Foyer pas regardé TV, pbm déc/box</fullName>
+                <default>false</default>
+                <label>Foyer pas regardé TV, pbm déc/box</label>
+            </value>
+            <value>
+                <fullName>Foyer pas regardé TV, pbm réception tv</fullName>
+                <default>false</default>
+                <label>Foyer pas regardé TV, pbm réception tv</label>
+            </value>
+            <value>
+                <fullName>Foyer pas regardé TV, pbm sonde dmd</fullName>
+                <default>false</default>
+                <label>Foyer pas regardé TV, pbm sonde dmd</label>
+            </value>
+            <value>
+                <fullName>Foyer s&apos;est abonné</fullName>
+                <default>false</default>
+                <label>Foyer s&apos;est abonné</label>
+            </value>
+            <value>
+                <fullName>Ind ne se connecte pas ou peu</fullName>
+                <default>false</default>
+                <label>Ind ne se connecte pas ou peu</label>
+            </value>
+            <value>
+                <fullName>Ind ou foyer en vacances</fullName>
+                <default>false</default>
+                <label>Ind ou foyer en vacances</label>
+            </value>
+            <value>
+                <fullName>Ind utilise un pc non configuré</fullName>
+                <default>false</default>
+                <label>Ind utilise un pc non configuré</label>
+            </value>
+            <value>
+                <fullName>Ind/foyer ne s&apos;est pas connecté temporairement</fullName>
+                <default>false</default>
+                <label>Ind/foyer ne s&apos;est pas connecté temporairement</label>
+            </value>
+            <value>
+                <fullName>Individu a utilisé TV sans regarder les chaînes signées</fullName>
+                <default>false</default>
+                <label>Individu a utilisé TV sans regarder les chaînes signées</label>
+            </value>
+            <value>
+                <fullName>Inter en cours</fullName>
+                <default>false</default>
+                <label>Inter en cours</label>
+            </value>
+            <value>
+                <fullName>Jamais abonné</fullName>
+                <default>false</default>
+                <label>Jamais abonné</label>
+            </value>
+            <value>
+                <fullName>Manip KO</fullName>
+                <default>false</default>
+                <label>Manip KO</label>
+            </value>
+            <value>
+                <fullName>Manip OK</fullName>
+                <default>false</default>
+                <label>Manip OK</label>
+            </value>
+            <value>
+                <fullName>N&apos;a plus internet / pbm avec internet</fullName>
+                <default>false</default>
+                <label>N&apos;a plus internet / pbm avec internet</label>
+            </value>
+            <value>
+                <fullName>Offre promotionnelle</fullName>
+                <default>false</default>
+                <label>Offre promotionnelle</label>
+            </value>
+            <value>
+                <fullName>Page en &quot;&quot;mono user&quot;&quot;</fullName>
+                <default>false</default>
+                <label>Page en &quot;&quot;mono user&quot;&quot;</label>
+            </value>
+            <value>
+                <fullName>Pan a laissé tv en AV (écran noir)</fullName>
+                <default>false</default>
+                <label>Pan a laissé tv en AV (écran noir)</label>
+            </value>
+            <value>
+                <fullName>Pan a oublié sa déclaration/ utilisé une autre lettre du foyer</fullName>
+                <default>false</default>
+                <label>Pan a oublié sa déclaration/ utilisé une autre lettre du foyer</label>
+            </value>
+            <value>
+                <fullName>Pan a oublié sa déclaration/utilisé une lettre invité</fullName>
+                <default>false</default>
+                <label>Pan a oublié sa déclaration/utilisé une lettre invité</label>
+            </value>
+            <value>
+                <fullName>Pan a regardé/utilisé tv (autre usage)</fullName>
+                <default>false</default>
+                <label>Pan a regardé/utilisé tv (autre usage)</label>
+            </value>
+            <value>
+                <fullName>Pan pas regardé TV</fullName>
+                <default>false</default>
+                <label>Pan pas regardé TV</label>
+            </value>
+            <value>
+                <fullName>Pan pas regardé tv, Pan absent</fullName>
+                <default>false</default>
+                <label>Pan pas regardé tv, Pan absent</label>
+            </value>
+            <value>
+                <fullName>Pan pas regardé tv, pbm déc/box</fullName>
+                <default>false</default>
+                <label>Pan pas regardé tv, pbm déc/box</label>
+            </value>
+            <value>
+                <fullName>Pan pas regardé tv, pbm sonde dmd</fullName>
+                <default>false</default>
+                <label>Pan pas regardé tv, pbm sonde dmd</label>
+            </value>
+            <value>
+                <fullName>Pan va faire la manip</fullName>
+                <default>false</default>
+                <label>Pan va faire la manip</label>
+            </value>
+            <value>
+                <fullName>Pan. a oublié de retirer sa lettre</fullName>
+                <default>false</default>
+                <label>Pan. a oublié de retirer sa lettre</label>
+            </value>
+            <value>
+                <fullName>Pan. n&apos;a pas regardé les chaînes en abonnement</fullName>
+                <default>false</default>
+                <label>Pan. n&apos;a pas regardé les chaînes en abonnement</label>
+            </value>
+            <value>
+                <fullName>Pan. n&apos;a pas regardé les chaînes identifiées : Fausse incohérence</fullName>
+                <default>false</default>
+                <label>Pan. n&apos;a pas regardé les chaînes identifiées : Fausse incohérence</label>
+            </value>
+            <value>
+                <fullName>Pan. pas regardé TV, pb réception TV</fullName>
+                <default>false</default>
+                <label>Pan. pas regardé TV, pb réception TV</label>
+            </value>
+            <value>
+                <fullName>Pas de page de déclaration</fullName>
+                <default>false</default>
+                <label>Pas de page de déclaration</label>
+            </value>
+            <value>
+                <fullName>Pb DMD/sonde : pas d&apos;inter</fullName>
+                <default>false</default>
+                <label>Pb DMD/sonde : pas d&apos;inter</label>
+            </value>
+            <value>
+                <fullName>Pb électrique</fullName>
+                <default>false</default>
+                <label>Pb électrique</label>
+            </value>
+            <value>
+                <fullName>Pb technique : transmis pour inter</fullName>
+                <default>false</default>
+                <label>Pb technique : transmis pour inter</label>
+            </value>
+            <value>
+                <fullName>Pbm de ligne internet</fullName>
+                <default>false</default>
+                <label>Pbm de ligne internet</label>
+            </value>
+            <value>
+                <fullName>Pbm de routeur</fullName>
+                <default>false</default>
+                <label>Pbm de routeur</label>
+            </value>
+            <value>
+                <fullName>Pbm dmd = inter tech ouverte</fullName>
+                <default>false</default>
+                <label>Pbm dmd = inter tech ouverte</label>
+            </value>
+            <value>
+                <fullName>Pbm fournisseurs électricité / téléphone du foyer</fullName>
+                <default>false</default>
+                <label>Pbm fournisseurs électricité / téléphone du foyer</label>
+            </value>
+            <value>
+                <fullName>Pbm liaison cpl/wifi</fullName>
+                <default>false</default>
+                <label>Pbm liaison cpl/wifi</label>
+            </value>
+            <value>
+                <fullName>Pbm routeur/pbm box</fullName>
+                <default>false</default>
+                <label>Pbm routeur/pbm box</label>
+            </value>
+            <value>
+                <fullName>Pc en panne /changement de pc</fullName>
+                <default>false</default>
+                <label>Pc en panne /changement de pc</label>
+            </value>
+            <value>
+                <fullName>Périphériques, Pan endormi</fullName>
+                <default>false</default>
+                <label>Périphériques, Pan endormi</label>
+            </value>
+            <value>
+                <fullName>Périphériques/Chaine radio, Oubli de lettre Pan</fullName>
+                <default>false</default>
+                <label>Périphériques/Chaine radio, Oubli de lettre Pan</label>
+            </value>
+            <value>
+                <fullName>Personne non concernée</fullName>
+                <default>false</default>
+                <label>Personne non concernée</label>
+            </value>
+            <value>
+                <fullName>PNC</fullName>
+                <default>false</default>
+                <label>PNC</label>
+            </value>
+            <value>
+                <fullName>RAS pour le foyer</fullName>
+                <default>false</default>
+                <label>RAS pour le foyer</label>
+            </value>
+            <value>
+                <fullName>Récept possibles par plateforme changé</fullName>
+                <default>false</default>
+                <label>Récept possibles par plateforme changé</label>
+            </value>
+            <value>
+                <fullName>Réparation - Changement - Attente nouveau TV</fullName>
+                <default>false</default>
+                <label>Réparation - Changement - Attente nouveau TV</label>
+            </value>
+            <value>
+                <fullName>Télécommande en attente</fullName>
+                <default>false</default>
+                <label>Télécommande en attente</label>
+            </value>
+            <value>
+                <fullName>Tjrs abonné, aud inf 10 min</fullName>
+                <default>false</default>
+                <label>Tjrs abonné, aud inf 10 min</label>
+            </value>
+            <value>
+                <fullName>Transmetteur vidéo/abonnement multi ecran</fullName>
+                <default>false</default>
+                <label>Transmetteur vidéo/abonnement multi ecran</label>
+            </value>
+            <value>
+                <fullName>Travaux</fullName>
+                <default>false</default>
+                <label>Travaux</label>
+            </value>
+            <value>
+                <fullName>Travaux en cours, audim. Débranché</fullName>
+                <default>false</default>
+                <label>Travaux en cours, audim. Débranché</label>
+            </value>
+            <value>
+                <fullName>Trop jeune, oublie sa lettre</fullName>
+                <default>false</default>
+                <label>Trop jeune, oublie sa lettre</label>
+            </value>
+            <value>
+                <fullName>TV non regardée F. , mais foyer présent</fullName>
+                <default>false</default>
+                <label>TV non regardée F. , mais foyer présent</label>
+            </value>
+            <value>
+                <fullName>TV non regardée F., car foyer absent non déclaré</fullName>
+                <default>false</default>
+                <label>TV non regardée F., car foyer absent non déclaré</label>
+            </value>
+            <value>
+                <fullName>TV non regardée F., car ind. absent pdt la période</fullName>
+                <default>false</default>
+                <label>TV non regardée F., car ind. absent pdt la période</label>
+            </value>
+            <value>
+                <fullName>TV non regardée Ind, mais ind. présent</fullName>
+                <default>false</default>
+                <label>TV non regardée Ind, mais ind. présent</label>
+            </value>
+            <value>
+                <fullName>TV regardée F. Autre usage longue durée confirmé&quot;&quot; (Audience justifiée)</fullName>
+                <default>false</default>
+                <label>TV regardée F. Autre usage longue durée confirmé&quot;&quot; (Audience justifiée)</label>
+            </value>
+            <value>
+                <fullName>TV regardée Ind.</fullName>
+                <default>false</default>
+                <label>TV regardée Ind.</label>
+            </value>
+            <value>
+                <fullName>Va vérifier l&apos;installation/ envoi de process</fullName>
+                <default>false</default>
+                <label>Va vérifier l&apos;installation/ envoi de process</label>
+            </value>
+            <value>
+                <fullName>Vacanciers</fullName>
+                <default>false</default>
+                <label>Vacanciers</label>
+            </value>
+            <value>
+                <fullName>Raisons diverses</fullName>
+                <default>false</default>
+                <label>Raisons diverses</label>
+            </value>
+            <value>
+                <fullName>Remonté à la DTSI</fullName>
+                <default>false</default>
+                <label>Remonté à la DTSI</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>11</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Manip KO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>11</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Manip OK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>11</controllingFieldValue>
+            <controllingFieldValue>14</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>17</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>13</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>22</controllingFieldValue>
+            <controllingFieldValue>21</controllingFieldValue>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Raisons diverses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Changement de fréquence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Changement FAI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Configuration ok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <valueName>DMD non relié au routeur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Ind ne se connecte pas ou peu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Ind ou foyer en vacances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Ind utilise un pc non configuré</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Ind/foyer ne s&apos;est pas connecté temporairement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Inter en cours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>N&apos;a plus internet / pbm avec internet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Page en &quot;&quot;mono user&quot;&quot;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Pas de page de déclaration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Pbm de routeur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Pc en panne /changement de pc</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Personne non concernée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>18</controllingFieldValue>
+            <valueName>Va vérifier l&apos;installation/ envoi de process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Autre usage longue durée confirmé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Console de jeux, Pan a oublié sa lettre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <valueName>Foyer joint. N&apos;a pas regardé de chaine signée (autre usage)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <valueName>Foyer pas regardé TV, pbm déc/box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <valueName>Foyer pas regardé TV, pbm réception tv</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <valueName>Foyer pas regardé TV, pbm sonde dmd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Pan a laissé tv en AV (écran noir)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Pan. a oublié de retirer sa lettre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Pb DMD/sonde : pas d&apos;inter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Pb technique : transmis pour inter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Périphériques, Pan endormi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Périphériques/Chaine radio, Oubli de lettre Pan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <valueName>PNC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8</controllingFieldValue>
+            <valueName>TV regardée F. Autre usage longue durée confirmé&quot;&quot; (Audience justifiée)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>12</controllingFieldValue>
+            <valueName>Autre usage confirmé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>12</controllingFieldValue>
+            <valueName>Chaîne(s) étrangère(s)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>12</controllingFieldValue>
+            <valueName>Chaîne(s) non signée(s)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>12</controllingFieldValue>
+            <valueName>Foyer a regardé tv</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>17</controllingFieldValue>
+            <valueName>Remonté à la DTSI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Audim. débranché par le foyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Déménagement en cours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Foyer en vacances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Pan va faire la manip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <valueName>Pb électrique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Pbm de ligne internet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Pbm dmd = inter tech ouverte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <valueName>Pbm fournisseurs électricité / téléphone du foyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Pbm liaison cpl/wifi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Pbm routeur/pbm box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>RAS pour le foyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Réparation - Changement - Attente nouveau TV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <valueName>Télécommande en attente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <valueName>Travaux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Attente télécommande</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Travaux en cours, audim. Débranché</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>16</controllingFieldValue>
+            <valueName>Vacanciers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Confirme audience autre usage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Pan pas regardé TV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Pan pas regardé tv, Pan absent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Pan pas regardé tv, pbm déc/box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Pan pas regardé tv, pbm sonde dmd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Pan. pas regardé TV, pb réception TV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Trop jeune, oublie sa lettre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>TV regardée Ind.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>22</controllingFieldValue>
+            <valueName>Individu a utilisé TV sans regarder les chaînes signées</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>22</controllingFieldValue>
+            <valueName>Pan a oublié sa déclaration/ utilisé une autre lettre du foyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>22</controllingFieldValue>
+            <valueName>Pan a regardé/utilisé tv (autre usage)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>22</controllingFieldValue>
+            <valueName>TV non regardée F., car ind. absent pdt la période</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>22</controllingFieldValue>
+            <valueName>TV non regardée Ind, mais ind. présent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>21</controllingFieldValue>
+            <valueName>Foyer a utilisé TV sans regarder les chaînes signées</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>21</controllingFieldValue>
+            <valueName>Pan a oublié sa déclaration/utilisé une lettre invité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>21</controllingFieldValue>
+            <valueName>TV non regardée F. , mais foyer présent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>21</controllingFieldValue>
+            <valueName>TV non regardée F., car foyer absent non déclaré</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9</controllingFieldValue>
+            <valueName>Aud inf 10min (séquence d&apos;audience &lt; 10 mins)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9</controllingFieldValue>
+            <valueName>Désabonné</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9</controllingFieldValue>
+            <valueName>Jamais abonné</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9</controllingFieldValue>
+            <valueName>Pan. n&apos;a pas regardé les chaînes en abonnement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9</controllingFieldValue>
+            <valueName>Tjrs abonné, aud inf 10 min</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Abonnement au cable compris dans les charges</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Autres bouquet que &quot;&quot;csat&quot;&quot;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Chaines canal + regardées en clair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Chaînes constatées dans les audiences : Fausse incohérence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Chaînes faisant parties de l&apos;abonnement de base adsl</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Changement IRD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Enregistrement vu et réalisé hors foyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Foyer s&apos;est abonné</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Offre promotionnelle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Pan. n&apos;a pas regardé les chaînes identifiées : Fausse incohérence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Récept possibles par plateforme changé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10</controllingFieldValue>
+            <valueName>Transmetteur vidéo/abonnement multi ecran</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

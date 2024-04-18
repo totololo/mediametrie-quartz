@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nom_de_l_etiquette__c</fullName>
+    <externalId>false</externalId>
+    <label>Nom de l&apos;étiquette</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Abo en cours de changement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Abo en cours de changement</label>
+            </value>
+            <value>
+                <fullName>Mauvaise réception</fullName>
+                <default>false</default>
+                <label>AIP Mauvaise réception</label>
+            </value>
+            <value>
+                <fullName>Mouvement atypique</fullName>
+                <default>false</default>
+                <label>AIP Mouvement atypique</label>
+            </value>
+            <value>
+                <fullName>Peu écoute casque</fullName>
+                <default>false</default>
+                <label>AIP  Peu écoute casque</label>
+            </value>
+            <value>
+                <fullName>Profession atypique</fullName>
+                <default>false</default>
+                <label>AIP Profession atypique</label>
+            </value>
+            <value>
+                <fullName>Refus temporaire de participation</fullName>
+                <default>false</default>
+                <label>AIP Refus temporaire de participation</label>
+            </value>
+            <value>
+                <fullName>Set meter(s) débranché(s)</fullName>
+                <default>false</default>
+                <label>AIP Set meter(s) débranché(s)</label>
+            </value>
+            <value>
+                <fullName>Attente intervention Ambassadeur pour installation du Meter</fullName>
+                <default>false</default>
+                <label>Attente intervention Ambassadeur pour installation du Meter</label>
+            </value>
+            <value>
+                <fullName>Attente matériel MM</fullName>
+                <default>false</default>
+                <label>Attente matériel MM</label>
+            </value>
+            <value>
+                <fullName>Autodésinstallation</fullName>
+                <default>false</default>
+                <label>Autodésinstallation</label>
+            </value>
+            <value>
+                <fullName>Autres usages +</fullName>
+                <default>false</default>
+                <label>Autres usages +</label>
+            </value>
+            <value>
+                <fullName>Box monobloc</fullName>
+                <default>false</default>
+                <label>Box monobloc</label>
+            </value>
+            <value>
+                <fullName>Chgt FAI/Box</fullName>
+                <default>false</default>
+                <label>Chgt FAI/Box</label>
+            </value>
+            <value>
+                <fullName>Chgt TV</fullName>
+                <default>false</default>
+                <label>Chgt TV</label>
+            </value>
+            <value>
+                <fullName>Ctrl abonnement</fullName>
+                <default>false</default>
+                <label>Ctrl abonnement</label>
+            </value>
+            <value>
+                <fullName>Débranchés</fullName>
+                <default>false</default>
+                <label>Débranchés</label>
+            </value>
+            <value>
+                <fullName>Déménagement</fullName>
+                <default>false</default>
+                <label>Déménagement</label>
+            </value>
+            <value>
+                <fullName>Device HS</fullName>
+                <default>false</default>
+                <label>Device HS</label>
+            </value>
+            <value>
+                <fullName>Device Incompatible</fullName>
+                <default>false</default>
+                <label>Device Incompatible</label>
+            </value>
+            <value>
+                <fullName>Equipé Non Actif</fullName>
+                <default>false</default>
+                <label>Equipé Non Actif</label>
+            </value>
+            <value>
+                <fullName>Foyer PaME à chuter</fullName>
+                <default>false</default>
+                <label>Foyer PaME à chuter</label>
+            </value>
+            <value>
+                <fullName>Foyer témoin</fullName>
+                <default>false</default>
+                <label>Foyer témoin</label>
+            </value>
+            <value>
+                <fullName>Foyer test</fullName>
+                <default>false</default>
+                <label>Foyer test</label>
+            </value>
+            <value>
+                <fullName>Foyer vacancier</fullName>
+                <default>false</default>
+                <label>Foyer vacancier</label>
+            </value>
+            <value>
+                <fullName>Gros conso TV</fullName>
+                <default>false</default>
+                <label>Gros conso TV</label>
+            </value>
+            <value>
+                <fullName>Indispo prochains jours</fullName>
+                <default>false</default>
+                <label>Indispo prochains jours</label>
+            </value>
+            <value>
+                <fullName>INJ Step1</fullName>
+                <default>false</default>
+                <label>INJ Step1</label>
+            </value>
+            <value>
+                <fullName>INJ Step2</fullName>
+                <default>false</default>
+                <label>INJ Step2</label>
+            </value>
+            <value>
+                <fullName>INJ Step3</fullName>
+                <default>false</default>
+                <label>INJ Step3</label>
+            </value>
+            <value>
+                <fullName>INJ Step4</fullName>
+                <default>false</default>
+                <label>INJ Step4</label>
+            </value>
+            <value>
+                <fullName>INJ Step5</fullName>
+                <default>false</default>
+                <label>INJ Step5</label>
+            </value>
+            <value>
+                <fullName>Màj version soft</fullName>
+                <default>false</default>
+                <label>Màj version soft</label>
+            </value>
+            <value>
+                <fullName>Matériel autodésinstall en attente</fullName>
+                <default>false</default>
+                <label>Matériel autodésinstall en attente</label>
+            </value>
+            <value>
+                <fullName>Matériel autodésinstall non reçu ou incomplet</fullName>
+                <default>false</default>
+                <label>Matériel autodésinstall non reçu ou incomplet</label>
+            </value>
+            <value>
+                <fullName>Modif CATI3</fullName>
+                <default>false</default>
+                <label>Modif CATI3</label>
+            </value>
+            <value>
+                <fullName>OK Conversion SM</fullName>
+                <default>false</default>
+                <label>OK Conversion SM</label>
+            </value>
+            <value>
+                <fullName>Pbl ADSL</fullName>
+                <default>false</default>
+                <label>Pbl ADSL</label>
+            </value>
+            <value>
+                <fullName>Pbl sonde TV</fullName>
+                <default>false</default>
+                <label>Pbl sonde TV</label>
+            </value>
+            <value>
+                <fullName>Petit conso TV</fullName>
+                <default>false</default>
+                <label>Petit conso TV</label>
+            </value>
+            <value>
+                <fullName>Pilote portail SF</fullName>
+                <default>false</default>
+                <label>Pilote portail SF</label>
+            </value>
+            <value>
+                <fullName>Pilote TvRouteur</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pilote TvRouteur</label>
+            </value>
+            <value>
+                <fullName>Pilote XXXX (TVM3…)</fullName>
+                <default>false</default>
+                <label>Pilote XXXX (TVM3…)</label>
+            </value>
+            <value>
+                <fullName>Présence foyer</fullName>
+                <default>false</default>
+                <label>Présence foyer</label>
+            </value>
+            <value>
+                <fullName>Raisons personnelles</fullName>
+                <default>false</default>
+                <label>Raisons personnelles</label>
+            </value>
+            <value>
+                <fullName>Reconsentement convention</fullName>
+                <default>false</default>
+                <label>Reconsentement convention</label>
+            </value>
+            <value>
+                <fullName>Refus connexion routeur MM</fullName>
+                <default>false</default>
+                <label>Refus connexion routeur MM</label>
+            </value>
+            <value>
+                <fullName>Refus installer Device</fullName>
+                <default>false</default>
+                <label>Refus installer Device</label>
+            </value>
+            <value>
+                <fullName>Répéteur</fullName>
+                <default>false</default>
+                <label>Répéteur</label>
+            </value>
+            <value>
+                <fullName>Suivi signature convention</fullName>
+                <default>false</default>
+                <label>Suivi signature convention</label>
+            </value>
+            <value>
+                <fullName>Ticket DSI/DDSM</fullName>
+                <default>false</default>
+                <label>Ticket DSI/DDSM</label>
+            </value>
+            <value>
+                <fullName>Ticket incident</fullName>
+                <default>false</default>
+                <label>Ticket incident</label>
+            </value>
+            <value>
+                <fullName>Travaux</fullName>
+                <default>false</default>
+                <label>Travaux</label>
+            </value>
+            <value>
+                <fullName>TV Non Active</fullName>
+                <default>false</default>
+                <label>TV Non Active</label>
+            </value>
+            <value>
+                <fullName>Wifi 6</fullName>
+                <default>false</default>
+                <label>Wifi 6</label>
+            </value>
+            <value>
+                <fullName>Wifi mesh</fullName>
+                <default>false</default>
+                <label>Wifi mesh</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

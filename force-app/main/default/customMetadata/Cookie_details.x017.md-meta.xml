@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>x017</label>
+    <protected>false</protected>
+    <values>
+        <field>Description__c</field>
+        <value xsi:type="xsd:string">Suivi de la dernière connexion et de la session active : Utile pour éviter de se reconnecter constamment.</value>
+    </values>
+    <values>
+        <field>Duree_de_conservation__c</field>
+        <value xsi:type="xsd:string">Expire à la fin de la session</value>
+    </values>
+    <values>
+        <field>Name__c</field>
+        <value xsi:type="xsd:string">disco</value>
+    </values>
+    <values>
+        <field>Type__c</field>
+        <value xsi:type="xsd:string">Obligatoire</value>
+    </values>
+</CustomMetadata>

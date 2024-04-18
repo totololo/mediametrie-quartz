@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV03_date_chute_temporaire_obligatoire</fullName>
+    <active>true</active>
+    <description>Règle qui oblige la saisie du champ Date de chute temporaire si le foyer panéliste passe au statut Désinstallé</description>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+				 RecordType.Name =$Label.PAN_recordType_mediamatpame,				
+TEXT(Statut_Foyer_paneliste__c) = $Label.PAN_Statut_Panel_Desinstalle,
+ISBLANK(Date_de_chute_temporaire__c)
+)</errorConditionFormula>
+    <errorDisplayField>Date_de_chute_temporaire__c</errorDisplayField>
+    <errorMessage>La date de chute temporaire est obligatoire si le statut du foyer panéliste est « Désinstallé »</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Individu_Paneliste_ExtId_SIPanel_c__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <description>&quot;(UUID + ‘~’ + UID) c&apos;est une concatenation faite dans mulesoft de UUID et UID avec un tilde entre les 2 valeurs
+Ce champ sert a faire l&apos;Upsert de Individu Panéliste&quot;</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>true</externalId>
+    <label>Individu_Paneliste_ExtId_SIPanel__c</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

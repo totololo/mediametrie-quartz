@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV06_solde_insuffisant</fullName>
+    <active>true</active>
+    <description>Règle qui empêche de débiter une somme supérieure au solde de points du foyer</description>
+    <errorConditionFormula>AND(
+	!$User.Bypass_validation_rules__c,
+	RecordType.Name = $Label.FID_Type_d_enregistrement_Debit,
+	OR(
+		AND(
+			ISNEW(),
+			Foyer__r.Solde_de_points__c &lt; Points_debites__c
+		),
+		AND(
+			NOT(ISNEW()),
+			PRIORVALUE(Points_debites__c) &lt; Points_debites__c,
+			Foyer__r.Solde_de_points__c &lt; (Points_debites__c - PRIORVALUE(Points_debites__c))
+		)
+	)
+)</errorConditionFormula>
+    <errorDisplayField>Points_debites__c</errorDisplayField>
+    <errorMessage>Le solde de points est inférieur au nombre de points commandés</errorMessage>
+</ValidationRule>

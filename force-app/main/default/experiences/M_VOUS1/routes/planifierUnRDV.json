@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "bcec4765-210a-4b4b-938d-9ddc5cf1ea3f",
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "configurationTags" : [ ],
+  "id" : "45a09b87-e9b4-4c6c-bd3d-c6abc0108375",
+  "label" : "Planifier un RDV",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-planifier-un-rdv",
+  "type" : "route",
+  "urlPrefix" : "planifier-un-rdv"
+}

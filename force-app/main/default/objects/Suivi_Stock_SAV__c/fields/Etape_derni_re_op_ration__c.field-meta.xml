@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etape_derni_re_op_ration__c</fullName>
+    <externalId>false</externalId>
+    <label>Etape dernière opération</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Envoi commande (Médiamétrie)</fullName>
+                <default>false</default>
+                <label>Envoi commande (Médiamétrie)</label>
+            </value>
+            <value>
+                <fullName>Mise en stock (Ingram Micro)</fullName>
+                <default>false</default>
+                <label>Mise en stock (Ingram Micro)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

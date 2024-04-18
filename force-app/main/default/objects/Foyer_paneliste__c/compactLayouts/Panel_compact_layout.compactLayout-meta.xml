@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Panel_compact_layout</fullName>
+    <fields>Name</fields>
+    <fields>Convention_a_jour__c</fields>
+    <fields>Foyer_Pilote__c</fields>
+    <fields>Statut_Audimetrique__c</fields>
+    <fields>Suspendu__c</fields>
+    <fields>Solde_de_points_fid__c</fields>
+    <fields>Controle_a_faire__c</fields>
+    <label>Panel compact layout</label>
+</CompactLayout>

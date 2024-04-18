@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Libelle__c</fullName>
+    <externalId>false</externalId>
+    <label>Libellé</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Absence mouvement</fullName>
+                <default>false</default>
+                <label>Absence mouvement</label>
+            </value>
+            <value>
+                <fullName>Absence collecte</fullName>
+                <default>false</default>
+                <label>Absence collecte</label>
+            </value>
+            <value>
+                <fullName>Pager OFF</fullName>
+                <default>false</default>
+                <label>Pager OFF</label>
+            </value>
+            <value>
+                <fullName>Pager éteint trop longtemps</fullName>
+                <default>false</default>
+                <label>Pager éteint trop longtemps</label>
+            </value>
+            <value>
+                <fullName>Setmeter Indice qualité</fullName>
+                <default>false</default>
+                <label>Setmeter Indice qualité</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

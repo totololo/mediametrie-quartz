@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowTest xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flowApiName>CAS_Email_Web_To_Case_Foyer_Paneliste</flowApiName>
+    <label>test</label>
+    <testPoints>
+        <elementApiName>Start</elementApiName>
+        <parameters>
+            <leftValueReference>$Record</leftValueReference>
+            <type>InputTriggeringRecordInitial</type>
+            <value>
+                <sobjectValue>{&quot;AccountId&quot;:&quot;0017T00000IhyAQQAZ&quot;,&quot;BusinessHoursId&quot;:&quot;01m3X0000005cLrQAI&quot;,&quot;Chute_confirmee__c&quot;:false,&quot;Cloturee_automatiquement__c&quot;:false,&quot;ContactId&quot;:&quot;0037T000008YMdFQAW&quot;,&quot;Description&quot;:&quot;Vous ne recevez pas souvent de courriers de la part de kaczmarekpatrick1@gmail.com. Découvrez pourquoi cela est important&lt;https://aka.ms/LearnAboutSenderIdentification&gt;\nPatrick KACZMAREK et Geneviève LEBRETON seront en vacances du mercredi 19 avril 2023 au mercredi 26 avril 2023 inclus.&quot;,&quot;Description_champ_technique__c&quot;:&quot;Vous ne recevez pas souvent de courriers de la part de kaczmarekpatrick1@gmail.com. Découvrez pourquoi cela est important&lt;https://aka.ms/LearnAboutSenderIdentification&gt;\nPatrick KACZMAREK et Geneviève LEBRETON seront en vacances du mercredi 19 avril 2023 a&quot;,&quot;En_attente__c&quot;:false,&quot;IsEscalated&quot;:false,&quot;Nombre_de_tentatives_welcome_call__c&quot;:0,&quot;Origin&quot;:&quot;Email MMAT&quot;,&quot;OwnerId&quot;:&quot;0053X00000DMayGQAT&quot;,&quot;Priority&quot;:&quot;Moyen&quot;,&quot;Process_Post_Etiquette_Motif__c&quot;:false,&quot;RDD_description__c&quot;:false,&quot;RecordTypeId&quot;:&quot;0123X000001GJ50QAG&quot;,&quot;SourceId&quot;:&quot;02s7T00000JpX4KQAV&quot;,&quot;Status&quot;:&quot;Nouveau&quot;,&quot;Subject&quot;:&quot;dates de vacances&quot;,&quot;SuppliedEmail&quot;:&quot;kaczmarekpatrick1@gmail.com&quot;,&quot;SuppliedName&quot;:&quot;Patrick KACZMAREK&quot;,&quot;Tech_AllIsTreated__c&quot;:true}</sobjectValue>
+            </value>
+        </parameters>
+    </testPoints>
+    <testPoints>
+        <assertions>
+            <conditions>
+                <leftValueReference>GET_Recuperation_Foyer_Paneliste_MMAT</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+        </assertions>
+        <elementApiName>Finish</elementApiName>
+    </testPoints>
+</FlowTest>

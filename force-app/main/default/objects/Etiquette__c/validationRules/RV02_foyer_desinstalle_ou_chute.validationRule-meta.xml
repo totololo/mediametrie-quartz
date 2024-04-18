@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV02_foyer_desinstalle_ou_chute</fullName>
+    <active>true</active>
+    <description>Règle qui empêche la création d&apos;étiquette pour un foyer désinstallé ou chuté</description>
+    <errorConditionFormula>AND (
+				!$User.Bypass_validation_rules__c,
+				 !$User.Bypass_RDD__c,
+				OR (
+								TEXT(Foyer__r.Statut_du_foyer__c) = $Label.ACC_Statut_du_foyer_Desinstalle,
+								TEXT(Foyer__r.Statut_du_foyer__c) = $Label.ACC_Statut_du_foyer_Chute_definitive,
+								AND(
+												!ISBLANK(Membre_du_foyer__c),
+												!ISBLANK(Membre_du_foyer__r.Date_de_chute_individu__c)
+								)
+				)
+)</errorConditionFormula>
+    <errorMessage>Il n’est pas possible de créer des étiquettes sur un foyer désinstallé ou chuté ni sur un individu chuté</errorMessage>
+</ValidationRule>

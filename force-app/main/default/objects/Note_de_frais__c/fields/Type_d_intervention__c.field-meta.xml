@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_d_intervention__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT( Intervention__r.Type_de_l_intervention__c),
+  &quot;1&quot;, &quot;Installation&quot;,
+  &quot;2&quot;, &quot;Désinstallation&quot;,
+  &quot;3&quot;, &quot;Dépannage/Support&quot;,
+  &quot;Inconnue&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Type d&apos;intervention</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_d_intervention__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( TEXT(Intervention__r.Type_de_l_intervention__c) == $Label.WOR_Type_d_intervention_Installation, $Label.WOR_Type_d_intervention_Installation_etiquette,
+IF( TEXT(Intervention__r.Type_de_l_intervention__c) == $Label.WOR_Type_d_intervention_Desinstallation, $Label.WOR_Type_d_intervention_Desinstallation_etiquette,
+IF( TEXT(Intervention__r.Type_de_l_intervention__c) == $Label.WOR_Type_d_intervention_Depannage_support, $Label.WOR_Type_d_intervention_Depannage_support_etiquette, &apos;&apos;
+)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Type d&apos;intervention</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV01_motif_requis</fullName>
+    <active>true</active>
+    <description>Règles qui vérifie si le motif est bien rempli si le champ Congé de l&apos;individu est rempli</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				NOT(ISBLANK(Conge_de_l_individu__c)),
+				ISBLANK(TEXT(Motif__c))
+)</errorConditionFormula>
+    <errorDisplayField>Motif__c</errorDisplayField>
+    <errorMessage>Le champ motif doit être rempli quand le congé est rattaché à un individu.</errorMessage>
+</ValidationRule>

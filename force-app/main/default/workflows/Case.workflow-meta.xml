@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>EA_Accuse_reception_requete</fullName>
+        <description>EA Accusé réception requête</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SuppliedEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Mails_Pan_listes_PRM/Accuse_reception_requete</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>FU_Cloturer_requete_6_tentatives</fullName>
+        <field>Status</field>
+        <literalValue>Clôturé</literalValue>
+        <name>FU_Cloturer_requete_6_tentatives</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_MAJ_datepassageAttente</fullName>
+        <field>date_mise_attente__c</field>
+        <formula>NOW()</formula>
+        <name>FU_MAJ_datepassageAttente</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_MAJ_datepassageencours</fullName>
+        <description>update the date_en_cours</description>
+        <field>date_en_cours__c</field>
+        <formula>NOW()</formula>
+        <name>FU_MAJ_datepassageencours</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_champ_description</fullName>
+        <description>Récupérer la description du champ technique &apos;description&apos; pour l&apos;afficher dans la liste associée</description>
+        <field>Description_champ_technique__c</field>
+        <formula>TRIM(LEFT( Description , 255))</formula>
+        <name>Update champ description</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>WF01_CAS_Email_to_case_response</fullName>
+        <actions>
+            <name>EA_Accuse_reception_requete</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.Bypass_workflows__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Email entrant</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF02_CAS_ProchaineAction</fullName>
+        <actions>
+            <name>Prochaine_Action</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <description>Création d&apos;une tache dès que les champs prochaine action et date de prochaine actions sont renseignés</description>
+        <formula>AND( $User.Bypass_workflows__c ==false ,  TEXT(Prochaine_action__c)!=null,NOT(ISBLANK( Date_prochaine_action__c )) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF03_CAS_datepassageAttente</fullName>
+        <actions>
+            <name>FU_MAJ_datepassageAttente</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>En cours</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.Bypass_workflows__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.En_attente__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>update the date_mise_attente field once the staut changes</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF03_CAS_datepassageencours</fullName>
+        <actions>
+            <name>FU_MAJ_datepassageencours</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>En cours</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.Bypass_workflows__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>update the date_en_cours field once the staut changes</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF03_Cloture_requete_6_tentatives</fullName>
+        <actions>
+            <name>FU_Cloturer_requete_6_tentatives</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( !$User.Bypass_workflows__c,  			TEXT (Nombre_de_tentatives_welcome_call__c) =$Label.CAS_Tentative_Appels,       RecordType.Name = $Label.CAS_Recordtype_DemandePanelisteAIP )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF08_MAJ champ Description_liste associee</fullName>
+        <actions>
+            <name>Update_champ_description</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( $User.Bypass_workflows__c = false,NOT(ISBLANK(Description)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Prochaine_Action</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.Date_prochaine_action__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Prochaine Action</subject>
+    </tasks>
+</Workflow>

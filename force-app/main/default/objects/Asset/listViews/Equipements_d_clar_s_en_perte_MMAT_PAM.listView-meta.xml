@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipements_d_clar_s_en_perte_MMAT_PAM</fullName>
+    <columns>Foyer_paneliste__c</columns>
+    <columns>ASSET.NAME</columns>
+    <columns>ASSET.SERIAL_NUMBER</columns>
+    <columns>ASSET.INSTALL_DATE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.NAME</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ASSET.STATUS</field>
+        <operation>equals</operation>
+        <value>5</value>
+    </filters>
+    <filters>
+        <field>ASSET.NAME</field>
+        <operation>notContain</operation>
+        <value>pager</value>
+    </filters>
+    <filters>
+        <field>ASSET.NAME</field>
+        <operation>notContain</operation>
+        <value>set</value>
+    </filters>
+    <filters>
+        <field>ASSET.NAME</field>
+        <operation>notContain</operation>
+        <value>beacon</value>
+    </filters>
+    <filters>
+        <field>ASSET.NAME</field>
+        <operation>notContain</operation>
+        <value>sim</value>
+    </filters>
+    <label>Equipements déclarés en perte MMAT/PAME</label>
+</ListView>

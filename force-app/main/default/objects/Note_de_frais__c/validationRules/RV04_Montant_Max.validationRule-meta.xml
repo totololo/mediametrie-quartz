@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV04_Montant_Max</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND(
+(ISPICKVAL( Type_de_frais__c , &apos;Hotel&apos;)),
+( Montant__c  &gt; 110)
+),
+AND(
+(ISPICKVAL( Type_de_frais__c , &apos;Restauration&apos;)),
+( Montant__c  &gt; 25))
+)</errorConditionFormula>
+    <errorMessage>Les frais de restauration ne doivent pas dépasser 25 euros et les frais d&apos;hôtel ne doivent pas dépasser 110 euros.</errorMessage>
+</ValidationRule>

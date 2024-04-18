@@ -1,0 +1,83 @@
+<!-- CommanderAura -->
+<aura:component implements="forceCommunity:themeLayout,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable"
+                access="global" controller="ContactFormulaire">
+  
+    <!-- Static Ressources -->
+    <ltng:require styles="{!$Resource.commonCss}" />
+    
+    <!-- Attributes -->
+    <aura:attribute name="type" type="String[]" />
+    <aura:attribute name="sousType" type="String[]" />
+    <aura:attribute name="MissingStatusMessage" type="String" default="Champ requis manquant"/>
+    <aura:attribute name="StatusEmpty" type="Boolean" default="false"/>
+    <aura:attribute name="buttonDisabled" type="Boolean" default="false"/>
+    <aura:attribute name="onLoad" type="Boolean" default="true" />
+    <aura:attribute name="sousTypeDisabled" type="Boolean" default="true" />
+    <aura:attribute name="statusList" type="String[]" />
+    <aura:attribute name="documentId" type="String" />
+    <aura:attribute name="contactType" type="String" />
+    <aura:attribute name="fieldDependenciesMap" type="String" />
+    <aura:attribute name="sousTypeInitial" type="String[]" />
+    <aura:attribute name="sousTypeEmpty" type="Boolean" default="true" />
+    
+    <!-- Handler -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- Loader -->
+    <aura:if isTrue="{!v.onLoad}">
+        <div class="pageLoader">
+            <lightning:spinner alternativeText="Loading" size="large" />
+        </div>
+    </aura:if>
+    
+    <!-- Titre -->
+    <div class="pageTitle">{!$Label.c.EXP_CommanderTitle}</div>
+    
+    <div class="centerDiv">
+        <form>
+            <!-- Type -->
+            <label for="type" class="inputTitle">{!$Label.c.EXP_Motif}</label><br/>
+            <select class="dropDownBox" id="typeValue" aura:id="typedev" onchange="{!c.getSousType}"><br/>
+                <aura:iteration items="{!v.type}" var="item">
+                    <aura:if isTrue="{!item == $Label.c.FOR_Type_fidelite}">
+                        <option value="{!item}"  selected="selected">{!item}</option>
+                        <aura:set attribute="else">
+                            <option value="{!item}">{!item}</option>
+                        </aura:set>
+                    </aura:if> 
+                </aura:iteration>
+            </select><br/>
+            
+            <!-- Sous-type -->
+            <label for="sous-type" class="inputTitle">{!$Label.c.EXP_SousMotif}</label><br/>
+            <select class="dropDownBox"  id="sousTypeValue" name="sous-type" onchange="{!c.checkSousType}"><br/>
+                <aura:iteration items="{!v.sousType}" var="it">
+                    <option value="{!it}">{!it}</option>
+                </aura:iteration>
+            </select><br/>
+                        
+            <!-- Description -->
+            <label class="inputTitle">{!$Label.c.EXP_Description}
+                <span id="description-required" class="requiredStar" style="display: inline-flex;">*</span>
+            </label>
+            <br/>
+            <textarea class="description" name="description" style="width:54.5%" id="description"
+                      placeholder="{!$Label.c.EXP_Description_Commande}" onchange="{!c.getDescription}" rows="5"></textarea><br/>
+            
+            <!-- Charger un fichier -->
+            <label class="inputTitle">{!$Label.c.EXP_JoindreUnFichier}</label><br/>
+            <lightning:fileUpload name="fileUploader"
+                                  class="fileInput"
+                                  multiple="false"
+                                  accept="{!v.filetype}"
+                                  recordId="{!v.recordId}"
+                                  onuploadfinished="{!c.handleUploadFinished}" />
+            
+            <!-- Soumettre -->       
+            <div class="button-container">
+                <div class="{!v.buttonDisabled ? 'soumettreDisabled submitButton center soumettreGreen' : 'soumettreGreen submitButton center'}" 
+                     onclick="{!c.createCase}">{!$Label.c.EXP_Soumettre}</div>
+            </div>
+        </form>
+    </div>
+</aura:component>

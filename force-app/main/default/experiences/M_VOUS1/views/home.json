@@ -1,0 +1,86 @@
+{
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "componentName" : "siteforce:sldsTwoCol84SidebarFeaturedLayout",
+  "dataProviders" : [ ],
+  "id" : "dd7ab0c7-6387-4f57-a3b5-7603d95524cc",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "confirmButtonLabel" : "Accepter",
+        "cookieFooterBackgroundColor" : "rgb(0,0,0)",
+        "cookieFooterButtonAlignment" : "left",
+        "cookieFooterLinkColor" : "rgb(250, 250, 250)",
+        "cookieFooterPadding" : "small",
+        "cookieFooterRelative" : false,
+        "cookieFooterTextColor" : "rgb(250, 250, 250)",
+        "displayType" : "modal",
+        "headingLabel" : "Cookies",
+        "informationButtonLabel" : "Informations",
+        "informationButtonLink" : "/s/cookie",
+        "instructions" : "Choisissez vos préférences",
+        "previewInBuilder" : true,
+        "rejectButtonLabel" : "Refuser",
+        "useRelaxedCSP" : true,
+        "viewCookiesLabel" : "",
+        "viewCookiesLink" : ""
+      },
+      "componentName" : "c:cookieConsent",
+      "id" : "d11eab19-f890-4d92-8bdd-edf9d7db0d22",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:cguPopUp",
+      "id" : "a383f5cb-4247-464a-b133-4f23e03bfbd8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:AccueilAura",
+      "id" : "8d1eab05-0179-4ad5-9614-6c4371bde770",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "709495be-8978-42dd-86fd-dcb0987333c2",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "810e943b-7107-441c-84ea-c01dc8901ee9",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "id" : "b8ee743e-f280-44ba-ba4e-b279b0c87c28",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "4cbfa5e9-dbbb-4342-8785-0f68974afe75",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "ec9fab25-043d-4eee-bf5e-86a346252743",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "M&VOUS - Accueil "
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "8c287678-c65b-4b64-91a7-10e226b81c22",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "dfcbcde1-1a79-4098-a09a-eff0c8eb1aba",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

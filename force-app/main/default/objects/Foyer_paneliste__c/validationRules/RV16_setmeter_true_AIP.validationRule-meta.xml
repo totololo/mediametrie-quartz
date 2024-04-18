@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV16_setmeter_true_AIP</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( RecordType.DeveloperName  &lt;&gt; &apos;AIP&apos;, Equipement_set_meter__c = true)</errorConditionFormula>
+    <errorMessage>Equipement Set Meter ne doit être à true que pour des foyers AIP</errorMessage>
+</ValidationRule>

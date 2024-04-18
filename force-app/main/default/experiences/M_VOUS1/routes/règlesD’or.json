@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "7df262a2-0474-4a74-ab2c-db49d90da395",
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "configurationTags" : [ ],
+  "id" : "91003744-8403-4305-9b48-233f088191c4",
+  "label" : "Règles d’or",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-regledor",
+  "type" : "route",
+  "urlPrefix" : "reglesdor"
+}

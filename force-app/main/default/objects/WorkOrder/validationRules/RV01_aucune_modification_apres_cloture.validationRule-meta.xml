@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV01_aucune_modification_apres_cloture</fullName>
+    <active>true</active>
+    <description>Règle qui empêche de modifier les champs d&apos;une intervention une fois que l&apos;intervention est terminée</description>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+				! $User.Bypass_RDD__c,
+				NOT(OR($Profile.Name ==&apos;Ambassadeur&apos; ,$Profile.Name ==&apos;Techs externes&apos; )),
+TEXT(PRIORVALUE(Status)) = $Label.WOR_Status_Terminee,
+NOT(ISCHANGED(Tech_RV01__c)),NOT(ISCHANGED(Tech_FinInter__c)), NOT(ISCHANGED( Etat__c )), NOT(ISCHANGED(Status))
+)</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas modifier une intervention terminée.</errorMessage>
+</ValidationRule>

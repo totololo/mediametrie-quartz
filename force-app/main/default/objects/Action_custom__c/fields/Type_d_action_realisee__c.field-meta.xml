@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_d_action_realisee__c</fullName>
+    <externalId>false</externalId>
+    <label>Type d&apos;action réalisée</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Audimètre</fullName>
+                <default>false</default>
+                <label>Audimètre</label>
+            </value>
+            <value>
+                <fullName>Alimentation Routeur</fullName>
+                <default>false</default>
+                <label>Alimentation Routeur</label>
+            </value>
+            <value>
+                <fullName>Alimentation Audimetre</fullName>
+                <default>false</default>
+                <label>Alimentation Audimetre</label>
+            </value>
+            <value>
+                <fullName>Routeur</fullName>
+                <default>false</default>
+                <label>Routeur</label>
+            </value>
+            <value>
+                <fullName>Intercepteur</fullName>
+                <default>false</default>
+                <label>Intercepteur</label>
+            </value>
+            <value>
+                <fullName>CPL</fullName>
+                <default>false</default>
+                <label>CPL</label>
+            </value>
+            <value>
+                <fullName>Répéteur Wifi</fullName>
+                <default>false</default>
+                <label>Répéteur Wifi</label>
+            </value>
+            <value>
+                <fullName>Extendeur CPL/Wifi</fullName>
+                <default>false</default>
+                <label>Extendeur CPL/Wifi</label>
+            </value>
+            <value>
+                <fullName>Câbles</fullName>
+                <default>false</default>
+                <label>Câbles</label>
+            </value>
+            <value>
+                <fullName>Dydac</fullName>
+                <default>false</default>
+                <label>Dydac</label>
+            </value>
+            <value>
+                <fullName>Télécommande</fullName>
+                <default>false</default>
+                <label>Télécommande</label>
+            </value>
+            <value>
+                <fullName>Hub Ethernet</fullName>
+                <default>false</default>
+                <label>Hub Ethernet</label>
+            </value>
+            <value>
+                <fullName>Capteur Audio</fullName>
+                <default>false</default>
+                <label>Capteur Audio</label>
+            </value>
+            <value>
+                <fullName>Meters</fullName>
+                <default>false</default>
+                <label>Meters</label>
+            </value>
+            <value>
+                <fullName>Sonde Tv</fullName>
+                <default>false</default>
+                <label>Sonde Tv</label>
+            </value>
+            <value>
+                <fullName>TV</fullName>
+                <default>false</default>
+                <label>TV</label>
+            </value>
+            <value>
+                <fullName>Installation impossible</fullName>
+                <default>false</default>
+                <label>Installation impossible</label>
+            </value>
+            <value>
+                <fullName>Poste</fullName>
+                <default>false</default>
+                <label>Poste</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

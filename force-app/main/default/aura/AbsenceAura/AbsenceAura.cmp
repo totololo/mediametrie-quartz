@@ -1,0 +1,132 @@
+<!-- AbsenceAura -->
+<aura:component implements="forceCommunity:themeLayout,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable"
+                access="global" controller="ContactFormulaire">
+    <!-- Attributes -->
+    <aura:attribute name="type" type="String[]" />
+    <aura:attribute name="sousType" type="String[]" />
+    <aura:attribute name="motif" type="String[]" />
+    <aura:attribute name="typeValue" type="String" />
+    <aura:attribute name="sousTypeValue" type="String" />
+    <aura:attribute name="motifValue" type="String" />
+    <aura:attribute name="descriptionValue" type="String" />
+    <aura:attribute name="dateDebutValue" type="String" />
+    <aura:attribute name="dateFinValue" type="String" />
+    <!-- Handler -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <ltng:require styles="resource/bootstrap" />
+    <form>
+        <!-- Type -->
+        <label for="type">Type</label><br/>
+        <select class="type" id="typeValue" aura:id="typedev" onchange="{!c.getSousType}"><br/>
+            <option value="-Aucun-">-Aucun-</option>
+            
+            <aura:iteration items="{!v.type}" var="item">
+                <option value="{!item}">{!item}</option>
+            </aura:iteration>
+        </select><br/>
+        
+        <!-- Sous-type -->
+        <label for="sous-type">Sous-type</label><br/>
+        <select class="type"  id="sousTypeValue" name="sous-type" onchange="{!c.getMotif}"><br/>
+            <option value="aucun">-Aucun-</option>
+            <aura:iteration items="{!v.sousType}" var="it">
+                <option value="{!it}" selected="{!$Label.c.FOR_Type_absence}">{!it}</option>
+            </aura:iteration>
+        </select><br/>
+        <!-- Motif -->
+        <!-- <label for="motif">Motif</label><br/>
+                    <select class="type" name="Motif" onchange="{!c.getMotifValue}"><br/>
+                        <option value="aucun">-Aucun-</option>
+                        <aura:iteration items="{!v.motif}" var="it">
+                           
+                           
+                            <option value="{!it}">{!it}</option>
+                            
+                        </aura:iteration>
+                    </select><br/> -->
+        <!-- Description -->
+        <label for="description">Description</label><br/>
+        <textarea class="description" name="description" id="description" placeholder="Description" onchange="{!c.getDescription}" rows="5"></textarea><br/>
+        <!-- Dates -->
+        <label for="date_debut">Date début</label><br/>
+        <input id="date_debut" name="date_debut" type="date" onchange="{!c.getDateDebut}"/><br/>
+        <label for="date_fin">Date fin</label><br/>
+        <input id="date_fin" name="date_debut" type="date" onchange="{!c.getDateFin}"/><br/>
+        <div class="slds-form-element">
+            <label class="slds-form-element__label" for="example-unique-id-35" id="combobox-label-id-15">Time</label>
+            <div class="slds-form-element__control">
+                <div class="slds-combobox_container">
+                    <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-timepicker">
+                        <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                            <input type="text" class="slds-input slds-combobox__input" id="example-unique-id-35" aria-activedescendant="" aria-autocomplete="list" aria-controls="example-unique-id-36" aria-expanded="false" aria-haspopup="listbox" autoComplete="off" role="combobox"
+                                   placeholder="Select a time…" value="" />
+                            <!-- <span class="slds-icon_container slds-icon-utility-clock slds-input__icon slds-input__icon_right">
+                                  <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+                                    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#clock"></use>
+                                  </svg>
+                                </span> -->
+                        </div>
+                        <div id="example-unique-id-36" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
+                            <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                <li role="presentation" class="slds-listbox__item">
+                                    <div id="option1" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                        <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                        <span class="slds-media__body">
+                                            <span class="slds-truncate" title="7:00am">7:00am</span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li role="presentation" class="slds-listbox__item">
+                                    <div id="option2" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                        <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                        <span class="slds-media__body">
+                                            <span class="slds-truncate" title="8:00am">8:00am</span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li role="presentation" class="slds-listbox__item">
+                                    <div id="option3" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                        <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                        <span class="slds-media__body">
+                                            <span class="slds-truncate" title="9:00am">9:00am</span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li role="presentation" class="slds-listbox__item">
+                                    <div id="option4" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                        <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                        <span class="slds-media__body">
+                                            <span class="slds-truncate" title="10:00am">10:00am</span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li role="presentation" class="slds-listbox__item">
+                                    <div id="option5" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                        <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                        <span class="slds-media__body">
+                                            <span class="slds-truncate" title="11:00am">11:00am</span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li role="presentation" class="slds-listbox__item">
+                                    <div id="option6" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                        <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                        <span class="slds-media__body">
+                                            <span class="slds-truncate" title="12:00pm">12:00pm</span>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Charger un fichier -->
+        <label class="label_file" for="fichier">Joindre un fichier</label><br/>
+        <input id="fichier" name="fichier" type="file"/><br/>
+        <!-- Soumettre -->
+        <input id="soumettre" type="submit" value="Soumettre"/>
+    </form>
+</aura:component>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foyer_paneliste__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Foyer panéliste</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Le foyer sélectionné n&apos;est pas celui du foyer panéliste</errorMessage>
+        <filterItems>
+            <field>Foyer_paneliste__c.Foyer__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.AccountId</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Foyer_paneliste__c</referenceTo>
+    <relationshipLabel>Interventions</relationshipLabel>
+    <relationshipName>Interventions</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

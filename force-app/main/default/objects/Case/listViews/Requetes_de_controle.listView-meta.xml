@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requetes_de_controle</fullName>
+    <columns>Type_de_panel_Old__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>Sous_type__c</columns>
+    <columns>Motif_de_la_requete__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Controle</value>
+    </filters>
+    <filters>
+        <field>CASES.CREATED_DATE_DATE_ONLY</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Nouveau</value>
+    </filters>
+    <label>Requêtes de contrôle</label>
+</ListView>

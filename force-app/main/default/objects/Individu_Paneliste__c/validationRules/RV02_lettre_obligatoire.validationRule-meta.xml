@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV02_lettre_obligatoire</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    !$User.Bypass_validation_rules__c,
+				!$User.Bypass_RDD__c,
+    ISBLANK(Date_de_chute_de_l_individu__c),
+    ISPICKVAL(Lettre__c, &apos;&apos;),
+				OR((TEXT(Foyer_paneliste__r.Referentiel_Panel__r.Type_de_panel__c) = $Label.RFP_TypePanel_MMAT),
+						(TEXT(Foyer_paneliste__r.Referentiel_Panel__r.Type_de_panel__c) = $Label.RFP_TypePanel_PaME))
+)</errorConditionFormula>
+    <errorMessage>Le champ lettre est obligatoire</errorMessage>
+</ValidationRule>

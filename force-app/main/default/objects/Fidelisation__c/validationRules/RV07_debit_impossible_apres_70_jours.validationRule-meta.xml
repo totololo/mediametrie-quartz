@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV07_debit_impossible_apres_70_jours</fullName>
+    <active>true</active>
+    <description>Règle qui empêche la création de débit sur un foyer chuté définitivement</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				!$User.Bypass_RDD__c, 
+				TEXT(Foyer__r.Statut_du_foyer__c) = $Label.ACC_Statut_du_foyer_Chute_definitive, NOT(Foyer_paneliste__r.A_anonymiser__c),
+				TODAY() - Foyer__r.Date_de_chute__c &gt;= VALUE($Label.RV_Limitation_debit_apres_chute),
+				RecordType.Name = $Label.FID_Type_d_enregistrement_Debit
+)</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas débiter un foyer chuté de plus de 70 jours calendaires</errorMessage>
+</ValidationRule>

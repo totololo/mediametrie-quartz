@@ -1,0 +1,163 @@
+.THIS .titre {
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 2vw;
+    color: black;
+}
+
+.THIS.articles {
+    /*display: grid;
+    place-items: center;*/
+    padding-top:30px;
+    margin: 0 auto;
+    width: 43%;
+} 
+
+
+.THIS  .photo_article {
+    width: 170PX;
+    height: 100PX;
+    margin-bottom: 1vw;
+    max-width: none !important;
+}
+
+.THIS  .categorie_article {
+    text-align: right;
+    width: 10vw;
+}
+
+.THIS .categorie_article img {
+    width: 1.5vw;
+    height: auto;
+}
+
+.THIS  .titre_article {
+    width: 28vw;
+    /* padding: 1vw; */
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    margin-left: 10px;
+}
+
+.THIS .date_article {
+    /* padding: 1vw; */
+    font-size: 12px;
+    color: #B03892;
+    /* margin-top: 15px; */
+    margin-left: 10px;
+    margin-top: 31px;
+}
+.THIS .nbLike {
+    padding-left: 1vw;
+    font-size: 0.9vw;
+}
+.THIS .heart{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.THIS .parentBanner {
+   	display: inline-flex;
+    margin-bottom: 8px;
+    border-bottom: 1px solid lightgrey;
+   
+}
+.THIS  a{
+    color : black;
+}
+
+
+.THIS .paneliste{
+ 
+    height: 30px;
+    width: 30px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    color: white;
+    background: #629d00;
+
+} 
+
+  .THIS .mediametrie{
+    height: 30px;
+    width: 30px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    color:white;
+    background: #ffd700;
+  }
+
+  .THIS .pagination{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    border: none !important;
+  }
+
+  .THIS .heartIcon{
+    width: 20px;
+  }
+
+  .THIS .PM{
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+
+@media screen and (max-width: 600px) {
+    .THIS  .titre {
+        font-size: 2vh;
+        margin-bottom: 2vh;
+        color: black;
+    }
+
+    .THIS .ul {
+        width: 90vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .THIS .table {
+        width: 90vw;
+    }
+
+    .THIS .photo_article {
+        width: 15vh;
+        height: auto;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        position: center;
+    }
+
+    .THIS .categorie_article {
+        text-align: right;
+        width: 10vw;
+    }
+
+    .THIS .categorie_article img {
+        width: 1.8vh;
+        height: auto;
+    }
+
+    .THIS .titre_article {
+        width: 65vw;
+        padding: 1vh;
+        font-size: 1.75vh;
+    }
+
+    .THIS .date_article {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+    .THIS.articles {
+        width: 100%;
+    } 
+}

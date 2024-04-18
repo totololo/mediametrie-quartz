@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <assignments>
+        <name>Update_localisation</name>
+        <label>Update localisation</label>
+        <locationX>310</locationX>
+        <locationY>905</locationY>
+        <assignmentItems>
+            <assignToReference>equipementToUpdate.Localisation__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Prestataire logistique</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_equipement</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_localisation_and_alerte</name>
+        <label>Update localisation and alerte</label>
+        <locationX>599</locationX>
+        <locationY>880</locationY>
+        <assignmentItems>
+            <assignToReference>equipementToUpdate.Localisation__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Prestataire logistique</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>equipementToUpdate.Alerte_maj_stock__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_equipement</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_bypass</name>
+        <label>Check bypass</label>
+        <locationX>446</locationX>
+        <locationY>401</locationY>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>No_bypass</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.Bypass_flows__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_if_date_sortie_filled</targetReference>
+            </connector>
+            <label>No bypass</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_date_sortie_filled</name>
+        <label>Check if date sortie filled</label>
+        <locationX>444</locationX>
+        <locationY>576</locationY>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Date_sortie_not_filled</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Date_sortie__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_localisation_old_value</targetReference>
+            </connector>
+            <label>Date sortie not filled</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_localisation_old_value</name>
+        <label>Check localisation old value</label>
+        <locationX>444</locationX>
+        <locationY>751</locationY>
+        <defaultConnector>
+            <targetReference>Update_localisation</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Old localisation not foyer</defaultConnectorLabel>
+        <rules>
+            <name>Old_localisation_foyer</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.equipement_de_mesure__r.Localisation__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Foyer</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_localisation_and_alerte</targetReference>
+            </connector>
+            <label>Old localisation foyer</label>
+        </rules>
+    </decisions>
+    <interviewLabel>SuiviStock_maj_localisation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SuiviStock_maj_localisation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_equipement</name>
+        <label>Update equipement</label>
+        <locationX>470</locationX>
+        <locationY>1057</locationY>
+        <inputReference>equipementToUpdate</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>330</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Check_bypass</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Type_de_suivi__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Suivi des stocks</stringValue>
+            </value>
+        </filters>
+        <object>Suivi_Stock_SAV__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>equipementToUpdate</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Asset</objectType>
+    </variables>
+</Flow>

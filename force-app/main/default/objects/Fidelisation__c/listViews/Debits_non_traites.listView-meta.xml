@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Debits_non_traites</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Points_debites__c</columns>
+    <columns>Origine_de_la_commande__c</columns>
+    <columns>Requete__c</columns>
+    <columns>Foyer__c</columns>
+    <columns>Composition_du_foyer__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Fidelisation__c.Debit</value>
+    </filters>
+    <filters>
+        <field>Statut_de_commande__c</field>
+        <operation>notEqual</operation>
+        <value>Envoyé</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>5/1/2021 12:00 AM</value>
+    </filters>
+    <label>Débits non traîtés</label>
+</ListView>

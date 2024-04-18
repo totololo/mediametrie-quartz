@@ -1,0 +1,49 @@
+.THIS .global {
+    width: 100%;
+    float:left;
+}
+
+.THIS .class1 {
+    width: 33.33%;
+  	float: left;
+  	height: 100%;
+  
+}
+
+.THIS .class2 {
+    width: 33.33%;
+  	float: left;
+  	height: 100%;
+}
+
+.THIS .class3 {
+    width: 33.33%;
+  	float: left;
+  	height: 100%;
+}
+
+.THIS .h1{
+    font-size: 22px;
+  	line-height: 150px;
+  	
+  	font-family:"Segoe print", Arial, Helvetica, sans-serif;
+      
+}
+
+.THIS .tab{font-size: 22px;
+  	line-height: 50px;
+  	font-family:"Segoe print", Arial, Helvetica, sans-serif;
+    border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    overflow:hidden;padding:10px 5px;word-break:normal;
+}
+
+
+
+.THIS .tabb{
+    border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;
+}
+
+.THIS .tg{
+    border-collapse:collapse;border-spacing:0;
+}

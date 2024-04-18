@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV07_date_passe_non_possible</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+				! $User.Bypass_RDD__c,
+				 (Date_de_suspension__c &lt; TODAY ())
+				||
+				(Date_de_suspension__c &gt; TODAY ())
+				, 
+				OR(
+        ISNEW(),
+        ISCHANGED(Date_de_suspension__c ) 
+       )
+  )</errorConditionFormula>
+    <errorMessage>Merci de renseigner la date de suspension avec la date d&apos;aujourd&apos;hui.</errorMessage>
+</ValidationRule>

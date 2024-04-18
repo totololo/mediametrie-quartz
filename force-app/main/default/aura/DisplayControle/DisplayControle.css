@@ -1,0 +1,15 @@
+.THIS .slds-card__header{
+    background-color: #EFEFEF;
+    height: 50px;
+}
+.THIS size{
+    font-size:5px;
+}
+
+   
+.THIS.outputLookupLink {
+    border-bottom: 1px dotted;
+    display: inline-block;
+    vertical-align: top;
+    color: rgb(0, 109, 204);
+}

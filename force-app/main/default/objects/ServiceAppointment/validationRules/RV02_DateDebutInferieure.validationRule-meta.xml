@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV02_DateDebutInferieure</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(! $User.Bypass_validation_rules__c ,
+				! $User.Bypass_RDD__c,
+OR (ISNEW(),ISCHANGED( SchedStartTime)),
+ DATEVALUE(SchedStartTime  ) &lt;  TODAY()
+				
+				
+)</errorConditionFormula>
+    <errorMessage>La date de début planifiée doit être postérieure ou égale à la date du jour</errorMessage>
+</ValidationRule>

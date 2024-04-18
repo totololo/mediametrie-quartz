@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mail_support__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+TEXT(Account.Type_de_foyer__c) = $Label.ACC_Type_de_panel_Mediamat,
+				$Label.MAIL_support_mediamat,
+
+
+IF(
+								TEXT(Account.Type_de_foyer__c) = $Label.ACC_Type_de_panel_Pame,
+								$Label.MAIL_support_pame,
+
+
+IF(
+TEXT(Account.Type_de_foyer__c) = $Label.ACC_Type_de_panel_AIP, $Label.MAIL_support_aip,
+
+								&quot;&quot;
+				)
+)
+)</formula>
+    <label>Mail support</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

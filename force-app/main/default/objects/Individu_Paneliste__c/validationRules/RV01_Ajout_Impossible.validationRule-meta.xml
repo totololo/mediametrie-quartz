@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV01_Ajout_Impossible</fullName>
+    <active>true</active>
+    <description>Règle qui vérifie qu&apos;on ne peut pas ajouter un individu panéliste à un foyer panéliste en cours de désinstallation ou ayant un statut « Désinstallé » ou « Chute définitive »</description>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+!$User.Bypass_RDD__c,
+ISNEW(),
+OR(
+TEXT(Foyer_paneliste__r.Referentiel_Panel__r.Type_de_panel__c) = $Label.RFP_TypePanel_MMAT,
+TEXT(Foyer_paneliste__r.Referentiel_Panel__r.Type_de_panel__c) = $Label.RFP_TypePanel_PaME
+),
+OR(
+ISPICKVAL(Foyer_paneliste__r.Statut_Foyer_paneliste__c, &apos;4&apos;),
+ISPICKVAL(Foyer_paneliste__r.Statut_Foyer_paneliste__c, &apos;5&apos;),
+AND(
+Foyer_paneliste__r.Intervention_en_cours__c = true,
+ISPICKVAL(Foyer_paneliste__r.Sous_type_d_intervention__c, &apos;8&apos;)
+)
+) 
+				)</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas ajouter un individu panéliste à un foyer panéliste en cours de désinstallation ou ayant un statut « Désinstallé » ou « Chute définitive »</errorMessage>
+</ValidationRule>

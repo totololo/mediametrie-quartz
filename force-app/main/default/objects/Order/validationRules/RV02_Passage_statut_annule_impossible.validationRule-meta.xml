@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV02_Passage_statut_annule_impossible</fullName>
+    <active>true</active>
+    <description>Bloquer le passage du statut clôturé à annulé</description>
+    <errorConditionFormula>AND(
+				
+		 $User.Bypass_validation_rules__c= false,	
+  ISCHANGED( Status  ),
+  (ISPICKVAL(PRIORVALUE( Status ), &quot;4&quot;)),
+  ISPICKVAL( Status, &quot;5&quot;) 
+		
+		)</errorConditionFormula>
+    <errorMessage>Une commande clôturée ne peut pas être annulée</errorMessage>
+</ValidationRule>

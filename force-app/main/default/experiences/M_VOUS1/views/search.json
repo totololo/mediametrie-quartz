@@ -1,0 +1,31 @@
+{
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "ef465171-eb79-4f49-8957-c126e4e8901e",
+  "label" : "Search",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:FAQ",
+      "id" : "7a947ce2-4fc9-4f5e-81ab-14f8343a45f1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3ae5fd48-8e46-4cb3-87e0-4cdab3613fa1",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "76415110-9ec0-446b-b8a3-3b51cf7c80f6",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "337216b5-f1b8-4cbd-9073-c75b0a2dcb9d",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "global-search"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Freeze__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Cette case à cocher permet de bloquer l&apos;attribution de points du foyer</description>
+    <externalId>false</externalId>
+    <label>Freeze</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,91 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" controller ='ContactFormulaire'>
+    <aura:attribute name="isModalOpen" type="boolean" default="true"/>
+    <aura:attribute name="cguText" type="string" default=""/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:if isTrue="{!v.isModalOpen}">
+        
+        <aura:set attribute="else"> 
+            <div class="backdrop"></div>
+        </aura:set> 
+    </aura:if>
+    <div class="slds-m-around_xx-large">
+        <!-- <lightning:button variant="brand"
+                          label="What is Modal/PopUp Box?"
+                          title="What is Modal/PopUp Box?"
+                          onclick="{! c.openModel }" />--> 
+        <!--Use aura:if tag to display/hide popup based on isModalOpen value-->  
+        <aura:if isTrue="{!v.isModalOpen}">
+            
+            <aura:set attribute="else"> 
+                <!-- Modal/Popup Box starts here-->
+                <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                    <div class="slds-modal__container">
+                        <!-- Modal/Popup Box Header Starts here-->
+                        <!--Modal/Popup Box Body Starts here-->
+                        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                            <div class="divPrincipal">
+                                <aura:unescapedHtml value="{!v.cguText}" />
+
+                                <!-- <h1 class="CGV">{!$Label.c.CGU}</h1> -->
+                                <!-- <h1 class="CGV" >{!$Label.c.EXP_Ligne1TexteCGU}</h1>
+                                <h4><strong>{!$Label.c.EXP_Ligne2TexteCGU}  </strong></h4>
+                                <p>{!$Label.c.EXP_Ligne3TexteCGU}
+                                    <br> </br>
+                                </p>
+                                <br> </br> <br> </br>
+                                <aura:unescapedHtml value="{!$Label.c.EXP_Ligne4TexteCGU}" />
+                                <br> </br> <br> </br>
+                                <aura:unescapedHtml value="{!$Label.c.EXP_Ligne5TexteCGU}" />
+                                <br></br> <br></br>
+                                <aura:unescapedHtml value="{!$Label.c.EXP_Ligne6TexteCGU}" />
+                                <br></br> <br></br>
+                                <aura:unescapedHtml value="{!$Label.c.EXP_Ligne7TexteCGU}" />
+                                 <br></br> <br></br>
+                                <aura:unescapedHtml value="{!$Label.c.EXP_Ligne8TexteCGU}" />
+                                <br></br> <br></br>
+                                <aura:unescapedHtml value="{!$Label.c.EXP_Ligne9TexteCGU}" />
+                                <br></br> <br></br>
+                                <aura:unescapedHtml value="{!$Label.c.EXP_Ligne10TexteCGU}" />
+                                <br></br> <br></br>
+                                <aura:unescapedHtml value="{!$Label.c.EXP_Ligne11TexteCGU}" />
+                                <br></br> <br></br>
+                                <aura:unescapedHtml value="{!$Label.c.EXP_Ligne12TexteCGU}" />
+                                <br></br> <br></br>
+                                <aura:unescapedHtml value="{!$Label.c.EXP_Ligne13TexteCGU}" />
+                                <br></br> <br></br>
+                                <aura:unescapedHtml value="{!$Label.c.EXP_Ligne14TexteCGU}" />
+                                <br></br> <br></br>
+                                <aura:unescapedHtml value="{!$Label.c.EXP_Ligne15TexteCGU}" />
+                                <br></br> <br></br>
+                                <aura:unescapedHtml value="{!$Label.c.EXP_Ligne16TexteCGU}" />
+                                <br></br> <br></br>
+                                <aura:unescapedHtml value="{!$Label.c.EXP_Ligne17TexteCGU}" />
+                                <br></br> <br></br>
+                                <aura:unescapedHtml value="{!$Label.c.EXP_Ligne18TexteCGU}" />
+                                <br></br> <br></br>
+                                <aura:unescapedHtml value="{!$Label.c.EXP_Ligne19TexteCGU}" />
+                                <br></br> <br></br>
+                                <aura:unescapedHtml value="{!$Label.c.EXP_Ligne20TexteCGU}" />
+                                -->
+                            </div>
+                        </div>
+                        <!--Modal/Popup Box Footer Starts here-->
+                        <footer class="slds-modal__footer">
+                            <lightning:button variant="brand-outline"
+                                              label="Refuser"
+                                              title="OK"
+                                              onclick="{!c.loginOut}"/>
+                            <lightning:button variant="brand"
+                                              label="Accepter"
+                                              title="OK"
+                                              onclick="{!c.updateCgu}"/>
+                            
+                        </footer>
+                    </div>
+                </section>
+                <div class="slds-backdrop slds-backdrop_open"></div> 
+            </aura:set> 
+        </aura:if>
+    </div>
+    
+</aura:component>

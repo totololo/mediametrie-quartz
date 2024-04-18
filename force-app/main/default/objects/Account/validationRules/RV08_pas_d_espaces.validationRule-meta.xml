@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV08_pas_d_espaces</fullName>
+    <active>true</active>
+    <description>Règle qui empêche la saisie d&apos;espaces dans les champs de type téléphone</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				OR(
+								AND(
+												!ISBLANK(Numero_de_portable__c),
+												CONTAINS(Numero_de_portable__c, &quot; &quot;) 
+								),
+								AND(
+												!ISBLANK(Numero_de_telephone_fixe__c),
+												CONTAINS(Numero_de_telephone_fixe__c, &quot; &quot;) 
+								),
+								AND(
+												!ISBLANK(Numero_du_conjoint__c),
+												CONTAINS(Numero_du_conjoint__c, &quot; &quot;) 
+								)
+				)
+)</errorConditionFormula>
+    <errorMessage>Un numéro de téléphone ne doit pas contenir d&apos;espace</errorMessage>
+</ValidationRule>

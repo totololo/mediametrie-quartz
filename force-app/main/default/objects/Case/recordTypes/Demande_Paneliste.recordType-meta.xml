@@ -1,0 +1,2493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demande_Paneliste</fullName>
+    <active>true</active>
+    <businessProcess>Autres</businessProcess>
+    <compactLayoutAssignment>Compact_layout_Demande_pan_liste</compactLayoutAssignment>
+    <label>Demande Panéliste</label>
+    <picklistValues>
+        <picklist>Motif_de_chute__c</picklist>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrainte du casque %28filaire ou bluetooth%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déménagement hors zone de mesure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Etude trop longue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mauvaise participation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ondes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oubli trop régulier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pager trop gros%2C inesthétique%2C indiscret%2E%2E%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas de motif précisé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Profession inadaptée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Programme de fid peu motivant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raisons personnelles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set meter %3A problèmes techniques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set meter %3A refus installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set meter %3A utilisation trop contraignante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structure du panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sursollicitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trop contraignant port et chargement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trop contraignant sans précision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trop contraignant à charger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trop contraignant à porter</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motif_de_cloture__c</picklist>
+        <values>
+            <fullName>Actif avant appel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motif_de_la_requete__c</picklist>
+        <values>
+            <fullName>A oublié d%27indiquer sa lettre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A oublié de retirer sa lettre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A oublié de se déclarer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A utilisé une autre lettre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abonnement Canal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abonnement hors foyer ou autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Absence d%27audience justifiée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Absence non déclarée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Absence prolongée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Absent du domicile - Audimètre débranché</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ajout de coordonnées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ajout de poste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ajout de poste annulé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application non active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attribution d%27une touche à un enfant de moins de 4 ans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audience inférieure à 10min</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audience sans présence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audience%3E à X heures avec changement de chaîne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audiences atypiques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audiences constatées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres abonnements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres désabonnements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres modifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres motifs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres raisons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres renseignements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres usages justifié %28utilisation de périphériques%2C VOD%2E%2E%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres usages justifié sans appel %28utilisation de périphériques%2C VOD%2E%2E%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres usages non justifié %28mauvaise audience %3D%3E Collecte OK%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres usages non justifié %28mauvaise audience %3D%3E Intervention%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canalsat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changement ADSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changement d%27état %28membre%2Finvité%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changement de coordonnées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changt de fréquence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaînes comprises dans l%27abonnement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chèques cadeaux non reçus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Codification impossible dans Panama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commande de cadeaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commande de moins de 3 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commande de point hors délai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commentaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrôle incohérent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coupure de courant%2Forages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Création invité permanent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Date de rappel en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande de renseignement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Device incompatible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devices en panne%2Fcassé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double participation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Débranchement %28orage%2C problème électrique%E2%80%A6%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Débranchement suite à mauvaise participation %28débranche la nuit%E2%80%A6%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déclaration des invités</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dégroupage en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déménagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déménagement%2Ftravaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Départ en vacance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Désabonné Canal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Désinstallation en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email envoyé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Envoi d%27une configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FTC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer désuspendu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer jamais abonné Canal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer mis sous surveillance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer regarde sur un autre support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer suspendu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individu refuse d%27installer son dévice %28meter%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individu refuse de configurer son dévice au routeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information manquante %28commande%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initialisation mise à jour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initialisation non mise à jour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation Meter OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation du Meter impossible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intervention ouverte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L%E2%80%99individu a quitté la mesure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ligne HS%2FNNA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manipulation ko</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manipulation ok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Message laissé sur le répondeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Messages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise à jour coordonnées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise à jour version logicielle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification composition du foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification de l%27équipement audiovisuel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification de la profession</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification des données socio-démo foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification du nombre de jours de présence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification poste du foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Msg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%27a pas allumé la télévision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%27a pas regardé les chaînes Canal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Naissance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ne s%27allume plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ne s%27est pas trouvé dans la pièce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non abonné - Audience sur la chaÎne justifiée en claire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notation des émissions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nouvel devices%2Fchangement de devices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nouvel envoi en recommandé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nouvel équipement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nouvelle personne dans le foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offre gratuite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panéliste est parti de la mesure d%E2%80%99audience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas de connexion individu%2Ffoyer %28justifié%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas de connexion web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas de message laissé sur le répondeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas de répondeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas disponible %28pour faire la manipulation%2C personne non concernée%2E%2E%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pbm page de déclaration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pbm routeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plus de réception TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poste coché hors tension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poste décoché hors tension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prise de RDV technicien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème ADSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème audimètre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème audimètre%2Frouteur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème autre équipement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème connexion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème câble numérique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème d%27antenne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème de MAG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème de TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème de déclaration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème de parabole</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème de télécommande</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème décodeur TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème ligne téléphonique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème ordinateur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème smartphone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème sonde TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème tablette</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème technique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème équipement panéliste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question MCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question cadeaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raisons personnelles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebranchement audimètre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reconnecté seul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relance convention meter Foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relance convention meter Individu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remontée Cati</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renseignement sur l%27audimètre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renseignement sur l%27outil de mesure internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retour d%27absence OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réactivation%2FRéparation du Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réinstallation du Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS envoyé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sans objet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solde de point</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sonne télévision allumée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sonne télévision éteinte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suppression de poste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suppression de poste annulée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suppression invité permanent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV en panne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Télécommande</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Une personne entre dans la mesure d%E2%80%99audience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacanciers</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motif_de_statut__c</picklist>
+        <values>
+            <fullName>Chute définitive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chute provisoire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intervention annulé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interventon finalisé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résolue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Appel Entrant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appel sortant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application panéliste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre type de contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courrier entrant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courrier sortant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email AIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email MMAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email PaME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email entrant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email sortant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Message entrant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Message sortant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nouveau foyer OK CATI 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sans réponse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sms entrant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sms sortant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfert d%27appel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Critique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moyen</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Élevé</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Prochaine_action__c</picklist>
+        <values>
+            <fullName>Prendre rendez-vous pour une intervention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rappeler le foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vérifier le solde de points</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>A oublié d%27indiquer sa lettre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A oublié de retirer sa lettre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A oublié de se déclarer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A utilisé une autre lettre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abonnement Canal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abonnement hors foyer ou autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Absence d%27audience justifiée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Absence non déclarée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Absence prolongée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Absent du domicile - Audimètre débranché</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ajout de coordonnées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ajout de poste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ajout de poste annulé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application non active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attribution d%27une touche à un enfant de moins de 4 ans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audience inférieure à 10min</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audience sans présence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audience%3E à X heures avec changement de chaîne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audiences atypiques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audiences constatées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre modification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre motif</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres abonnements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres désabonnements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres modifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres motifs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres raisons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres renseignements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres usages justifié %28utilisation de périphériques%2C VOD%2E%2E%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres usages justifié sans appel %28utilisation de périphériques%2C VOD%2E%2E%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres usages non justifié %28mauvaise audience %3D%3E Collecte OK%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres usages non justifié %28mauvaise audience %3D%3E Intervention%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canalsat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changement ADSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changement d%27équipement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changement d%27état %28membre%2Finvité%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changement de coordonnées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changt de fréquence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaînes comprises dans l%27abonnement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chèque cadeau non reçu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Codification impossible dans Panama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commande de cadeaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commande de moins de 3 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commande de point hors délai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commande de points</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commentaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congés</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrôle incohérent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coupure de courant%2Forages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Création invité permanent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Date de rappel en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande de renseignement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande de solde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Device incompatible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devices en panne%2Fcassé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double participation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Débranchement %28orage%2C problème électrique%E2%80%A6%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Débranchement suite à mauvaise participation %28débranche la nuit%E2%80%A6%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déclaration des invités</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dégroupage en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déménagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déménagement%2Ftravaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Départ en vacance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Désabonné Canal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Désaccord nombre de points</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Désinstallation en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email envoyé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Envoi d%27une configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FTC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer désuspendu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer jamais abonné Canal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer mis sous surveillance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer regarde sur un autre support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer suspendu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individu refuse d%27installer son dévice %28meter%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individu refuse de configurer son dévice au routeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information manquante %28commande%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initialisation mise à jour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initialisation non mise à jour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation Meter OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation du Meter impossible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intervention ouverte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L%E2%80%99individu a quitté la mesure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ligne HS%2FNNA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manipulation ko</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manipulation ok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Message laissé sur le répondeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Messages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise à jour coordonnées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise à jour version logicielle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification composition du foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification de l%27équipement audiovisuel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification de la profession</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification des données socio-démo foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification du nombre de jours de présence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification poste du foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Msg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%27a pas allumé la télévision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%27a pas regardé les chaînes Canal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Naissance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ne s%27allume plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ne s%27est pas trouvé dans la pièce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non abonné - Audience sur la chaÎne justifiée en claire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notation des émissions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nouvel devices%2Fchangement de devices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nouvel envoi en recommandé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nouvel équipement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nouvelle personne dans le foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offre gratuite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panéliste est parti de la mesure d%E2%80%99audience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas de connexion individu%2Ffoyer %28justifié%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas de connexion web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas de message laissé sur le répondeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas de répondeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas disponible %28pour faire la manipulation%2C personne non concernée%2E%2E%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pbm page de déclaration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pbm routeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plus de réception TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poste coché hors tension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poste décoché hors tension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prise de RDV technicien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème ADSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème audimètre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème audimètre%2Frouteur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème autre équipement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème connexion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème câble numérique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème d%27antenne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème de MAG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème de TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème de déclaration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème de parabole</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème de télécommande</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème décodeur TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème intervention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème ligne téléphonique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème ordinateur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème smartphone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème sonde TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème tablette</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème technique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème équipement panéliste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question MCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question cadeaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raisons personnelles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebranchement audimètre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reconnecté seul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relance convention meter Foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relance convention meter Individu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remontée Cati</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renseignement sur l%27audimètre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renseignement sur l%27outil de mesure internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retour d%27absence OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réactivation%2FRéparation du Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réclamation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réinstallation du Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS envoyé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sans objet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solde de point</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sonne télévision allumée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sonne télévision éteinte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suppression de poste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suppression de poste annulée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suppression invité permanent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV en panne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Télécommande</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Une personne entre dans la mesure d%E2%80%99audience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacanciers</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rep_ou_non_rep__c</picklist>
+        <values>
+            <fullName>Non répondant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Répondant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sous_type__c</picklist>
+        <values>
+            <fullName>A quitte la mesure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audimètre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre déplacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Box internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broswer only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Browser %2B mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casque Bluetooth ko</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changement coordonnées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changement profession</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chute forcée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chute inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chèques cadeaux non reçus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commande chèques cadeaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commande de chèques cadeau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Composition foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Console de jeux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrainte pager %28lourd%2C gros%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrôle Médiacabsat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrôle abonnement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrôle de participation internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrôle de participations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrôle des absences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrôle des connexions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrôle des non connectés après collecte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrôle des présences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrôle qualité audience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrôles autres usages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Convention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande de chute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande de renseignement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Décodeur tv</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déménage hors zone de mesure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déménagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enveloppe retour taille large</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enveloppe retour taille standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer inactif meter J%2B90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gamification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hors quota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactif browser J%2B14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactif browser J%2B180</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactif browser J%2B60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactif browser J%2B7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactif mobile J%2B14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactif mobile J%2B180</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactif mobile J%2B60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactif mobile J%2B7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactif mobile et browser J%2B14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactif mobile et browser J%2B180</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactif mobile et browser J%2B60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactif mobile et browser J%2B7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Info solde de points</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation Nouveau Foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matériel ko %28refus renvoi%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matériel non réceptionné</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modalité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mode de réception TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ne désire plus participer sans motif</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non réception du pager %28refus renvoi%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pack initial ROAv3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pack initial ROAv3 et Setmeter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Port trop contraignant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prise en charge réparation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème équipement panéliste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recensement annuel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus convention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remerciement cadeau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reprise Panama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restitution du matériel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Routeur Médiametrie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réclamation incentive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Régularisation solde de points</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screenwise meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Setmeter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sur sollicitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tirage au sort %2F jeux concours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tous les membres du foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tous les membres du foyer %2F audimètre débranché</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Télécommande</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Téléviseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Une partie du foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacances</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sous_type_d_intervention__c</picklist>
+        <values>
+            <fullName>Changement d%27équipements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connexion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mediamat et PaME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Médiamat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PaME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visite de courtoisie</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sous_type_de_controle__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audimètre non connecté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer avec abo C%2B sans audience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foyer avec audience sans abo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tech_Priority__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Anomalie matériel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrôle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Convention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande de contacte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande de renseignement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déclaration d%27absence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fidélisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactif meter J%2B14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactif meter J%2B180</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactif meter J%2B60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactif meter J%2B7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactif meter J%2B90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation SetMeter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intervention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification des données soci-demo du foyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification équipement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-répondant ROAV3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème équipement Médiamétrie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème équipement Panéliste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remplacement de matériel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réclamation matériel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vie du foyer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_d_intervention__c</picklist>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intervention</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_contact__c</picklist>
+        <values>
+            <fullName>Application panéliste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre type de contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact technicien entrant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact technicien sortant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courrier opérateur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courrier panéliste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail entrant technicien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail opérateur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail panéliste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail sortant technicien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Message laissé par opérateur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Message laissé par panéliste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Message téléchargé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ne répond pas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS opérateur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS panéliste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sans objet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site panéliste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfert d%27appel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Téléphone opérateur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Téléphone panéliste</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_controle__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_panel_Old2__c</picklist>
+        <values>
+            <fullName>AIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MMAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PaME</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>qualificationCase__c</picklist>
+        <values>
+            <fullName>CBUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CINX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CNDO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TANM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TANO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TMOD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TWRG</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

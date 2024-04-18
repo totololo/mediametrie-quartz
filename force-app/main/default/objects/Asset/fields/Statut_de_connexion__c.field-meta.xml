@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_de_connexion__c</fullName>
+    <externalId>false</externalId>
+    <label>Statut de connexion</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Connected</fullName>
+                <default>false</default>
+                <label>Connected</label>
+            </value>
+            <value>
+                <fullName>Disconnected</fullName>
+                <default>false</default>
+                <label>Disconnected</label>
+            </value>
+            <value>
+                <fullName>ConnectedCol</fullName>
+                <default>false</default>
+                <label>ConnectedCol</label>
+            </value>
+            <value>
+                <fullName>ConnectedSup</fullName>
+                <default>false</default>
+                <label>ConnectedSup</label>
+            </value>
+            <value>
+                <fullName>ConnectedExp</fullName>
+                <default>false</default>
+                <label>ConnectedExp</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV14_CodeProfessionObligatoire</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,ISBLANK(Code_profession__c ),TEXT( Type__c )!= $Label.CON_Type_Invite)</errorConditionFormula>
+    <errorMessage>Le code profession est obligatoire pour les individus de type membre</errorMessage>
+</ValidationRule>

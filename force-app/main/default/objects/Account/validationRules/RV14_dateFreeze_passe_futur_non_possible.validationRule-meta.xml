@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV14_dateFreeze_passe_futur_non_possible</fullName>
+    <active>false</active>
+    <description>La date de freeze choisi doit être la date du jour.</description>
+    <errorConditionFormula>AND(
+    !$User.Bypass_validation_rules__c,
+    OR(
+     Date_de_Freeze__c &lt;  TODAY(),
+     Date_de_Freeze__c &gt;  TODAY()
+    ),
+
+     OR(
+        ISNEW(),
+        ISCHANGED(Date_de_Freeze__c ) 
+       )
+  )</errorConditionFormula>
+    <errorDisplayField>Date_de_Freeze__c</errorDisplayField>
+    <errorMessage>Merci de choisir la date d&apos;aujourd&apos;hui.</errorMessage>
+</ValidationRule>

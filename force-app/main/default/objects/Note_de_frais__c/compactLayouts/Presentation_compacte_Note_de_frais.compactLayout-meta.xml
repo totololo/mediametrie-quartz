@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Presentation_compacte_Note_de_frais</fullName>
+    <fields>Intervention__c</fields>
+    <fields>Montant__c</fields>
+    <fields>Type_de_frais__c</fields>
+    <fields>Id_Foyer__c</fields>
+    <label>Présentation compacte Note de frais</label>
+</CompactLayout>

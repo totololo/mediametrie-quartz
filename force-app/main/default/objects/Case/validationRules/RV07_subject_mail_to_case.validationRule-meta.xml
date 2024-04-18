@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV07_subject_mail_to_case</fullName>
+    <active>true</active>
+    <description>Bloque la création de de case si les sujets des mail recu contient ces titres.</description>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+ISPICKVAL(Origin , &apos;Email entrant&apos;),
+ISNEW(),
+OR(
+CONTAINS( Subject , $Label.CAS_Name_mailSubjectToBlock),
+CONTAINS( Subject , $Label.CAS_Name_mailSubjectToBlock2),
+CONTAINS( Subject , $Label.CAS_Name_mailSubjectToBlock3),
+CONTAINS( Subject , $Label.CAS_Name_mailSubjectToBlock4),
+CONTAINS( Subject , $Label.CAS_Name_mailSubjectToBlock5),
+CONTAINS( Subject , $Label.CAS_Name_mailSubjectToBlock6)
+)
+)</errorConditionFormula>
+    <errorMessage>Email bloqué</errorMessage>
+</ValidationRule>

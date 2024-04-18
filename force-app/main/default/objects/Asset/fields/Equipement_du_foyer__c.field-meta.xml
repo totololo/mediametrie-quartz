@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipement_du_foyer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Equipement du foyer</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>L&apos;équipement foyer n&apos;appartient pas au foyer choisit.</errorMessage>
+        <filterItems>
+            <field>$Source.AccountId</field>
+            <operation>equals</operation>
+            <valueField>Equipements_du_foyer__c.Foyer__r.Id</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Equipements_du_foyer__c</referenceTo>
+    <relationshipLabel>Équipements de mesure</relationshipLabel>
+    <relationshipName>quipements_de_mesure</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

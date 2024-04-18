@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foyers_pan_listes_Mesure_Plateforme</fullName>
+    <columns>NAME</columns>
+    <columns>Convention_a_jour__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Statut_Foyer_paneliste__c</columns>
+    <columns>Suspendu__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Referentiel_Panel__c</field>
+        <operation>equals</operation>
+        <value>Mesure Plateforme</value>
+    </filters>
+    <label>Foyers panélistes Mesure Plateforme</label>
+</ListView>

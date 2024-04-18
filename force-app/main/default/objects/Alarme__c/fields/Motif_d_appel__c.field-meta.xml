@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_d_appel__c</fullName>
+    <externalId>false</externalId>
+    <label>Motif d&apos;appel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ABSENCE DE MOUVEMENT JUSTIFIEE</fullName>
+                <default>false</default>
+                <label>ABSENCE DE MOUVEMENT JUSTIFIEE</label>
+            </value>
+            <value>
+                <fullName>ANOMALIE CARTE SIM</fullName>
+                <default>false</default>
+                <label>ANOMALIE CARTE SIM</label>
+            </value>
+            <value>
+                <fullName>ATTACHE CASSEE</fullName>
+                <default>false</default>
+                <label>ATTACHE CASSEE</label>
+            </value>
+            <value>
+                <fullName>BLUETOOTH</fullName>
+                <default>false</default>
+                <label>BLUETOOTH</label>
+            </value>
+            <value>
+                <fullName>CHUTE TEMPORAIRE</fullName>
+                <default>false</default>
+                <label>CHUTE TEMPORAIRE</label>
+            </value>
+            <value>
+                <fullName>J+22 à J+44</fullName>
+                <default>false</default>
+                <label>J+22 à J+44</label>
+            </value>
+            <value>
+                <fullName>NON PORTE ECOUTE AU CASQUE</fullName>
+                <default>false</default>
+                <label>NON PORTE ECOUTE AU CASQUE</label>
+            </value>
+            <value>
+                <fullName>PAGER CASSE</fullName>
+                <default>false</default>
+                <label>PAGER CASSE</label>
+            </value>
+            <value>
+                <fullName>PAGER NON CHARGE</fullName>
+                <default>false</default>
+                <label>PAGER NON CHARGE</label>
+            </value>
+            <value>
+                <fullName>PAGER NON PORTE</fullName>
+                <default>false</default>
+                <label>PAGER NON PORTE</label>
+            </value>
+            <value>
+                <fullName>SUSPENDU</fullName>
+                <default>false</default>
+                <label>SUSPENDU</label>
+            </value>
+            <value>
+                <fullName>VACANCIER</fullName>
+                <default>false</default>
+                <label>VACANCIER</label>
+            </value>
+            <value>
+                <fullName>ECOUTE AU CASQUE BLUETOOTH</fullName>
+                <default>false</default>
+                <label>ECOUTE AU CASQUE BLUETOOTH</label>
+            </value>
+            <value>
+                <fullName>MANIP KO</fullName>
+                <default>false</default>
+                <label>MANIP KO</label>
+            </value>
+            <value>
+                <fullName>PAGER (TROP LOURD )</fullName>
+                <default>false</default>
+                <label>PAGER (TROP LOURD )</label>
+            </value>
+            <value>
+                <fullName>PAGER PERDU</fullName>
+                <default>false</default>
+                <label>PAGER PERDU</label>
+            </value>
+            <value>
+                <fullName>PROBLEME DE BATTERIE</fullName>
+                <default>false</default>
+                <label>PROBLEME DE BATTERIE</label>
+            </value>
+            <value>
+                <fullName>AUDIENCE JUSTIFIEE</fullName>
+                <default>false</default>
+                <label>AUDIENCE JUSTIFIEE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

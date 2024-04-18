@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "57fc87c3-50ec-4e01-9875-17fcc4e6672a",
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "configurationTags" : [ ],
+  "id" : "9da97df8-1ea6-48c8-a84f-0685b56dbe5c",
+  "label" : "detailArticle",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-detailarticle",
+  "type" : "route",
+  "urlPrefix" : "MetVOUS"
+}

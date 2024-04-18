@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV06_prenom_obligatoire</fullName>
+    <active>false</active>
+    <description>Impossible de créer un nouveau membre du foyer sans avoir renseigné le champ &quot;Prénom&quot;</description>
+    <errorConditionFormula>AND(
+ !$User.Bypass_validation_rules__c,
+ ISBLANK( FirstName )
+)</errorConditionFormula>
+    <errorDisplayField>FirstName</errorDisplayField>
+    <errorMessage>Impossible de créer un nouveau membre du foyer sans avoir renseigné le champ &quot;Prénom&quot;</errorMessage>
+</ValidationRule>

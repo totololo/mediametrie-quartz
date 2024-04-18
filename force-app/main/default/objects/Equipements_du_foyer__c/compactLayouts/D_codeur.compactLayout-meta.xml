@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>D_codeur</fullName>
+    <fields>Name</fields>
+    <fields>Foyer__c</fields>
+    <fields>Usage_Principal__c</fields>
+    <fields>Utilisateur_principal__c</fields>
+    <fields>Type_de_connexion_WIFI_uniquement__c</fields>
+    <fields>Systeme_d_exploitation__c</fields>
+    <label>Décodeur</label>
+</CompactLayout>

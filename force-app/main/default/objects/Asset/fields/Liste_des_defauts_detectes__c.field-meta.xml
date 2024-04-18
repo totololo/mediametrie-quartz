@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Liste_des_defauts_detectes__c</fullName>
+    <externalId>false</externalId>
+    <label>Liste des défauts détectés</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ne s&apos;allume pas</fullName>
+                <default>false</default>
+                <label>Ne s&apos;allume pas</label>
+            </value>
+            <value>
+                <fullName>Erreur de signal</fullName>
+                <default>false</default>
+                <label>Erreur de signal</label>
+            </value>
+            <value>
+                <fullName>Voyant rouge</fullName>
+                <default>false</default>
+                <label>Voyant rouge</label>
+            </value>
+            <value>
+                <fullName>Voyant éteint</fullName>
+                <default>false</default>
+                <label>Voyant éteint</label>
+            </value>
+            <value>
+                <fullName>Surtension</fullName>
+                <default>false</default>
+                <label>Surtension</label>
+            </value>
+            <value>
+                <fullName>Cable endommagé</fullName>
+                <default>false</default>
+                <label>Cable endommagé</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

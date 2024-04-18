@@ -1,0 +1,97 @@
+{
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "e0a312f1-2c13-468a-b28d-82d7dbe09e96",
+  "label" : "solde de point",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "d51f272e-32c9-493b-97ee-c99813b422bf",
+          "columns" : [ {
+            "UUID" : "6268e19d-9154-4b94-bd01-6ae5aacdce9e",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "d51f272e-32c9-493b-97ee-c99813b422bf",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:soldeDepointAura",
+          "id" : "f4723794-eab4-4c66-a5fb-1a84a15ad638",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "6268e19d-9154-4b94-bd01-6ae5aacdce9e",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "5963ef20-a23c-40ba-ba4f-43440f900a05",
+          "columns" : [ {
+            "UUID" : "3b6868ef-48f9-4506-971a-12d6ca070197",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 252
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "5963ef20-a23c-40ba-ba4f-43440f900a05",
+      "regions" : [ {
+        "id" : "3b6868ef-48f9-4506-971a-12d6ca070197",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2354d1e2-86de-459b-91a6-4935a1f5ac6a",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "M&VOUS - Solde de points"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "b0897e78-e8ae-4090-a1e1-5f754a681059",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "cee97066-e70d-445c-8b22-82dff9641a87",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-solde-de-point"
+}

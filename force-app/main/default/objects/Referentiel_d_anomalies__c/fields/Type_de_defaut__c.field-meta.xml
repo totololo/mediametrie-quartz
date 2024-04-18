@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_de_defaut__c</fullName>
+    <externalId>false</externalId>
+    <label>Type de défaut</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Défaut mineur</fullName>
+                <default>false</default>
+                <label>Défaut mineur</label>
+            </value>
+            <value>
+                <fullName>Défaut majeur</fullName>
+                <default>false</default>
+                <label>Défaut majeur</label>
+            </value>
+            <value>
+                <fullName>Défaut bloquant</fullName>
+                <default>false</default>
+                <label>Défaut bloquant</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

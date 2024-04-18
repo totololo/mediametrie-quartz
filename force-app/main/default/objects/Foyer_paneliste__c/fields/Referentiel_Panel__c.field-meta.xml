@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referentiel_Panel__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Référentiel Panel</label>
+    <referenceTo>Referentiel_Panel__c</referenceTo>
+    <relationshipLabel>Foyers panélistes (Référentiel Panel)</relationshipLabel>
+    <relationshipName>Foyers_pan_listes</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

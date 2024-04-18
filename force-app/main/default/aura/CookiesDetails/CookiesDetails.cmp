@@ -1,0 +1,39 @@
+<!-- CookiesDetails -->
+<aura:component implements="forceCommunity:themeLayout,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable"
+                access="global" controller="CookieConsentService">
+    
+    <aura:attribute name="onLoad" type="Boolean" default="true" />
+    <aura:attribute name="data" type="Object" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- Loader -->
+    <aura:if isTrue="{!v.onLoad}">
+        <div class="pageLoader">
+            <lightning:spinner alternativeText="Loading" size="large" />
+        </div>
+    </aura:if>
+    <br/><br/>
+    {!$Label.c.EXP_CookiesDetailsText1}
+    <br/><br/>
+    <table class="slds-table slds-table--bordered slds-table--striped">
+        <thead>
+            <tr>
+                <th scope="col" style="width: 84px;"><span class="slds-truncate">Nom du cookie</span></th>
+                <th scope="col"><span class="slds-truncate">Durée de convervation</span></th>
+                <th scope="col"><span class="slds-truncate">Type</span></th>
+                <th scope="col"><span class="slds-truncate">Description</span></th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.data}" var="cookie">
+                <tr>
+                    <td>{!cookie.Name__c}</td>
+                    <td>{!cookie.Duree_de_conservation__c}</td>
+                    <td>{!cookie.Type__c}</td>
+                    <td style="max-width: 600px;"><aura:unescapedHtml value="{!cookie.Description__c}" /> </td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>	
+</aura:component>

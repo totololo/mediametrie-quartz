@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>qualificationCase__c</fullName>
+    <externalId>false</externalId>
+    <label>Qualification de l&apos;appel</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CPRO</fullName>
+                <default>false</default>
+                <label>Réalisé</label>
+            </value>
+            <value>
+                <fullName>CBUS</fullName>
+                <default>false</default>
+                <label>Occupé</label>
+            </value>
+            <value>
+                <fullName>CFAI</fullName>
+                <default>false</default>
+                <label>Erreur technique</label>
+            </value>
+            <value>
+                <fullName>CINX</fullName>
+                <default>false</default>
+                <label>Abandonné</label>
+            </value>
+            <value>
+                <fullName>TWRG</fullName>
+                <default>false</default>
+                <label>Faux numéro</label>
+            </value>
+            <value>
+                <fullName>TANO</fullName>
+                <default>false</default>
+                <label>Rejeté</label>
+            </value>
+            <value>
+                <fullName>TANM</fullName>
+                <default>false</default>
+                <label>Répondeur</label>
+            </value>
+            <value>
+                <fullName>TMOD</fullName>
+                <default>false</default>
+                <label>Fax/Modem</label>
+            </value>
+            <value>
+                <fullName>CNDO</fullName>
+                <default>false</default>
+                <label>NJPC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motifs_de_chute__c</fullName>
+    <externalId>false</externalId>
+    <label>Motifs de chute</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abonnement internet suspendu ou résilié</fullName>
+                <default>false</default>
+                <label>Abonnement internet suspendu ou résilié</label>
+            </value>
+            <value>
+                <fullName>Autre motif (voir commentaire et informer N+1)</fullName>
+                <default>false</default>
+                <label>Autre motif (voir commentaire et informer N+1)</label>
+            </value>
+            <value>
+                <fullName>Autre motif</fullName>
+                <default>false</default>
+                <label>Autre motif</label>
+            </value>
+            <value>
+                <fullName>Accès Internet clé 3G ou bas débit</fullName>
+                <default>false</default>
+                <label>Accès Internet clé 3G ou bas débit</label>
+            </value>
+            <value>
+                <fullName>Audimètre perturbe le téléviseur</fullName>
+                <default>false</default>
+                <label>Audimètre perturbe le téléviseur</label>
+            </value>
+            <value>
+                <fullName>CATI 3 manquant</fullName>
+                <default>false</default>
+                <label>CATI 3 manquant</label>
+            </value>
+            <value>
+                <fullName>Chutes MM : mauvaise participation ; joignabilité</fullName>
+                <default>false</default>
+                <label>Chutes MM : mauvaise participation ; joignabilité</label>
+            </value>
+            <value>
+                <fullName>Chute panéliste : suite déménagement</fullName>
+                <default>false</default>
+                <label>Chute panéliste : suite déménagement</label>
+            </value>
+            <value>
+                <fullName>Chutes forcées : ajustement quotas</fullName>
+                <default>false</default>
+                <label>Chutes forcées : ajustement quotas</label>
+            </value>
+            <value>
+                <fullName>Chutes forcées : déménagement chute hors quotas</fullName>
+                <default>false</default>
+                <label>Chutes forcées : déménagement chute hors quotas</label>
+            </value>
+            <value>
+                <fullName>Chute panéliste : Motivation : rémumération</fullName>
+                <default>false</default>
+                <label>Chute panéliste : Motivation : rémumération</label>
+            </value>
+            <value>
+                <fullName>Chute liée à la participation GOOGLE</fullName>
+                <default>false</default>
+                <label>Chute liée à la participation GOOGLE</label>
+            </value>
+            <value>
+                <fullName>Déménagement à l&apos;étranger</fullName>
+                <default>false</default>
+                <label>Déménagement à l&apos;étranger</label>
+            </value>
+            <value>
+                <fullName>Installation TV impossible : connexion GSM &amp; Internet</fullName>
+                <default>false</default>
+                <label>Installation TV impossible : connexion GSM &amp; Internet</label>
+            </value>
+            <value>
+                <fullName>Install TV impossible : pas de sortie son</fullName>
+                <default>false</default>
+                <label>Install TV impossible : pas de sortie son</label>
+            </value>
+            <value>
+                <fullName>Install TV impossible : sotie exclusive hauts parleurs</fullName>
+                <default>false</default>
+                <label>Install TV impossible : sotie exclusive hauts parleurs</label>
+            </value>
+            <value>
+                <fullName>Install TV impossible : O détection ON/OFF</fullName>
+                <default>false</default>
+                <label>Install TV impossible : O détection ON/OFF</label>
+            </value>
+            <value>
+                <fullName>Mauvaise réception TV</fullName>
+                <default>false</default>
+                <label>Mauvaise réception TV</label>
+            </value>
+            <value>
+                <fullName>Ne peut plus participer (NPF1)</fullName>
+                <default>false</default>
+                <label>Ne peut plus participer (NPF1)</label>
+            </value>
+            <value>
+                <fullName>Non répondants depuis plus de 3 mois</fullName>
+                <default>false</default>
+                <label>Non répondants depuis plus de 3 mois</label>
+            </value>
+            <value>
+                <fullName>Problème de connexion routeur</fullName>
+                <default>false</default>
+                <label>Problème de connexion routeur</label>
+            </value>
+            <value>
+                <fullName>Problème de connexion GSM / Wifi / CPL récurrents</fullName>
+                <default>false</default>
+                <label>Problème de connexion GSM / Wifi / CPL récurrents</label>
+            </value>
+            <value>
+                <fullName>Perte de contact : 0 news + multiples relances</fullName>
+                <default>false</default>
+                <label>Perte de contact : 0 news + multiples relances</label>
+            </value>
+            <value>
+                <fullName>Refus panéliste : rétractation avant install</fullName>
+                <default>false</default>
+                <label>Refus panéliste : rétractation avant install</label>
+            </value>
+            <value>
+                <fullName>Refus panéliste : audimètre qui chauffe</fullName>
+                <default>false</default>
+                <label>Refus panéliste : audimètre qui chauffe</label>
+            </value>
+            <value>
+                <fullName>Refus d&apos;équiper un appareil audio visuel</fullName>
+                <default>false</default>
+                <label>Refus d&apos;équiper un appareil audio visuel</label>
+            </value>
+            <value>
+                <fullName>Refus panéliste : Raison esthétique (fils ou DMD)</fullName>
+                <default>false</default>
+                <label>Refus panéliste : Raison esthétique (fils ou DMD)</label>
+            </value>
+            <value>
+                <fullName>Refus panéliste : KO connexion routeur internet</fullName>
+                <default>false</default>
+                <label>Refus panéliste : KO connexion routeur internet</label>
+            </value>
+            <value>
+                <fullName>Raisons personnelles</fullName>
+                <default>false</default>
+                <label>Raisons personnelles</label>
+            </value>
+            <value>
+                <fullName>Refus de signer la convention</fullName>
+                <default>false</default>
+                <label>Refus de signer la convention</label>
+            </value>
+            <value>
+                <fullName>Refus panéliste : ouverture poste TV refusée</fullName>
+                <default>false</default>
+                <label>Refus panéliste : ouverture poste TV refusée</label>
+            </value>
+            <value>
+                <fullName>Refus panéliste : Absence de support pour audimètre</fullName>
+                <default>false</default>
+                <label>Refus panéliste : Absence de support pour audimètre</label>
+            </value>
+            <value>
+                <fullName>Refus de se connecter au wifi routeur (PaMe)</fullName>
+                <default>false</default>
+                <label>Refus de se connecter au wifi routeur (PaMe)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

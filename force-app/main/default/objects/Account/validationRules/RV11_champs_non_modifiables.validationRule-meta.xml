@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV11_champs_non_modifiables</fullName>
+    <active>true</active>
+    <description>Règle qui empêche la modification du numéro du foyer et du type de panel</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				$Profile.Name &lt;&gt; $Label.PROFILE_Administrateur_systeme,
+			 $Profile.Name &lt;&gt;	$Label.PROFILE_Pole_PRM_controle_France,
+			 $Profile.Name &lt;&gt;	$Label.PROFILE_System_Administrator,
+			 $Profile.Name &lt;&gt;	$Label.PROFILE_SVC_Administrateur_Systeme,
+				$Profile.Name &lt;&gt; $Label.PROFILE_Supervieur_prm,
+				OR
+							(
+											ISCHANGED(Name),
+				    ISCHANGED(Type_de_foyer__c)
+				)
+)</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas modifier le Numéro du foyer ou son Type</errorMessage>
+</ValidationRule>

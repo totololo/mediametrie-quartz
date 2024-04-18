@@ -1,0 +1,8 @@
+<aura:component 
+	implements="lightning:availableForFlowScreens,force:hasRecordId" access="global" >
+    <lightning:utilityBarAPI aura:id="utilitybar" />
+    
+    <footer  >
+      <button class="slds-button slds-button_brand" onclick="{! c.minimizeUtility }" style="margin-left: 70%">{!$Label.c.Flow_msg_fin}</button>
+    </footer>
+</aura:component>

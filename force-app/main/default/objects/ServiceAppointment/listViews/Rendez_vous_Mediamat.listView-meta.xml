@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rendez_vous_Mediamat</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>LatestEndTime</columns>
+    <columns>SchedStartTime</columns>
+    <columns>SchedEndTime</columns>
+    <columns>Status</columns>
+    <columns>EstDuration</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type_de_panel__c</field>
+        <operation>equals</operation>
+        <value>MEDIAMAT (MMAT)</value>
+    </filters>
+    <filters>
+        <field>SchedStartTime</field>
+        <operation>equals</operation>
+        <value>9/29/2023 12:00 AM</value>
+    </filters>
+    <label>Rendez-vous Mediamat</label>
+</ListView>

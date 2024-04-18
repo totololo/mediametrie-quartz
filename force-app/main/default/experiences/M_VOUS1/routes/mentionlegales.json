@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "d2507600-3352-455f-ade0-10f4b1d99840",
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "configurationTags" : [ ],
+  "id" : "90f461fe-93fa-43b4-bf4a-4f3baa66b76b",
+  "label" : "Mentionlegales",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-mentionlegales",
+  "type" : "route",
+  "urlPrefix" : "mentionslegales"
+}

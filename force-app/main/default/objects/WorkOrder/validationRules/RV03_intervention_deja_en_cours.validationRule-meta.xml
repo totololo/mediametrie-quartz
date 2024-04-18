@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV03_intervention_deja_en_cours</fullName>
+    <active>true</active>
+    <description>Règle qui empêche de créer une intervention quand une autre est déjà en cours</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				/*NOT(Tech_RV03__c),*/
+				Foyer_paneliste__r.Intervention_en_cours__c,
+				/*NOT( 
+								AND(
+												ISCHANGED(Status),
+												TEXT(Status)== $Label.WOR_Status_Terminee
+								)
+				),
+				OR(*/
+								ISNEW()/*,
+								AND(
+												TEXT(Status)== $Label.WOR_Status_Nouvelle,
+												ISCHANGED(WorkTypeId)
+								)
+				)*/
+)</errorConditionFormula>
+    <errorMessage>Impossible de créer une deuxième intervention car il existe déjà une intervention en cours sur ce foyer.</errorMessage>
+</ValidationRule>

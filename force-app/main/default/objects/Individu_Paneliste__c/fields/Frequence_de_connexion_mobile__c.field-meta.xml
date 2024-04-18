@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Frequence_de_connexion_mobile__c</fullName>
+    <externalId>false</externalId>
+    <label>Fréquence de connexion mobile</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tous les jours</fullName>
+                <default>false</default>
+                <label>Tous les jours</label>
+            </value>
+            <value>
+                <fullName>Presque tous les jours</fullName>
+                <default>false</default>
+                <label>Presque tous les jours</label>
+            </value>
+            <value>
+                <fullName>1 à 2 fois par semaine</fullName>
+                <default>false</default>
+                <label>1 à 2 fois par semaine</label>
+            </value>
+            <value>
+                <fullName>1 à 3 fois par mois</fullName>
+                <default>false</default>
+                <label>1 à 3 fois par mois</label>
+            </value>
+            <value>
+                <fullName>Moins souvent</fullName>
+                <default>false</default>
+                <label>Moins souvent</label>
+            </value>
+            <value>
+                <fullName>Jamais</fullName>
+                <default>false</default>
+                <label>Jamais</label>
+            </value>
+            <value>
+                <fullName>NSP/Refus</fullName>
+                <default>false</default>
+                <label>NSP/Refus</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

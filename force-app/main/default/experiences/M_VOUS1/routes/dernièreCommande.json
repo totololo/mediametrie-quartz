@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "139a75a5-e6b7-4ebe-b495-f4a923423a84",
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "configurationTags" : [ ],
+  "id" : "cfa5fff1-84ad-4fd2-ad27-9fdb0c0dfa92",
+  "label" : "Dernière Commande",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-dernire-commande",
+  "type" : "route",
+  "urlPrefix" : "derniere-commande"
+}

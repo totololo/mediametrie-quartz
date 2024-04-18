@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tnt_integree_tv__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <label>TNT intégrée TV</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

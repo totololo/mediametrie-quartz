@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_d_action_demandee__c</fullName>
+    <externalId>false</externalId>
+    <label>Type d&apos;action demandée</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ajout poste</fullName>
+                <default>false</default>
+                <label>Ajout poste</label>
+            </value>
+            <value>
+                <fullName>Audimètre ne s&apos;allume plus</fullName>
+                <default>false</default>
+                <label>Audimètre ne s&apos;allume plus</label>
+            </value>
+            <value>
+                <fullName>Pb Audience</fullName>
+                <default>false</default>
+                <label>Pb Audience</label>
+            </value>
+            <value>
+                <fullName>Pb Connexion</fullName>
+                <default>false</default>
+                <label>Pb Connexion</label>
+            </value>
+            <value>
+                <fullName>Pb Sonde Tv (Déclaration)</fullName>
+                <default>false</default>
+                <label>Pb Sonde Tv (Déclaration)</label>
+            </value>
+            <value>
+                <fullName>Changement TV</fullName>
+                <default>false</default>
+                <label>Changement TV</label>
+            </value>
+            <value>
+                <fullName>Pas de connexion Wifi</fullName>
+                <default>false</default>
+                <label>Pas de connexion Wifi</label>
+            </value>
+            <value>
+                <fullName>Paramétrage Meters</fullName>
+                <default>false</default>
+                <label>Paramétrage Meters</label>
+            </value>
+            <value>
+                <fullName>Installation Meters</fullName>
+                <default>false</default>
+                <label>Installation Meters</label>
+            </value>
+            <value>
+                <fullName>Installation</fullName>
+                <default>false</default>
+                <label>Installation</label>
+            </value>
+            <value>
+                <fullName>Desinstallation Poste</fullName>
+                <default>false</default>
+                <label>Desinstallation Poste</label>
+            </value>
+            <value>
+                <fullName>Désinstallation</fullName>
+                <default>false</default>
+                <label>Désinstallation</label>
+            </value>
+            <value>
+                <fullName>Changement Audimètre</fullName>
+                <default>false</default>
+                <label>Changement Audimètre</label>
+            </value>
+            <value>
+                <fullName>Chute</fullName>
+                <default>false</default>
+                <label>Chute</label>
+            </value>
+            <value>
+                <fullName>Routeur ne s&apos;allume plus</fullName>
+                <default>false</default>
+                <label>Routeur ne s&apos;allume plus</label>
+            </value>
+            <value>
+                <fullName>Reinstallation</fullName>
+                <default>false</default>
+                <label>Reinstallation</label>
+            </value>
+            <value>
+                <fullName>Contrôle</fullName>
+                <default>false</default>
+                <label>Contrôle</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<!--
+  @description       : 
+  @author            : Anes BOUZOUINA
+  @group             : 
+  @last modified on  : 10-26-2022
+  @last modified by  : Anes BOUZOUINA
+-->
+<template>
+	<lightning-card title="Vues de liste du file d'attente" icon-name="utility:multi_picklist">   
+            <lightning-datatable  
+           data={listview.data} columns={cols} key-field="Id" hide-checkbox-column="true">  
+            </lightning-datatable>  
+	</lightning-card>
+</template>

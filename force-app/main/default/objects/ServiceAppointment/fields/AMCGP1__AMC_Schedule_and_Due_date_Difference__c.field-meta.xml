@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMCGP1__AMC_Schedule_and_Due_date_Difference__c</fullName>
+    <deprecated>false</deprecated>
+    <description>It is used in Assessment reports</description>
+    <externalId>false</externalId>
+    <formula>ROUND(((SchedEndTime - DueDate)*1440),0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sch End and Due Date Diff (Mins)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

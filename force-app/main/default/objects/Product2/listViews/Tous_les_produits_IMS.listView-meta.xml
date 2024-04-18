@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tous_les_produits_IMS</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+    <columns>PRODUCT2.DESCRIPTION</columns>
+    <columns>PRODUCT2.FAMILY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PRODUCT2.FAMILY</field>
+        <operation>equals</operation>
+        <value>MEDIAMAT</value>
+    </filters>
+    <label>Tous les produits IMS</label>
+</ListView>

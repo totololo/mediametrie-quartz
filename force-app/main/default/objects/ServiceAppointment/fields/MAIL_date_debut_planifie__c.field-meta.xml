@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MAIL_date_debut_planifie__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+				MOD(DATEVALUE(SchedStartTime) - DATE( 1900, 1, 7 ), 7),
+				0, &quot;Dimanche &quot;,
+				1, &quot;Lundi &quot;,
+				2, &quot;Mardi &quot;,
+				3, &quot;Mercredi &quot;,
+				4, &quot;Jeudi &quot;,
+				5, &quot;Vendredi &quot;,
+				&quot;Samedi &quot;
+) + IF(
+				DAY(DATEVALUE(SchedStartTime)) = 1,
+				TEXT(DAY(DATEVALUE(SchedStartTime))) + &quot;er&quot;,
+				TEXT(DAY(DATEVALUE(SchedStartTime)))
+) + &quot; &quot; + CASE(
+				MONTH(DATEVALUE(SchedStartTime)),
+				1, &quot;Janvier &quot;,
+				2, &quot;Février &quot;,
+				3, &quot;Mars &quot;,
+				4, &quot;Avril &quot;,
+				5, &quot;Mai &quot;,
+				6, &quot;Juin &quot;,
+				7, &quot;Juillet &quot;,
+				8, &quot;Août &quot;,
+				9, &quot;Septembre &quot;,
+				10, &quot;Octobre &quot;,
+				11, &quot;Novembre &quot;,
+				&quot;Décembre &quot;
+) + TEXT(YEAR(DATEVALUE(SchedStartTime)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>MAIL_date_début_planifié</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

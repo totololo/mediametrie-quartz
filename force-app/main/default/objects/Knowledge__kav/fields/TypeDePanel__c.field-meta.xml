@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeDePanel__c</fullName>
+    <externalId>false</externalId>
+    <label>Type de panel</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MMT</fullName>
+                <default>false</default>
+                <label>MMT</label>
+            </value>
+            <value>
+                <fullName>PAME</fullName>
+                <default>false</default>
+                <label>PAME</label>
+            </value>
+            <value>
+                <fullName>AIP</fullName>
+                <default>false</default>
+                <label>AIP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

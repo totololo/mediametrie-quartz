@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "596afd7c-353d-4235-b03f-b9608dd3cb5e",
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "configurationTags" : [ ],
+  "id" : "af1ca7a7-7a87-49bd-976e-6398533558d7",
+  "label" : "CGU",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-cgv",
+  "type" : "route",
+  "urlPrefix" : "cgu"
+}

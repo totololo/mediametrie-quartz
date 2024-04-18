@@ -1,0 +1,87 @@
+.THIS .body {
+    color: black;
+    overflow-x: hidden;
+}
+
+.THIS .inputTitle {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.THIS .selected {
+    transition: margin-top .5s !important;
+}
+
+.THIS .div-removed {
+    margin-top: -170px;
+}
+
+.THIS .faq-content {
+    max-width: 50vw;
+    min-width: 50vw;
+}
+
+.THIS .titre-categorie {
+    font-weight: bold;
+    color: #629d00;
+    margin: 30px 0;
+    cursor: pointer;
+    padding-bottom: 30px !important;
+}
+
+.THIS .knowledgeDiv {
+    border-bottom: 0.5px solid #ccc;
+    margin-top: 20px;
+    width: 100%;
+    display: inline-block;
+    height: 100%; 
+}
+
+.THIS .knowledgeTitle {
+    color: darkgray;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.THIS .arictles-section {
+    width: 100% !important;
+     transition: margin-bottom 0s .5s,margin-top .5s;
+}
+
+.THIS a {
+    text-decoration: none;  
+}
+
+.THIS a + div {
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.THIS a:focus + div {
+    opacity: 1;
+    height: auto;
+}
+
+.THIS .display-block{
+    display: block;
+}
+
+.THIS .display-none{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {    
+    .THIS .faq-content {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    
+}

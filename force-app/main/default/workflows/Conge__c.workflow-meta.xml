@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>FU_Conge_toEnCoursOFF</fullName>
+        <field>Tech_EnCours__c</field>
+        <literalValue>NON</literalValue>
+        <name>FU_Conge_toEnCoursOFF</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_Conge_toEnCoursON</fullName>
+        <field>Tech_EnCours__c</field>
+        <literalValue>OUI</literalValue>
+        <name>FU_Conge_toEnCoursON</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>WF01_CONG_Rappel au retour</fullName>
+        <actions>
+            <name>Rappel_au_retour</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <description>Règle qui crée un tâche pour que l&apos;agent rappel le panéliste à son retour de congé.</description>
+        <formula>AND( 				!$User.Bypass_workflows__c, 				Rappel_au_retour__c, 				NOT(ISBLANK(Date_de_fin__c)), 				NOT(ISBLANK(Conge_de_l_individu__c)), 				OR( 								ISNEW(), 								ISCHANGED(Date_de_fin__c) 				) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF02_CONG_Rappel au retour_foyer</fullName>
+        <actions>
+            <name>Rappel_au_retour_du_foyer</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <description>Règle qui crée un tâche pour que l&apos;agent rappel le panéliste à son retour de congé.</description>
+        <formula>AND( 				!$User.Bypass_validation_rules__c, 				Rappel_au_retour__c, 				NOT(ISBLANK(Date_de_fin__c)), 				OR(ISCHANGED(Date_de_fin__c),ISNEW()), 				ISBLANK(Conge_de_l_individu__c) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF03_CongeON</fullName>
+        <actions>
+            <name>FU_Conge_toEnCoursON</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Conge__c.isCongeEnCours__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF04_CongeOFF</fullName>
+        <actions>
+            <name>FU_Conge_toEnCoursOFF</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Conge__c.isCongeEnCours__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Rappel_au_retour</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Conge__c.Date_de_fin__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Rappel au retour</subject>
+    </tasks>
+    <tasks>
+        <fullName>Rappel_au_retour_du_foyer</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Conge__c.Date_de_fin__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Rappel au retour du foyer</subject>
+    </tasks>
+</Workflow>

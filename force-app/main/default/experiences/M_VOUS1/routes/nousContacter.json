@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "c6d8c345-4204-4152-933f-0c189ddf8907",
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "configurationTags" : [ ],
+  "id" : "6462afd5-6321-4ff0-8983-fb0d97ca4672",
+  "label" : "Nous contacter",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-nous-contactez",
+  "type" : "route",
+  "urlPrefix" : "nous-contacter"
+}

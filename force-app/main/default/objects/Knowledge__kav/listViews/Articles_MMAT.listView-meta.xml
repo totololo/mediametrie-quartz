@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Articles_MMAT</fullName>
+    <columns>Priority__c</columns>
+    <columns>ARTICLE_NUMBER</columns>
+    <columns>TITLE</columns>
+    <columns>VALIDATION_STATUS_ENUM</columns>
+    <columns>PUBLISH_STATUS</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>LANGUAGE</columns>
+    <columns>LAST_PUBLISHED_DATE</columns>
+    <columns>TypeDePanel__c</columns>
+    <columns>IS_CHANNEL_CSP</columns>
+    <columns>ARTICLE_TOTAL_VIEW_COUNT</columns>
+    <columns>URL_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TypeDePanel__c</field>
+        <operation>equals</operation>
+        <value>MMT</value>
+    </filters>
+    <label>Articles MMAT</label>
+</ListView>

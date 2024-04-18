@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Visites_de_courtoisie</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>Type_de_l_intervention__c</columns>
+    <columns>Sous_type_d_intervention__c</columns>
+    <columns>Status</columns>
+    <columns>Priority</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sous_type_d_intervention__c</field>
+        <operation>equals</operation>
+        <value>22</value>
+    </filters>
+    <filters>
+        <field>Type_de_panel__c</field>
+        <operation>equals</operation>
+        <value>MEDIAMAT (MMAT)</value>
+    </filters>
+    <label>Visites de courtoisie MMAT</label>
+</ListView>

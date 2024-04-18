@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tous_les_debits</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Date_de_traitement__c</columns>
+    <columns>Points_debites__c</columns>
+    <columns>Origine_de_la_commande__c</columns>
+    <columns>Statut_de_commande__c</columns>
+    <columns>Requete__c</columns>
+    <columns>Foyer__c</columns>
+    <columns>Composition_du_foyer__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type_de_panel__c</field>
+        <operation>equals</operation>
+        <value>PaME</value>
+    </filters>
+    <label>Tous les débits</label>
+</ListView>

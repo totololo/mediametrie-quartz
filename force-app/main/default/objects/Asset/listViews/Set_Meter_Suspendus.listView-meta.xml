@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Set_Meter_Suspendus</fullName>
+    <columns>ASSET.NAME</columns>
+    <columns>ASSET.SERIAL_NUMBER</columns>
+    <columns>ASSET.INSTALL_DATE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.NAME</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type_de_materiel__c</field>
+        <operation>equals</operation>
+        <value>24</value>
+    </filters>
+    <filters>
+        <field>ASSET.STATUS</field>
+        <operation>equals</operation>
+        <value>2</value>
+    </filters>
+    <filters>
+        <field>Suspendu__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Set Meter Suspendus</label>
+</ListView>

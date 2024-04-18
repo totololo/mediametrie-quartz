@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>x041</label>
+    <protected>false</protected>
+    <values>
+        <field>Description__c</field>
+        <value xsi:type="xsd:string">Ce cookie est essentiel pour maintenir une session active sur le site salesforce.com.&lt;br/&gt; Il garantit que les requêtes de diffusion en continu suivantes sont dirigées vers le &lt;br/&gt;même serveur qui a traité initialement la requête d&apos;abonnement en diffusion en continu.</value>
+    </values>
+    <values>
+        <field>Duree_de_conservation__c</field>
+        <value xsi:type="xsd:string">3 heures</value>
+    </values>
+    <values>
+        <field>Name__c</field>
+        <value xsi:type="xsd:string">sfdc-stream</value>
+    </values>
+    <values>
+        <field>Type__c</field>
+        <value xsi:type="xsd:string">Obligatoire</value>
+    </values>
+</CustomMetadata>

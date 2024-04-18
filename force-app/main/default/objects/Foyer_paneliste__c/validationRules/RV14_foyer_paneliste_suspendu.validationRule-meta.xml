@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV14_foyer_paneliste_suspendu</fullName>
+    <active>true</active>
+    <description>Un foyer panéliste ne peut être suspendu que si le statut du foyer panéliste est « Intégré »</description>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+!$User.Bypass_RDD__c,
+Suspendu__c,
+OR(
+ISCHANGED(Suspendu__c),
+ISCHANGED( Date_de_suspension__c )
+),
+OR(
+
+ISPICKVAL(PRIORVALUE(Statut_Foyer_paneliste__c),&quot;PAN_Statut_Panel_Integre&quot;),
+ISPICKVAL(PRIORVALUE(Statut_Foyer_paneliste__c),&quot;$Label.PAN_Statut_panel&quot;),
+ISPICKVAL(PRIORVALUE(Statut_Foyer_paneliste__c),&quot;$Label.PAN_Statut_Panel_Installe&quot;),
+ISPICKVAL(PRIORVALUE(Statut_Foyer_paneliste__c),&quot;$Label.PAN_Statut_Panel_Equipe&quot;)
+
+)
+)</errorConditionFormula>
+    <errorDisplayField>Suspendu__c</errorDisplayField>
+    <errorMessage>Un foyer panéliste ne peut être suspendu que si le statut du foyer panéliste est « Intégré »</errorMessage>
+</ValidationRule>

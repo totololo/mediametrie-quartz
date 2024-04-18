@@ -1,0 +1,11 @@
+{
+  "cmsSettings" : { },
+  "currentThemeId" : "2c277a55-7ee1-4d09-92b4-f1c9181ad6ca",
+  "headMarkup" : "<script src=\"/resource/1695049748000/cookieConsent?\"></script>\n<script src=\"/resource/1695040083000/clientFingerprint?\"></script>",
+  "id" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "isLockerServiceEnabled" : true,
+  "isRelaxedCSPLevel" : true,
+  "label" : "main",
+  "templateName" : "Service Community Template",
+  "type" : "appPage"
+}

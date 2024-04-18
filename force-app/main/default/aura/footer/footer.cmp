@@ -1,0 +1,47 @@
+<!--
+  @description       : 
+  @author            : Anes BOUZOUINA
+  @group             : 
+  @last modified on  : 12-19-2022
+  @last modified by  : Anes BOUZOUINA
+-->
+<aura:component
+                implements="forceCommunity:themeLayout,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable,force:appHostable"
+                access="global" controller ='ContactFormulaire'
+                >
+    <!-- Handlers/> -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <!-- attributes -->
+    <aura:attribute name="ContactType" type="String" />
+    
+    <div class="footer">
+        <div class="footerImg">
+            <img class="heartIcon" src="{!$Resource.logo_mediametrie_blanc}" />
+        </div>
+        <div class="footer2">
+            
+            <h1 class="principal">L'Equipe Panel de Médiamétrie<br /></h1>
+            <aura:if isTrue="{!v.ContactType == 'AIP'}">
+                <h2>0.800.073.100 (gratuit)</h2>
+                <h2>panelaip@mediametrie.fr </h2>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.ContactType == 'PAME'}">
+                <h2>0.800.929.600 (appel gratuit)</h2>
+                <h2>sclaret@mediametrie.fr </h2>
+            </aura:if>
+            
+            
+            <aura:if isTrue="{!v.ContactType == 'MMT'}">
+                <h2>0.800.511.000 (gratuit)</h2>
+                <h2>panelmediamat@mediametrie.fr</h2>
+            </aura:if>
+            
+            <h3>
+                <a href="/s/cgu" style="color:white">{!$Label.c.CGU}  </a> |
+                <a href="/s/mentionslegales" style="color:white">  {!$Label.c.Mentions_legales}  </a> 
+            </h3>
+        </div>
+        
+    </div>
+</aura:component>

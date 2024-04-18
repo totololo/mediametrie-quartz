@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>D_faut_identifi_en_SAV__c</fullName>
+    <externalId>false</externalId>
+    <label>Défaut identifié en SAV</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accéléromètre HS</fullName>
+                <default>false</default>
+                <label>Accéléromètre HS</label>
+            </value>
+            <value>
+                <fullName>Audimètre en doublon</fullName>
+                <default>false</default>
+                <label>Audimètre en doublon</label>
+            </value>
+            <value>
+                <fullName>Autres</fullName>
+                <default>false</default>
+                <label>Autres</label>
+            </value>
+            <value>
+                <fullName>Batterie HS</fullName>
+                <default>false</default>
+                <label>Batterie HS</label>
+            </value>
+            <value>
+                <fullName>BIP sans arrêt</fullName>
+                <default>false</default>
+                <label>BIP sans arrêt</label>
+            </value>
+            <value>
+                <fullName>Bouton HS</fullName>
+                <default>false</default>
+                <label>Bouton HS</label>
+            </value>
+            <value>
+                <fullName>Carte SIM absente</fullName>
+                <default>false</default>
+                <label>Carte SIM absente</label>
+            </value>
+            <value>
+                <fullName>Carte Sim HS</fullName>
+                <default>false</default>
+                <label>Carte Sim HS</label>
+            </value>
+            <value>
+                <fullName>Carte SIM mal insérée</fullName>
+                <default>false</default>
+                <label>Carte SIM mal insérée</label>
+            </value>
+            <value>
+                <fullName>Cassé</fullName>
+                <default>false</default>
+                <label>Cassé</label>
+            </value>
+            <value>
+                <fullName>Chargement HS/ne démarre pas</fullName>
+                <default>false</default>
+                <label>Chargement HS/ne démarre pas</label>
+            </value>
+            <value>
+                <fullName>Connexion beacon HS</fullName>
+                <default>false</default>
+                <label>Connexion beacon HS</label>
+            </value>
+            <value>
+                <fullName>Connexion GSM HS</fullName>
+                <default>false</default>
+                <label>Connexion GSM HS</label>
+            </value>
+            <value>
+                <fullName>Coque cassée/vis</fullName>
+                <default>false</default>
+                <label>Coque cassée/vis</label>
+            </value>
+            <value>
+                <fullName>Ecran cassé</fullName>
+                <default>false</default>
+                <label>Ecran cassé</label>
+            </value>
+            <value>
+                <fullName>Ecran HS</fullName>
+                <default>false</default>
+                <label>Ecran HS</label>
+            </value>
+            <value>
+                <fullName>Etiquette Code barre illisible</fullName>
+                <default>false</default>
+                <label>Etiquette Code barre illisible</label>
+            </value>
+            <value>
+                <fullName>Fonction Tactile HS</fullName>
+                <default>false</default>
+                <label>Fonction Tactile HS</label>
+            </value>
+            <value>
+                <fullName>HS</fullName>
+                <default>false</default>
+                <label>HS</label>
+            </value>
+            <value>
+                <fullName>Lecteur SIM HS</fullName>
+                <default>false</default>
+                <label>Lecteur SIM HS</label>
+            </value>
+            <value>
+                <fullName>Led HS</fullName>
+                <default>false</default>
+                <label>Led HS</label>
+            </value>
+            <value>
+                <fullName>Line in HS</fullName>
+                <default>false</default>
+                <label>Line in HS</label>
+            </value>
+            <value>
+                <fullName>Màj BIOS</fullName>
+                <default>false</default>
+                <label>Màj BIOS</label>
+            </value>
+            <value>
+                <fullName>Mauvais étiquetage</fullName>
+                <default>false</default>
+                <label>Mauvais étiquetage</label>
+            </value>
+            <value>
+                <fullName>Micro interne HS</fullName>
+                <default>false</default>
+                <label>Micro interne HS</label>
+            </value>
+            <value>
+                <fullName>Ne démarre pas</fullName>
+                <default>false</default>
+                <label>Ne démarre pas</label>
+            </value>
+            <value>
+                <fullName>Ne s&apos;allume pas</fullName>
+                <default>false</default>
+                <label>Ne s&apos;allume pas</label>
+            </value>
+            <value>
+                <fullName>Pas d&apos;affichage</fullName>
+                <default>false</default>
+                <label>Pas d&apos;affichage</label>
+            </value>
+            <value>
+                <fullName>Pas de charge</fullName>
+                <default>false</default>
+                <label>Pas de charge</label>
+            </value>
+            <value>
+                <fullName>Pas de marquage audio</fullName>
+                <default>false</default>
+                <label>Pas de marquage audio</label>
+            </value>
+            <value>
+                <fullName>Pb Liés à l&apos;écran</fullName>
+                <default>false</default>
+                <label>Pb Liés à l&apos;écran</label>
+            </value>
+            <value>
+                <fullName>Perte IMEI</fullName>
+                <default>false</default>
+                <label>Perte IMEI</label>
+            </value>
+            <value>
+                <fullName>Problèmes Alimentation</fullName>
+                <default>false</default>
+                <label>Problèmes Alimentation</label>
+            </value>
+            <value>
+                <fullName>Problèmes redémarrage</fullName>
+                <default>false</default>
+                <label>Problèmes redémarrage</label>
+            </value>
+            <value>
+                <fullName>RAS/ Màj Version/ Licence</fullName>
+                <default>false</default>
+                <label>RAS/ Màj Version/ Licence</label>
+            </value>
+            <value>
+                <fullName>RAS/ Mis à jour Version</fullName>
+                <default>false</default>
+                <label>RAS/ Mis à jour Version</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

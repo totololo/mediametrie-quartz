@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>x010</label>
+    <protected>false</protected>
+    <values>
+        <field>Description__c</field>
+        <value xsi:type="xsd:string">Préférences de consentement aux cookies :&lt;br/&gt; Il enregistre si vous avez accepté les options de cookies proposées par le site. &lt;br/&gt;Cela nous permet de recueillir votre consentement.</value>
+    </values>
+    <values>
+        <field>Duree_de_conservation__c</field>
+        <value xsi:type="xsd:string">1 an</value>
+    </values>
+    <values>
+        <field>Name__c</field>
+        <value xsi:type="xsd:string">CookieConsent</value>
+    </values>
+    <values>
+        <field>Type__c</field>
+        <value xsi:type="xsd:string">Obligatoire</value>
+    </values>
+</CustomMetadata>

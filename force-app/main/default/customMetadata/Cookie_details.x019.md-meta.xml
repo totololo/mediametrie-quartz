@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>x019</label>
+    <protected>false</protected>
+    <values>
+        <field>Description__c</field>
+        <value xsi:type="xsd:string">Vérification des requêtes clientes : &lt;br/&gt;S&apos;assure que vos demandes atteignent les bons serveurs, 
+ augmentant ainsi la probabilité &lt;br/&gt;de récupérer des informations depuis la mémoire cache.</value>
+    </values>
+    <values>
+        <field>Duree_de_conservation__c</field>
+        <value xsi:type="xsd:string">3 heures</value>
+    </values>
+    <values>
+        <field>Name__c</field>
+        <value xsi:type="xsd:string">force-proxy-stream</value>
+    </values>
+    <values>
+        <field>Type__c</field>
+        <value xsi:type="xsd:string">Obligatoire</value>
+    </values>
+</CustomMetadata>

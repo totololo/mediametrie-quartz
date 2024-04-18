@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV01_RC_DateDebut_Avant_DateDeFin</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+				 Date_de_fin__c &lt;  Date_de_debut__c 
+				)</errorConditionFormula>
+    <errorMessage>La date de début doit être antérieure la date de fin</errorMessage>
+</ValidationRule>

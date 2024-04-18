@@ -1,0 +1,225 @@
+.THIS.formContainer {
+    margin-bottom: 10%;
+}
+
+.THIS .inputBox {
+    display: grid;
+}
+
+.THIS .form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.THIS .label {
+    color: black;
+    font-size: 1vw;
+}
+
+.THIS .infoSection {
+    margin-bottom: 40px;
+}
+
+.THIS .select{
+    background-color: white;
+    width: 25vw;
+    margin-bottom: 2%;
+    padding: 0.25%;
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 1px #bfbfbf;
+    font-size: 2vh;
+    height: 5vh;
+}
+
+.THIS .leftPadding{
+    Padding-left: 5%;
+}
+
+.THIS .champ{
+    background-color: white;
+    /*width: 25vw;*/
+    margin-bottom: 2%;
+    padding: 0.25%;
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 1px #bfbfbf;
+    font-size: 18px;
+    height: 24px;
+    width: 100%;
+}
+.THIS .textarea {
+    background-color: white;
+    width: 25vw;
+    margin-bottom: 2%;
+    padding: 0.25%;
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 1px #bfbfbf;
+    font-size: 2vh;
+    height: 5vh;
+}
+
+.THIS .textarea:focus {
+    outline: none;
+}
+
+.THIS  #icon_utilisateur {
+    text-align: center;
+    margin-top: 2vw;
+}
+
+.THIS#icon_utilisateur img {
+    width: 8vw;
+    height: auto;
+}
+
+.THIS#pseudo_utilisateur {
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 2vw;
+}
+
+.THIS  .titre_section {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 2vw;
+    margin-top: 49px;
+}
+
+.THIS #a_propos {
+    width: 100%;
+}
+
+.THIS  .space {
+    margin-bottom: 2vw;
+    margin-right: 10px;
+}
+
+.THIS .inputLabel {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.THIS .checkBoxDiv {
+    margin-bottom: 10px;
+}
+
+.THIS  .center {
+    text-align: center;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+}
+
+.THIS .TextAreaInput {
+    background-color: white;
+    margin-top: 0.25%;
+    padding: 0.25%;
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 1px #bfbfbf;
+    resize: vertical;
+    min-width: 100% !important;
+    min-height: 35px;
+    max-height: 250px;
+    margin-bottom: 14px;
+    height: 26px;
+    width: 100%;
+}
+
+.THIS .slds-input  {
+    background-color: white;
+    margin-bottom: 2%;
+    padding: 0.25%;
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 1px #bfbfbf;
+    font-size: 18px;
+    height: 24px;
+    width: 100%;
+    min-height: 24px;
+}
+
+.THIS .slds-input:active {
+    border: 2px solid black !important;
+    border-radius: 4px !important;
+}
+
+.THIS .slds-input:focus {
+    border: 2px solid black !important;
+    border-radius: 4px !important;
+    --slds-c-input-shadow: var(--slds-c-input-shadow-focus, var(--sds-c-input-shadow-focus, 0 0 0 var(--lwc-brandAccessible,black)));
+}
+
+@media all and (max-width: 1023px) {
+    .THIS .leftPadding{
+        Padding-left: 0 !important;
+    }
+    
+     .THIS .inputBox {
+        margin-bottom: 30px;  
+	}     
+                
+     .THIS .slds-input {
+            height: 41px;
+	}                
+                
+    .THIS .inputLabel {
+        font-weight: 550;
+    }
+    
+    .THIS .select {
+        width: 15vh;
+        font-size: 2vh;
+    }
+    
+    .THIS  .champ {
+        width: 100%;
+        font-size: 12px;
+    }
+    
+    .THIS .textarea {
+        width: 15vh;
+        font-size: 2vh;
+    }
+    
+    .THIS  #a_propos {
+        font-size: 2vh;
+    }
+    
+    .THIS #titre {
+        font-size: 2vh;
+    }
+    
+    .THIS  #icon_utilisateur img {
+        width: 10vh;
+        height: auto;
+    }
+    
+    .THIS#pseudo_utilisateur {
+        font-size: 2vh;
+        margin-bottom: 2vw;
+    }
+    
+    .THIS  .titre_section {
+        font-size: 18px;
+        margin-bottom: 1vh;
+        margin-top: 30px;
+    }
+    
+    .THIS  .label {
+        font-size: 2vh;
+    }
+    
+    .THIS  #enregistrer {
+        font-size: 2vh;
+        width: 20vh;
+    }
+    
+    .THIS  .space {
+        margin-bottom: 0;
+    }
+}

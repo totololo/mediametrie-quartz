@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMCGP1__AMC_Actual_vs_Planned_Duration__c</fullName>
+    <deprecated>false</deprecated>
+    <description>It is used in assessment Reports</description>
+    <externalId>false</externalId>
+    <formula>IF( AMCGP1__AMC_Difference_considering_Buffer_Mins__c = 0, &apos;Same as Planned&apos;, IF( AMCGP1__AMC_Difference_considering_Buffer_Mins__c &gt; 0, &apos;Longer than Planned&apos;,&apos;Shorter than Planned&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Actual vs Planned Duration</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

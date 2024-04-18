@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV13_Nombre_heures_requis</fullName>
+    <active>false</active>
+    <description>Nombre d&apos;heures requis si la case Temps plein n&apos;est pas cochée</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				TEXT(Type__c) != $Label.CON_Type_Invite,TEXT(Activite_actuelle__c) != null,
+				TEXT(Activite_actuelle__c) != $Label.CON_ActiviteActuelle_8,
+				TEXT(Activite_actuelle__c) != $Label.CON_ActiviteActuelle_A_la_recherche_premier_emploi,
+				TEXT(Activite_actuelle__c) != $Label.CON_ActiviteActuelle_Autre_cas,
+				!Temps_plein__c,
+				ISBLANK(Nombre_d_heures_travaillees__c)
+)</errorConditionFormula>
+    <errorDisplayField>Nombre_d_heures_travaillees__c</errorDisplayField>
+    <errorMessage>Le nombre d&apos;heures travaillées doit être renseigné si l&apos;individu n&apos;est pas à temps plein</errorMessage>
+</ValidationRule>

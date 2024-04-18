@@ -1,0 +1,21 @@
+.THIS.divPrincipal{
+    padding:30px;
+    margin: 0 auto;
+    width: 50%;
+    font-family: Mediametrie, sans-serif;
+
+}
+.THIS .Mention{
+    font-size: 46px;
+    color: #b41432;
+    font-weight: bold;
+    padding-bottom: 30px;
+    line-height: 55px;
+}
+
+@media screen and (max-width: 600px) {
+
+.THIS.divPrincipal {
+   width: 100%;
+    }
+}

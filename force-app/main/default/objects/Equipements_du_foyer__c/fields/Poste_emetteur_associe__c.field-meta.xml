@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Poste_emetteur_associe__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Poste émetteur associé</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Le Poste émetteur associé doit appartenir au même foyer que le poste du périphérique et être de type Poste TV</errorMessage>
+        <filterItems>
+            <field>Equipements_du_foyer__c.Foyer__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Foyer__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Equipements_du_foyer__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Poste TV</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Equipements_du_foyer__c</referenceTo>
+    <relationshipLabel>Équipements du foyer (Poste émetteur associé)</relationshipLabel>
+    <relationshipName>Postes_emetteurs_associes</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

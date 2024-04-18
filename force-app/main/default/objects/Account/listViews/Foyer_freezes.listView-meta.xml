@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foyer_freezes</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Departement__c</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>Numero_de_telephone_fixe__c</columns>
+    <columns>Type_de_foyer__c</columns>
+    <columns>Date_de_Freeze__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Freeze__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Statut_du_foyer__c</field>
+        <operation>notEqual</operation>
+        <value>5</value>
+    </filters>
+    <label>Foyer freezés</label>
+</ListView>

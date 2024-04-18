@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requetes_du_jour</fullName>
+    <columns>CASES.ORIGIN</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Type_de_panel_Old__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.CLOSED_DATE</columns>
+    <columns>Duree_de_traitement__c</columns>
+    <columns>Rep_ou_non_rep__c</columns>
+    <columns>Type_de_controle__c</columns>
+    <columns>Sous_type_de_controle__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Nombre_de_controles__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.CREATED_DATE_DATE_ONLY</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Nouveau</value>
+    </filters>
+    <label>Requêtes du jour</label>
+</ListView>

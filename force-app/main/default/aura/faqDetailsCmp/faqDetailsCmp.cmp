@@ -1,0 +1,40 @@
+<!-- faqDetailsCmp -->
+<aura:component implements="forceCommunity:themeLayout,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable"
+                access="global" controller="FaqController">
+    
+    <!-- Static Ressources -->
+    <ltng:require styles="{!$Resource.commonCss}" />
+    
+    <!-- Attributes -->
+    <aura:attribute name="knowId" type="String" />
+    <aura:attribute name="onLoad" type="Boolean" default="true" />
+    <aura:attribute name="question" type="String" />
+    <aura:attribute name="response" type="String" />
+       
+    <!-- Handler -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- Loader -->
+    <aura:if isTrue="{!v.onLoad}">
+        <div class="pageLoader">
+            <lightning:spinner alternativeText="Loading" size="large" />
+        </div>
+    </aura:if>
+    
+    <!-- Title 
+    <div class="pageTitle">Mon profil</div>-->
+    
+    <!-- Form -->
+    <div class="centerDiv">
+        <div class="faq-content">
+            <div class="titre-categorie">
+                <aura:unescapedHtml value="{!v.question}" />
+            </div>
+            
+            <div class="knowledge-response">
+                <aura:unescapedHtml value="{!v.response}" />
+            </div>
+            
+        </div>
+    </div>
+</aura:component>

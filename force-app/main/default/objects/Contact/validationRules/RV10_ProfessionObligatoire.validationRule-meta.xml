@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV10_ProfessionObligatoire</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+    !$User.Bypass_validation_rules__c,
+    TEXT(Type__c) != $Label.CON_Type_Invite,
+    AND( TEXT( Activite_actuelle__c ) !=null,
+        TEXT( Activite_actuelle__c ) != $Label.CON_ActiviteActuelle_8,
+        TEXT( Activite_actuelle__c ) != $Label.CON_ActiviteActuelle_A_la_recherche_premier_emploi,
+        TEXT( Activite_actuelle__c ) != $Label.CON_ActiviteActuelle_Autre_cas
+    ),
+    OR( 
+        ISBLANK(Profession__c),
+        ISBLANK(TEXT(Type_d_emploi__c))
+    )
+)</errorConditionFormula>
+    <errorMessage>La profession et le type d&apos;emploi sont obligatoires</errorMessage>
+</ValidationRule>

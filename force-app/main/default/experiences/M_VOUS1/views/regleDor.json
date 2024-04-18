@@ -1,0 +1,68 @@
+{
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "7df262a2-0474-4a74-ab2c-db49d90da395",
+  "label" : "regleDor",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "a03779e8-5808-4734-a4fc-df801d7d4f0c",
+          "columns" : [ {
+            "UUID" : "46a68ae6-7a56-474c-92c3-3a51330b82c1",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "a03779e8-5808-4734-a4fc-df801d7d4f0c",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:RegleDOrAura",
+          "id" : "09e0eb6b-44f4-425c-882c-c05492381a4c",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "46a68ae6-7a56-474c-92c3-3a51330b82c1",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "499c694b-9bdf-41e1-969e-f7baccb7c2ed",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "M&VOUS - Règles d’or"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "08bedd67-19cd-4cd3-8247-af4a56d1ee10",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b9a234a5-e4d6-4368-a692-26fcc7c3e2a1",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-regledor"
+}

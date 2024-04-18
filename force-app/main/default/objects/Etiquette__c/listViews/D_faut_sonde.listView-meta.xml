@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>D_faut_sonde</fullName>
+    <columns>Foyer__c</columns>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Date_de_debut__c</columns>
+    <columns>Date_de_fin__c</columns>
+    <columns>Statut__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Nom_de_l_etiquette__c</field>
+        <operation>equals</operation>
+        <value>Pbl sonde TV</value>
+    </filters>
+    <label>Défaut sonde</label>
+</ListView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inactifs_pager_60J</fullName>
+    <columns>NAME</columns>
+    <columns>Statut_Foyer_paneliste__c</columns>
+    <columns>Statut_Audimetrique__c</columns>
+    <columns>Date_dernier_changement__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Statut_Foyer_paneliste__c</field>
+        <operation>equals</operation>
+        <value>3</value>
+    </filters>
+    <filters>
+        <field>Statut_Audimetrique__c</field>
+        <operation>equals</operation>
+        <value>4</value>
+    </filters>
+    <filters>
+        <field>Date_dernier_changement__c</field>
+        <operation>lessOrEqual</operation>
+        <value>N_DAYS_AGO:60</value>
+    </filters>
+    <filters>
+        <field>Referentiel_Panel__c</field>
+        <operation>contains</operation>
+        <value>aip</value>
+    </filters>
+    <label>Inactifs pager +60J</label>
+</ListView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foyers_inactifs_45j_passer_chute_temp</fullName>
+    <columns>NAME</columns>
+    <columns>Date_dernier_changement__c</columns>
+    <columns>Date_de_suspension__c</columns>
+    <columns>Suspendu__c</columns>
+    <columns>Statut_Audimetrique__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Statut_Audimetrique__c</field>
+        <operation>equals</operation>
+        <value>4</value>
+    </filters>
+    <filters>
+        <field>Referentiel_Panel__c</field>
+        <operation>contains</operation>
+        <value>AIP</value>
+    </filters>
+    <filters>
+        <field>Statut_Foyer_paneliste__c</field>
+        <operation>equals</operation>
+        <value>0,1,2,3</value>
+    </filters>
+    <filters>
+        <field>Motif_de_suspension__c</field>
+        <operation>notEqual</operation>
+        <value>202,21,104,101,111,105,52,89,11,14,102,103,201,203</value>
+    </filters>
+    <filters>
+        <field>LAST_UPDATE</field>
+        <operation>lessOrEqual</operation>
+        <value>N_DAYS_AGO:45</value>
+    </filters>
+    <label>Foyers inactifs+45j à passer chute temp</label>
+</ListView>

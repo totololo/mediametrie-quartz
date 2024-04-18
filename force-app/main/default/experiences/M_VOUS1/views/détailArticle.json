@@ -1,0 +1,46 @@
+{
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "7ee52dfa-daa8-441a-902d-834c76a5c6d4",
+  "label" : "Détail Article",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:testBootstrap",
+      "id" : "6aa97c9d-eeec-43b6-b315-ff734d2a7a4c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d6f80d4f-5d12-45f6-8c27-f645a52b96fc",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "c155616f-8dc1-4163-8afc-55810f6faf1d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "3a65a8dc-7d12-4e4e-90e0-f8a1801d6b81",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Account Management"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "10d8defe-cca3-4048-8865-c012feca2a3d",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e5476f0c-3b32-4e4d-8402-3cfcbf2e9045",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "account-management"
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rendez_vous_planifies</fullName>
+    <columns>Foyer_paneliste__c</columns>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>SchedStartTime</columns>
+    <columns>SchedEndTime</columns>
+    <columns>Status</columns>
+    <columns>Numero_de_la_station__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sous_type_d_intervention__c</field>
+        <operation>notEqual</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>SchedStartTime</field>
+        <operation>equals</operation>
+        <value>10/2/2023 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>En cours</value>
+    </filters>
+    <label>Rendez-vous planifiés</label>
+</ListView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cordon_Rebut</fullName>
+    <columns>NAME</columns>
+    <columns>Code_Article__c</columns>
+    <columns>Quantite__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Etat__c</field>
+        <operation>equals</operation>
+        <value>Rebut</value>
+    </filters>
+    <filters>
+        <field>Prestataire__c</field>
+        <operation>equals</operation>
+        <value>Cordon</value>
+    </filters>
+    <label>Cordon Rebut</label>
+</ListView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_sur_place__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Contact principal</label>
+    <lookupFilter>
+        <active>false</active>
+        <errorMessage>Cet individu est un invité ou ne fait pas partie de ce foyer ou n&apos;existe pas.</errorMessage>
+        <filterItems>
+            <field>Contact.AccountId</field>
+            <operation>equals</operation>
+            <valueField>$Source.AccountId</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Contact.Type__c</field>
+            <operation>notEqual</operation>
+            <value>Invité</value>
+        </filterItems>
+        <filterItems>
+            <field>Contact.Contact_principal__c</field>
+            <operation>equals</operation>
+            <value>true</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Cases (Contact sur place)</relationshipLabel>
+    <relationshipName>Cases</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

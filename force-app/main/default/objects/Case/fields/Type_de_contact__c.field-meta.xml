@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_de_contact__c</fullName>
+    <externalId>false</externalId>
+    <label>Type de contact</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sans objet</fullName>
+                <default>false</default>
+                <label>Sans objet</label>
+            </value>
+            <value>
+                <fullName>Courrier opérateur</fullName>
+                <default>false</default>
+                <label>Courrier opérateur</label>
+            </value>
+            <value>
+                <fullName>Courrier panéliste</fullName>
+                <default>false</default>
+                <label>Courrier panéliste</label>
+            </value>
+            <value>
+                <fullName>Contact technicien sortant</fullName>
+                <default>false</default>
+                <label>Contact technicien sortant</label>
+            </value>
+            <value>
+                <fullName>Contact technicien entrant</fullName>
+                <default>false</default>
+                <label>Contact technicien entrant</label>
+            </value>
+            <value>
+                <fullName>Mail opérateur</fullName>
+                <default>false</default>
+                <label>Mail opérateur</label>
+            </value>
+            <value>
+                <fullName>Mail panéliste</fullName>
+                <default>false</default>
+                <label>Mail panéliste</label>
+            </value>
+            <value>
+                <fullName>Message laissé par opérateur</fullName>
+                <default>false</default>
+                <label>Message laissé par opérateur</label>
+            </value>
+            <value>
+                <fullName>Message laissé par panéliste</fullName>
+                <default>false</default>
+                <label>Message laissé par panéliste</label>
+            </value>
+            <value>
+                <fullName>Message téléchargé</fullName>
+                <default>false</default>
+                <label>Message téléchargé</label>
+            </value>
+            <value>
+                <fullName>Autre type de contact</fullName>
+                <default>false</default>
+                <label>Autre type de contact</label>
+            </value>
+            <value>
+                <fullName>Ne répond pas</fullName>
+                <default>false</default>
+                <label>Ne répond pas</label>
+            </value>
+            <value>
+                <fullName>Téléphone opérateur</fullName>
+                <default>false</default>
+                <label>Téléphone opérateur</label>
+            </value>
+            <value>
+                <fullName>Téléphone panéliste</fullName>
+                <default>false</default>
+                <label>Téléphone panéliste</label>
+            </value>
+            <value>
+                <fullName>Application panéliste</fullName>
+                <default>false</default>
+                <label>Application panéliste</label>
+            </value>
+            <value>
+                <fullName>Transfert d&apos;appel</fullName>
+                <default>false</default>
+                <label>Transfert d&apos;appel</label>
+            </value>
+            <value>
+                <fullName>Mail entrant technicien</fullName>
+                <default>false</default>
+                <label>Mail entrant technicien</label>
+            </value>
+            <value>
+                <fullName>Mail sortant technicien</fullName>
+                <default>false</default>
+                <label>Mail sortant technicien</label>
+            </value>
+            <value>
+                <fullName>SMS opérateur</fullName>
+                <default>false</default>
+                <label>SMS opérateur</label>
+            </value>
+            <value>
+                <fullName>SMS panéliste</fullName>
+                <default>false</default>
+                <label>SMS panéliste</label>
+            </value>
+            <value>
+                <fullName>Site panéliste</fullName>
+                <default>false</default>
+                <label>Site panéliste</label>
+            </value>
+            <value>
+                <fullName>Indisponible</fullName>
+                <default>false</default>
+                <label>Indisponible</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

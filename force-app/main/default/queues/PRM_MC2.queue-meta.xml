@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>PRM MC2</name>
+    <queueMembers>
+        <users>
+            <user>agomez@mediametrie.fr</user>
+            <user>andescamps@mediametrie.fr</user>
+            <user>bmorel@mediametrie.fr</user>
+            <user>bdebure@mediametrie.fr</user>
+            <user>csené@mediametrie.fr</user>
+            <user>candrieu@mediametrie.fr</user>
+            <user>dcarle@mediametrie.fr</user>
+            <user>dguyon@mediametrie.fr</user>
+            <user>ddangleterre@mediametrie.fr</user>
+            <user>djakovljevic@mediametrie.fr</user>
+            <user>eprince@mediametrie.fr</user>
+            <user>eaubertie@mediametrie.fr</user>
+            <user>hmoujahid@mediametrie.fr</user>
+            <user>mbouvet@mediametrie.fr</user>
+            <user>jreziga@mediametrie.fr</user>
+            <user>jgallet@mediametrie.fr</user>
+            <user>jdelval@mediametrie.fr</user>
+            <user>jdage@mediametrie.fr</user>
+            <user>llamont@mediametrie.fr</user>
+            <user>mabecar@mediametrie.fr</user>
+            <user>masylla@mediametrie.fr</user>
+            <user>mgoulouzelle@mediametrie.fr</user>
+            <user>nthumerelle@mediametrie.fr</user>
+            <user>rchoquet@mediametrie.fr</user>
+            <user>tdescombes@mediametrie.fr</user>
+            <user>tleuillet@mediametrie.fr</user>
+            <user>uginerturmel@mediametrie.fr</user>
+            <user>vcaron@mediametrie.fr</user>
+            <user>vdonnette@mediametrie.fr</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>cases_Routing_config</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

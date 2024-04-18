@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "e6294cf3-1e8c-429f-adea-2da669084f54",
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "configurationTags" : [ ],
+  "id" : "fdc33a38-4b16-4a81-9e07-98363552ddd9",
+  "label" : "Equipements",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-equipements",
+  "type" : "route",
+  "urlPrefix" : "equipements"
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modele_de_console_de_jeux__c</fullName>
+    <externalId>false</externalId>
+    <label>Modèle de console de jeux</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>35</fullName>
+                <default>false</default>
+                <label>MICROSOFT - XBOX One</label>
+            </value>
+            <value>
+                <fullName>34</fullName>
+                <default>false</default>
+                <label>SONY - PLAYSTATION 4</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>MICROSOFT - XBOX 360</label>
+            </value>
+            <value>
+                <fullName>28</fullName>
+                <default>false</default>
+                <label>SONY - PLAYSTATION 3</label>
+            </value>
+            <value>
+                <fullName>33</fullName>
+                <default>false</default>
+                <label>NINTENDO - Wii U</label>
+            </value>
+            <value>
+                <fullName>13</fullName>
+                <default>false</default>
+                <label>NINTENDO - Wii</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>MICROSOFT - XBOX</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>AUTRES MODELES</label>
+            </value>
+            <value>
+                <fullName>Nintendo Switch</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Nintendo Switch</label>
+            </value>
+            <value>
+                <fullName>Playstation 4</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Playstation 4</label>
+            </value>
+            <value>
+                <fullName>Xbox One</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Xbox One</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

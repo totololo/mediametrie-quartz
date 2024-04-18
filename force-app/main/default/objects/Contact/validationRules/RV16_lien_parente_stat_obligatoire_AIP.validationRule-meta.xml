@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV16_lien_parente_stat_obligatoire_AIP</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+!$User.Bypass_RDD__c,
+ISBLANK(Date_de_chute_individu__c),
+ISBLANK(TEXT(Lien_de_parente_stat__c)),
+$User.Username &lt;&gt; $Label.Mulesoft_integrationUser_username ,
+INCLUDES(Account.Types_de_Panel__c, &apos;AIP&apos;)
+)</errorConditionFormula>
+    <errorMessage>Le champs Lien de parenté stat est obligatoire.</errorMessage>
+</ValidationRule>

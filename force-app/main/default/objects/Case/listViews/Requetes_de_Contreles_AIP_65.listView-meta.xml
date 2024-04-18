@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requetes_de_Contreles_AIP_65</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND (( 4 AND 5 ) OR ( 6 AND 7 )) AND 8</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>NAME</columns>
+    <columns>Sous_type__c</columns>
+    <columns>Jour_de_traitement__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>Nombre_de_controles__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Age__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>65</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Controle_AIP</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Nouveau,En cours,Hiérarchisé</value>
+    </filters>
+    <filters>
+        <field>Jour_de_traitement__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>4</value>
+    </filters>
+    <filters>
+        <field>Jour_de_traitement__c</field>
+        <operation>lessOrEqual</operation>
+        <value>10</value>
+    </filters>
+    <filters>
+        <field>Jour_de_traitement__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>14</value>
+    </filters>
+    <filters>
+        <field>Jour_de_traitement__c</field>
+        <operation>lessOrEqual</operation>
+        <value>20</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>notContain</operation>
+        <value>Non-répondant SetMeter</value>
+    </filters>
+    <label>Requêtes de Contrôles AIP - 65+</label>
+</ListView>

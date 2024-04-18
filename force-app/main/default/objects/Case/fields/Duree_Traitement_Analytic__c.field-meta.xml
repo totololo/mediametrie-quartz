@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duree_Traitement_Analytic__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+AND(ISPICKVAL(Status, &apos;En cours&apos;), En_attente__c == false),
+ROUND((NOW() - date_en_cours__c) * 1440, 0),
+IF(
+AND(ISPICKVAL(Status, &apos;En cours&apos;), En_attente__c == true), 
+ROUND((date_mise_attente__c - date_en_cours__c) * 1440, 0),
+ROUND((ClosedDate - date_en_cours__c) * 1440, 0)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Duree_Traitement_Analytic</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

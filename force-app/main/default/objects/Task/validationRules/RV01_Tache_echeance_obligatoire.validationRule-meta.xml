@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV01_Tache_echeance_obligatoire</fullName>
+    <active>true</active>
+    <description>Les tâches doivent obligatoirement avoir une échéance.</description>
+    <errorConditionFormula>AND(
+$User.Bypass_validation_rules__c = false,
+$User.Username&lt;&gt;$Label.Mulesoft_integrationUser_username,
+
+ISNULL(ActivityDate) 
+				)</errorConditionFormula>
+    <errorDisplayField>ActivityDate</errorDisplayField>
+    <errorMessage>Merci de renseigner une date d&apos;échéance.</errorMessage>
+</ValidationRule>

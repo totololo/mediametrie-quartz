@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Compact_Layout_Non_Equipe</fullName>
+    <fields>Name</fields>
+    <fields>Type__c</fields>
+    <fields>Lien_parente__c</fields>
+    <fields>AccountId</fields>
+    <fields>Email</fields>
+    <fields>MobilePhone</fields>
+    <fields>Lien_de_parente_stat__c</fields>
+    <label>Contact Compact Layout Non Equipe</label>
+</CompactLayout>

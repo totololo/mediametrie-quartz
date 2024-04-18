@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foyers_suspendus_MMAT_PaME</fullName>
+    <columns>NAME</columns>
+    <columns>Date_de_suspension__c</columns>
+    <columns>Motif_de_suspension__c</columns>
+    <columns>Statut_Audimetrique__c</columns>
+    <columns>Intervention_en_cours__c</columns>
+    <columns>Date_de_debut_d_intervention__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Suspendu__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Referentiel_Panel__c</field>
+        <operation>notEqual</operation>
+        <value>AIP</value>
+    </filters>
+    <filters>
+        <field>Statut_Foyer_paneliste__c</field>
+        <operation>notEqual</operation>
+        <value>4,6,5</value>
+    </filters>
+    <filters>
+        <field>Date_de_suspension__c</field>
+        <operation>lessOrEqual</operation>
+        <value>N_WEEKS_AGO:2</value>
+    </filters>
+    <filters>
+        <field>Intervention_en_cours__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Foyers suspendus MMAT / PaME</label>
+</ListView>

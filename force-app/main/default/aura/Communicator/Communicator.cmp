@@ -1,0 +1,52 @@
+<!--
+  @description       : 
+  @author            : Anes BOUZOUINA
+  @group             : 
+  @last modified on  : 11-18-2022
+  @last modified by  : Anes BOUZOUINA
+-->
+<aura:component controller="CommunicatorController"  implements="flexipage:availableForAllPageTypes,force:hasRecordId"  access="global" >
+    <aura:attribute name="markedupText" type="String" />
+    <aura:attribute name="compteId" type="String" />
+    <aura:registerEvent name="avayaEvent" type="c:AvayaEvent"/>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
+    <aura:handler name="avayaEvent" event="c:AvayaEvent" action="{!c.handleAvayaEvent}"/>
+    <article class="slds-card">
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <span class="slds-icon_container slds-icon-standard-contact">
+                        <lightning:icon iconName="standard:live_chat" size="small"/>
+                    </span>
+                </div>
+                <div class="slds-media__body">
+                    <h2><span class="slds-text-heading_small">Bienvenue à Avaya CRM Connected Desktop </span></h2>
+                </div>
+            </header>
+        </div>
+        <!-- <div><c:displayAccount></c:displayAccount></div> -->
+        <!-- <div class="slds-card__body">
+            <div class="slds-size_2-of-2">
+                <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                    <div class="slds-align_absolute-center" style="min-height:100px; max-height:200px; overflow:auto;">
+                        <ui:outputRichText value="{!v.markedupText}" />
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>-->
+    </article> 
+    <!-- <article class="slds-card">
+        
+    <DIV>     
+        <lightning:recordForm recordId="{!v.compteId}" 
+        objectApiName="Case"
+        layoutType="Compact"
+        columns="2"/> 
+    </DIV>
+    </article> -->
+    <lightning:navigation aura:id="navigation"/>
+
+  
+</aura:component>

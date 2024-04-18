@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV12_date_passe_non_possible</fullName>
+    <active>false</active>
+    <description>La date de suspension choisi doit être la date du jour.</description>
+    <errorConditionFormula>AND(
+    !$User.Bypass_validation_rules__c,
+				$User.Username&lt;&gt;$Label.Mulesoft_integrationUser_username,
+    OR(
+     Date_de_suspension__c &lt;  TODAY(),
+     Date_de_suspension__c &gt;  TODAY()
+    ),
+
+     OR(
+        ISNEW(),
+        ISCHANGED(Date_de_suspension__c ) 
+       )
+  )</errorConditionFormula>
+    <errorDisplayField>Date_de_suspension__c</errorDisplayField>
+    <errorMessage>Merci de choisir la date d&apos;aujourd&apos;hui.</errorMessage>
+</ValidationRule>

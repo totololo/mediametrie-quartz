@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV15_TypeObligatoirePaMEMediamat</fullName>
+    <active>false</active>
+    <description>Le type est obligatoire pour les enregistrements de types PaME et Mediamat équipés</description>
+    <errorConditionFormula>AND( !$User.Bypass_validation_rules__c,    RecordType.DeveloperName   !=  $Label.Con_TypeD_Enregistrement_MediamatNonEquipe,    RecordType.DeveloperName   !=  $Label.Con_TypeD_Enregistrement_PaMENonEquipe,  ISBLANK(  TEXT( Type__c )  ) 
+)</errorConditionFormula>
+    <errorDisplayField>Type__c</errorDisplayField>
+    <errorMessage>Le type est obligatoire pour les individus équipés</errorMessage>
+</ValidationRule>

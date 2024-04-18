@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email</name>
+        <label>Send Email</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <actionName>Account.Alerte_Synchronisation_Foyer_SI_Panel_Echouee</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Account.Alerte_Synchronisation_Foyer_SI_Panel_Echouee</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <name>Declenchement_possible</name>
+        <label>Déclenchement possible?</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Declenchement_est_possible</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.Bypass_flows__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$User.Bypass_RDD__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email</targetReference>
+            </connector>
+            <label>Déclenchement est possible</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>ACC_Envoi_notification_mail_si_echec_synchronisation_Foyer {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ACC_Envoi_notification_mail_si_echec_synchronisation_Foyer</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Declenchement_possible</targetReference>
+        </connector>
+        <filterFormula>OR(
+     AND(
+        ISNEW(),
+        !ISNULL({!$Record.Message_en_cas_d_erreur__c}),
+        ISPICKVAL({!$Record.Appel_OK_KO__c}, &quot;KO&quot;)
+    ),
+    AND(
+        ISCHANGED({!$Record.Message_en_cas_d_erreur__c}),
+        !ISNULL({!$Record.Message_en_cas_d_erreur__c}),
+        !ISBLANK({!$Record.Message_en_cas_d_erreur__c})
+    ),
+    AND(
+        ISCHANGED({!$Record.Appel_OK_KO__c}),
+        ISPICKVAL({!$Record.Appel_OK_KO__c}, &quot;KO&quot;)
+    )
+)</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

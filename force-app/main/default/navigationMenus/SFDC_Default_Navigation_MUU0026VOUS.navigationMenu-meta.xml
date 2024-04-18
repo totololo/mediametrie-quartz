@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>M%26VOUS</container>
+    <containerType>Network</containerType>
+    <label>Default Navigation</label>
+    <navigationMenuItem>
+        <label>Cagnotte</label>
+        <position>1</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>Commander</label>
+                <position>0</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/commander</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Solde de points</label>
+                <position>1</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/solde-de-points</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Dernière commande</label>
+                <position>2</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/derniere-commande</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Contact</label>
+        <position>2</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>Nous contacter</label>
+                <position>0</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/nous-contacter</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Planifier un RDV</label>
+                <position>1</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/planifier-un-rdv</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Absence</label>
+        <position>3</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/absence</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Equipements</label>
+        <position>4</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/equipements</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Participation</label>
+        <position>5</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>FAQ</label>
+                <position>0</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/faq</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Règles d&apos;or</label>
+                <position>1</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/reglesdor</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+</NavigationMenu>

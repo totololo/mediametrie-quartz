@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contr_les_AIP_NR_J12</fullName>
+    <columns>NAME</columns>
+    <columns>Date_de_controle__c</columns>
+    <columns>Foyer__c</columns>
+    <columns>Type_de_controle__c</columns>
+    <columns>Sous_type_de_controle__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>Cause_de_controle__c</columns>
+    <columns>Type_de_panel__c</columns>
+    <columns>Statut__c</columns>
+    <columns>Audimetre__c</columns>
+    <columns>Requete__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Controle__c.Controle_AIP</value>
+    </filters>
+    <filters>
+        <field>Date_de_controle__c</field>
+        <operation>equals</operation>
+        <value>8/25/2023 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Audimetre__c</field>
+        <operation>contains</operation>
+        <value>pager</value>
+    </filters>
+    <label>Contrôles AIP NR J12</label>
+</ListView>

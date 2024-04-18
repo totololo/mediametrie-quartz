@@ -1,0 +1,49 @@
+<!-- FAQ -->
+<aura:component implements="forceCommunity:themeLayout,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable"
+                access="global" controller="FaqController">
+    
+    <!-- Static Ressources -->
+    <ltng:require styles="{!$Resource.commonCss}" />
+    
+    <!-- Attributes -->
+    <aura:attribute name="data" type="Map"  />
+    <aura:attribute name="allData2" type="Map"  />
+    <aura:attribute name="displayDiv" type="boolean" default="false"/>
+    
+    <aura:attribute name="openedDiv" type="String"  />
+    <aura:attribute name="onLoad" type="Boolean" default="true" />
+    
+    <!-- Handler -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- Loader -->
+    <aura:if isTrue="{!v.onLoad}">
+        <div class="pageLoader">
+            <lightning:spinner alternativeText="Loading" size="large" />
+        </div>
+    </aura:if> 
+    
+    <!-- Titre -->
+    <div class="pageTitle">{!$Label.c.EXP_FAQTitle}</div>    
+    
+    <div class="centerDiv">
+        <div class="faq-content">
+            <aura:iteration items="{!v.data}" var="item">
+                <div class="titre-categorie inputTitle dropDownBox" onclick="{!c.displayAritcles}"
+                     value="{!item.key}" id="{!item.key}">{!item.key}</div>
+                <div id="{!item.key + '/body'}" style="{!v.displayDiv ? 'display: block;' : 'display: none;'}" class="arictles-section">
+                    <aura:iteration items="{!item.value}" var="knowledge"> 
+                        <div class="knowledgeDiv dropDownBox">
+                            <div class="knowledgeTitle" onclick="{!c.showResponse}" data-Id="{!knowledge.knowledgeId}" id="{!knowledge.knowledgeId}">
+                                <aura:unescapedHtml value="{!knowledge.question}" />
+                            </div>
+                            <span id="{!knowledge.knowledgeId + '/response'}" style="{!v.displayDiv ? 'display: block;' : 'display: none;'}" class="arictles-section">
+                                <aura:unescapedHtml value="{!knowledge.reponse}" />
+                            </span>
+                        </div>
+                    </aura:iteration>
+                </div>
+            </aura:iteration>
+        </div>
+    </div>    
+</aura:component>

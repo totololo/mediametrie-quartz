@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Liste_des_TVM3</fullName>
+    <columns>Foyer_paneliste__c</columns>
+    <columns>ASSET.NAME</columns>
+    <columns>ASSET.SERIAL_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Ressource_de_service__c</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>ASSET.STATUS</columns>
+    <columns>Version_du_Logiciel__c</columns>
+    <columns>Type_d_audimetre__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ASSET.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Asset.Dispositifs_de_mesure_d_audience_MM_PaMe</value>
+    </filters>
+    <filters>
+        <field>ASSET.NAME</field>
+        <operation>contains</operation>
+        <value>TVM</value>
+    </filters>
+    <label>Liste des TVM3</label>
+</ListView>

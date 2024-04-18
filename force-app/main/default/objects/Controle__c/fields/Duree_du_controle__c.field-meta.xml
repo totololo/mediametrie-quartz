@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duree_du_controle__c</fullName>
+    <externalId>false</externalId>
+    <label>Durée</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Plus d&apos;une heure</fullName>
+                <default>false</default>
+                <label>Plus d&apos;une heure</label>
+            </value>
+            <value>
+                <fullName>Entre 10mn et 1 heure</fullName>
+                <default>false</default>
+                <label>Entre 10mn et 1 heure</label>
+            </value>
+            <value>
+                <fullName>Moins de 10mn</fullName>
+                <default>false</default>
+                <label>Moins de 10mn</label>
+            </value>
+            <value>
+                <fullName>De 10 à 15mn</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>De 10 à 15mn</label>
+            </value>
+            <value>
+                <fullName>De 15 à 60mn</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>De 15 à 60mn</label>
+            </value>
+            <value>
+                <fullName>De 5 à 10mn</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>De 5 à 10mn</label>
+            </value>
+            <value>
+                <fullName>Moins de 5mn</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Moins de 5mn</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

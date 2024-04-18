@@ -1,0 +1,166 @@
+<aura:component controller="ControleController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId"  access="global">
+ 	<aura:handler name="init" value="{!this}" action="{!c.myAction}" />
+    <aura:handler event="force:refreshView" action="{!c.myAction}" />
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="controles" type="Controle__c[]" />
+    <aura:attribute name="controleNumber" type="string"/>
+    <aura:attribute name="selectedControle" type="string"/>
+    <aura:attribute type="string" name="recordName" />
+	
+    
+    <!-- CREATE component with a custom icon -->
+  
+         <article class="slds-card">
+        <div class="slds-card__header slds-grid">
+        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+          <div class="slds-media__figure">
+            <span class="slds-icon_container  slds-icon-custom-custom97" title="{!v.controleNumber}">
+              <lightning:icon iconName="custom:custom97"  class="slds-icon slds-icon_small " size="small" aria-hidden="true" />
+            </span>
+          </div>
+          <div class="slds-media__body">
+            <h2 class="slds-card__header-title">
+                <span>{!v.controleNumber}</span>
+            </h2>
+          </div>
+        
+  	<!--  Call addControle when a click in new button to create a record --> 
+          <div class="slds-no-flex">
+           <lightning:buttonMenu onselect="{!c.addControle}" iconSize="x-small"  >
+                 <lightning:menuItem label="{!$Label.c.New}" /> 
+            </lightning:buttonMenu> 
+          </div>
+         </header>  
+         </div>
+          
+        <p class="slds-p-horizontal_small">
+        <aura:iteration items="{!v.controles}" var="con">
+          
+         <!-- CREATE the MenuItem with value Edit and Delete-->
+         <div class="slds-clearfix">
+        <lightning:buttonMenu aura:id="actionMenuItems"  onselect="{!c.handleSelect}"  alternativeText="Action" class="slds-float_right"   iconSize="x-small">
+        <lightning:menuItem value="{!con.Id+';Edit'}" label="{!$Label.c.Edit}"/>
+        <lightning:menuItem value="{!con.Id+';Delete'}" label="{!$Label.c.Delete}" disabled="true" />
+        </lightning:buttonMenu>
+          
+
+     <!-- Get et surligner the name of controle -->
+
+        <a  href="javascript:void(0)" class="outputLookupLink " target="_blank"  id="{!con.Id}" 
+     	    onmouseover="{!c.show}"
+            onclick="{!c.handleClick}"
+            onmouseout="{!c.hide}"	
+            data-value="{!con.Id}"  
+            title="{!con.Name}"  >{!con.Name}
+    	</a>
+    <!-- if:true to display/hide popup based on selectedControle value--> 
+    
+        <aura:if isTrue="{!con.Id==v.selectedControle}">
+            <!-- Popup Box  starts here -->
+        <section class="slds-popover slds-popover_panel slds-popover_large slds-nubbin_left "  style="margin-left:1rem;margin-top:-5rem;position:absolute;"  role="dialog">
+           <!--  Popup Box header here -->
+        <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-float_right slds-popover__close" title="Close" onclick="{!c.hide}">
+                    <lightning:icon iconName="utility:close" size="x-small"/>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+            
+        <div class="slds-popover__footer">
+         <header class="slds-media slds-media_center slds-m-bottom_small">
+                    <span class="{!'slds-icon_container  slds-icon-custom-custom97 slds-media__figure'}">
+                        <lightning:icon iconName="custom:custom97" aria-hidden="true" />
+                    </span>
+                    <div class="slds-media__body">
+                        <h2 class="slds-text-heading_medium slds-hyphenate" id="panel-heading-id">
+                            {!con.Name}
+                        </h2>
+                    </div>
+          </header>     
+             <!-- Popup Box footer starts here -->
+         <footer class="slds-grid slds-wrap slds-grid_pull-padded">
+        <div class="slds-p-horizontal_small slds-size_1-of-2 slds-p-bottom_x-small">
+        <dl>
+          <dt>
+            <p class="slds-popover_panel__footer"  title="Type de contrôle:">{!$Label.c.Type_de_controle}</p>
+           
+          </dt>
+               <dd>
+             <lightning:recordViewForm recordId="{!con.Id}" objectApiName="Controle__c">    
+          	<lightning:outputField   fieldName="Type_de_controle__c" variant="label-hidden"/> 
+       		<br></br>
+     		</lightning:recordViewForm>
+            </dd>
+        </dl>
+        </div>
+           
+         <div class="slds-p-horizontal_small slds-size_1-of-2 slds-p-bottom_x-small">
+        <dl>
+          <dt>
+            <p class="slds-popover_panel__footer"  title="Statut">{!$Label.c.Statut}</p>
+          </dt>
+            <dd>
+            <lightning:recordViewForm recordId="{!con.Id}" objectApiName="Controle__c">    
+          	<lightning:outputField   fieldName="Statut__c" variant="label-hidden"/> 
+       		<br></br>
+     		</lightning:recordViewForm>
+            </dd>
+        </dl>
+       </div> 
+                    
+          <div class="slds-p-horizontal_small slds-size_1-of-2 slds-p-bottom_x-small">
+        <dl>
+          <dt>
+            <p class="slds-popover_panel__footer" title="Date de controle" >{!$Label.c.Date_de_controle }</p>
+            </dt>
+        </dl>
+            <dd><lightning:formattedDateTime value="{!con.Date_de_controle__c}" year="numeric"
+        month="numeric" day="numeric" hour="2-digit" minute="2-digit" />
+            
+            </dd>
+            </div></footer>
+            </div> 
+            </section> 
+           
+   		 </aura:if>
+
+    
+     
+     <!-- Display the Date of Controle -->
+    <div class="slds-list--horizontal forceListRecordItem" data-aura-class="forceListRecordItem">
+    <div class="slds-item--label slds-truncate recordCell" title="Date de controle:" >{!$Label.c.Date_de_controle }</div>
+    <div class="slds-item--detail slds-truncate recordCell">
+    <span class="uiOutputDateTime"
+        data-aura-class="uiOutputDateTime">  
+    <lightning:formattedDateTime value="{!con.Date_de_controle__c}" year="numeric"
+        month="numeric" day="numeric" hour="2-digit" minute="2-digit" />
+    </span></div>
+    </div>  
+         
+    <!-- Display type of Controle -->        
+     <ul class="itemRows truncate">
+     <div class="slds-list--horizontal forceListRecordItem"
+        data-aura-class="forceListRecordItem">
+     <div class="slds-item--label slds-truncate recordCell" title="Type de contrôle:">{!$Label.c.Type_de_controle}</div>
+     <div class="slds-item--detail slds-truncate recordCell">
+     <lightning:recordViewForm recordId="{!con.Id}" objectApiName="Controle__c">    
+              <lightning:outputField   fieldName="Type_de_controle__c" variant="label-hidden"/>
+     </lightning:recordViewForm>
+     </div>
+     </div>
+         
+     <!-- Display the Sub type of Controle -->
+     <div class="slds-list--horizontal forceListRecordItem"
+        data-aura-class="forceListRecordItem">
+     <div class="slds-item--label slds-truncate recordCell" title="Sous type de controle:">{!$Label.c.Sous_type_de_controle}</div>
+     <div class="slds-item--detail slds-truncate recordCell">
+     <lightning:recordViewForm recordId="{!con.Id}" objectApiName="Controle__c">    
+          <lightning:outputField   fieldName="Sous_type_de_controle__c" variant="label-hidden"/> 
+       <br></br>
+     </lightning:recordViewForm>
+     </div>
+     </div>              
+     </ul>
+         </div>
+    </aura:iteration>
+    </p>       
+    </article>
+</aura:component>

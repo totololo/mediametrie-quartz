@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resultat_d_appel__c</fullName>
+    <externalId>false</externalId>
+    <label>Résultat d&apos;appel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sous_type_de_controle__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Non Joint</fullName>
+                <default>false</default>
+                <label>Non Joint</label>
+            </value>
+            <value>
+                <fullName>Commande Beacon envoyée</fullName>
+                <default>false</default>
+                <label>Commande Beacon envoyée</label>
+            </value>
+            <value>
+                <fullName>Commande Beacon non envoyée</fullName>
+                <default>false</default>
+                <label>Commande Beacon non envoyée</label>
+            </value>
+            <value>
+                <fullName>Absence de mouvement justifiée</fullName>
+                <default>false</default>
+                <label>Absence de mouvement justifiée</label>
+            </value>
+            <value>
+                <fullName>Anomalie carte SIM</fullName>
+                <default>false</default>
+                <label>Anomalie carte SIM</label>
+            </value>
+            <value>
+                <fullName>Attache cassée</fullName>
+                <default>false</default>
+                <label>Attache cassée</label>
+            </value>
+            <value>
+                <fullName>Bluetooth</fullName>
+                <default>false</default>
+                <label>Bluetooth</label>
+            </value>
+            <value>
+                <fullName>Chute temporaire</fullName>
+                <default>false</default>
+                <label>Chute temporaire</label>
+            </value>
+            <value>
+                <fullName>J+22 à J+44</fullName>
+                <default>false</default>
+                <label>J+22 à J+44</label>
+            </value>
+            <value>
+                <fullName>NON PORTE écouté au casque</fullName>
+                <default>false</default>
+                <label>NON PORTE écouté au casque</label>
+            </value>
+            <value>
+                <fullName>Pager cassé</fullName>
+                <default>false</default>
+                <label>Pager cassé</label>
+            </value>
+            <value>
+                <fullName>Pager non chargé</fullName>
+                <default>false</default>
+                <label>Pager non chargé</label>
+            </value>
+            <value>
+                <fullName>Pager non porté</fullName>
+                <default>false</default>
+                <label>Pager non porté</label>
+            </value>
+            <value>
+                <fullName>Suspendu</fullName>
+                <default>false</default>
+                <label>Suspendu</label>
+            </value>
+            <value>
+                <fullName>Vacancier</fullName>
+                <default>false</default>
+                <label>Vacancier</label>
+            </value>
+            <value>
+                <fullName>Ecoute au casque bluetooth</fullName>
+                <default>false</default>
+                <label>Ecoute au casque bluetooth</label>
+            </value>
+            <value>
+                <fullName>Manip KO</fullName>
+                <default>false</default>
+                <label>Manip KO</label>
+            </value>
+            <value>
+                <fullName>Pager (Trop lourd)</fullName>
+                <default>false</default>
+                <label>Pager (Trop lourd)</label>
+            </value>
+            <value>
+                <fullName>Pager perdu</fullName>
+                <default>false</default>
+                <label>Pager perdu</label>
+            </value>
+            <value>
+                <fullName>Problème de batterie</fullName>
+                <default>false</default>
+                <label>Problème de batterie</label>
+            </value>
+            <value>
+                <fullName>Audience justifiée</fullName>
+                <default>false</default>
+                <label>Audience justifiée</label>
+            </value>
+            <value>
+                <fullName>Joint</fullName>
+                <default>false</default>
+                <label>Joint</label>
+            </value>
+            <value>
+                <fullName>Absence hors France</fullName>
+                <default>false</default>
+                <label>Absence hors France</label>
+            </value>
+            <value>
+                <fullName>Appelé la veille</fullName>
+                <default>false</default>
+                <label>Appelé la veille</label>
+            </value>
+            <value>
+                <fullName>Au moins 1 beacons associes au foyer est inactif</fullName>
+                <default>false</default>
+                <label>Au moins 1 beacons associes au foyer est inactif</label>
+            </value>
+            <value>
+                <fullName>Autre motif</fullName>
+                <default>false</default>
+                <label>Autre motif</label>
+            </value>
+            <value>
+                <fullName>Beacons associes au foyer - 20% batterie</fullName>
+                <default>false</default>
+                <label>Beacons associes au foyer - 20% batterie</label>
+            </value>
+            <value>
+                <fullName>Dimanche</fullName>
+                <default>false</default>
+                <label>Dimanche</label>
+            </value>
+            <value>
+                <fullName>Fiche clôturée automatiquement J+1</fullName>
+                <default>false</default>
+                <label>Fiche clôturée automatiquement J+1</label>
+            </value>
+            <value>
+                <fullName>Jour férié</fullName>
+                <default>false</default>
+                <label>Jour férié</label>
+            </value>
+            <value>
+                <fullName>Mauvaise récéption</fullName>
+                <default>false</default>
+                <label>Mauvaise récéption</label>
+            </value>
+            <value>
+                <fullName>Mouvement atypique</fullName>
+                <default>false</default>
+                <label>Mouvement atypique</label>
+            </value>
+            <value>
+                <fullName>Pager perdu va le rechercher</fullName>
+                <default>false</default>
+                <label>Pager perdu va le rechercher</label>
+            </value>
+            <value>
+                <fullName>Profession atypique</fullName>
+                <default>false</default>
+                <label>Profession atypique</label>
+            </value>
+            <value>
+                <fullName>Raisons personnelles</fullName>
+                <default>false</default>
+                <label>Raisons personnelles</label>
+            </value>
+            <value>
+                <fullName>Rdv</fullName>
+                <default>false</default>
+                <label>Rdv</label>
+            </value>
+            <value>
+                <fullName>Refus temporaire de participation</fullName>
+                <default>false</default>
+                <label>Refus temporaire de participation</label>
+            </value>
+            <value>
+                <fullName>Beacons associés au foyer sont inactifs</fullName>
+                <default>false</default>
+                <label>Beacons associés au foyer sont inactifs</label>
+            </value>
+            <value>
+                <fullName>A Fournir</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>A Fournir</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>31</controllingFieldValue>
+            <controllingFieldValue>32</controllingFieldValue>
+            <controllingFieldValue>33</controllingFieldValue>
+            <valueName>Non Joint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <controllingFieldValue>33</controllingFieldValue>
+            <valueName>Absence de mouvement justifiée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Anomalie carte SIM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Attache cassée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Chute temporaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>NON PORTE écouté au casque</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <controllingFieldValue>33</controllingFieldValue>
+            <valueName>Pager cassé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <controllingFieldValue>33</controllingFieldValue>
+            <valueName>Pager non chargé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Pager non porté</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Suspendu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <controllingFieldValue>31</controllingFieldValue>
+            <controllingFieldValue>33</controllingFieldValue>
+            <valueName>Vacancier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <valueName>Manip KO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <valueName>Pager (Trop lourd)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Pager perdu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Problème de batterie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Absence hors France</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Appelé la veille</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <controllingFieldValue>31</controllingFieldValue>
+            <controllingFieldValue>32</controllingFieldValue>
+            <controllingFieldValue>33</controllingFieldValue>
+            <valueName>Au moins 1 beacons associes au foyer est inactif</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <controllingFieldValue>31</controllingFieldValue>
+            <controllingFieldValue>32</controllingFieldValue>
+            <controllingFieldValue>33</controllingFieldValue>
+            <valueName>Autre motif</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <controllingFieldValue>31</controllingFieldValue>
+            <controllingFieldValue>32</controllingFieldValue>
+            <controllingFieldValue>33</controllingFieldValue>
+            <valueName>Beacons associes au foyer - 20% batterie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Dimanche</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Fiche clôturée automatiquement J+1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Jour férié</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Mauvaise récéption</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Mouvement atypique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Pager perdu va le rechercher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Profession atypique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Raisons personnelles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Rdv</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26</controllingFieldValue>
+            <controllingFieldValue>27</controllingFieldValue>
+            <controllingFieldValue>29</controllingFieldValue>
+            <controllingFieldValue>30</controllingFieldValue>
+            <valueName>Refus temporaire de participation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>31</controllingFieldValue>
+            <controllingFieldValue>32</controllingFieldValue>
+            <controllingFieldValue>33</controllingFieldValue>
+            <valueName>Commande Beacon non envoyée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>31</controllingFieldValue>
+            <controllingFieldValue>33</controllingFieldValue>
+            <valueName>Beacons associés au foyer sont inactifs</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

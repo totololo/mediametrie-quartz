@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actions__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( TEXT(Intervention__r.Actions__c) == &apos;1&apos;, $Label.WOR_Actions_Nouveau_Foyer_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;3&apos;, $Label.WOR_Actions_Suppression_D_Un_Poste_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;4&apos;, $Label.WOR_Actions_Changement_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;5&apos;, $Label.WOR_Actions_Controle_De_l_installation_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;6&apos;, $Label.WOR_Actions_Demenagement_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;7&apos;, $Label.WOR_Actions_Reinstallation_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;8&apos;, $Label.WOR_Actions_Desinstallation_Definitive_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;10&apos;, $Label.WOR_Actions_Verification_de_l_initialisation_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;11&apos;, $Label.WOR_Actions_Verification_Des_Elements_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;12&apos;, $Label.WOR_Actions_Controle_De_Connexion_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;13&apos;, $Label.WOR_Actions_Pb_Sonde_Tv_Declaration_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;14&apos;, $Label.WOR_Actions_Routeur_Ne_S_allume_plus_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;16&apos;, $Label.WOR_Actions_Controle_Audience_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;18&apos;, $Label.WOR_Actions_Mise_A_Jour_Etiquette_Equipement_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;19&apos;, $Label.WOR_Actions_Mutation_Audimetre_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;21&apos;, $Label.WOR_Actions_Ajout_De_Poste_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;22&apos;, $Label.WOR_Actions_Visite_De_Courtoisie_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;23&apos;, $Label.WOR_Actions_Passage_Improviste_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;24&apos;, $Label.WOR_Actions_Controle_Qualite_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;25&apos;, $Label.WOR_Actions_Auto_desinstallation_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;25&apos;, $Label.WOR_Actions_Configuration_Routeur_Pame_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;27&apos;, $Label.WOR_Actions_Parametrage_EtiquetteMeters_2_a_4_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;28&apos;, $Label.WOR_Actions_Parametrage_Meters_5_a_8_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;29&apos;, $Label.WOR_Actions_Configuration_Meters_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;31&apos;, $Label.WOR_Actions_Configuration_Routeur_2_et_plus_Etiquette,
+IF( TEXT(Intervention__r.Actions__c) == &apos;32&apos;, $Label.WOR_Actions_Modification_Abonnement_Etiquette, &apos;&apos;
+))))))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Actions</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

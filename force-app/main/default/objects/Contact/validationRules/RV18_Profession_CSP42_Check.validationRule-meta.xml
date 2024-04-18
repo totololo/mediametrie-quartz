@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV18_Profession_CSP42_Check</fullName>
+    <active>true</active>
+    <description>si Profession__c &lt;&gt; ‘’ et CSP42__c = ‘’ ne pas permettre la maj</description>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+!$User.Bypass_RDD__c,
+$Profile.Name &lt;&gt; &apos;SVC_Administrateur systeme&apos;,
+!ISBLANK(Profession__c),
+ISBLANK(CSP42__c))</errorConditionFormula>
+    <errorMessage>Veuillez renseigner le Code profession CSP42 afin de continuer mm</errorMessage>
+</ValidationRule>

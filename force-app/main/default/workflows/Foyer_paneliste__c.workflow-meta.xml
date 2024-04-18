@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Cocher_Case_Suspendu</fullName>
+        <field>Suspendu__c</field>
+        <literalValue>1</literalValue>
+        <name>Cocher_Case_Suspendu</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_de_freeze</fullName>
+        <field>Date_de_Freeze__c</field>
+        <formula>TODAY()</formula>
+        <name>Date de freeze</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_de_suspension</fullName>
+        <field>Date_de_suspension__c</field>
+        <formula>TODAY()</formula>
+        <name>Date de suspension</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Freeze_du_foyer</fullName>
+        <field>Freeze__c</field>
+        <literalValue>1</literalValue>
+        <name>Freeze du foyer</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MAJ_champ_date_de_chute</fullName>
+        <field>Date_de_chute__c</field>
+        <formula>TODAY()</formula>
+        <name>MAJ champ date de chute</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>WF01_FPA_Freeze_apres_desinstallation</fullName>
+        <actions>
+            <name>Date_de_freeze</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Freeze_du_foyer</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>User.Bypass_flows__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Foyer_paneliste__c.Statut_Foyer_paneliste__c</field>
+            <operation>equals</operation>
+            <value>4,6,5,Chute définitive et désinstallé</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Foyer_paneliste__c.Freeze__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Foyer_paneliste__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Médiamat / PaMe</value>
+        </criteriaItems>
+        <description>Règle qui Freeze un Foyer panéliste dès qu&apos;il passe au statut désinstallé.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF02_FPA_Maj_Date_de_suspension</fullName>
+        <actions>
+            <name>Date_de_suspension</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.Bypass_workflows__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Foyer_paneliste__c.Suspendu__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Règle qui permet de mettre à jour la date de suspension avec la date du jour.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF03_FPA_Cocher_Suspendu_si_Date_suspension_renseignee</fullName>
+        <actions>
+            <name>Cocher_Case_Suspendu</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Règle qui permet de cocher la case &apos;Suspendu&apos; si la date de suspension est renseignée.</description>
+        <formula>AND(  				!$User.Bypass_workflows__c,  				ISCHANGED(Date_de_suspension__c),  				NOT( ISNULL(Date_de_suspension__c)) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF06_FPA_RemplirDateChute</fullName>
+        <actions>
+            <name>MAJ_champ_date_de_chute</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>User.Bypass_workflows__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Foyer_paneliste__c.Statut_Foyer_paneliste__c</field>
+            <operation>equals</operation>
+            <value>5</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.Bypass_RDD__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>Règle qui renseigne la date de chute à la date du jour</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

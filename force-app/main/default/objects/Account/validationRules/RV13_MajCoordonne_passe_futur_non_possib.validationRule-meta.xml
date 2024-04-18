@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV13_MajCoordonne_passe_futur_non_possib</fullName>
+    <active>false</active>
+    <description>La Maj coordonnés choisi doit être la date du jour.</description>
+    <errorConditionFormula>AND(
+    !$User.Bypass_validation_rules__c,
+				$User.Username&lt;&gt;$Label.Mulesoft_integrationUser_username,
+    OR(
+     Maj_coordonnees__c &lt;  TODAY(),
+     Maj_coordonnees__c &gt;  TODAY()
+    ),
+
+     OR(
+        ISNEW(),
+        ISCHANGED(Maj_coordonnees__c ) 
+       )
+  )</errorConditionFormula>
+    <errorDisplayField>Maj_coordonnees__c</errorDisplayField>
+    <errorMessage>Merci de choisir la date d&apos;aujourd&apos;hui.</errorMessage>
+</ValidationRule>

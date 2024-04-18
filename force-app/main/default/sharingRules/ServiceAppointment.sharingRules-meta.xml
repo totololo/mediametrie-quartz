@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>HorsTechniciens</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>HorsTechniciens</label>
+        <sharedTo>
+            <role>MM</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Status</field>
+            <operation>equals</operation>
+            <value>À planifier,Planifié,Dispatché,En cours,Impossible de terminer,Terminé,Annulé</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_des_RDV_A_Planifier</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage des RDV A Planifier</label>
+        <sharedTo>
+            <group>Groupe_Profil_Ambassadeur</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Status</field>
+            <operation>equals</operation>
+            <value>À planifier,Planifié</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SA_aPlanifier_Read</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>SA_aPlanifier_Read</label>
+        <sharedTo>
+            <role>Technicien</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Status</field>
+            <operation>equals</operation>
+            <value>À planifier</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Techniciens</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Techniciens</label>
+        <sharedTo>
+            <role>Technicien</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Status</field>
+            <operation>equals</operation>
+            <value>Dispatché,En cours,Impossible de terminer,Terminé,Annulé</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

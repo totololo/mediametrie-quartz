@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV02_debit_moins_50_points_impossible</fullName>
+    <active>true</active>
+    <description>Règle qui empêche la création de commande de moins de 50 points de fidélité</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				!$User.Bypass_RDD__c,
+				RecordType.Name = $Label.FID_Type_d_enregistrement_Debit,
+				OR(
+				Points_debites__c &lt; VALUE($Label.RV_Limitation_debit_de_points),
+			 ISNULL(Points_debites__c) 	 
+								)
+)</errorConditionFormula>
+    <errorDisplayField>Points_debites__c</errorDisplayField>
+    <errorMessage>Impossible de débiter moins de 50 points de fidélité.</errorMessage>
+</ValidationRule>

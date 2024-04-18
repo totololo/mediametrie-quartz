@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_de_decodeur__c</fullName>
+    <externalId>false</externalId>
+    <label>Type de décodeur</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Fournisseur__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>Adaptateur TNT externe</label>
+            </value>
+            <value>
+                <fullName>52</fullName>
+                <default>false</default>
+                <label>Adaptateur TNT externe cable</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>Adaptateur TNT intégré</label>
+            </value>
+            <value>
+                <fullName>53</fullName>
+                <default>false</default>
+                <label>Adaptateur TNT intégré cable</label>
+            </value>
+            <value>
+                <fullName>40</fullName>
+                <default>false</default>
+                <label>Adaptateur TNT intégré hertzien</label>
+            </value>
+            <value>
+                <fullName>57</fullName>
+                <default>false</default>
+                <label>ALICE ADSL</label>
+            </value>
+            <value>
+                <fullName>22</fullName>
+                <default>false</default>
+                <label>AUCHAN ADSL</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>Aucun décodeur</label>
+            </value>
+            <value>
+                <fullName>31</fullName>
+                <default>false</default>
+                <label>Autre décodeur TNT Payante</label>
+            </value>
+            <value>
+                <fullName>23</fullName>
+                <default>false</default>
+                <label>AUTRE FOURNISSEUR ADSL</label>
+            </value>
+            <value>
+                <fullName>46</fullName>
+                <default>false</default>
+                <label>AUTRE FOURNISSEUR CABLE ANALOGIQUE</label>
+            </value>
+            <value>
+                <fullName>45</fullName>
+                <default>false</default>
+                <label>AUTRE FOURNISSEUR CABLE NUMERIQUE</label>
+            </value>
+            <value>
+                <fullName>30</fullName>
+                <default>false</default>
+                <label>AUTRE FOURNISSEUR SATELLITE</label>
+            </value>
+            <value>
+                <fullName>10</fullName>
+                <default>false</default>
+                <label>Bbox Miami</label>
+            </value>
+            <value>
+                <fullName>27</fullName>
+                <default>false</default>
+                <label>BIS TV</label>
+            </value>
+            <value>
+                <fullName>19</fullName>
+                <default>false</default>
+                <label>BOUYGUES ADSL</label>
+            </value>
+            <value>
+                <fullName>58</fullName>
+                <default>false</default>
+                <label>CANALSAT/CANAL+ par SAT</label>
+            </value>
+            <value>
+                <fullName>32</fullName>
+                <default>false</default>
+                <label>CANALSAT/CANAL+ par TNT (SYSTER+)</label>
+            </value>
+            <value>
+                <fullName>14</fullName>
+                <default>false</default>
+                <label>DARTY ADSL</label>
+            </value>
+            <value>
+                <fullName>33</fullName>
+                <default>false</default>
+                <label>Décodeur collectif</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>Décodeur du fournisseur</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>Eqt connecté web</label>
+            </value>
+            <value>
+                <fullName>21</fullName>
+                <default>false</default>
+                <label>FRANSAT</label>
+            </value>
+            <value>
+                <fullName>42</fullName>
+                <default>false</default>
+                <label>FRANSAT Collectif</label>
+            </value>
+            <value>
+                <fullName>59</fullName>
+                <default>false</default>
+                <label>FREE ADSL</label>
+            </value>
+            <value>
+                <fullName>9</fullName>
+                <default>false</default>
+                <label>FREEBOX REVOLUTION</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>Le Cube</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <label>Le Cube S</label>
+            </value>
+            <value>
+                <fullName>60</fullName>
+                <default>false</default>
+                <label>NEUF SFR ADSL</label>
+            </value>
+            <value>
+                <fullName>48</fullName>
+                <default>false</default>
+                <label>NUMERICABLE ANALOGIQUE</label>
+            </value>
+            <value>
+                <fullName>61</fullName>
+                <default>false</default>
+                <label>NUMERICABLE NUMERIQUE</label>
+            </value>
+            <value>
+                <fullName>62</fullName>
+                <default>false</default>
+                <label>ORANGE ADSL</label>
+            </value>
+            <value>
+                <fullName>28</fullName>
+                <default>false</default>
+                <label>ORANGE SAT</label>
+            </value>
+            <value>
+                <fullName>56</fullName>
+                <default>false</default>
+                <label>SFR sat</label>
+            </value>
+            <value>
+                <fullName>20</fullName>
+                <default>false</default>
+                <label>TNTSAT</label>
+            </value>
+            <value>
+                <fullName>41</fullName>
+                <default>false</default>
+                <label>TNTSAT Collectif</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>Transmetteur vidéo</label>
+            </value>
+            <value>
+                <fullName>36</fullName>
+                <default>false</default>
+                <label>TVNUM</label>
+            </value>
+            <value>
+                <fullName>55</fullName>
+                <default>false</default>
+                <label>VIRGIN ADSL</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>18</controllingFieldValue>
+            <controllingFieldValue>6</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>17</controllingFieldValue>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>14</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <controllingFieldValue>12</controllingFieldValue>
+            <controllingFieldValue>13</controllingFieldValue>
+            <controllingFieldValue>20</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>16</controllingFieldValue>
+            <controllingFieldValue>4</controllingFieldValue>
+            <controllingFieldValue>11</controllingFieldValue>
+            <controllingFieldValue>5</controllingFieldValue>
+            <valueName>3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>18</controllingFieldValue>
+            <controllingFieldValue>6</controllingFieldValue>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>14</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <controllingFieldValue>12</controllingFieldValue>
+            <controllingFieldValue>13</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>4</controllingFieldValue>
+            <controllingFieldValue>11</controllingFieldValue>
+            <controllingFieldValue>5</controllingFieldValue>
+            <valueName>5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6</controllingFieldValue>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>14</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <controllingFieldValue>12</controllingFieldValue>
+            <controllingFieldValue>13</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>4</controllingFieldValue>
+            <controllingFieldValue>11</controllingFieldValue>
+            <controllingFieldValue>5</controllingFieldValue>
+            <valueName>4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1</controllingFieldValue>
+            <controllingFieldValue>14</controllingFieldValue>
+            <valueName>1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1</controllingFieldValue>
+            <controllingFieldValue>14</controllingFieldValue>
+            <valueName>2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14</controllingFieldValue>
+            <valueName>6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7</controllingFieldValue>
+            <valueName>10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>4</controllingFieldValue>
+            <valueName>9</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

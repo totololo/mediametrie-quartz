@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actions__c</fullName>
+    <externalId>false</externalId>
+    <label>Actions</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type_de_l_intervention__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>21</fullName>
+                <default>false</default>
+                <label>Ajout de poste</label>
+            </value>
+            <value>
+                <fullName>25</fullName>
+                <default>false</default>
+                <label>Auto désinstallation</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>Changement (TV, barre de son ect …)</label>
+            </value>
+            <value>
+                <fullName>29</fullName>
+                <default>false</default>
+                <label>Configuration Meters (si boite mail ok)</label>
+            </value>
+            <value>
+                <fullName>30</fullName>
+                <default>false</default>
+                <label>Configuration routeur (connexion des equipements au routeur Mediametrie )</label>
+            </value>
+            <value>
+                <fullName>31</fullName>
+                <default>false</default>
+                <label>Configuration routeur (connexion des equipements au routeur Mediametrie ) 2 et +</label>
+            </value>
+            <value>
+                <fullName>26</fullName>
+                <default>false</default>
+                <label>Configuration Routeur (Pame)</label>
+            </value>
+            <value>
+                <fullName>16</fullName>
+                <default>false</default>
+                <label>Contrôle audience</label>
+            </value>
+            <value>
+                <fullName>12</fullName>
+                <default>false</default>
+                <label>Contrôle de connexion</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>Contrôle de l&apos;installation</label>
+            </value>
+            <value>
+                <fullName>24</fullName>
+                <default>false</default>
+                <label>Contrôle qualité</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>Déménagement</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <label>Désinstallation définitive</label>
+            </value>
+            <value>
+                <fullName>18</fullName>
+                <default>false</default>
+                <label>Mise à jour équipement</label>
+            </value>
+            <value>
+                <fullName>32</fullName>
+                <default>false</default>
+                <label>Modification Abonnement</label>
+            </value>
+            <value>
+                <fullName>19</fullName>
+                <default>false</default>
+                <label>Mutation Audimètre</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>Nouveau foyer</label>
+            </value>
+            <value>
+                <fullName>27</fullName>
+                <default>false</default>
+                <label>Paramétrage Meters 2 à 4</label>
+            </value>
+            <value>
+                <fullName>28</fullName>
+                <default>false</default>
+                <label>Paramétrage Meters 5 à 8</label>
+            </value>
+            <value>
+                <fullName>23</fullName>
+                <default>false</default>
+                <label>Passage Improviste</label>
+            </value>
+            <value>
+                <fullName>13</fullName>
+                <default>false</default>
+                <label>Pb Sonde Tv (Déclaration)</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>Réinstallation</label>
+            </value>
+            <value>
+                <fullName>14</fullName>
+                <default>false</default>
+                <label>Routeur ne s&apos;allume plus</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>Suppression d&apos;un poste</label>
+            </value>
+            <value>
+                <fullName>10</fullName>
+                <default>false</default>
+                <label>Vérification de l&apos;initialisation</label>
+            </value>
+            <value>
+                <fullName>11</fullName>
+                <default>false</default>
+                <label>Vérification des éléments</label>
+            </value>
+            <value>
+                <fullName>22</fullName>
+                <default>false</default>
+                <label>Visite de courtoisie</label>
+            </value>
+            <value>
+                <fullName>33</fullName>
+                <default>false</default>
+                <label>Streaming Meter</label>
+            </value>
+            <value>
+                <fullName>34</fullName>
+                <default>false</default>
+                <label>Contrôle Streaming Meter</label>
+            </value>
+            <value>
+                <fullName>35</fullName>
+                <default>false</default>
+                <label>Réinstallation Streaming Meter</label>
+            </value>
+            <value>
+                <fullName>36</fullName>
+                <default>false</default>
+                <label>Installation Streaming Meter</label>
+            </value>
+            <value>
+                <fullName>37</fullName>
+                <default>false</default>
+                <label>Mapping devices</label>
+            </value>
+            <value>
+                <fullName>Contrôle audience</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contrôle audience (old)</label>
+            </value>
+            <value>
+                <fullName>Contrôle de connexion</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contrôle de connexion (old)</label>
+            </value>
+            <value>
+                <fullName>Contrôle de l&apos;installation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contrôle de l&apos;installation (old)</label>
+            </value>
+            <value>
+                <fullName>Déménagement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Déménagement (old)</label>
+            </value>
+            <value>
+                <fullName>Désinstallation définitive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Désinstallation définitive (old)</label>
+            </value>
+            <value>
+                <fullName>Réinstallation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Réinstallation (old)</label>
+            </value>
+            <value>
+                <fullName>Vérification des éléments</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vérification des éléments (old)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>33</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>21</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>29</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>31</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>26</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>16</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>12</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>24</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>18</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>32</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>19</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>23</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>13</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>14</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>11</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>22</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>34</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>35</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>36</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>37</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

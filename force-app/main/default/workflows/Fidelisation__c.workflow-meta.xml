@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>FU_Maj_Impact</fullName>
+        <field>Solde_de_points_a_creation__c</field>
+        <formula>IF(
+				RecordType.Name = $Label.FID_Type_d_enregistrement_Credit,
+				Foyer__r.Solde_de_points__c + Points_credites__c,
+				Foyer__r.Solde_de_points__c - Points_debites__c
+)</formula>
+        <name>FU_Maj_Impact</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>WF01_FID_Maj_Impact</fullName>
+        <actions>
+            <name>FU_Maj_Impact</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.Bypass_workflows__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

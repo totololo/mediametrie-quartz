@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV01_date_de_suspension_requise</fullName>
+    <active>true</active>
+    <description>Lorsque le foyer panéliste est suspendu, la date de suspension doit être renseignée à la date du jour</description>
+    <errorConditionFormula>AND(
+$User.Bypass_validation_rules__c = False, 
+Suspendu__c = True, 
+    OR(
+       ISCHANGED(Suspendu__c),
+       ISCHANGED( Date_de_suspension__c )
+    ),
+    OR(
+       ISBLANK(Date_de_suspension__c),
+       Date_de_suspension__c &lt;&gt; TODAY()
+      )
+)</errorConditionFormula>
+    <errorMessage>Lorsque le foyer panéliste est suspendu, la date de suspension doit être renseignée à la date du jour.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>D_sinstallations_Postes_PaME</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>Type_de_l_intervention__c</columns>
+    <columns>Sous_type_d_intervention__c</columns>
+    <columns>Status</columns>
+    <columns>Priority</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type_de_l_intervention__c</field>
+        <operation>equals</operation>
+        <value>2</value>
+    </filters>
+    <filters>
+        <field>Type_de_panel__c</field>
+        <operation>contains</operation>
+        <value>PaME</value>
+    </filters>
+    <filters>
+        <field>Sous_type_d_intervention__c</field>
+        <operation>equals</operation>
+        <value>3</value>
+    </filters>
+    <label>Désinstallations Postes PaME</label>
+</ListView>

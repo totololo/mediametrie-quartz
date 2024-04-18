@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV04_debit_annule</fullName>
+    <active>true</active>
+    <description>Règle qui autorise l&apos;annulation d&apos;un débit uniquement pour les responsables</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				!$User.Bypass_RDD__c,
+				TEXT(Statut_de_commande__c) = $Label.FID_Statut_de_commande_Annulee,
+				RecordType.Name = $Label.FID_Type_d_enregistrement_Debit,
+				$Profile.Name != $Label.PROFILE_Supervieur_prm
+)</errorConditionFormula>
+    <errorMessage>Le débit ne peut être annulé que par un responsable</errorMessage>
+</ValidationRule>

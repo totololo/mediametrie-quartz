@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV05_date_de_chute_obligatoire</fullName>
+    <active>false</active>
+    <description>Règle qui oblige la saisie du champ Date de chute si le statut du foyer est Chute définitive.</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				$User.Username&lt;&gt;$Label.Mulesoft_integrationUser_username,
+				ISCHANGED(Statut_du_foyer__c),
+				TEXT(Statut_du_foyer__c) = $Label.ACC_Statut_du_foyer_Chute_definitive,
+				OR(
+								ISBLANK(Date_de_chute__c),
+								Date_de_chute__c &lt; TODAY()
+				)
+)</errorConditionFormula>
+    <errorDisplayField>Date_de_chute__c</errorDisplayField>
+    <errorMessage>Lorsque le statut du foyer passe à &quot;Chute définitive&quot;, la date de chute est obligatoire et doit être supérieure ou égale à la date du jour</errorMessage>
+</ValidationRule>

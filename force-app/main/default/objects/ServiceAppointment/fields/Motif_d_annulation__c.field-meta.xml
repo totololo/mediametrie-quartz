@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_d_annulation__c</fullName>
+    <externalId>false</externalId>
+    <label>Motif d&apos;annulation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Annulation Panéliste</fullName>
+                <default>false</default>
+                <label>Annulation Panéliste</label>
+            </value>
+            <value>
+                <fullName>Annulation Ambassadeur</fullName>
+                <default>false</default>
+                <label>Annulation Ambassadeur</label>
+            </value>
+            <value>
+                <fullName>Annulation Technicien Externe</fullName>
+                <default>false</default>
+                <label>Annulation Technicien Externe</label>
+            </value>
+            <value>
+                <fullName>Annulation problème résolu</fullName>
+                <default>false</default>
+                <label>Annulation problème résolu</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Annulation Panéliste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Annulation Ambassadeur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Annulation Technicien Externe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Annulation problème résolu</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

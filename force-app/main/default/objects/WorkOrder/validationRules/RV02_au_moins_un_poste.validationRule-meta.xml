@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV02_au_moins_un_poste</fullName>
+    <active>false</active>
+    <description>Règle qui oblige à choisir au moins un équipement pour une intervention dépannage/support</description>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+!$User.Bypass_RDD__c,
+ISBLANK(Equipement_du_foyer__c),
+TEXT(Type_de_l_intervention__c) = $Label.WOR_Type_d_intervention_Depannage_support
+)</errorConditionFormula>
+    <errorDisplayField>AssetId</errorDisplayField>
+    <errorMessage>Merci de choisir un équipement pour pouvoir créer une intervention de type dépannage/support</errorMessage>
+</ValidationRule>

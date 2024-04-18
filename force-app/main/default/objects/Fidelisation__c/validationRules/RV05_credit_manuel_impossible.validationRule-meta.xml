@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV05_credit_manuel_impossible</fullName>
+    <active>true</active>
+    <description>Règle qui autorise la création de crédit manuel uniquement pour les superviseurs et les data managers.</description>
+    <errorConditionFormula>AND(
+    !$User.Bypass_validation_rules__c,
+    RecordType.Name = $Label.FID_Type_d_enregistrement_Credit,
+    $Profile.Name != $Label.PROFILE_Data_manager,
+    $Profile.Name != $Label.PROFILE_Supervieur_prm,
+$Profile.Name != $Label.PROFILE_SVC_Data_manager,
+$Profile.Name != $Label.PROFILE_System_Administrator,
+$Profile.Name != $Label.PROFILE_SVC_Administrateur_Systeme,
+				$Profile.Name != $Label.PROFILE_Administrateur_systeme
+)</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas ajouter un crédit manuellement si vous n&apos;êtes pas un superviseur ou un data manager</errorMessage>
+</ValidationRule>

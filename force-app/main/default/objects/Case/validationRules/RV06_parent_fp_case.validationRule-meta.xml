@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV06_parent_fp_case</fullName>
+    <active>false</active>
+    <description>En cas de saisie manuelle il faut vérifier que le foyer panéliste de la requête et de la requête parent sont identiques</description>
+    <errorConditionFormula>Foyer_paneliste__c != Parent.Foyer_paneliste__c</errorConditionFormula>
+    <errorMessage>incohérence entre le foyer panéliste de la requete et de la requete parent</errorMessage>
+</ValidationRule>

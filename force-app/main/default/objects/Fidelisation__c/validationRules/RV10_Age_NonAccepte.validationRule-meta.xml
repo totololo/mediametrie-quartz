@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV10_Age_NonAccepte</fullName>
+    <active>true</active>
+    <description>l&apos;age du panéliste doit être supérieure à 15</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				!$User.Bypass_RDD__c,
+ TEXT(Foyer_paneliste__r.Referentiel_Panel__r.Type_de_panel__c)=&apos;AIP&apos;,
+RecordType.Name = $Label.FID_Type_d_enregistrement_Debit,				
+	TEXT(Type_de_mouvement__c)=&apos;1&apos;,  
+	YEAR(TODAY()) - YEAR(Composition_du_foyer__r.Birthdate )&lt; 15
+	)</errorConditionFormula>
+    <errorMessage>Commande refusée, vous êtes trop jeune.</errorMessage>
+</ValidationRule>

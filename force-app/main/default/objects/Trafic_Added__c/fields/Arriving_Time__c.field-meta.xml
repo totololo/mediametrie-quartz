@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Arriving_Time__c</fullName>
+    <externalId>false</externalId>
+    <label>Créneau Horaire</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Entre 9 et 10 H</fullName>
+                <default>false</default>
+                <label>Entre 9 et 10 H</label>
+            </value>
+            <value>
+                <fullName>Entre 10 et 11 H</fullName>
+                <default>false</default>
+                <label>Entre 10 et 11 H</label>
+            </value>
+            <value>
+                <fullName>Entre 15 et 16 H</fullName>
+                <default>false</default>
+                <label>Entre 15 et 16 H</label>
+            </value>
+            <value>
+                <fullName>Entre 16 et 17 H</fullName>
+                <default>false</default>
+                <label>Entre 16 et 17 H</label>
+            </value>
+            <value>
+                <fullName>Entre 17 et 18 H</fullName>
+                <default>false</default>
+                <label>Entre 17 et 18 H</label>
+            </value>
+            <value>
+                <fullName>Entre 18 et 19 H</fullName>
+                <default>false</default>
+                <label>Entre 18 et 19 H</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

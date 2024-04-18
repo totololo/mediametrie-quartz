@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV08_debit_impossible_pour_foyer_recrute</fullName>
+    <active>true</active>
+    <description>Règle qui empêche un foyer panéliste de faire une commande de points dans les 3 mois après son installation</description>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+RecordType.Name = $Label.FID_Type_d_enregistrement_Debit,AND($Profile.Name &lt;&gt; $Label.PROFILE_Supervieur_prm,Foyer_paneliste__r.Nb_mois_apres_collection__c &lt; VALUE($Label.RV_Limitation_apres_installation))
+
+)</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas débiter un foyer panéliste installé depuis moins de 3 mois sauf profil superviseur PRM</errorMessage>
+</ValidationRule>

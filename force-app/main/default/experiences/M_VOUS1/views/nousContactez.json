@@ -1,0 +1,97 @@
+{
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "c6d8c345-4204-4152-933f-0c189ddf8907",
+  "label" : "Nous Contactez",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "99f8bb1a-3cdf-4e3f-9896-033dffff46db",
+          "columns" : [ {
+            "UUID" : "9d166656-e8ae-467c-b47c-96e39f72f380",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "99f8bb1a-3cdf-4e3f-9896-033dffff46db",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:NousContactez",
+          "id" : "016369d5-43f7-4179-b457-7f64a78ec750",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "9d166656-e8ae-467c-b47c-96e39f72f380",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "9bc29ca9-85d9-42d1-85d8-c56d061e20e0",
+          "columns" : [ {
+            "UUID" : "f207f16f-6cf0-4c47-9832-50112a7c30e4",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 150
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "9bc29ca9-85d9-42d1-85d8-c56d061e20e0",
+      "regions" : [ {
+        "id" : "f207f16f-6cf0-4c47-9832-50112a7c30e4",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "97580f6e-537e-4c06-bd75-12c93878701c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "M&VOUS - Nous contacter"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "2c2994d5-e965-4207-a191-4e7e878c82d1",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9283d74c-9e20-4b66-a320-b1447faec09b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-nous-contactez"
+}

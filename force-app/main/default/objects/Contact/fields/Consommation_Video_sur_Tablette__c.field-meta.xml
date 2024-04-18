@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consommation_Video_sur_Tablette__c</fullName>
+    <externalId>false</externalId>
+    <label>Consommation Vidéo sur Tablette</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>NSP/Refus</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>Jamais</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>Presque tous les jours</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>Tous les jours</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>1 à 2 fois par semaine</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>1 à 3 fois par mois</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>Moins souvent</label>
+            </value>
+            <value>
+                <fullName>Non réponse</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non réponse</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

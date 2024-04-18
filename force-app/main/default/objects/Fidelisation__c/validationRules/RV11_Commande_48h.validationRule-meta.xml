@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV11_Commande_48h</fullName>
+    <active>true</active>
+    <description>Bloquer la commande si le panel a commandé dans les dernières 48H</description>
+    <errorConditionFormula>AND(
+ISNEW(),
+!$User.Bypass_validation_rules__c,
+!$User.Bypass_RDD__c,
+TEXT(Foyer_paneliste__r.Referentiel_Panel__r.Type_de_panel__c)=&apos;AIP&apos;,
+RecordType.Name = $Label.FID_Type_d_enregistrement_Debit,
+TEXT(Type_de_mouvement__c)=&apos;1&apos;,
+Individu_paneliste__c!=null,
+TODAY() -  Individu_paneliste__r.Date_de_derniere_commande__c &lt; 2,
+TEXT(Origine_de_la_commande__c) = $Label.FID_OrigineCommande_Application_MMOI
+)</errorConditionFormula>
+    <errorMessage>Vous avez déjà fait une commande il y a moins de 48H.</errorMessage>
+</ValidationRule>

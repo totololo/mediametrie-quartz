@@ -1,0 +1,145 @@
+.THIS.form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.THIS .label {
+    color: black;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.THIS .type{
+    background-color: white;
+    width: 50vw;
+    margin-top: 0.25%;;
+    padding: 0.25%;
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 1px #bfbfbf;
+    font-size: 2vh;
+    height: 5vh;
+}
+.THIS .textarea {
+    background-color: white;
+    width: 50vw;
+    margin-top: 0.25%;;
+    padding: 0.25%;
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 1px #bfbfbf;
+    font-size: 2vh;
+    height: 5vh;
+}
+
+.THIS .type:focus {
+    outline: none;
+} 
+
+.THIS .textarea {
+    width: 49.5vw;
+}
+
+.THIS .option {
+    color: white !important;
+}
+
+.THIS #type{
+    margin-bottom: 1%;
+}
+.THIS #sous-type{
+    margin-bottom: 1%;
+}
+
+.THIS #motif {
+    margin-bottom: 1%;
+}
+
+.THIS #date_fin  {
+    margin-bottom: 1vh;
+}
+.THIS #fichier {
+    margin-bottom: 1vh;
+}
+
+.THIS #date_fin{
+    border-radius: 0;
+    border: solid 1px #bfbfbf;
+    padding: 0.5vh;
+}
+.THIS #date_debut {
+    border-radius: 0;
+    border: solid 1px #bfbfbf;
+    padding: 0.5vh;
+}
+
+.THIS #fichier {
+    border: solid 1px #bfbfbf;
+    padding: 0.75vh;
+}
+
+.THIS .daySpan {
+    font-weight: bold;
+}
+
+.THIS .hourSpan {
+    float: right;
+}
+
+.THIS .daysRow {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+
+.THIS .horaire-title {
+    font-size: 12px !important;
+}
+
+.THIS .horraireList {
+    font-size: 12px !important;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+.THIS .soumettre {
+    margin-top: 30px !important;
+}
+
+.THIS .startDate{
+    width: 50vw;
+}
+
+.THIS .timeDiv{
+    margin-bottom: 0px !important;
+}
+
+@media screen and (max-width: 600px) {    
+    .THIS .horaire-title {
+        font-size: 13px !important;
+    }
+    
+    .THIS .horraireList {
+        font-size: 13px !important;
+        margin-top: 10% !important;
+    }
+    
+    .THIS .startDate{
+        width: -webkit-fill-available;
+    }
+}
+
+@media all and (max-width: 1023px) {
+    .THIS .startDate{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }    
+    
+   
+    .THIS .dropDownBox {
+              height: 50px;
+        white-space: normal;
+        
+    }
+
+}

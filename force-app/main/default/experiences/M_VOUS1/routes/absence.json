@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "4aa86890-9f8f-491b-8551-4773dc3597a3",
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "configurationTags" : [ ],
+  "id" : "b9059702-183c-42be-9e8a-1e93dd98c4d0",
+  "label" : "Absence",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-absences",
+  "type" : "route",
+  "urlPrefix" : "absence"
+}

@@ -1,0 +1,1695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_de_la_requete__c</fullName>
+    <externalId>false</externalId>
+    <label>Motif de la requête</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sous_type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A oublié de retirer sa lettre</fullName>
+                <default>false</default>
+                <label>A oublié de retirer sa lettre</label>
+            </value>
+            <value>
+                <fullName>A oublié de se déclarer</fullName>
+                <default>false</default>
+                <label>A oublié de se déclarer</label>
+            </value>
+            <value>
+                <fullName>A oublié d&apos;indiquer sa lettre</fullName>
+                <default>false</default>
+                <label>A oublié d&apos;indiquer sa lettre</label>
+            </value>
+            <value>
+                <fullName>A utilisé une autre lettre</fullName>
+                <default>false</default>
+                <label>A utilisé une autre lettre</label>
+            </value>
+            <value>
+                <fullName>Abonnement Canal</fullName>
+                <default>false</default>
+                <label>Abonnement Canal</label>
+            </value>
+            <value>
+                <fullName>Abonnement hors foyer ou autre</fullName>
+                <default>false</default>
+                <label>Abonnement hors foyer ou autre</label>
+            </value>
+            <value>
+                <fullName>Abs</fullName>
+                <default>false</default>
+                <label>Abs</label>
+            </value>
+            <value>
+                <fullName>Absence d&apos;audience justifiée</fullName>
+                <default>false</default>
+                <label>Absence d&apos;audience justifiée</label>
+            </value>
+            <value>
+                <fullName>Absence non déclarée</fullName>
+                <default>false</default>
+                <label>Absence non déclarée</label>
+            </value>
+            <value>
+                <fullName>Absence prolongée</fullName>
+                <default>false</default>
+                <label>Absence prolongée</label>
+            </value>
+            <value>
+                <fullName>Absent du domicile - Audimètre débranché</fullName>
+                <default>false</default>
+                <label>Absent du domicile - Audimètre débranché</label>
+            </value>
+            <value>
+                <fullName>Ajout de coordonnées</fullName>
+                <default>false</default>
+                <label>Ajout de coordonnées</label>
+            </value>
+            <value>
+                <fullName>Ajout de poste</fullName>
+                <default>false</default>
+                <label>Ajout de poste</label>
+            </value>
+            <value>
+                <fullName>Ajout de poste annulé</fullName>
+                <default>false</default>
+                <label>Ajout de poste annulé</label>
+            </value>
+            <value>
+                <fullName>Application non active</fullName>
+                <default>false</default>
+                <label>Application non active</label>
+            </value>
+            <value>
+                <fullName>Attribution d&apos;une touche à un enfant de moins de 4 ans</fullName>
+                <default>false</default>
+                <label>Attribution d&apos;une touche à un enfant de moins de 4 ans</label>
+            </value>
+            <value>
+                <fullName>Audience inférieure à 10min</fullName>
+                <default>false</default>
+                <label>Audience inférieure à 10min</label>
+            </value>
+            <value>
+                <fullName>Audience sans présence</fullName>
+                <default>false</default>
+                <label>Audience sans présence</label>
+            </value>
+            <value>
+                <fullName>Audience&gt; à X heures avec changement de chaîne</fullName>
+                <default>false</default>
+                <label>Audience&gt; à X heures avec changement de chaîne</label>
+            </value>
+            <value>
+                <fullName>Audiences atypiques</fullName>
+                <default>false</default>
+                <label>Audiences atypiques</label>
+            </value>
+            <value>
+                <fullName>Audiences constatées</fullName>
+                <default>false</default>
+                <label>Audiences constatées</label>
+            </value>
+            <value>
+                <fullName>Autres abonnements</fullName>
+                <default>false</default>
+                <label>Autres abonnements</label>
+            </value>
+            <value>
+                <fullName>Autres désabonnements</fullName>
+                <default>false</default>
+                <label>Autres désabonnements</label>
+            </value>
+            <value>
+                <fullName>Autres modifications</fullName>
+                <default>false</default>
+                <label>Autres modifications</label>
+            </value>
+            <value>
+                <fullName>Autres motifs</fullName>
+                <default>false</default>
+                <label>Autres motifs</label>
+            </value>
+            <value>
+                <fullName>Autres raisons</fullName>
+                <default>false</default>
+                <label>Autres raisons</label>
+            </value>
+            <value>
+                <fullName>Autres renseignements</fullName>
+                <default>false</default>
+                <label>Autres renseignements</label>
+            </value>
+            <value>
+                <fullName>Autres usages justifié (utilisation de périphériques, VOD...)</fullName>
+                <default>false</default>
+                <label>Autres usages justifié (utilisation de périphériques, VOD...)</label>
+            </value>
+            <value>
+                <fullName>Autres usages justifié sans appel (utilisation de périphériques, VOD...)</fullName>
+                <default>false</default>
+                <label>Autres usages justifié sans appel (utilisation de périphériques, VOD...)</label>
+            </value>
+            <value>
+                <fullName>Autres usages non justifié (mauvaise audience =&gt; Collecte OK)</fullName>
+                <default>false</default>
+                <label>Autres usages non justifié (mauvaise audience =&gt; Collecte OK)</label>
+            </value>
+            <value>
+                <fullName>Autres usages non justifié (mauvaise audience =&gt; Intervention)</fullName>
+                <default>false</default>
+                <label>Autres usages non justifié (mauvaise audience =&gt; Intervention)</label>
+            </value>
+            <value>
+                <fullName>Canalsat</fullName>
+                <default>false</default>
+                <label>Canalsat</label>
+            </value>
+            <value>
+                <fullName>Chaînes comprises dans l&apos;abonnement</fullName>
+                <default>false</default>
+                <label>Chaînes comprises dans l&apos;abonnement</label>
+            </value>
+            <value>
+                <fullName>Changement ADSL</fullName>
+                <default>false</default>
+                <label>Changement ADSL</label>
+            </value>
+            <value>
+                <fullName>Changement de coordonnées</fullName>
+                <default>false</default>
+                <label>Changement de coordonnées</label>
+            </value>
+            <value>
+                <fullName>Changement d&apos;état (membre/invité)</fullName>
+                <default>false</default>
+                <label>Changement d&apos;état (membre/invité)</label>
+            </value>
+            <value>
+                <fullName>Changt de fréquence</fullName>
+                <default>false</default>
+                <label>Changt de fréquence</label>
+            </value>
+            <value>
+                <fullName>Chèques cadeaux non reçus</fullName>
+                <default>false</default>
+                <label>Chèques cadeaux non reçus</label>
+            </value>
+            <value>
+                <fullName>Chute</fullName>
+                <default>false</default>
+                <label>Chute</label>
+            </value>
+            <value>
+                <fullName>Codification impossible dans Panama</fullName>
+                <default>false</default>
+                <label>Codification impossible dans Panama</label>
+            </value>
+            <value>
+                <fullName>Commande de cadeaux</fullName>
+                <default>false</default>
+                <label>Commande de cadeaux</label>
+            </value>
+            <value>
+                <fullName>Commande de moins de 3 mois</fullName>
+                <default>false</default>
+                <label>Commande de moins de 3 mois</label>
+            </value>
+            <value>
+                <fullName>Commande de point hors délai</fullName>
+                <default>false</default>
+                <label>Commande de point hors délai</label>
+            </value>
+            <value>
+                <fullName>Commentaire</fullName>
+                <default>false</default>
+                <label>Commentaire</label>
+            </value>
+            <value>
+                <fullName>Contrôle incohérent</fullName>
+                <default>false</default>
+                <label>Contrôle incohérent</label>
+            </value>
+            <value>
+                <fullName>Coupure de courant/orages</fullName>
+                <default>false</default>
+                <label>Coupure de courant/orages</label>
+            </value>
+            <value>
+                <fullName>Création invité permanent</fullName>
+                <default>false</default>
+                <label>Création invité permanent</label>
+            </value>
+            <value>
+                <fullName>Date de rappel en cours</fullName>
+                <default>false</default>
+                <label>Date de rappel en cours</label>
+            </value>
+            <value>
+                <fullName>Débranchement (orage, problème électrique…)</fullName>
+                <default>false</default>
+                <label>Débranchement (orage, problème électrique…)</label>
+            </value>
+            <value>
+                <fullName>Débranchement suite à mauvaise participation (débranche la nuit…)</fullName>
+                <default>false</default>
+                <label>Débranchement suite à mauvaise participation (débranche la nuit…)</label>
+            </value>
+            <value>
+                <fullName>Déclaration des invités</fullName>
+                <default>false</default>
+                <label>Déclaration des invités</label>
+            </value>
+            <value>
+                <fullName>Dégroupage en cours</fullName>
+                <default>false</default>
+                <label>Dégroupage en cours</label>
+            </value>
+            <value>
+                <fullName>Demande de renseignement</fullName>
+                <default>false</default>
+                <label>Demande de renseignement</label>
+            </value>
+            <value>
+                <fullName>Déménagement</fullName>
+                <default>false</default>
+                <label>Déménagement</label>
+            </value>
+            <value>
+                <fullName>Déménagement/travaux</fullName>
+                <default>false</default>
+                <label>Déménagement/travaux</label>
+            </value>
+            <value>
+                <fullName>Départ en vacance</fullName>
+                <default>false</default>
+                <label>Départ en vacance</label>
+            </value>
+            <value>
+                <fullName>Désabonné Canal</fullName>
+                <default>false</default>
+                <label>Désabonné Canal</label>
+            </value>
+            <value>
+                <fullName>Désinstallation en cours</fullName>
+                <default>false</default>
+                <label>Désinstallation en cours</label>
+            </value>
+            <value>
+                <fullName>Device incompatible</fullName>
+                <default>false</default>
+                <label>Device incompatible</label>
+            </value>
+            <value>
+                <fullName>Devices en panne/cassé</fullName>
+                <default>false</default>
+                <label>Devices en panne/cassé</label>
+            </value>
+            <value>
+                <fullName>Double participation</fullName>
+                <default>false</default>
+                <label>Double participation</label>
+            </value>
+            <value>
+                <fullName>Email envoyé</fullName>
+                <default>false</default>
+                <label>Email envoyé</label>
+            </value>
+            <value>
+                <fullName>Envoi d&apos;une configuration</fullName>
+                <default>false</default>
+                <label>Envoi d&apos;une configuration</label>
+            </value>
+            <value>
+                <fullName>Foyer désuspendu</fullName>
+                <default>false</default>
+                <label>Foyer désuspendu</label>
+            </value>
+            <value>
+                <fullName>Foyer jamais abonné Canal</fullName>
+                <default>false</default>
+                <label>Foyer jamais abonné Canal</label>
+            </value>
+            <value>
+                <fullName>Foyer mis sous surveillance</fullName>
+                <default>false</default>
+                <label>Foyer mis sous surveillance</label>
+            </value>
+            <value>
+                <fullName>Foyer regarde sur un autre support</fullName>
+                <default>false</default>
+                <label>Foyer regarde sur un autre support</label>
+            </value>
+            <value>
+                <fullName>Foyer suspendu</fullName>
+                <default>false</default>
+                <label>Foyer suspendu</label>
+            </value>
+            <value>
+                <fullName>FTC</fullName>
+                <default>false</default>
+                <label>FTC</label>
+            </value>
+            <value>
+                <fullName>Individu refuse de configurer son dévice au routeur</fullName>
+                <default>false</default>
+                <label>Individu refuse de configurer son dévice au routeur</label>
+            </value>
+            <value>
+                <fullName>Individu refuse d&apos;installer son dévice (meter)</fullName>
+                <default>false</default>
+                <label>Individu refuse d&apos;installer son dévice (meter)</label>
+            </value>
+            <value>
+                <fullName>Information manquante (commande)</fullName>
+                <default>false</default>
+                <label>Information manquante (commande)</label>
+            </value>
+            <value>
+                <fullName>Initialisation mise à jour</fullName>
+                <default>false</default>
+                <label>Initialisation mise à jour</label>
+            </value>
+            <value>
+                <fullName>Initialisation non mise à jour</fullName>
+                <default>false</default>
+                <label>Initialisation non mise à jour</label>
+            </value>
+            <value>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+                <label>Injoignable</label>
+            </value>
+            <value>
+                <fullName>Installation du Meter impossible</fullName>
+                <default>false</default>
+                <label>Installation du Meter impossible</label>
+            </value>
+            <value>
+                <fullName>Installation Meter OK</fullName>
+                <default>false</default>
+                <label>Installation Meter OK</label>
+            </value>
+            <value>
+                <fullName>Intervention ouverte</fullName>
+                <default>false</default>
+                <label>Intervention ouverte</label>
+            </value>
+            <value>
+                <fullName>L’individu a quitté la mesure</fullName>
+                <default>false</default>
+                <label>L’individu a quitté la mesure</label>
+            </value>
+            <value>
+                <fullName>Ligne HS/NNA</fullName>
+                <default>false</default>
+                <label>Ligne HS/NNA</label>
+            </value>
+            <value>
+                <fullName>Manipulation ko</fullName>
+                <default>false</default>
+                <label>Manipulation ko</label>
+            </value>
+            <value>
+                <fullName>Manipulation ok</fullName>
+                <default>false</default>
+                <label>Manipulation ok</label>
+            </value>
+            <value>
+                <fullName>Message laissé sur le répondeur</fullName>
+                <default>false</default>
+                <label>Message laissé sur le répondeur</label>
+            </value>
+            <value>
+                <fullName>Messages</fullName>
+                <default>false</default>
+                <label>Messages</label>
+            </value>
+            <value>
+                <fullName>Mise à jour coordonnées</fullName>
+                <default>false</default>
+                <label>Mise à jour coordonnées</label>
+            </value>
+            <value>
+                <fullName>Mise à jour version logicielle</fullName>
+                <default>false</default>
+                <label>Mise à jour version logicielle</label>
+            </value>
+            <value>
+                <fullName>Modification composition du foyer</fullName>
+                <default>false</default>
+                <label>Modification composition du foyer</label>
+            </value>
+            <value>
+                <fullName>Modification de la profession</fullName>
+                <default>false</default>
+                <label>Modification de la profession</label>
+            </value>
+            <value>
+                <fullName>Modification de l&apos;équipement audiovisuel</fullName>
+                <default>false</default>
+                <label>Modification de l&apos;équipement audiovisuel</label>
+            </value>
+            <value>
+                <fullName>Modification des données socio-démo foyer</fullName>
+                <default>false</default>
+                <label>Modification des données socio-démo foyer</label>
+            </value>
+            <value>
+                <fullName>Modification du nombre de jours de présence</fullName>
+                <default>false</default>
+                <label>Modification du nombre de jours de présence</label>
+            </value>
+            <value>
+                <fullName>Modification poste du foyer</fullName>
+                <default>false</default>
+                <label>Modification poste du foyer</label>
+            </value>
+            <value>
+                <fullName>Msg</fullName>
+                <default>false</default>
+                <label>Msg</label>
+            </value>
+            <value>
+                <fullName>N&apos;a pas allumé la télévision</fullName>
+                <default>false</default>
+                <label>N&apos;a pas allumé la télévision</label>
+            </value>
+            <value>
+                <fullName>N&apos;a pas regardé les chaînes Canal</fullName>
+                <default>false</default>
+                <label>N&apos;a pas regardé les chaînes Canal</label>
+            </value>
+            <value>
+                <fullName>Naissance</fullName>
+                <default>false</default>
+                <label>Naissance</label>
+            </value>
+            <value>
+                <fullName>Ne s&apos;allume plus</fullName>
+                <default>false</default>
+                <label>Ne s&apos;allume plus</label>
+            </value>
+            <value>
+                <fullName>Ne s&apos;est pas trouvé dans la pièce</fullName>
+                <default>false</default>
+                <label>Ne s&apos;est pas trouvé dans la pièce</label>
+            </value>
+            <value>
+                <fullName>Non abonné - Audience sur la chaÎne justifiée en claire</fullName>
+                <default>false</default>
+                <label>Non abonné - Audience sur la chaÎne justifiée en claire</label>
+            </value>
+            <value>
+                <fullName>NOOS</fullName>
+                <default>false</default>
+                <label>NOOS</label>
+            </value>
+            <value>
+                <fullName>Notation des émissions</fullName>
+                <default>false</default>
+                <label>Notation des émissions</label>
+            </value>
+            <value>
+                <fullName>Nouvel devices/changement de devices</fullName>
+                <default>false</default>
+                <label>Nouvel devices/changement de devices</label>
+            </value>
+            <value>
+                <fullName>Nouvel envoi en recommandé</fullName>
+                <default>false</default>
+                <label>Nouvel envoi en recommandé</label>
+            </value>
+            <value>
+                <fullName>Nouvel équipement</fullName>
+                <default>false</default>
+                <label>Nouvel équipement</label>
+            </value>
+            <value>
+                <fullName>Nouvelle personne dans le foyer</fullName>
+                <default>false</default>
+                <label>Nouvelle personne dans le foyer</label>
+            </value>
+            <value>
+                <fullName>NPAI</fullName>
+                <default>false</default>
+                <label>NPAI</label>
+            </value>
+            <value>
+                <fullName>Offre gratuite</fullName>
+                <default>false</default>
+                <label>Offre gratuite</label>
+            </value>
+            <value>
+                <fullName>Panéliste est parti de la mesure d’audience</fullName>
+                <default>false</default>
+                <label>Panéliste est parti de la mesure d’audience</label>
+            </value>
+            <value>
+                <fullName>Pas de connexion individu/foyer (justifié)</fullName>
+                <default>false</default>
+                <label>Pas de connexion individu/foyer (justifié)</label>
+            </value>
+            <value>
+                <fullName>Pas de connexion web</fullName>
+                <default>false</default>
+                <label>Pas de connexion web</label>
+            </value>
+            <value>
+                <fullName>Pas de message laissé sur le répondeur</fullName>
+                <default>false</default>
+                <label>Pas de message laissé sur le répondeur</label>
+            </value>
+            <value>
+                <fullName>Pas de répondeur</fullName>
+                <default>false</default>
+                <label>Pas de répondeur</label>
+            </value>
+            <value>
+                <fullName>Pas disponible (pour faire la manipulation, personne non concernée...)</fullName>
+                <default>false</default>
+                <label>Pas disponible (pour faire la manipulation, personne non concernée...)</label>
+            </value>
+            <value>
+                <fullName>Pbm page de déclaration</fullName>
+                <default>false</default>
+                <label>Pbm page de déclaration</label>
+            </value>
+            <value>
+                <fullName>Pbm routeur</fullName>
+                <default>false</default>
+                <label>Pbm routeur</label>
+            </value>
+            <value>
+                <fullName>Plus de réception TV</fullName>
+                <default>false</default>
+                <label>Plus de réception TV</label>
+            </value>
+            <value>
+                <fullName>Poste coché hors tension</fullName>
+                <default>false</default>
+                <label>Poste coché hors tension</label>
+            </value>
+            <value>
+                <fullName>Poste décoché hors tension</fullName>
+                <default>false</default>
+                <label>Poste décoché hors tension</label>
+            </value>
+            <value>
+                <fullName>Prise de RDV technicien</fullName>
+                <default>false</default>
+                <label>Prise de RDV technicien</label>
+            </value>
+            <value>
+                <fullName>Problème ADSL</fullName>
+                <default>false</default>
+                <label>Problème ADSL</label>
+            </value>
+            <value>
+                <fullName>Problème audimètre</fullName>
+                <default>false</default>
+                <label>Problème audimètre</label>
+            </value>
+            <value>
+                <fullName>Problème audimètre/routeur</fullName>
+                <default>false</default>
+                <label>Problème audimètre/routeur</label>
+            </value>
+            <value>
+                <fullName>Problème autre équipement</fullName>
+                <default>false</default>
+                <label>Problème autre équipement</label>
+            </value>
+            <value>
+                <fullName>Problème câble numérique</fullName>
+                <default>false</default>
+                <label>Problème câble numérique</label>
+            </value>
+            <value>
+                <fullName>Problème connexion</fullName>
+                <default>false</default>
+                <label>Problème connexion</label>
+            </value>
+            <value>
+                <fullName>Problème d&apos;antenne</fullName>
+                <default>false</default>
+                <label>Problème d&apos;antenne</label>
+            </value>
+            <value>
+                <fullName>Problème de déclaration</fullName>
+                <default>false</default>
+                <label>Problème de déclaration</label>
+            </value>
+            <value>
+                <fullName>Problème de MAG</fullName>
+                <default>false</default>
+                <label>Problème de MAG</label>
+            </value>
+            <value>
+                <fullName>Problème de parabole</fullName>
+                <default>false</default>
+                <label>Problème de parabole</label>
+            </value>
+            <value>
+                <fullName>Problème de télécommande</fullName>
+                <default>false</default>
+                <label>Problème de télécommande</label>
+            </value>
+            <value>
+                <fullName>Problème de TV</fullName>
+                <default>false</default>
+                <label>Problème de TV</label>
+            </value>
+            <value>
+                <fullName>Problème décodeur TV</fullName>
+                <default>false</default>
+                <label>Problème décodeur TV</label>
+            </value>
+            <value>
+                <fullName>Problème équipement panéliste</fullName>
+                <default>false</default>
+                <label>Problème équipement panéliste</label>
+            </value>
+            <value>
+                <fullName>Problème ligne téléphonique</fullName>
+                <default>false</default>
+                <label>Problème ligne téléphonique</label>
+            </value>
+            <value>
+                <fullName>Problème ordinateur</fullName>
+                <default>false</default>
+                <label>Problème ordinateur</label>
+            </value>
+            <value>
+                <fullName>Problème smartphone</fullName>
+                <default>false</default>
+                <label>Problème smartphone</label>
+            </value>
+            <value>
+                <fullName>Problème sonde TV</fullName>
+                <default>false</default>
+                <label>Problème sonde TV</label>
+            </value>
+            <value>
+                <fullName>Problème tablette</fullName>
+                <default>false</default>
+                <label>Problème tablette</label>
+            </value>
+            <value>
+                <fullName>Problème technique</fullName>
+                <default>false</default>
+                <label>Problème technique</label>
+            </value>
+            <value>
+                <fullName>Question cadeaux</fullName>
+                <default>false</default>
+                <label>Question cadeaux</label>
+            </value>
+            <value>
+                <fullName>Question MCS</fullName>
+                <default>false</default>
+                <label>Question MCS</label>
+            </value>
+            <value>
+                <fullName>Raisons personnelles</fullName>
+                <default>false</default>
+                <label>Raisons personnelles</label>
+            </value>
+            <value>
+                <fullName>Réactivation/Réparation du Meter</fullName>
+                <default>false</default>
+                <label>Réactivation/Réparation du Meter</label>
+            </value>
+            <value>
+                <fullName>Rebranchement audimètre</fullName>
+                <default>false</default>
+                <label>Rebranchement audimètre</label>
+            </value>
+            <value>
+                <fullName>Reconnecté seul</fullName>
+                <default>false</default>
+                <label>Reconnecté seul</label>
+            </value>
+            <value>
+                <fullName>Réinstallation du Meter</fullName>
+                <default>false</default>
+                <label>Réinstallation du Meter</label>
+            </value>
+            <value>
+                <fullName>Relance</fullName>
+                <default>false</default>
+                <label>Relance</label>
+            </value>
+            <value>
+                <fullName>Relance convention meter Foyer</fullName>
+                <default>false</default>
+                <label>Relance convention meter Foyer</label>
+            </value>
+            <value>
+                <fullName>Relance convention meter Individu</fullName>
+                <default>false</default>
+                <label>Relance convention meter Individu</label>
+            </value>
+            <value>
+                <fullName>Remontée Cati</fullName>
+                <default>false</default>
+                <label>Remontée Cati</label>
+            </value>
+            <value>
+                <fullName>Renseignement sur l&apos;audimètre</fullName>
+                <default>false</default>
+                <label>Renseignement sur l&apos;audimètre</label>
+            </value>
+            <value>
+                <fullName>Renseignement sur l&apos;outil de mesure internet</fullName>
+                <default>false</default>
+                <label>Renseignement sur l&apos;outil de mesure internet</label>
+            </value>
+            <value>
+                <fullName>Retour d&apos;absence OK</fullName>
+                <default>false</default>
+                <label>Retour d&apos;absence OK</label>
+            </value>
+            <value>
+                <fullName>Sans objet</fullName>
+                <default>false</default>
+                <label>Sans objet</label>
+            </value>
+            <value>
+                <fullName>SMS envoyé</fullName>
+                <default>false</default>
+                <label>SMS envoyé</label>
+            </value>
+            <value>
+                <fullName>Solde de point</fullName>
+                <default>false</default>
+                <label>Solde de point</label>
+            </value>
+            <value>
+                <fullName>Sonne télévision allumée</fullName>
+                <default>false</default>
+                <label>Sonne télévision allumée</label>
+            </value>
+            <value>
+                <fullName>Sonne télévision éteinte</fullName>
+                <default>false</default>
+                <label>Sonne télévision éteinte</label>
+            </value>
+            <value>
+                <fullName>Suppression de poste</fullName>
+                <default>false</default>
+                <label>Suppression de poste</label>
+            </value>
+            <value>
+                <fullName>Suppression de poste annulée</fullName>
+                <default>false</default>
+                <label>Suppression de poste annulée</label>
+            </value>
+            <value>
+                <fullName>Suppression invité permanent</fullName>
+                <default>false</default>
+                <label>Suppression invité permanent</label>
+            </value>
+            <value>
+                <fullName>Télécommande</fullName>
+                <default>false</default>
+                <label>Télécommande</label>
+            </value>
+            <value>
+                <fullName>Travaux</fullName>
+                <default>false</default>
+                <label>Travaux</label>
+            </value>
+            <value>
+                <fullName>TV en panne</fullName>
+                <default>false</default>
+                <label>TV en panne</label>
+            </value>
+            <value>
+                <fullName>Une personne entre dans la mesure d’audience</fullName>
+                <default>false</default>
+                <label>Une personne entre dans la mesure d’audience</label>
+            </value>
+            <value>
+                <fullName>Vacanciers</fullName>
+                <default>false</default>
+                <label>Vacanciers</label>
+            </value>
+            <value>
+                <fullName>Inactivité meter 90J</fullName>
+                <default>false</default>
+                <label>Inactivité meter 90J</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <valueName>Ajout de coordonnées</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <valueName>Attribution d&apos;une touche à un enfant de moins de 4 ans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <valueName>Autres modifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <valueName>Changement de coordonnées</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <valueName>Changement d&apos;état (membre/invité)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <valueName>Création invité permanent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participations</controllingFieldValue>
+            <controllingFieldValue>Contrôle des absences</controllingFieldValue>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <controllingFieldValue>Audimètre</controllingFieldValue>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <controllingFieldValue>Contrôles autres usages</controllingFieldValue>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <controllingFieldValue>Renseignement sur Audimètre</controllingFieldValue>
+            <controllingFieldValue>Tous les membres du foyer / audimètre débranché</controllingFieldValue>
+            <valueName>Email envoyé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <valueName>L’individu a quitté la mesure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participations</controllingFieldValue>
+            <controllingFieldValue>Contrôle des absences</controllingFieldValue>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <controllingFieldValue>Audimètre</controllingFieldValue>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <controllingFieldValue>Contrôles autres usages</controllingFieldValue>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <controllingFieldValue>Renseignement sur Audimètre</controllingFieldValue>
+            <controllingFieldValue>Tous les membres du foyer / audimètre débranché</controllingFieldValue>
+            <valueName>Ligne HS/NNA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participations</controllingFieldValue>
+            <controllingFieldValue>Contrôle des absences</controllingFieldValue>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <controllingFieldValue>Audimètre</controllingFieldValue>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <controllingFieldValue>Contrôles autres usages</controllingFieldValue>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <controllingFieldValue>Renseignement sur Audimètre</controllingFieldValue>
+            <controllingFieldValue>Tous les membres du foyer / audimètre débranché</controllingFieldValue>
+            <valueName>Message laissé sur le répondeur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <valueName>Mise à jour coordonnées</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <valueName>Modification de la profession</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <valueName>Modification du nombre de jours de présence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <valueName>Naissance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <valueName>Nouvelle personne dans le foyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <valueName>Panéliste est parti de la mesure d’audience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participations</controllingFieldValue>
+            <controllingFieldValue>Contrôle des absences</controllingFieldValue>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <controllingFieldValue>Audimètre</controllingFieldValue>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <controllingFieldValue>Contrôles autres usages</controllingFieldValue>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <controllingFieldValue>Renseignement sur Audimètre</controllingFieldValue>
+            <controllingFieldValue>Tous les membres du foyer / audimètre débranché</controllingFieldValue>
+            <valueName>Pas de message laissé sur le répondeur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participations</controllingFieldValue>
+            <controllingFieldValue>Contrôle des absences</controllingFieldValue>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <controllingFieldValue>Audimètre</controllingFieldValue>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <controllingFieldValue>Contrôles autres usages</controllingFieldValue>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <controllingFieldValue>Renseignement sur Audimètre</controllingFieldValue>
+            <controllingFieldValue>Tous les membres du foyer / audimètre débranché</controllingFieldValue>
+            <valueName>Pas de répondeur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participations</controllingFieldValue>
+            <controllingFieldValue>Contrôle des absences</controllingFieldValue>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <controllingFieldValue>Audimètre</controllingFieldValue>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <controllingFieldValue>Contrôles autres usages</controllingFieldValue>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <controllingFieldValue>Renseignement sur Audimètre</controllingFieldValue>
+            <controllingFieldValue>Tous les membres du foyer / audimètre débranché</controllingFieldValue>
+            <valueName>Pas disponible (pour faire la manipulation, personne non concernée...)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participations</controllingFieldValue>
+            <controllingFieldValue>Contrôle des absences</controllingFieldValue>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <controllingFieldValue>Contrôle Médiacabsat</controllingFieldValue>
+            <controllingFieldValue>Audimètre</controllingFieldValue>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <controllingFieldValue>Contrôle qualité audience</controllingFieldValue>
+            <controllingFieldValue>Contrôles autres usages</controllingFieldValue>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <controllingFieldValue>Renseignement sur Audimètre</controllingFieldValue>
+            <controllingFieldValue>Tous les membres du foyer / audimètre débranché</controllingFieldValue>
+            <valueName>Sans objet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participations</controllingFieldValue>
+            <controllingFieldValue>Contrôle des absences</controllingFieldValue>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <controllingFieldValue>Audimètre</controllingFieldValue>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <controllingFieldValue>Contrôles autres usages</controllingFieldValue>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <controllingFieldValue>Renseignement sur Audimètre</controllingFieldValue>
+            <controllingFieldValue>Tous les membres du foyer / audimètre débranché</controllingFieldValue>
+            <valueName>SMS envoyé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <valueName>Suppression invité permanent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Composition foyer</controllingFieldValue>
+            <valueName>Une personne entre dans la mesure d’audience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>Abonnement Canal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>Abonnement hors foyer ou autre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>Audience inférieure à 10min</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>Autres abonnements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>Autres désabonnements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>Canalsat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>Chaînes comprises dans l&apos;abonnement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>Codification impossible dans Panama</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>Désabonné Canal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>Foyer jamais abonné Canal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>Foyer regarde sur un autre support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>FTC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>Initialisation mise à jour</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>Initialisation non mise à jour</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>N&apos;a pas regardé les chaînes Canal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>Non abonné - Audience sur la chaÎne justifiée en claire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>NOOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <valueName>Offre gratuite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle abonnement</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <controllingFieldValue>Contrôles autres usages</controllingFieldValue>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <valueName>Vacanciers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>A oublié de se déclarer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Abs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Application non active</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <controllingFieldValue>Contrôle de participations</controllingFieldValue>
+            <controllingFieldValue>Contrôle des absences</controllingFieldValue>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <controllingFieldValue>Audimètre</controllingFieldValue>
+            <controllingFieldValue>Contrôles autres usages</controllingFieldValue>
+            <valueName>Autres raisons</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Changt de fréquence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Contrôle incohérent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Déménagement/travaux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Device incompatible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Devices en panne/cassé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Individu refuse de configurer son dévice au routeur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Individu refuse d&apos;installer son dévice (meter)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Installation du Meter impossible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Installation Meter OK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Msg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Nouvel devices/changement de devices</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Pas de connexion individu/foyer (justifié)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Pas de connexion web</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Pbm page de déclaration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Pbm routeur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <controllingFieldValue>Tous les membres du foyer / audimètre débranché</controllingFieldValue>
+            <valueName>Problème ADSL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Réactivation/Réparation du Meter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Réinstallation du Meter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Relance convention meter Foyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participation internet</controllingFieldValue>
+            <valueName>Relance convention meter Individu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participations</controllingFieldValue>
+            <valueName>A oublié de retirer sa lettre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participations</controllingFieldValue>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <valueName>A utilisé une autre lettre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participations</controllingFieldValue>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <valueName>Audience&gt; à X heures avec changement de chaîne</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle de participations</controllingFieldValue>
+            <valueName>Audiences atypiques</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des absences</controllingFieldValue>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <valueName>Absence prolongée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des absences</controllingFieldValue>
+            <valueName>Retour d&apos;absence OK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Absent du domicile - Audimètre débranché</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Changement ADSL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Débranchement (orage, problème électrique…)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Débranchement suite à mauvaise participation (débranche la nuit…)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Dégroupage en cours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <valueName>Déménagement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Désinstallation en cours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Envoi d&apos;une configuration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Injoignable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Intervention ouverte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Manipulation ko</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Manipulation ok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <controllingFieldValue>Audimètre</controllingFieldValue>
+            <valueName>Ne s&apos;allume plus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Nouvel équipement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Prise de RDV technicien</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Problème audimètre/routeur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Problème connexion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <controllingFieldValue>Audimètre</controllingFieldValue>
+            <valueName>Problème de déclaration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Problème de télécommande</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Problème équipement panéliste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Problème ligne téléphonique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <controllingFieldValue>Audimètre</controllingFieldValue>
+            <valueName>Problème sonde TV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Raisons personnelles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Rebranchement audimètre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Reconnecté seul</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <controllingFieldValue>Audimètre</controllingFieldValue>
+            <valueName>Sonne télévision allumée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <controllingFieldValue>Audimètre</controllingFieldValue>
+            <valueName>Sonne télévision éteinte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des connexions</controllingFieldValue>
+            <controllingFieldValue>Contrôle des non connectés après collecte</controllingFieldValue>
+            <valueName>Travaux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <valueName>A oublié d&apos;indiquer sa lettre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <valueName>Absence d&apos;audience justifiée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <valueName>Absence non déclarée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <valueName>Audiences constatées</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <valueName>Date de rappel en cours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <valueName>N&apos;a pas allumé la télévision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle des présences</controllingFieldValue>
+            <valueName>Ne s&apos;est pas trouvé dans la pièce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audimètre</controllingFieldValue>
+            <valueName>Mise à jour version logicielle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <valueName>Audience sans présence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <valueName>Double participation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <valueName>Foyer désuspendu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <valueName>Foyer mis sous surveillance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <valueName>Foyer suspendu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <valueName>Poste coché hors tension</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <valueName>Poste décoché hors tension</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôles autres usages</controllingFieldValue>
+            <valueName>Autres usages justifié (utilisation de périphériques, VOD...)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôles autres usages</controllingFieldValue>
+            <valueName>Autres usages justifié sans appel (utilisation de périphériques, VOD...)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôles autres usages</controllingFieldValue>
+            <valueName>Autres usages non justifié (mauvaise audience =&gt; Collecte OK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôles autres usages</controllingFieldValue>
+            <valueName>Autres usages non justifié (mauvaise audience =&gt; Intervention)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <controllingFieldValue>Tous les membres du foyer / audimètre débranché</controllingFieldValue>
+            <valueName>Autres motifs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <valueName>Chèques cadeaux non reçus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <valueName>Commande de cadeaux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <valueName>Commande de moins de 3 mois</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <valueName>Commande de point hors délai</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <valueName>Demande de renseignement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <valueName>Information manquante (commande)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <valueName>Nouvel envoi en recommandé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <valueName>NPAI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Info solde de points</controllingFieldValue>
+            <valueName>Solde de point</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <controllingFieldValue>Tous les membres du foyer / audimètre débranché</controllingFieldValue>
+            <valueName>Problème autre équipement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <valueName>Problème câble numérique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <valueName>Problème d&apos;antenne</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <valueName>Problème de MAG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <valueName>Problème de parabole</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <valueName>Problème de TV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <valueName>Problème décodeur TV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <valueName>Problème ordinateur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <valueName>Problème smartphone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problème équipement panéliste</controllingFieldValue>
+            <valueName>Problème tablette</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <valueName>Ajout de poste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <valueName>Ajout de poste annulé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <valueName>Chute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <valueName>Commentaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <valueName>Modification composition du foyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <valueName>Modification de l&apos;équipement audiovisuel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <valueName>Modification des données socio-démo foyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <valueName>Modification poste du foyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <controllingFieldValue>Tous les membres du foyer / audimètre débranché</controllingFieldValue>
+            <valueName>Problème technique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <valueName>Question cadeaux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <valueName>Question MCS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <valueName>Relance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <valueName>Remontée Cati</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <valueName>Suppression de poste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recensement annuel</controllingFieldValue>
+            <valueName>Suppression de poste annulée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renseignement sur Audimètre</controllingFieldValue>
+            <valueName>Autres renseignements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renseignement sur Audimètre</controllingFieldValue>
+            <valueName>Déclaration des invités</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renseignement sur Audimètre</controllingFieldValue>
+            <valueName>Messages</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renseignement sur Audimètre</controllingFieldValue>
+            <valueName>Notation des émissions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renseignement sur Audimètre</controllingFieldValue>
+            <valueName>Renseignement sur l&apos;outil de mesure internet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renseignement sur Audimètre</controllingFieldValue>
+            <valueName>Télécommande</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tous les membres du foyer / audimètre débranché</controllingFieldValue>
+            <valueName>Coupure de courant/orages</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tous les membres du foyer / audimètre débranché</controllingFieldValue>
+            <valueName>Départ en vacance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tous les membres du foyer / audimètre débranché</controllingFieldValue>
+            <valueName>Plus de réception TV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tous les membres du foyer / audimètre débranché</controllingFieldValue>
+            <valueName>Problème audimètre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tous les membres du foyer / audimètre débranché</controllingFieldValue>
+            <valueName>TV en panne</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute inactive</controllingFieldValue>
+            <valueName>Inactivité meter 90J</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

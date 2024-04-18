@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RDV_annul_s</fullName>
+    <columns>Account</columns>
+    <columns>Name</columns>
+    <columns>Status</columns>
+    <columns>EarliestStartTime</columns>
+    <columns>ZIP</columns>
+    <columns>Commune__c</columns>
+    <columns>Numero_de_la_station__c</columns>
+    <columns>LastModifiedDate</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Annulé</value>
+    </filters>
+    <filters>
+        <field>Motif_d_annulation__c</field>
+        <operation>equals</operation>
+        <value>Annulation Panéliste</value>
+    </filters>
+    <filters>
+        <field>LastModifiedDate</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>RDV annulés pnl du jour</label>
+</ListView>

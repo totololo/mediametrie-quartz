@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>X024</label>
+    <protected>false</protected>
+    <values>
+        <field>Formulaire__c</field>
+        <value xsi:type="xsd:string">Planifier un RDV</value>
+    </values>
+    <values>
+        <field>Sous_type_SF__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Sous_type_portail__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Type_SF__c</field>
+        <value xsi:type="xsd:string">Anomalie matériel</value>
+    </values>
+    <values>
+        <field>Type_portail__c</field>
+        <value xsi:type="xsd:string">Déclarer un incident matériel</value>
+    </values>
+    <values>
+        <field>user_type__c</field>
+        <value xsi:type="xsd:string">AIP</value>
+    </values>
+</CustomMetadata>

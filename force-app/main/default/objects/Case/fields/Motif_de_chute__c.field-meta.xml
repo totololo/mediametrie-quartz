@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_de_chute__c</fullName>
+    <externalId>false</externalId>
+    <label>Motif de chute</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Chute_confirmee__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Contrainte du casque (filaire ou bluetooth)</fullName>
+                <default>false</default>
+                <label>Contrainte du casque (filaire ou bluetooth)</label>
+            </value>
+            <value>
+                <fullName>Déménagement hors zone de mesure</fullName>
+                <default>false</default>
+                <label>Déménagement hors zone de mesure</label>
+            </value>
+            <value>
+                <fullName>Etude trop longue</fullName>
+                <default>false</default>
+                <label>Etude trop longue</label>
+            </value>
+            <value>
+                <fullName>Mauvaise participation</fullName>
+                <default>false</default>
+                <label>Mauvaise participation</label>
+            </value>
+            <value>
+                <fullName>Ondes</fullName>
+                <default>false</default>
+                <label>Ondes</label>
+            </value>
+            <value>
+                <fullName>Oubli trop régulier</fullName>
+                <default>false</default>
+                <label>Oubli trop régulier</label>
+            </value>
+            <value>
+                <fullName>Pager trop gros, inesthétique, indiscret...</fullName>
+                <default>false</default>
+                <label>Pager trop gros, inesthétique, indiscret...</label>
+            </value>
+            <value>
+                <fullName>Pas de motif précisé</fullName>
+                <default>false</default>
+                <label>Pas de motif précisé</label>
+            </value>
+            <value>
+                <fullName>Profession inadaptée</fullName>
+                <default>false</default>
+                <label>Profession inadaptée</label>
+            </value>
+            <value>
+                <fullName>Programme de fid peu motivant</fullName>
+                <default>false</default>
+                <label>Programme de fid peu motivant</label>
+            </value>
+            <value>
+                <fullName>Raisons personnelles</fullName>
+                <default>false</default>
+                <label>Raisons personnelles</label>
+            </value>
+            <value>
+                <fullName>Set meter : problèmes techniques</fullName>
+                <default>false</default>
+                <label>Set meter : problèmes techniques</label>
+            </value>
+            <value>
+                <fullName>Set meter : refus installation</fullName>
+                <default>false</default>
+                <label>Set meter : refus installation</label>
+            </value>
+            <value>
+                <fullName>Set meter : utilisation trop contraignante</fullName>
+                <default>false</default>
+                <label>Set meter : utilisation trop contraignante</label>
+            </value>
+            <value>
+                <fullName>Structure du panel</fullName>
+                <default>false</default>
+                <label>Structure du panel</label>
+            </value>
+            <value>
+                <fullName>Sursollicitation</fullName>
+                <default>false</default>
+                <label>Sursollicitation</label>
+            </value>
+            <value>
+                <fullName>Trop contraignant port et chargement</fullName>
+                <default>false</default>
+                <label>Trop contraignant port et chargement</label>
+            </value>
+            <value>
+                <fullName>Trop contraignant sans précision</fullName>
+                <default>false</default>
+                <label>Trop contraignant sans précision</label>
+            </value>
+            <value>
+                <fullName>Trop contraignant à charger</fullName>
+                <default>false</default>
+                <label>Trop contraignant à charger</label>
+            </value>
+            <value>
+                <fullName>Trop contraignant à porter</fullName>
+                <default>false</default>
+                <label>Trop contraignant à porter</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Autre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Contrainte du casque (filaire ou bluetooth)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Déménagement hors zone de mesure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Etude trop longue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Mauvaise participation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Ondes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Oubli trop régulier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Pager trop gros, inesthétique, indiscret...</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Pas de motif précisé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Profession inadaptée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Programme de fid peu motivant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Raisons personnelles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Set meter : problèmes techniques</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Set meter : refus installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Set meter : utilisation trop contraignante</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Structure du panel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Sursollicitation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Trop contraignant port et chargement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Trop contraignant sans précision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Trop contraignant à charger</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

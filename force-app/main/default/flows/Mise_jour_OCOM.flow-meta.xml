@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>send_BandeUsine_To_OCOM</name>
+        <label>send BandeUsine To OCOM</label>
+        <locationX>182</locationX>
+        <locationY>398</locationY>
+        <actionName>AP01_BandeUsine</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Callout_Success_BandeUsine</targetReference>
+        </connector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>listBandeUsineIds</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>AP01_BandeUsine</nameSegment>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>53.0</apiVersion>
+    <constants>
+        <name>objectAsset</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Asset</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>objectBandeUsine</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Bande_Usine__c</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Callout_Success_BandeUsine</name>
+        <label>Callout Success BandeUsine</label>
+        <locationX>182</locationX>
+        <locationY>518</locationY>
+        <defaultConnector>
+            <targetReference>Error_Screen_BandeUsine</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Callout Failed</defaultConnectorLabel>
+        <rules>
+            <name>Callout_Successfull_BandeUsine</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>send_BandeUsine_To_OCOM.responseStatusCode</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>201.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Succes_Screen_BandeUsine</targetReference>
+            </connector>
+            <label>Callout Successfull BandeUsine</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>COND_By_Pass</name>
+        <label>By Pass ?</label>
+        <locationX>380</locationX>
+        <locationY>158</locationY>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>By_Pass</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.Bypass_flows__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Mettre_jour_la_Bande_Usine</targetReference>
+            </connector>
+            <label>By Pass ?</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Mise à jour - OCOM {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Mise à jour - OCOM</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Error_Screen_BandeUsine</name>
+        <label>Error Screen - BandeUsine</label>
+        <locationX>314</locationX>
+        <locationY>638</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>ErrorMessage_BandeUsine</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;Les équipements de mesure ont été importés dans OCOM avec succès.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;&lt;strong style=&quot;color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); font-size: 12px;&quot;&gt;Code Retour &lt;/strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;: {!send_BandeUsine_To_OCOM.responseStatusCode}&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;&lt;em style=&quot;font-size: 12px;&quot;&gt;﻿&lt;/em&gt;&lt;/p&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;&lt;strong style=&quot;font-size: 12px;&quot;&gt;Référende de l&apos;Erreur&lt;/strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt; : {!send_BandeUsine_To_OCOM.responseErrorReference}&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;&lt;strong style=&quot;font-size: 12px;&quot;&gt;Message d&apos;Erreur&lt;/strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt; : {!send_BandeUsine_To_OCOM.responseErrorDescription}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Mettre_jour_la_Bande_Usine</name>
+        <label>Mettre à jour la Bande Usine</label>
+        <locationX>182</locationX>
+        <locationY>278</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <backButtonLabel>Annuler</backButtonLabel>
+        <connector>
+            <targetReference>send_BandeUsine_To_OCOM</targetReference>
+        </connector>
+        <fields>
+            <name>text_Screen1_Bande_Usine</name>
+            <fieldText>&lt;p&gt;Lancer le provisionning d&apos;OCOM&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;** {!recordId} **&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Succes_Screen_BandeUsine</name>
+        <label>Succes Screen - BandeUsine</label>
+        <locationX>50</locationX>
+        <locationY>638</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>TXT_Provisionning_OK</name>
+            <fieldText>&lt;p&gt;Les équipements de mesure ont été importés dans OCOM avec succès.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>COND_By_Pass</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>In_ObjectType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

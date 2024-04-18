@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV01_date_de_fin_obligatoire</fullName>
+    <active>true</active>
+    <description>Règle qui oblige à renseigner la date de fin pour certaines étiquettes</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				ISBLANK(Date_de_fin__c),
+				TEXT(Nom_de_l_etiquette__c) != $Label.ETI_Nom_de_l_etiquette_Foyer_test_temoin,
+				!CONTAINS(TEXT(Nom_de_l_etiquette__c), $Label.ETI_Nom_de_l_etiquette_injoignable_step),
+				TEXT(Nom_de_l_etiquette__c) != $Label.ETI_Nom_de_l_etiquette_Modif_cati3,
+				TEXT(Nom_de_l_etiquette__c) != $Label.ETI_Nom_de_l_etiquette_Pilote_xxx
+)</errorConditionFormula>
+    <errorDisplayField>Date_de_fin__c</errorDisplayField>
+    <errorMessage>La date de fin est obligatoire pour ce type d&apos;étiquette</errorMessage>
+</ValidationRule>

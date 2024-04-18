@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>FU_MajNomRessource</fullName>
+        <description>Mise à jour du nom de la ressource par &quot;utilisateur&quot; + &quot; Numéro de la station&quot;</description>
+        <field>Name</field>
+        <formula>RelatedRecord.FirstName + &apos; &apos; + RelatedRecord.LastName +&quot;-&quot;+Text(Numero_de_station__c)</formula>
+        <name>FU_MajNomRessource</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>WF01_RES_MajNomDeLaRessource</fullName>
+        <actions>
+            <name>FU_MajNomRessource</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Mettre à jour le nom de la ressource par &quot;utilisateur&quot; + &quot;Numéro de la station&quot;</description>
+        <formula>AND(  $User.Bypass_workflows__c=false , OR(ISNEW(),ISCHANGED(Numero_de_station__c)),NOT(ISBLANK(Numero_de_station__c) ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

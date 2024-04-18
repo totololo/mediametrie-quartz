@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PresenceUserConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <users>
+            <user>cma@mediametrie.fr</user>
+            <user>hwaendendries@mediametrie.fr</user>
+            <user>kafambo@mediametrie.fr</user>
+            <user>tleuillet@mediametrie.fr</user>
+        </users>
+    </assignments>
+    <capacity>5</capacity>
+    <enableAutoAccept>false</enableAutoAccept>
+    <enableDecline>false</enableDecline>
+    <enableDeclineReason>false</enableDeclineReason>
+    <enableDisconnectSound>false</enableDisconnectSound>
+    <enableRequestSound>true</enableRequestSound>
+    <label>Chat Agents</label>
+</PresenceUserConfig>

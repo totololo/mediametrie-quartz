@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_de_suspension__c</fullName>
+    <externalId>false</externalId>
+    <label>Motif de suspension</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>105</fullName>
+                <default>false</default>
+                <label>Audience différée sans equipement</label>
+            </value>
+            <value>
+                <fullName>52</fullName>
+                <default>false</default>
+                <label>Autre audience incorrecte (hors bagotement / autre usage anormal)</label>
+            </value>
+            <value>
+                <fullName>89</fullName>
+                <default>false</default>
+                <label>Autre usage anormal, dont bagotement</label>
+            </value>
+            <value>
+                <fullName>11</fullName>
+                <default>false</default>
+                <label>Chgt / Inst TV / TV temporaire non installé</label>
+            </value>
+            <value>
+                <fullName>14</fullName>
+                <default>false</default>
+                <label>Chgt / Inst décodeur num</label>
+            </value>
+            <value>
+                <fullName>41</fullName>
+                <default>false</default>
+                <label>Chute</label>
+            </value>
+            <value>
+                <fullName>21</fullName>
+                <default>false</default>
+                <label>Déménagement / travaux en cours</label>
+            </value>
+            <value>
+                <fullName>104</fullName>
+                <default>false</default>
+                <label>En attente matériel MM</label>
+            </value>
+            <value>
+                <fullName>102</fullName>
+                <default>false</default>
+                <label>KO DTV audience hors norme (impactant les résultats)</label>
+            </value>
+            <value>
+                <fullName>103</fullName>
+                <default>false</default>
+                <label>KO DTV pour investigation</label>
+            </value>
+            <value>
+                <fullName>101</fullName>
+                <default>false</default>
+                <label>Pilote</label>
+            </value>
+            <value>
+                <fullName>111</fullName>
+                <default>false</default>
+                <label>TV non relié à l’audimètre</label>
+            </value>
+            <value>
+                <fullName>202</fullName>
+                <default>false</default>
+                <label>Mauvaise audience</label>
+            </value>
+            <value>
+                <fullName>201</fullName>
+                <default>false</default>
+                <label>Audience incohérente</label>
+            </value>
+            <value>
+                <fullName>200</fullName>
+                <default>false</default>
+                <label>En attente de chute</label>
+            </value>
+            <value>
+                <fullName>203</fullName>
+                <default>false</default>
+                <label>203</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

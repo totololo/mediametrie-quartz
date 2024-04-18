@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>duree__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;6&apos;)), 90, 
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;7&apos;)), 90,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;19&apos;)), 60,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;16&apos;)), 60,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;18&apos;)), 0,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;23&apos;)), 30,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;22&apos;)), 60,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;4&apos;)), 60,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;12&apos;)), 60,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;5&apos;)), 60,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;21&apos;)), 60,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;3&apos;)), 20,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;13&apos;)), 60,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;14&apos;)), 15,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;26&apos;)), 15,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;24&apos;)), 60,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;25&apos;)), 0,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;1&apos;)), 120,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;PAME&apos;,ISPICKVAL( Actions__c , &apos;8&apos;)), 30,
+
+IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;6&apos;)), 80, 
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;7&apos;)), 80,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;19&apos;)), 60,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;16&apos;)), 60,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;18&apos;)), 0,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;23&apos;)), 30,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;22&apos;)), 40,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;4&apos;)), 60,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;12&apos;)), 60,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;5&apos;)), 60,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;21&apos;)), 60,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;3&apos;)), 20,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;13&apos;)), 60,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;14&apos;)), 15,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;24&apos;)), 60,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;25&apos;)), 0,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;1&apos;)), 100,
+  IF(AND(WorkOrder.Type_de_panel__c = &apos;MMT&apos;,ISPICKVAL( Actions__c , &apos;8&apos;)), 30,
+
+
+
+0)))))))))))))))))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>durée</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

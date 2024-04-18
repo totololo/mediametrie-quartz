@@ -1,0 +1,29 @@
+<apex:page standardController="Asset" recordSetVar="ass" extensions="AP01_ListView_Asset">
+    <apex:includeScript value="/soap/ajax/18.0/connection.js"/>
+    <script>
+    var GetIDs= '{!assIds}';
+    </script>
+    {!$CurrentPage.Parameters.retURL}    
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="status" />
+                    <apex:selectList value="{!val}" multiselect="false" id="items" size="1" required="true">
+                        <apex:selectOptions value="{!options}" />
+                        <apex:actionSupport event="onchange" action="{!lic}" reRender="abcd" />
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>         
+            <apex:outputPanel rendered="{!if(selected==False,True,False)}">  
+                <apex:pageMessages ></apex:pageMessages>
+            </apex:outputPanel>
+            <apex:pageBlockButtons location="bottom">                
+                <apex:commandButton value="Enregistrer" action="{!show}" disabled="{!if(selected==False,True,False)}"/>
+                <apex:commandButton value="Annuler" action="{!back}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>        
+    </apex:form>
+    
+    
+</apex:page>

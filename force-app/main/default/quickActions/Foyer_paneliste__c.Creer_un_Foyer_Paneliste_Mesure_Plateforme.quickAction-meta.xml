@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flowDefinition>PAN_Creation_Foyer_Pan_Mesure_Plateforme</flowDefinition>
+    <label>Créer un Foyer Panéliste Mesure Plateforme</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

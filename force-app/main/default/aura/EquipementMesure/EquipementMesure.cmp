@@ -1,0 +1,116 @@
+<aura:component implements="forceCommunity:themeLayout,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable"
+                access="global" controller ='getEquipementsduFoyer'>
+    
+    <!-- Static Ressources -->
+    <ltng:require styles="{!$Resource.commonCss}" />
+    
+    <!-- Attributes -->
+    <aura:attribute name="data" type="String[]"  />
+    <aura:attribute name="isAIP" type="Boolean"  />
+    <!--aura:attribute name="pageNumber" type="Integer" Default="1"/>
+    <aura:attribute name="totalRecords" type="Integer" Default="0"/>
+    <aura:attribute name="recordsPerPage" type="Integer" Default="0"/>
+    <aura:attribute name="totalPages" type="Integer" Default="1"/ -->
+    <aura:attribute name="onLoad" type="Boolean" default="true" />
+    <!-- Handler -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- Loader -->
+    <aura:if isTrue="{!v.onLoad}">
+        <div class="pageLoader">
+            <lightning:spinner alternativeText="Loading" size="large" />
+        </div>
+    </aura:if>
+    
+    <!-- Titre -->
+    <aura:if isTrue="{!v.isAIP}">
+        <div class="pageTitle">{!$Label.c.EXP_TousLesEquipements}</div>
+        <aura:set attribute="else">
+            <div class="pageTitle">{!$Label.c.EXP_EquipementsDuFoyerTitle}</div>
+        </aura:set>
+    </aura:if>
+    
+    
+    <!-- No Data to display message -->    
+    <aura:if isTrue="{!!v.data}">
+        <div class="noData">
+            {!$Label.c.NoDataToDisplay}
+        </div>
+    </aura:if>
+    
+    <aura:if isTrue="{!v.isAIP}">
+        <!-- Tableau -->
+        <table class="collapsibleTable">
+            <thead class="collapsibleHead">
+                <tr class="collapsibleRow">
+                    <th class="collapsibleHeader">{!$Label.c.EXP_Type}</th>
+                    <th class="collapsibleHeader">{!$Label.c.EXP_NiveauDeBatterie}</th>
+                    <th class="collapsibleHeader">{!$Label.c.EXP_Emplacement}</th>
+                    <th class="collapsibleHeader">{!$Label.c.EXP_DateInstallation}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <aura:iteration items="{!v.data}" var="item">
+                    <tr class="collapsibleRow">
+                        <td class="collapsibleData" data-label="Nom de l'équipement" >
+                            <aura:if isTrue="{!item.type}"> {!item.type} <aura:set attribute="else">-</aura:set></aura:if>
+                        </td>
+                        <td class="collapsibleData" data-label="Marque">
+                            <aura:if isTrue="{!item.batterie}"> {!item.batterie}%<aura:set attribute="else">-</aura:set></aura:if>
+                        </td>
+                        <td class="collapsibleData" data-label="Emplacement">
+                            <aura:if isTrue="{!item.emplacement}"> {!item.emplacement} <aura:set attribute="else">-</aura:set></aura:if>
+                        </td>
+                        <td class="collapsibleData" data-label="Utilisateur principal">
+                            <aura:if isTrue="{!item.dateInstallation}"> {!item.dateInstallation} <aura:set attribute="else">-</aura:set></aura:if>
+                        </td>
+                    </tr>
+                </aura:iteration>
+                
+            </tbody>
+        </table>
+        
+        <!-- this is for mediamate et pame  -->
+        <aura:set attribute="else">
+            <table class="collapsibleTable">
+                <thead class="collapsibleHead">
+                    <tr class="collapsibleRow">
+                        <th class="collapsibleHeader">{!$Label.c.EXP_Type}</th>
+                        <th class="collapsibleHeader">{!$Label.c.EXP_Marque}</th>
+                        <th class="collapsibleHeader">{!$Label.c.EXP_Emplacement}</th>
+                        <th class="collapsibleHeader">{!$Label.c.EXP_UtilisateurPrincipal}</th>
+                    </tr>
+                </thead>
+                <tbody>  
+                    <aura:iteration items="{!v.data}" var="item">
+                        <tr class="collapsibleRow">
+                            <td class="collapsibleData" data-label="Nom de l'équipement">
+                                <aura:if isTrue="{!item.type}"> {!item.type} <aura:set attribute="else">-</aura:set></aura:if>
+                            </td>
+                            <td class="collapsibleData" data-label="Marque">
+                                <aura:if isTrue="{!item.marque}"> {!item.marque} <aura:set attribute="else">-</aura:set></aura:if>
+                            </td>
+                            <td class="collapsibleData" data-label="Emplacement">
+                                <aura:if isTrue="{!item.emplacement}"> {!item.emplacement} <aura:set attribute="else">-</aura:set></aura:if>
+                            </td>
+                            <td class="collapsibleData" data-label="Utilisateur principal">
+                                <aura:if isTrue="{!item.utilisateurPrincipal}"> {!item.utilisateurPrincipal} <aura:set attribute="else">-</aura:set></aura:if>
+                            </td>
+                        </tr>
+                    </aura:iteration>
+                </tbody>
+            </table>
+        </aura:set>
+    </aura:if>
+    
+    <!-- Pagination -->
+    <!-- div class="pagination">
+        <div class="number_page">
+            {!v.pageNumber} sur {!v.totalPages}
+        </div>
+        <div class="arrowDiv">
+            <a><img class="arrowIcon" src="{!$Resource.arrowLeft}"/></a>
+            <a><img class="arrowIcon" src="{!$Resource.arrowRight}"/></a>
+        </div>
+    </div-->
+</aura:component>

@@ -1,0 +1,69 @@
+<!-- SoldeDepointAura -->
+<aura:component implements="forceCommunity:themeLayout,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable"
+                access="global" controller ='getFoyerPanelisteInformations'>
+    
+    <!-- Static Ressources -->
+    <ltng:require styles="{!$Resource.commonCss}" />
+    
+    <!-- Attributes -->
+    <aura:attribute name="data" type="String[]"/>
+    <aura:attribute name="isAIP" type="Boolean" Default="false"/>
+    <aura:attribute name="pageNumber" type="Integer" Default="1"/>
+    <aura:attribute name="totalRecords" type="Integer" Default="0"/>
+    <aura:attribute name="recordsPerPage" type="Integer" Default="0"/>
+    <aura:attribute name="totalPages" type="Integer" Default="1"/>
+    <aura:attribute name="onLoad" type="Boolean" default="true" />
+    
+    <!-- Handler -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- Loader -->
+    <aura:if isTrue="{!v.onLoad}">
+        <div class="pageLoader">
+            <lightning:spinner alternativeText="Loading" size="large" />
+        </div>
+    </aura:if> 
+    
+    <!-- Titre -->
+    <div class="pageTitle">{!$Label.c.EXP_SoldeDePointsTitle}</div>
+    
+    <!-- No Data to display message -->    
+    <aura:if isTrue="{!v.totalRecords == 0}">
+        <div class="noData">
+            {!$Label.c.EXP_NoDataToDisplay}
+        </div>
+    </aura:if>
+    
+    
+    <table class="collapsibleTable">
+        <thead class="collapsibleHead">
+            <tr class="collapsibleRow">
+                <th class="collapsibleHeader">{!$Label.c.EXP_NomComplet}</th>
+                <th class="collapsibleHeader">{!$Label.c.EXP_SoldeDePoints}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.data}" var="item">
+                <tr class="collapsibleRow">
+                    <td class="collapsibleData" data-label="Nom complet">
+                        <aura:if isTrue="{!item.Name}"> {!item.Name} <aura:set attribute="else">-</aura:set></aura:if>
+                    </td>
+                    <td class="collapsibleData" data-label="Solde de points">
+                        <aura:if isTrue="{!item.Solde}"> {!item.Solde} <aura:set attribute="else">-</aura:set></aura:if>
+                    </td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+    
+    <!-- Pagination -->
+    <div class="pagination">
+        <div class="number_page">
+            {!v.pageNumber} {!$Label.c.EXP_Sur} {!v.totalPages}
+        </div>
+        <div class="arrowDiv">
+            <a  onclick="{!c.handlePrevPage}" ><img class="arrowIcon" src="{!$Resource.arrowLeft}"/></a>
+            <a  onclick="{!c.handleNextPage}"><img class="arrowIcon" src="{!$Resource.arrowRight}"/></a>
+        </div>
+    </div>
+</aura:component>

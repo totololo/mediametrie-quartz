@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV09_Foyer_FoyerPaneliste_From_Requete</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    !$User.Bypass_validation_rules__c,
+				!$User.Bypass_RDD__c,
+    Requete__c != null,
+    OR(
+        Foyer_paneliste__c != Requete__r.Foyer_paneliste__c,
+        Foyer__c != Requete__r.AccountId
+    )
+)</errorConditionFormula>
+    <errorMessage>Les champs foyer et le foyer panéliste doivent correspondre à ceux de la requête associé</errorMessage>
+</ValidationRule>

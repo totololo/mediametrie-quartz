@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recrut_s_sans_date_1ere_collecte_30J</fullName>
+    <columns>Foyer__c</columns>
+    <columns>NAME</columns>
+    <columns>Statut_Foyer_paneliste__c</columns>
+    <columns>Suspendu__c</columns>
+    <columns>Referentiel_Panel__c</columns>
+    <columns>Date_de_creation__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Statut_Audimetrique__c</columns>
+    <columns>Date_de_descente__c</columns>
+    <columns>Date_d_installation__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Statut_Foyer_paneliste__c</field>
+        <operation>notEqual</operation>
+        <value>1,3,4,6,5</value>
+    </filters>
+    <filters>
+        <field>Referentiel_Panel__c</field>
+        <operation>contains</operation>
+        <value>aip</value>
+    </filters>
+    <filters>
+        <field>Date_de_creation__c</field>
+        <operation>lessOrEqual</operation>
+        <value>N_DAYS_AGO:30</value>
+    </filters>
+    <filters>
+        <field>Date_de_descente__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Statut_Audimetrique__c</field>
+        <operation>equals</operation>
+        <value>1,4</value>
+    </filters>
+    <label>Recrutés sans date 1ere collecte +30J</label>
+</ListView>

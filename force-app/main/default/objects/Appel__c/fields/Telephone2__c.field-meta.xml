@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Telephone2__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Account__r.Numero_de_telephone_fixe__c !=null,&apos;+33&apos;+TRIM(right(Account__r.Numero_de_telephone_fixe__c , (LEN( Account__r.Numero_de_telephone_fixe__c) - 1))),null)</formula>
+    <inlineHelpText>Numéro de fix du foyer</inlineHelpText>
+    <label>Téléphone2</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

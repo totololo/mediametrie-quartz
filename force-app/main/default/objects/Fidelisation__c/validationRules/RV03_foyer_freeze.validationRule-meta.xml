@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV03_foyer_freeze</fullName>
+    <active>false</active>
+    <description>Règle qui empêche de créditer des points à un foyer freezé</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				Points_credites__c &lt;&gt;0,
+				Foyer__r.Freeze__c,
+				RecordType.Name = $Label.FID_Type_d_enregistrement_Credit
+)</errorConditionFormula>
+    <errorMessage>Aucun point ne peut être créditer sur un foyer freezé</errorMessage>
+</ValidationRule>

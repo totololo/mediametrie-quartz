@@ -1,0 +1,38 @@
+{
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "45bdfb43-7b40-4945-9d8e-4bd9f0d3f942",
+  "label" : "Accueil",
+  "regions" : [ {
+    "id" : "5ed04748-837b-4efb-bf81-a9f20966c885",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "0f8ac8e9-7527-44dd-9d3b-709f6d815cea",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "ba704976-2009-4601-853b-a0184f369735",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "M&VOUS - Accueil"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "0cbc83a8-5b9d-4ecc-9406-deb7ca87a9be",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "95716485-c278-48c4-8281-18392b6bdbeb",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-accueil"
+}

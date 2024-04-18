@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_d_equipements__c</fullName>
+    <externalId>false</externalId>
+    <label>Type d&apos;équipements</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Poste</fullName>
+                <default>false</default>
+                <label>Poste</label>
+            </value>
+            <value>
+                <fullName>Beacon</fullName>
+                <default>false</default>
+                <label>Beacon</label>
+            </value>
+            <value>
+                <fullName>Carte SIM</fullName>
+                <default>false</default>
+                <label>Carte SIM</label>
+            </value>
+            <value>
+                <fullName>Meter</fullName>
+                <default>false</default>
+                <label>Meter</label>
+            </value>
+            <value>
+                <fullName>Ordinateur</fullName>
+                <default>false</default>
+                <label>Ordinateur</label>
+            </value>
+            <value>
+                <fullName>Pager</fullName>
+                <default>false</default>
+                <label>Pager</label>
+            </value>
+            <value>
+                <fullName>Périphérique</fullName>
+                <default>false</default>
+                <label>Périphérique</label>
+            </value>
+            <value>
+                <fullName>Tablette</fullName>
+                <default>false</default>
+                <label>Tablette</label>
+            </value>
+            <value>
+                <fullName>Téléphone portable</fullName>
+                <default>false</default>
+                <label>Téléphone portable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

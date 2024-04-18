@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Postes_TV</fullName>
+    <columns>NAME</columns>
+    <columns>Foyer_paneliste__c</columns>
+    <columns>Marque_TV__c</columns>
+    <columns>Poste_TV__c</columns>
+    <columns>Usage_Principal__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Postes TV</label>
+</ListView>

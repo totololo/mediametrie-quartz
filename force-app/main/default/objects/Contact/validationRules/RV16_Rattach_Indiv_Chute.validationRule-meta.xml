@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV16_Rattach_Indiv_Chute</fullName>
+    <active>true</active>
+    <description>On ne peut pas rattacher un individu chuté à un foyer.</description>
+    <errorConditionFormula>AND(
+ !$User.Bypass_validation_rules__c,
+  	 AND(NOT(isblank(Date_de_chute_individu__c)),PRIORVALUE(AccountId)=null,NOT(isblank(AccountId)))
+		 
+	)</errorConditionFormula>
+    <errorMessage>Un individu chuté ne peux plus être rattaché à un foyer</errorMessage>
+</ValidationRule>

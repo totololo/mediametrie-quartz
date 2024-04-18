@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllContacts</fullName>
+    <columns>Type__c</columns>
+    <columns>Lien_parente__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.PHONE3</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>Date_d_entree_individu__c</columns>
+    <columns>Lettre__c</columns>
+    <columns>Date_de_chute_individu__c</columns>
+    <columns>Frequence_de_connexion_mobile__c</columns>
+    <columns>Frequence_de_connexion_ordinateur__c</columns>
+    <columns>Frequence_de_connexion_tablette__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account.Type_de_foyer__c</field>
+        <operation>equals</operation>
+        <value>4</value>
+    </filters>
+    <filters>
+        <field>Age__c</field>
+        <operation>equals</operation>
+        <value>13</value>
+    </filters>
+    <label>Tous les individus</label>
+</ListView>

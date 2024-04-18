@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participation_Ind_6h_9h_MMAT_new</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 6 AND ( 5 OR 7 )</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>NAME</columns>
+    <columns>Sous_type__c</columns>
+    <columns>Rep_ou_non_rep__c</columns>
+    <columns>Nombre_de_controles__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>Type_de_controle__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Controle</value>
+    </filters>
+    <filters>
+        <field>Type_de_panel__c</field>
+        <operation>notEqual</operation>
+        <value>PAME</value>
+    </filters>
+    <filters>
+        <field>CASES.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>Type_de_controle__c</field>
+        <operation>equals</operation>
+        <value>3</value>
+    </filters>
+    <filters>
+        <field>Sous_type__c</field>
+        <operation>equals</operation>
+        <value>Audience individuelle &gt;7h</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Nouveau,Hiérarchisé</value>
+    </filters>
+    <filters>
+        <field>Sous_type_de_controle__c</field>
+        <operation>equals</operation>
+        <value>2</value>
+    </filters>
+    <label>Participation Ind 6h-9h MMAT (new)</label>
+</ListView>

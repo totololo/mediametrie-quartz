@@ -1,0 +1,102 @@
+<!-- MonProfile -->
+<aura:component implements="forceCommunity:themeLayout,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable"
+                access="global" controller="getUserInformations">
+    
+    <!-- Static Ressources -->
+    <ltng:require styles="{!$Resource.commonCss}" />
+    <!-- Attributes -->
+    <aura:attribute name="data" type="Object" />
+    <aura:attribute name="Email" type="String" />
+    <aura:attribute name="PostalCode" type="String" />
+    <aura:attribute name="NumeroPaneliste" type="String" />
+    <aura:attribute name="SoldeDePoint" type="String" />
+    <aura:attribute name="onLoad" type="Boolean" default="true" />
+    <aura:attribute name="channelPrivilegeList" type="String[]" />
+    <aura:attribute name="buttonDisabled" type="Boolean" default="false" />
+    <aura:attribute name="personneDeReference" type="String" />
+    <aura:attribute name="userAddress" type="String" />
+    
+    <!-- Handler -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- Loader -->
+    <aura:if isTrue="{!v.onLoad}">
+        <div class="pageLoader">
+            <lightning:spinner alternativeText="Loading" size="large" />
+        </div>
+    </aura:if>
+    
+    <!-- Title -->
+    <div class="pageTitle">{!$Label.c.EXP_MonProfilTitle}</div>
+        
+    <!-- Form -->
+    <form class="formContainer">
+        <!-- Informations -->
+        <div class="titre_section">{!$Label.c.EXP_Informations}</div>
+        <div class="slds-grid slds-wrap">
+            <!-- Nom complet -->
+            <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-1 inputBox">
+                <label class="inputLabel" for="nom_complet" >{!$Label.c.EXP_NomComplet}</label>
+                <input class="champ noneEditableFields" name="nom_complet" id="nom_complet" type="text" value="{!v.data.Name}" disabled="true"/>
+            </div>
+            <!-- Numéro panéliste -->
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12 inputBox">
+                <label class="inputLabel" for="num_panel">{!$Label.c.EXP_NumeroPaneliste}</label>
+                <input class="champ noneEditableFields" type="text" value="{!v.data.Numero_paneliste__c}" disabled="true"/>
+            </div>
+            <!-- Solde de points -->
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12 inputBox leftPadding">
+                <label class="inputLabel marge" for="solde_point">{!$Label.c.EXP_SoldeDePoints}</label>
+                <input class="champ noneEditableFields" type="text" value="{!v.data.Solde_de_point__c}" disabled="true"/>
+            </div>
+        </div>
+        
+        <!-- Contacts -->
+        <div class="titre_section">{!$Label.c.EXP_Contact}</div>
+        
+        <div class="slds-grid slds-wrap">
+            <!-- email -->
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12 inputBox">
+                <label class="inputLabel" for="email">{!$Label.c.EXP_Email}</label>
+                <lightning:input class="email-input" variant="label-hidden" type="email" aura:id="emailInput" 
+                                 value="{!v.data.Contact.Email}" onblur="{! c.checkEmailFormat }"/>
+            </div>
+            <!-- Mobile -->
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12 inputBox leftPadding">
+                <label class="inputLabel" for="mobile">{!$Label.c.EXP_Mobile}</label>
+                <input class="champ" name="mobile" id="mobile" type="tel" value="{!v.data.Contact.MobilePhone}"/>
+            </div>
+            <!-- Adresse -->
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12 inputBox">
+                <label class="inputLabel marge" for="adresse">{!$Label.c.EXP_Adresse}</label>
+                <input class="champ noneEditableFields" name="adresse" id="adresse" type="text" 
+                       value="{!v.userAddress}" disabled="true"/>
+                
+            </div>
+            <!-- Canal privilegie -->
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12 inputBox leftPadding">
+                <label class="inputLabel">{!$Label.c.EXP_CanalPrivilegie}</label>
+                <select class="dropDownBox champ canalPrivilegie" id="CanalPrivilegie" onchange="{!c.getMotif}">
+                    <option value="aucun">{!$Label.c.EXP_AucunDropDown}</option>
+                    <aura:iteration items="{!v.channelPrivilegeList}" var="channel">
+                        <option value="{!channel.value}" selected="{!channel.value==v.data.Tech_CanalPrivilegie__c}">{!channel.label}</option>
+                    </aura:iteration>
+                </select>
+            </div>
+
+            <!-- Personne de contact for minors -->
+            <aura:if isTrue="{!v.personneDeReference}">
+                <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12 inputBox">         
+                    <label class="inputLabel marge" for="solde_point">{!$Label.c.EXP_PersonneDeContact}</label>
+                    <input class="champ noneEditableFields" type="text" value="{!v.personneDeReference}" disabled="true"/>
+                </div>
+            </aura:if>
+        </div>
+
+        <!-- Enregistrer -->       
+            <div class="button-container">
+                <div class="{!v.buttonDisabled ? 'soumettreDisabled submitButton center soumettreGreen' : 'soumettreGreen submitButton center'}" 
+                     onclick="{!c.updateUser}">{!$Label.c.EXP_Enregistrer}</div>
+            </div>
+    </form>
+</aura:component>

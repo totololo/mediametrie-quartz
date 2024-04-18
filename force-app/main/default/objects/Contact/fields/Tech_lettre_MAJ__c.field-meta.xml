@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_lettre_MAJ__c</fullName>
+    <defaultValue>1</defaultValue>
+    <description>champ tech mis à jour par le flux individupan_updatecontact_techfield permettant de savoir quand l&apos;enfant ind pan a été mis à jour dans le traitement de classe AP02_MembreDuFoyer</description>
+    <externalId>false</externalId>
+    <label>Tech_lettre_MAJ</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

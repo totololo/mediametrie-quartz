@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Installations_Mediamat</fullName>
+    <columns>CreatedDate</columns>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>Type_de_l_intervention__c</columns>
+    <columns>Sous_type_d_intervention__c</columns>
+    <columns>Status</columns>
+    <columns>Priority</columns>
+    <columns>Nombre_d_equipements__c</columns>
+    <columns>Debut_Planifie__c</columns>
+    <columns>Etat__c</columns>
+    <columns>Subject</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>EndDate</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type_de_l_intervention__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Installations nouveaux foyers MMAT</label>
+</ListView>

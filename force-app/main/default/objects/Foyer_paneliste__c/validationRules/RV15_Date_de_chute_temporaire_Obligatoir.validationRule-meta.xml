@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV15_Date_de_chute_temporaire_Obligatoir</fullName>
+    <active>true</active>
+    <description>Règle:  tu ne peux pas modif la date chute si la date chute temporaire n’est pas renseignée</description>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+!$User.Bypass_RDD__c,
+$Profile.Name &lt;&gt; &apos;SVC_Administrateur systeme&apos;,
+!ISBLANK(Date_de_chute__c),
+ISBLANK(Date_de_chute_temporaire__c))</errorConditionFormula>
+    <errorDisplayField>Date_de_chute__c</errorDisplayField>
+    <errorMessage>La date de chute temporaire doit être renseignée afin de renseignée la date de chute</errorMessage>
+</ValidationRule>

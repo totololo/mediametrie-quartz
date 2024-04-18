@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV14_CompoFoyer_A_MemeFoyer</fullName>
+    <active>true</active>
+    <description>le Foyer de la compo foyer de la fidélisation doit être le même que celui du champ foyer sur fidélisation</description>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+!$User.Bypass_RDD__c,
+Composition_du_foyer__c != null,
+Foyer__c !=null,
+Composition_du_foyer__r.AccountId != Foyer__c 
+)</errorConditionFormula>
+    <errorMessage>Ce membre de foyer ne fait pas partie de ce foyer ou il n&apos;existe pas 22</errorMessage>
+</ValidationRule>

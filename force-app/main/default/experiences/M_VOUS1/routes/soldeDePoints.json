@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "e0a312f1-2c13-468a-b28d-82d7dbe09e96",
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "configurationTags" : [ ],
+  "id" : "63fa0fc2-fcf3-400a-b833-ce0a93ba804e",
+  "label" : "Solde de points",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-solde-de-point",
+  "type" : "route",
+  "urlPrefix" : "solde-de-points"
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tous_les_suivis_d_exp_ditions</fullName>
+    <columns>Name</columns>
+    <columns>LastModifiedDate</columns>
+    <columns>LastModifiedBy</columns>
+    <columns>WorkOrder</columns>
+    <columns>WorkOrderLineItem</columns>
+    <columns>DestinationLocation</columns>
+    <columns>SourceLocation</columns>
+    <columns>Case</columns>
+    <columns>Account</columns>
+    <filterScope>Everything</filterScope>
+    <label>Tous les suivis d&apos;expéditions</label>
+</ListView>

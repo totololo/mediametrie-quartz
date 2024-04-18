@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV_champsObligatoiresPourDecodeur</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Type__c , &apos;2&apos;), OR(ISPICKVAL(Type_de_decodeur__c , &quot;&quot;) , ISPICKVAL(Fournisseur__c , &quot;&quot;), ISPICKVAL(Mode_de_reception__c, &quot;&quot;))   
+)</errorConditionFormula>
+    <errorMessage>Pour le type Décodeur, les champs Type de décodeur, Fournisseur et Mode de réception sont obligatoires</errorMessage>
+</ValidationRule>

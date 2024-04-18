@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Log_Error_Message_short__c</fullName>
+    <description>Pour contenir le message d&apos;erreur tronqué à 255 caractères</description>
+    <encryptionScheme>CaseInsensitiveDeterministicEncryption</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Log Error Message (short)</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

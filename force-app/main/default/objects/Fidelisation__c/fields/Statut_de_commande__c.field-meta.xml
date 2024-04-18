@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_de_commande__c</fullName>
+    <externalId>false</externalId>
+    <label>Statut de commande</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Enregistrée</fullName>
+                <default>true</default>
+                <label>Enregistrée</label>
+            </value>
+            <value>
+                <fullName>En cours de traitement</fullName>
+                <default>false</default>
+                <label>En cours de traitement</label>
+            </value>
+            <value>
+                <fullName>Expédiée</fullName>
+                <default>false</default>
+                <label>Expédiée</label>
+            </value>
+            <value>
+                <fullName>Annulée</fullName>
+                <default>false</default>
+                <label>Annulée</label>
+            </value>
+            <value>
+                <fullName>Clôturé</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Clôturé</label>
+            </value>
+            <value>
+                <fullName>En cours logistique</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>En cours logistique</label>
+            </value>
+            <value>
+                <fullName>Envoyé</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Envoyé</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

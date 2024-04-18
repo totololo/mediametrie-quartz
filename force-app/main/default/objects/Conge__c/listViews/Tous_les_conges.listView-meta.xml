@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tous_les_conges</fullName>
+    <columns>NAME</columns>
+    <columns>Date_de_debut__c</columns>
+    <columns>Date_de_fin__c</columns>
+    <columns>Foyer__c</columns>
+    <columns>Conge_de_l_individu__c</columns>
+    <columns>Type_de_conge__c</columns>
+    <columns>Rappel_au_retour__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Tous les congés</label>
+</ListView>

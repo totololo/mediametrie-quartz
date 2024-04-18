@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Types_de_Panel__c</fullName>
+    <externalId>false</externalId>
+    <label>Types de Panel</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MMT</fullName>
+                <default>false</default>
+                <label>MMT</label>
+            </value>
+            <value>
+                <fullName>AIP</fullName>
+                <default>false</default>
+                <label>AIP</label>
+            </value>
+            <value>
+                <fullName>PaME</fullName>
+                <default>false</default>
+                <label>PaME</label>
+            </value>
+            <value>
+                <fullName>Mesure Plateforme</fullName>
+                <default>false</default>
+                <label>Mesure Plateforme</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

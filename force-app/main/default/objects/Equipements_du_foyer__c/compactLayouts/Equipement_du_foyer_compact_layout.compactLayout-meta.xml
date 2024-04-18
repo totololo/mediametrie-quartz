@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipement_du_foyer_compact_layout</fullName>
+    <fields>Name</fields>
+    <fields>Foyer__c</fields>
+    <fields>Emplacement__c</fields>
+    <fields>Frequence_utilisation_tv__c</fields>
+    <fields>Connectable_a_internet__c</fields>
+    <fields>Connecte_a_internet__c</fields>
+    <fields>Audience_HD__c</fields>
+    <label>Equipement du foyer compact layout</label>
+</CompactLayout>

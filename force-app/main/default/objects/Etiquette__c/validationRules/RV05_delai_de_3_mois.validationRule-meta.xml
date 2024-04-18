@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV05_delai_de_3_mois</fullName>
+    <active>true</active>
+    <description>Règle qui oblige les étiquettes à ne pas dépasser un délai de 3 mois</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+    TEXT(Nom_de_l_etiquette__c )  &lt;&gt; 	 &apos;Pilote TvRouteur&apos;,
+				OR(
+								AND(
+								    ISNEW(),
+				        (
+                /*Calcul de la différence d&apos;année en mois*/
+                (YEAR(Date_de_fin__c) - YEAR(Date_de_debut__c)) * 12
+                /*Ajout de la différence de mois*/
+                + (MONTH(Date_de_fin__c) - MONTH(Date_de_debut__c))
+                /*Retrait de 1 si le jour dans le mois n&apos;est pas encore dépassé*/
+                - IF(DAY(Date_de_fin__c) - DAY(Date_de_debut__c) &lt;= 0, 1, 0)
+            ) &gt;= VALUE($Label.RV_Delai_etiquette_3_mois)
+								),
+								AND(
+												ISCHANGED(Date_de_fin__c),
+												(
+																/*Calcul de la différence d&apos;année en mois*/
+                (YEAR(Date_de_fin__c) - YEAR(TODAY())) * 12
+                /*Ajout de la différence de mois*/
+                + (MONTH(Date_de_fin__c) - MONTH(TODAY()))
+                /*Retrait de 1 si le jour dans le mois n&apos;est pas encore dépassé*/
+                - IF(DAY(Date_de_fin__c) - DAY(TODAY()) &lt;= 0, 1, 0)
+												) &gt;= VALUE($Label.RV_Delai_etiquette_3_mois)
+								)
+				)
+)</errorConditionFormula>
+    <errorDisplayField>Date_de_fin__c</errorDisplayField>
+    <errorMessage>La durée d&apos;une étiquette ne doit pas dépasser 3 mois</errorMessage>
+</ValidationRule>

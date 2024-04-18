@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV01_modif_nom_impossible</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+$User.Username&lt;&gt;$Label.Mulesoft_integrationUser_username,
+				NOT(ISNEW()),
+				ISCHANGED(Name)
+)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas modifier le nom d&apos;un équipement</errorMessage>
+</ValidationRule>

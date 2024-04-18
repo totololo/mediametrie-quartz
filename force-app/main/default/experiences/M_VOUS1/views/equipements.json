@@ -1,0 +1,97 @@
+{
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "e6294cf3-1e8c-429f-adea-2da669084f54",
+  "label" : "equipements",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "100a71c3-5e85-48a4-977a-6ccf89993a1f",
+          "columns" : [ {
+            "UUID" : "413badc0-189e-4b5d-a6d0-3456ad94f1e9",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "100a71c3-5e85-48a4-977a-6ccf89993a1f",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:EquipementMesure",
+          "id" : "d62832b6-3349-4627-8cf4-188aed7b1a25",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "413badc0-189e-4b5d-a6d0-3456ad94f1e9",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "3addb738-c329-4b30-8ef2-a485ea86ecf6",
+          "columns" : [ {
+            "UUID" : "0d304df6-67ae-4e33-9eed-3787b3f45c0b",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 315
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "3addb738-c329-4b30-8ef2-a485ea86ecf6",
+      "regions" : [ {
+        "id" : "0d304df6-67ae-4e33-9eed-3787b3f45c0b",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "0a08fe4d-daad-40b2-9943-7deae5c5cda8",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "M&VOUS - Equipements"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "c0cd067e-1c41-4c98-bcf9-2c5e9c10c490",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b1a52a39-a240-46b1-ac2c-b4e26653499a",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-equipements"
+}

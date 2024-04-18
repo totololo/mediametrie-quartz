@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_WorkOrders</fullName>
+    <columns>Name</columns>
+    <columns>Subject</columns>
+    <columns>Account</columns>
+    <columns>Priority</columns>
+    <columns>Status</columns>
+    <columns>CreatedDate</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type_de_panel__c</field>
+        <operation>equals</operation>
+        <value>PAME</value>
+    </filters>
+    <filters>
+        <field>Actions__c</field>
+        <operation>equals</operation>
+        <value>25</value>
+    </filters>
+    <label>Mes interventions</label>
+</ListView>

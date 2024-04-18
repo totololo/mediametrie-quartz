@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV03_date_de_fin_inferieure</fullName>
+    <active>true</active>
+    <description>Règle qui empêche la date de fin à être antérieure à la date de début</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+				!$User.Bypass_RDD__c,
+				Date_de_fin__c &lt; Date_de_debut__c
+)</errorConditionFormula>
+    <errorDisplayField>Date_de_fin__c</errorDisplayField>
+    <errorMessage>La date de fin doit être postérieure à la date de début</errorMessage>
+</ValidationRule>

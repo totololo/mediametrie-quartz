@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV11_secteur_activite_et_nombre_salaries</fullName>
+    <active>true</active>
+    <description>Règle qui oblige la saisie du secteur d&apos;activité ou du nombre de salariés en fonction du type d&apos;emploi</description>
+    <errorConditionFormula>AND(
+				!$User.Bypass_validation_rules__c,
+	!$User.Bypass_RDD__c,
+				TEXT(Type__c) != $Label.CON_Type_Invite,
+				OR(
+								AND(
+												TEXT(Type_d_emploi__c) = $Label.CON_Type_Emploi_Salarie,
+												ISBLANK(TEXT(Secteur_d_activite__c))
+								),
+								AND(
+												TEXT(Type_d_emploi__c) = $Label.CON_Type_Emploi_A_Son_Compte,
+												ISBLANK(TEXT(Nombre_de_salaries__c))
+								)
+				)
+)</errorConditionFormula>
+    <errorMessage>Le champ Secteur d&apos;activité est obligatoire pour les membres salariés.
+Le champ Nombre de salariés est obligatoire pour les membres à leur compte.</errorMessage>
+</ValidationRule>

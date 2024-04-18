@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Smile_me</fullName>
+    <columns>NAME</columns>
+    <columns>Type_de_panel__c</columns>
+    <columns>Motif_de_credit__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Points_credites__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Motif_de_credit__c</field>
+        <operation>equals</operation>
+        <value>9</value>
+    </filters>
+    <label>Smile me</label>
+</ListView>

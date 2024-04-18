@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>File d&apos;attente AIP</name>
+    <queueMembers>
+        <users>
+            <user>alecomte@mediametrie.fr</user>
+            <user>ajaworska@mediametrie.fr</user>
+            <user>acarpentier@mediametrie.fr</user>
+            <user>afacon@mediametrie.fr</user>
+            <user>cbrin@mediametrie.fr</user>
+            <user>dguyon@mediametrie.fr</user>
+            <user>jbresson@mediametrie.fr</user>
+            <user>jsaraivaguerra@mediametrie.fr</user>
+            <user>jilie@mediametrie.fr</user>
+            <user>ldesperelle@mediametrie.fr</user>
+            <user>lwisniowski@mediametrie.fr</user>
+            <user>mjoseph@mediametrie.fr</user>
+            <user>cdegremont@mediametrie.fr</user>
+            <user>mlogghe@mediametrie.fr</user>
+            <user>mrolland@mediametrie.fr</user>
+            <user>mvilain@mediametrie.fr</user>
+            <user>nfougerais@mediametrie.fr</user>
+            <user>nthierry@mediametrie.fr</user>
+            <user>oelie@mediametrie.fr</user>
+            <user>ppincet@mediametrie.fr</user>
+            <user>sbancel@mediametrie.fr</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>cases_Routing_config</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

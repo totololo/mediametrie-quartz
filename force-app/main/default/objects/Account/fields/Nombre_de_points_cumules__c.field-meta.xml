@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nombre_de_points_cumules__c</fullName>
+    <externalId>false</externalId>
+    <label>Nombre de points cumulés</label>
+    <summarizedField>Fidelisation__c.Points_credites__c</summarizedField>
+    <summaryFilterItems>
+        <field>Fidelisation__c.Statut_de_commande__c</field>
+        <operation>notEqual</operation>
+        <value>Annulée</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Fidelisation__c.Foyer__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

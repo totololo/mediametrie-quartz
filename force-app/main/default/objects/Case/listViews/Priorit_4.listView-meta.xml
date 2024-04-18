@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Priorit_4</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.ORIGIN</field>
+        <operation>equals</operation>
+        <value>Email entrant</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Nouveau,Hiérarchisé</value>
+    </filters>
+    <filters>
+        <field>CASES.SUBJECT</field>
+        <operation>contains</operation>
+        <value>télévis,audimètre,routeur,panne,barre,décodeur,antenne,console,dvd,magnétoscope,écran,tv,télécommande,box,sfr,orange,free,Bouygues,cast,fibre,optique,adsl,déménage,Satellite,câble,hdmi,péritel,canal,intern</value>
+    </filters>
+    <label>Priorité 4</label>
+</ListView>

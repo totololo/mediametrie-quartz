@@ -1,0 +1,30 @@
+<!-- RegleDOrAura -->
+<aura:component implements="forceCommunity:themeLayout,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable"
+                access="global" controller="ContactFormulaire">
+    
+    <!-- Static Ressources -->
+    <ltng:require styles="{!$Resource.commonCss}" />
+    
+    <!--meta name="viewport" content="width=device-width, initiale-scale=1.0"/-->
+    
+    <!-- Attributes -->
+    <aura:attribute name="onLoad" type="Boolean" default="true" />
+    <aura:attribute name="pdfRessource" type="String" />
+    
+    <!-- Handler -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- Loader -->
+    <aura:if isTrue="{!v.onLoad}">
+        <div class="pageLoader">
+            <lightning:spinner alternativeText="Loading" size="large" />
+        </div>
+    </aura:if> 
+    
+    <!-- Titre -->
+    <div class="pageTitle">{!$Label.c.EXP_ReglesDorTitle}</div>
+    <div class="iframeDiv">
+            <img src="{!v.pdfRessource}"  class="imageOr"/>
+                <!--   <iframe src="{! v.pdfRessource}" width="100%" height="500px"></iframe> -->  
+    </div> 
+</aura:component>

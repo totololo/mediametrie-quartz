@@ -1,0 +1,97 @@
+{
+  "appPageId" : "f8ce9bd8-dc9d-4e0c-a24f-d4478abc068a",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "139a75a5-e6b7-4ebe-b495-f4a923423a84",
+  "label" : "Dernière Commande",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "e0ecec25-47f8-4959-bb9a-8d26a72ad99c",
+          "columns" : [ {
+            "UUID" : "a4bd6e8d-ccdc-4992-964a-90b94c25df4e",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 400
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "e0ecec25-47f8-4959-bb9a-8d26a72ad99c",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:derniereCommandAura",
+          "id" : "d44def94-a164-4beb-9476-65b3e27126d5",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a4bd6e8d-ccdc-4992-964a-90b94c25df4e",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "ce268d2b-c3fe-488c-b452-ec911b2ae2fb",
+          "columns" : [ {
+            "UUID" : "02085ca5-76da-488c-9300-9cf8b681f931",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 241
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "ce268d2b-c3fe-488c-b452-ec911b2ae2fb",
+      "regions" : [ {
+        "id" : "02085ca5-76da-488c-9300-9cf8b681f931",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "153d4d67-e416-4832-9dbf-403c08a81680",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "M&VOUS - Dernière commande"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "03f3ebcc-04a9-485d-bd2a-7ad6289a22c3",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "51b78e06-98d4-4b1b-b288-d98f047bfa1f",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-dernire-commande"
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consigne__c</fullName>
+    <externalId>false</externalId>
+    <label>Consigne</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Le panéliste semble ne pas avoir beaucoup bougé. Appeler le panéliste pour vérifier qu&apos;il a bien eu son pager avec lui toute la journée.</fullName>
+                <default>false</default>
+                <label>Le panéliste semble ne pas avoir beaucoup bougé. Appeler le panéliste pour vérifier qu&apos;il a bien eu son pager avec lui toute la journée.</label>
+            </value>
+            <value>
+                <fullName>Le pager semble être éteint. Appeler le panéliste pour vérifier qu&apos;il a bien respecté les règles de participation (pager allumé et chargé).</fullName>
+                <default>false</default>
+                <label>Le pager semble être éteint. Appeler le panéliste pour vérifier qu&apos;il a bien respecté les règles de participation (pager allumé et chargé).</label>
+            </value>
+            <value>
+                <fullName>Le pager semble être éteint depuis trop longtemps. Appeler le panéliste pour rappeler les règles de participation (pager allumé et chargé).</fullName>
+                <default>false</default>
+                <label>Le pager semble être éteint depuis trop longtemps. Appeler le panéliste pour rappeler les règles de participation (pager allumé et chargé).</label>
+            </value>
+            <value>
+                <fullName>L’indice qualité remonté par le setmeter est bas. Appeler le panéliste pour vérifier l’installation du setmeter et les habitudes d&apos;écoutes qui pourraient expliquer le niveau du Snap Quality.</fullName>
+                <default>false</default>
+                <label>L’indice qualité remonté par le setmeter est bas. Appeler le panéliste pour vérifier l’installation du setmeter et les habitudes d&apos;écoutes qui pourraient expliquer le niveau du Snap Quality.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

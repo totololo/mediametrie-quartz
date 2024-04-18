@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV12_Motif_Credit_Oblig</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+!$User.Bypass_validation_rules__c,
+RecordType.Name = $Label.FID_Type_d_enregistrement_Credit,
+				ISPICKVAL(Motif_de_credit__c ,&apos;&apos;) 
+				)</errorConditionFormula>
+    <errorDisplayField>Motif_de_credit__c</errorDisplayField>
+    <errorMessage>Le motif de credit est obligatoire</errorMessage>
+</ValidationRule>

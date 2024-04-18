@@ -1,0 +1,2124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sous_type__c</fullName>
+    <externalId>false</externalId>
+    <label>Sous-type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Absence collecte</fullName>
+                <default>false</default>
+                <label>Absence collecte</label>
+            </value>
+            <value>
+                <fullName>Absence mouvement</fullName>
+                <default>false</default>
+                <label>Absence mouvement</label>
+            </value>
+            <value>
+                <fullName>Adaptateur casque</fullName>
+                <default>false</default>
+                <label>Adaptateur casque</label>
+            </value>
+            <value>
+                <fullName>Anomalie affichage</fullName>
+                <default>false</default>
+                <label>Anomalie affichage</label>
+            </value>
+            <value>
+                <fullName>Anomalie autre</fullName>
+                <default>false</default>
+                <label>Anomalie autre</label>
+            </value>
+            <value>
+                <fullName>Anomalie batterie</fullName>
+                <default>false</default>
+                <label>Anomalie batterie</label>
+            </value>
+            <value>
+                <fullName>Anomalie carte Sim</fullName>
+                <default>false</default>
+                <label>Anomalie carte Sim</label>
+            </value>
+            <value>
+                <fullName>Anomalie des données en base panel</fullName>
+                <default>false</default>
+                <label>Anomalie des données en base panel</label>
+            </value>
+            <value>
+                <fullName>Anomalie horloge</fullName>
+                <default>false</default>
+                <label>Anomalie horloge</label>
+            </value>
+            <value>
+                <fullName>Anomalie informations</fullName>
+                <default>false</default>
+                <label>Anomalie informations</label>
+            </value>
+            <value>
+                <fullName>Anomalie lors du traitement des données d&apos;audience</fullName>
+                <default>false</default>
+                <label>Anomalie lors du traitement des données d&apos;audience</label>
+            </value>
+            <value>
+                <fullName>A quitte la mesure</fullName>
+                <default>false</default>
+                <label>A quitte la mesure</label>
+            </value>
+            <value>
+                <fullName>Audience individuelle &gt;7h</fullName>
+                <default>false</default>
+                <label>Audience individuelle &gt;7h</label>
+            </value>
+            <value>
+                <fullName>Audience individuelle &gt; 7h</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Audience individuelle &gt; 7h</label>
+            </value>
+            <value>
+                <fullName>Audimètre</fullName>
+                <default>false</default>
+                <label>Audimètre</label>
+            </value>
+            <value>
+                <fullName>Audimètre non connecté</fullName>
+                <default>false</default>
+                <label>Audimètre non connecté</label>
+            </value>
+            <value>
+                <fullName>Au moins 1 beacon batterie faible</fullName>
+                <default>false</default>
+                <label>Au moins 1 beacon batterie faible</label>
+            </value>
+            <value>
+                <fullName>Au moins 1 beacon inactif</fullName>
+                <default>false</default>
+                <label>Au moins 1 beacon inactif</label>
+            </value>
+            <value>
+                <fullName>Au moins 1 beacon jamais détecté</fullName>
+                <default>false</default>
+                <label>Au moins 1 beacon jamais détecté</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Autre cause technique</fullName>
+                <default>false</default>
+                <label>Autre cause technique</label>
+            </value>
+            <value>
+                <fullName>Autre déplacement</fullName>
+                <default>false</default>
+                <label>Autre déplacement</label>
+            </value>
+            <value>
+                <fullName>Autre déplacement hors zone de mesure</fullName>
+                <default>false</default>
+                <label>Autre déplacement hors zone de mesure</label>
+            </value>
+            <value>
+                <fullName>Autres usages</fullName>
+                <default>false</default>
+                <label>Autres usages</label>
+            </value>
+            <value>
+                <fullName>Avis</fullName>
+                <default>false</default>
+                <label>Avis</label>
+            </value>
+            <value>
+                <fullName>Beacon</fullName>
+                <default>false</default>
+                <label>Beacon</label>
+            </value>
+            <value>
+                <fullName>Beacon (logement plus grand)</fullName>
+                <default>false</default>
+                <label>Beacon (logement plus grand)</label>
+            </value>
+            <value>
+                <fullName>Beacon(s) Réceptionné(s)</fullName>
+                <default>false</default>
+                <label>Beacon(s) Réceptionné(s)</label>
+            </value>
+            <value>
+                <fullName>Beacon (tv en plus)</fullName>
+                <default>false</default>
+                <label>Beacon (tv en plus)</label>
+            </value>
+            <value>
+                <fullName>Beacon (vehicule supplémentaire)</fullName>
+                <default>false</default>
+                <label>Beacon (vehicule supplémentaire)</label>
+            </value>
+            <value>
+                <fullName>Beacon casse</fullName>
+                <default>false</default>
+                <label>Beacon casse</label>
+            </value>
+            <value>
+                <fullName>Beacon déchargé</fullName>
+                <default>false</default>
+                <label>Beacon déchargé</label>
+            </value>
+            <value>
+                <fullName>Beacon longue durée</fullName>
+                <default>false</default>
+                <label>Beacon longue durée</label>
+            </value>
+            <value>
+                <fullName>Beacon perdu</fullName>
+                <default>false</default>
+                <label>Beacon perdu</label>
+            </value>
+            <value>
+                <fullName>Beacons injoignables</fullName>
+                <default>false</default>
+                <label>Beacons injoignables</label>
+            </value>
+            <value>
+                <fullName>Bluetooth</fullName>
+                <default>false</default>
+                <label>Bluetooth</label>
+            </value>
+            <value>
+                <fullName>Bouton on off casse</fullName>
+                <default>false</default>
+                <label>Bouton on off casse</label>
+            </value>
+            <value>
+                <fullName>Box internet</fullName>
+                <default>false</default>
+                <label>Box internet</label>
+            </value>
+            <value>
+                <fullName>Bracelet casse</fullName>
+                <default>false</default>
+                <label>Bracelet casse</label>
+            </value>
+            <value>
+                <fullName>Bracelet perdu</fullName>
+                <default>false</default>
+                <label>Bracelet perdu</label>
+            </value>
+            <value>
+                <fullName>Broswer only</fullName>
+                <default>false</default>
+                <label>Broswer only</label>
+            </value>
+            <value>
+                <fullName>Browser + mobile</fullName>
+                <default>false</default>
+                <label>Browser + mobile</label>
+            </value>
+            <value>
+                <fullName>Cable USB casse</fullName>
+                <default>false</default>
+                <label>Cable USB casse</label>
+            </value>
+            <value>
+                <fullName>Cable USB perdu</fullName>
+                <default>false</default>
+                <label>Cable USB perdu</label>
+            </value>
+            <value>
+                <fullName>Carte Sim absente</fullName>
+                <default>false</default>
+                <label>Carte Sim absente</label>
+            </value>
+            <value>
+                <fullName>Casque Bluetooth ko</fullName>
+                <default>false</default>
+                <label>Casque Bluetooth ko</label>
+            </value>
+            <value>
+                <fullName>Changement adresse email</fullName>
+                <default>false</default>
+                <label>Changement adresse email</label>
+            </value>
+            <value>
+                <fullName>Changement coordonnées</fullName>
+                <default>false</default>
+                <label>Changement coordonnées</label>
+            </value>
+            <value>
+                <fullName>Changement coordonnées postales</fullName>
+                <default>false</default>
+                <label>Changement coordonnées postales</label>
+            </value>
+            <value>
+                <fullName>Changement profession</fullName>
+                <default>false</default>
+                <label>Changement profession</label>
+            </value>
+            <value>
+                <fullName>Chargeur casse</fullName>
+                <default>false</default>
+                <label>Chargeur casse</label>
+            </value>
+            <value>
+                <fullName>Chargeur perdu</fullName>
+                <default>false</default>
+                <label>Chargeur perdu</label>
+            </value>
+            <value>
+                <fullName>Chèques cadeau non reçu</fullName>
+                <default>false</default>
+                <label>Chèques cadeau non reçu</label>
+            </value>
+            <value>
+                <fullName>Chèques cadeaux non reçus</fullName>
+                <default>false</default>
+                <label>Chèques cadeaux non reçus</label>
+            </value>
+            <value>
+                <fullName>Chute forcée</fullName>
+                <default>false</default>
+                <label>Chute forcée</label>
+            </value>
+            <value>
+                <fullName>Chute inactive</fullName>
+                <default>false</default>
+                <label>Chute inactive</label>
+            </value>
+            <value>
+                <fullName>Commande chèques cadeaux</fullName>
+                <default>false</default>
+                <label>Commande chèques cadeaux</label>
+            </value>
+            <value>
+                <fullName>Commande de chèques cadeau</fullName>
+                <default>false</default>
+                <label>Commande de chèques cadeau</label>
+            </value>
+            <value>
+                <fullName>Communication ligne dédiée par le PRM mc2</fullName>
+                <default>false</default>
+                <label>Communication ligne dédiée par le PRM mc2</label>
+            </value>
+            <value>
+                <fullName>Composition foyer</fullName>
+                <default>false</default>
+                <label>Composition foyer</label>
+            </value>
+            <value>
+                <fullName>Console de jeux</fullName>
+                <default>false</default>
+                <label>Console de jeux</label>
+            </value>
+            <value>
+                <fullName>Contrainte pager (lourd, gros)</fullName>
+                <default>false</default>
+                <label>Contrainte pager (lourd, gros)</label>
+            </value>
+            <value>
+                <fullName>Contrôle</fullName>
+                <default>false</default>
+                <label>Contrôle</label>
+            </value>
+            <value>
+                <fullName>Contrôle abonnement</fullName>
+                <default>false</default>
+                <label>Contrôle abonnement</label>
+            </value>
+            <value>
+                <fullName>Contrôle de participation internet</fullName>
+                <default>false</default>
+                <label>Contrôle de participation internet</label>
+            </value>
+            <value>
+                <fullName>Contrôle de participations</fullName>
+                <default>false</default>
+                <label>Contrôle de participations</label>
+            </value>
+            <value>
+                <fullName>Contrôle des absences</fullName>
+                <default>false</default>
+                <label>Contrôle des absences</label>
+            </value>
+            <value>
+                <fullName>Contrôle des connexions</fullName>
+                <default>false</default>
+                <label>Contrôle des connexions</label>
+            </value>
+            <value>
+                <fullName>Contrôle des non connectés après collecte</fullName>
+                <default>false</default>
+                <label>Contrôle des non connectés après collecte</label>
+            </value>
+            <value>
+                <fullName>Contrôle des présences</fullName>
+                <default>false</default>
+                <label>Contrôle des présences</label>
+            </value>
+            <value>
+                <fullName>Contrôle Médiacabsat</fullName>
+                <default>false</default>
+                <label>Contrôle Médiacabsat</label>
+            </value>
+            <value>
+                <fullName>Contrôle qualité audience</fullName>
+                <default>false</default>
+                <label>Contrôle qualité audience</label>
+            </value>
+            <value>
+                <fullName>Contrôles autres usages</fullName>
+                <default>false</default>
+                <label>Contrôles autres usages</label>
+            </value>
+            <value>
+                <fullName>Convention</fullName>
+                <default>false</default>
+                <label>Convention</label>
+            </value>
+            <value>
+                <fullName>Convention non reçue (renvoi du lien)</fullName>
+                <default>false</default>
+                <label>Convention non reçue (renvoi du lien)</label>
+            </value>
+            <value>
+                <fullName>Cordon casse</fullName>
+                <default>false</default>
+                <label>Cordon casse</label>
+            </value>
+            <value>
+                <fullName>Cordon perdu</fullName>
+                <default>false</default>
+                <label>Cordon perdu</label>
+            </value>
+            <value>
+                <fullName>Correction adresse email suite erreur de saisie</fullName>
+                <default>false</default>
+                <label>Correction adresse email suite erreur de saisie</label>
+            </value>
+            <value>
+                <fullName>Correction adresse postale suite erreur de saisie</fullName>
+                <default>false</default>
+                <label>Correction adresse postale suite erreur de saisie</label>
+            </value>
+            <value>
+                <fullName>Déclaration d&apos;absence</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Déclaration d&apos;absence</label>
+            </value>
+            <value>
+                <fullName>Déclaration de congés</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Déclaration de congés</label>
+            </value>
+            <value>
+                <fullName>Décodeur tv</fullName>
+                <default>false</default>
+                <label>Décodeur tv</label>
+            </value>
+            <value>
+                <fullName>Définitivement perdu</fullName>
+                <default>false</default>
+                <label>Définitivement perdu</label>
+            </value>
+            <value>
+                <fullName>Demande d&apos;attestation scolaire</fullName>
+                <default>false</default>
+                <label>Demande d&apos;attestation scolaire</label>
+            </value>
+            <value>
+                <fullName>Demande d&apos;information générale</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Demande d&apos;information générale</label>
+            </value>
+            <value>
+                <fullName>Demande de chute</fullName>
+                <default>false</default>
+                <label>Demande de chute</label>
+            </value>
+            <value>
+                <fullName>Demande de renseignement</fullName>
+                <default>false</default>
+                <label>Demande de renseignement</label>
+            </value>
+            <value>
+                <fullName>Demande de renvoi du matériel</fullName>
+                <default>false</default>
+                <label>Demande de renvoi du matériel</label>
+            </value>
+            <value>
+                <fullName>Demande pack complet</fullName>
+                <default>false</default>
+                <label>Demande pack complet</label>
+            </value>
+            <value>
+                <fullName>Déménage hors zone de mesure</fullName>
+                <default>false</default>
+                <label>Déménage hors zone de mesure</label>
+            </value>
+            <value>
+                <fullName>Déménagement</fullName>
+                <default>false</default>
+                <label>Déménagement</label>
+            </value>
+            <value>
+                <fullName>Désaccord nombre de points</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Désaccord nombre de points</label>
+            </value>
+            <value>
+                <fullName>Dysfonctionnement</fullName>
+                <default>false</default>
+                <label>Dysfonctionnement</label>
+            </value>
+            <value>
+                <fullName>Enveloppe retour taille large</fullName>
+                <default>false</default>
+                <label>Enveloppe retour taille large</label>
+            </value>
+            <value>
+                <fullName>Enveloppe retour taille standard</fullName>
+                <default>false</default>
+                <label>Enveloppe retour taille standard</label>
+            </value>
+            <value>
+                <fullName>FAI</fullName>
+                <default>false</default>
+                <label>FAI</label>
+            </value>
+            <value>
+                <fullName>Focus groupe</fullName>
+                <default>false</default>
+                <label>Focus groupe</label>
+            </value>
+            <value>
+                <fullName>Foyer avec abo C+ sans audience</fullName>
+                <default>false</default>
+                <label>Foyer avec abo C+ sans audience</label>
+            </value>
+            <value>
+                <fullName>Foyer avec audience sans abo</fullName>
+                <default>false</default>
+                <label>Foyer avec audience sans abo</label>
+            </value>
+            <value>
+                <fullName>Foyer inactif meter J+90</fullName>
+                <default>false</default>
+                <label>Foyer inactif meter J+90</label>
+            </value>
+            <value>
+                <fullName>Foyer sans activité routeur</fullName>
+                <default>false</default>
+                <label>Foyer sans activité routeur</label>
+            </value>
+            <value>
+                <fullName>Foyer sans activité Web cohérente</fullName>
+                <default>false</default>
+                <label>Foyer sans activité Web cohérente</label>
+            </value>
+            <value>
+                <fullName>Foyers sans audience depuis 6 jours ou plus</fullName>
+                <default>false</default>
+                <label>Foyers sans audience depuis 6 jours ou plus</label>
+            </value>
+            <value>
+                <fullName>Gamification</fullName>
+                <default>false</default>
+                <label>Gamification</label>
+            </value>
+            <value>
+                <fullName>Hors quota</fullName>
+                <default>false</default>
+                <label>Hors quota</label>
+            </value>
+            <value>
+                <fullName>Inactif browser J+1</fullName>
+                <default>false</default>
+                <label>Inactif browser J+1</label>
+            </value>
+            <value>
+                <fullName>Inactif browser J+14</fullName>
+                <default>false</default>
+                <label>Inactif browser J+14</label>
+            </value>
+            <value>
+                <fullName>Inactif browser J+180</fullName>
+                <default>false</default>
+                <label>Inactif browser J+180</label>
+            </value>
+            <value>
+                <fullName>Inactif browser J+60</fullName>
+                <default>false</default>
+                <label>Inactif browser J+60</label>
+            </value>
+            <value>
+                <fullName>Inactif browser J+7</fullName>
+                <default>false</default>
+                <label>Inactif browser J+7</label>
+            </value>
+            <value>
+                <fullName>Inactif mobile et browser J+1</fullName>
+                <default>false</default>
+                <label>Inactif mobile et browser J+1</label>
+            </value>
+            <value>
+                <fullName>Inactif mobile et browser J+14</fullName>
+                <default>false</default>
+                <label>Inactif mobile et browser J+14</label>
+            </value>
+            <value>
+                <fullName>Inactif mobile et browser J+180</fullName>
+                <default>false</default>
+                <label>Inactif mobile et browser J+180</label>
+            </value>
+            <value>
+                <fullName>Inactif mobile et browser J+60</fullName>
+                <default>false</default>
+                <label>Inactif mobile et browser J+60</label>
+            </value>
+            <value>
+                <fullName>Inactif mobile et browser J+7</fullName>
+                <default>false</default>
+                <label>Inactif mobile et browser J+7</label>
+            </value>
+            <value>
+                <fullName>Inactif mobile J+1</fullName>
+                <default>false</default>
+                <label>Inactif mobile J+1</label>
+            </value>
+            <value>
+                <fullName>Inactif mobile J+14</fullName>
+                <default>false</default>
+                <label>Inactif mobile J+14</label>
+            </value>
+            <value>
+                <fullName>Inactif mobile J+180</fullName>
+                <default>false</default>
+                <label>Inactif mobile J+180</label>
+            </value>
+            <value>
+                <fullName>Inactif mobile J+60</fullName>
+                <default>false</default>
+                <label>Inactif mobile J+60</label>
+            </value>
+            <value>
+                <fullName>Inactif mobile J+7</fullName>
+                <default>false</default>
+                <label>Inactif mobile J+7</label>
+            </value>
+            <value>
+                <fullName>Indice de qualité faible</fullName>
+                <default>false</default>
+                <label>Indice de qualité faible</label>
+            </value>
+            <value>
+                <fullName>Individu sans activité Web cohérente</fullName>
+                <default>false</default>
+                <label>Individu sans activité Web cohérente</label>
+            </value>
+            <value>
+                <fullName>Individus sans audience depuis 28 jours ou plus</fullName>
+                <default>false</default>
+                <label>Individus sans audience depuis 28 jours ou plus</label>
+            </value>
+            <value>
+                <fullName>Info solde de points</fullName>
+                <default>false</default>
+                <label>Info solde de points</label>
+            </value>
+            <value>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+                <label>Injoignable</label>
+            </value>
+            <value>
+                <fullName>Installation</fullName>
+                <default>false</default>
+                <label>Installation</label>
+            </value>
+            <value>
+                <fullName>Installation Nouveau Foyer</fullName>
+                <default>false</default>
+                <label>Installation Nouveau Foyer</label>
+            </value>
+            <value>
+                <fullName>Matériel ko (refus renvoi)</fullName>
+                <default>false</default>
+                <label>Matériel ko (refus renvoi)</label>
+            </value>
+            <value>
+                <fullName>Matériel non réceptionné</fullName>
+                <default>false</default>
+                <label>Matériel non réceptionné</label>
+            </value>
+            <value>
+                <fullName>Matériel réceptionné</fullName>
+                <default>false</default>
+                <label>Matériel réceptionné</label>
+            </value>
+            <value>
+                <fullName>Message invitant à contacter la hotline</fullName>
+                <default>false</default>
+                <label>Message invitant à contacter la hotline</label>
+            </value>
+            <value>
+                <fullName>Mobile only</fullName>
+                <default>false</default>
+                <label>Mobile only</label>
+            </value>
+            <value>
+                <fullName>Modalité</fullName>
+                <default>false</default>
+                <label>Modalité</label>
+            </value>
+            <value>
+                <fullName>Mode de réception TV</fullName>
+                <default>false</default>
+                <label>Mode de réception TV</label>
+            </value>
+            <value>
+                <fullName>Modification civilité nom</fullName>
+                <default>false</default>
+                <label>Modification civilité nom</label>
+            </value>
+            <value>
+                <fullName>Modification d&apos;insatallation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Modification d&apos;insatallation</label>
+            </value>
+            <value>
+                <fullName>Modification d&apos;installation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Modification d&apos;installation</label>
+            </value>
+            <value>
+                <fullName>Modification de la profession</fullName>
+                <default>false</default>
+                <label>Modification de la profession</label>
+            </value>
+            <value>
+                <fullName>Mousqueton HS</fullName>
+                <default>false</default>
+                <label>Mousqueton HS</label>
+            </value>
+            <value>
+                <fullName>Mousqueton perdu</fullName>
+                <default>false</default>
+                <label>Mousqueton perdu</label>
+            </value>
+            <value>
+                <fullName>Multiprise</fullName>
+                <default>false</default>
+                <label>Multiprise</label>
+            </value>
+            <value>
+                <fullName>Ne désire plus participer sans motif</fullName>
+                <default>false</default>
+                <label>Ne désire plus participer sans motif</label>
+            </value>
+            <value>
+                <fullName>Non envoyé au Médiamat</fullName>
+                <default>false</default>
+                <label>Non envoyé au Médiamat</label>
+            </value>
+            <value>
+                <fullName>Non réception de commande</fullName>
+                <default>false</default>
+                <label>Non réception de commande</label>
+            </value>
+            <value>
+                <fullName>Non réception du pager (refus renvoi)</fullName>
+                <default>false</default>
+                <label>Non réception du pager (refus renvoi)</label>
+            </value>
+            <value>
+                <fullName>Non réceptionne suite NPAI</fullName>
+                <default>false</default>
+                <label>Non réceptionne suite NPAI</label>
+            </value>
+            <value>
+                <fullName>Nouvelle personne dans le foyer</fullName>
+                <default>false</default>
+                <label>Nouvelle personne dans le foyer</label>
+            </value>
+            <value>
+                <fullName>Pack Initial</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pack Initial</label>
+            </value>
+            <value>
+                <fullName>Pack initial Pager</fullName>
+                <default>false</default>
+                <label>Pack initial Pager</label>
+            </value>
+            <value>
+                <fullName>Pack Initial Pager et Setmeter</fullName>
+                <default>false</default>
+                <label>Pack Initial Pager et Setmeter</label>
+            </value>
+            <value>
+                <fullName>Pack initial ROAv3</fullName>
+                <default>false</default>
+                <label>Pack initial ROAv3</label>
+            </value>
+            <value>
+                <fullName>Pack initial ROAv3 et Setmeter</fullName>
+                <default>false</default>
+                <label>Pack initial ROAv3 et Setmeter</label>
+            </value>
+            <value>
+                <fullName>Pager</fullName>
+                <default>false</default>
+                <label>Pager</label>
+            </value>
+            <value>
+                <fullName>Pager : Absence de collecte</fullName>
+                <default>false</default>
+                <label>Pager : Absence de collecte</label>
+            </value>
+            <value>
+                <fullName>Pager : Absence de mouvement</fullName>
+                <default>false</default>
+                <label>Pager : Absence de mouvement</label>
+            </value>
+            <value>
+                <fullName>Pager : Collecte incomplète</fullName>
+                <default>false</default>
+                <label>Pager : Collecte incomplète</label>
+            </value>
+            <value>
+                <fullName>Pager : Eteint trop longtemps</fullName>
+                <default>false</default>
+                <label>Pager : Eteint trop longtemps</label>
+            </value>
+            <value>
+                <fullName>Pager : OFF</fullName>
+                <default>false</default>
+                <label>Pager : OFF</label>
+            </value>
+            <value>
+                <fullName>Pager casse</fullName>
+                <default>false</default>
+                <label>Pager casse</label>
+            </value>
+            <value>
+                <fullName>Pager éteint trop longtemps</fullName>
+                <default>false</default>
+                <label>Pager éteint trop longtemps</label>
+            </value>
+            <value>
+                <fullName>Pager OFF</fullName>
+                <default>false</default>
+                <label>Pager OFF</label>
+            </value>
+            <value>
+                <fullName>Pager perdu</fullName>
+                <default>false</default>
+                <label>Pager perdu</label>
+            </value>
+            <value>
+                <fullName>Pager réceptionné</fullName>
+                <default>false</default>
+                <label>Pager réceptionné</label>
+            </value>
+            <value>
+                <fullName>Par le paneliste</fullName>
+                <default>false</default>
+                <label>Par le paneliste</label>
+            </value>
+            <value>
+                <fullName>Parrainage</fullName>
+                <default>false</default>
+                <label>Parrainage</label>
+            </value>
+            <value>
+                <fullName>PAR UN TIERS envoi enveloppe retour à une autre adresse</fullName>
+                <default>false</default>
+                <label>PAR UN TIERS envoi enveloppe retour à une autre adresse</label>
+            </value>
+            <value>
+                <fullName>Perte / Vol</fullName>
+                <default>false</default>
+                <label>Perte / Vol</label>
+            </value>
+            <value>
+                <fullName>Pince cassée</fullName>
+                <default>false</default>
+                <label>Pince cassée</label>
+            </value>
+            <value>
+                <fullName>Pince perdue</fullName>
+                <default>false</default>
+                <label>Pince perdue</label>
+            </value>
+            <value>
+                <fullName>Port trop contraignant</fullName>
+                <default>false</default>
+                <label>Port trop contraignant</label>
+            </value>
+            <value>
+                <fullName>Post installation</fullName>
+                <default>false</default>
+                <label>Post installation</label>
+            </value>
+            <value>
+                <fullName>Prise en charge réparation</fullName>
+                <default>false</default>
+                <label>Prise en charge réparation</label>
+            </value>
+            <value>
+                <fullName>Problème autres</fullName>
+                <default>false</default>
+                <label>Problème autres</label>
+            </value>
+            <value>
+                <fullName>Problème carte SIM</fullName>
+                <default>false</default>
+                <label>Problème carte SIM</label>
+            </value>
+            <value>
+                <fullName>Problème d&apos;intervention</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Problème d&apos;intervention</label>
+            </value>
+            <value>
+                <fullName>Problème de connexion</fullName>
+                <default>false</default>
+                <label>Problème de connexion</label>
+            </value>
+            <value>
+                <fullName>Problème de connexion site convention</fullName>
+                <default>false</default>
+                <label>Problème de connexion site convention</label>
+            </value>
+            <value>
+                <fullName>Problème équipement panéliste</fullName>
+                <default>false</default>
+                <label>Problème équipement panéliste</label>
+            </value>
+            <value>
+                <fullName>Problème meter</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Problème meter</label>
+            </value>
+            <value>
+                <fullName>Problème routeur</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Problème routeur</label>
+            </value>
+            <value>
+                <fullName>Problème technique</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Problème technique</label>
+            </value>
+            <value>
+                <fullName>Question</fullName>
+                <default>false</default>
+                <label>Question</label>
+            </value>
+            <value>
+                <fullName>Recensement annuel</fullName>
+                <default>false</default>
+                <label>Recensement annuel</label>
+            </value>
+            <value>
+                <fullName>Réclamation incentive</fullName>
+                <default>false</default>
+                <label>Réclamation incentive</label>
+            </value>
+            <value>
+                <fullName>Réclamation technique</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Réclamation technique</label>
+            </value>
+            <value>
+                <fullName>Refus convention</fullName>
+                <default>false</default>
+                <label>Refus convention</label>
+            </value>
+            <value>
+                <fullName>Règles de participation</fullName>
+                <default>false</default>
+                <label>Règles de participation</label>
+            </value>
+            <value>
+                <fullName>Régularisation solde de points</fullName>
+                <default>false</default>
+                <label>Régularisation solde de points</label>
+            </value>
+            <value>
+                <fullName>Réinitialisation MDP</fullName>
+                <default>false</default>
+                <label>Réinitialisation MDP</label>
+            </value>
+            <value>
+                <fullName>Rejeté Médiamat</fullName>
+                <default>false</default>
+                <label>Rejeté Médiamat</label>
+            </value>
+            <value>
+                <fullName>Relance signature convention</fullName>
+                <default>false</default>
+                <label>Relance signature convention</label>
+            </value>
+            <value>
+                <fullName>Remerciement cadeau</fullName>
+                <default>false</default>
+                <label>Remerciement cadeau</label>
+            </value>
+            <value>
+                <fullName>Renseignement sur Audimètre</fullName>
+                <default>false</default>
+                <label>Renseignement sur Audimètre</label>
+            </value>
+            <value>
+                <fullName>Renvoi suite non-réception</fullName>
+                <default>false</default>
+                <label>Renvoi suite non-réception</label>
+            </value>
+            <value>
+                <fullName>Reprise de participation</fullName>
+                <default>false</default>
+                <label>Reprise de participation</label>
+            </value>
+            <value>
+                <fullName>Reprise Panama</fullName>
+                <default>false</default>
+                <label>Reprise Panama</label>
+            </value>
+            <value>
+                <fullName>Réseau indisponible</fullName>
+                <default>false</default>
+                <label>Réseau indisponible</label>
+            </value>
+            <value>
+                <fullName>Résolution problème</fullName>
+                <default>false</default>
+                <label>Résolution problème</label>
+            </value>
+            <value>
+                <fullName>Restitution du matériel</fullName>
+                <default>false</default>
+                <label>Restitution du matériel</label>
+            </value>
+            <value>
+                <fullName>Retour complet</fullName>
+                <default>false</default>
+                <label>Retour complet</label>
+            </value>
+            <value>
+                <fullName>Retour incomplet</fullName>
+                <default>false</default>
+                <label>Retour incomplet</label>
+            </value>
+            <value>
+                <fullName>Routeur Médiametrie</fullName>
+                <default>false</default>
+                <label>Routeur Médiametrie</label>
+            </value>
+            <value>
+                <fullName>Sans beacon</fullName>
+                <default>false</default>
+                <label>Sans beacon</label>
+            </value>
+            <value>
+                <fullName>Screenwise meter</fullName>
+                <default>false</default>
+                <label>Screenwise meter</label>
+            </value>
+            <value>
+                <fullName>Setmeter</fullName>
+                <default>false</default>
+                <label>Setmeter</label>
+            </value>
+            <value>
+                <fullName>Setmeter : Absence de collecte</fullName>
+                <default>false</default>
+                <label>Setmeter : Absence de collecte</label>
+            </value>
+            <value>
+                <fullName>Setmeter ne s&apos;allume plus</fullName>
+                <default>false</default>
+                <label>Setmeter ne s&apos;allume plus</label>
+            </value>
+            <value>
+                <fullName>Souhaite connaitre les résultats de l’étude</fullName>
+                <default>false</default>
+                <label>Souhaite connaitre les résultats de l’étude</label>
+            </value>
+            <value>
+                <fullName>Suite relance mail</fullName>
+                <default>false</default>
+                <label>Suite relance mail</label>
+            </value>
+            <value>
+                <fullName>Suite relance sms</fullName>
+                <default>false</default>
+                <label>Suite relance sms</label>
+            </value>
+            <value>
+                <fullName>Sur sollicitation</fullName>
+                <default>false</default>
+                <label>Sur sollicitation</label>
+            </value>
+            <value>
+                <fullName>Télécommande</fullName>
+                <default>false</default>
+                <label>Télécommande</label>
+            </value>
+            <value>
+                <fullName>Téléviseur</fullName>
+                <default>false</default>
+                <label>Téléviseur</label>
+            </value>
+            <value>
+                <fullName>Tirage au sort / jeux concours</fullName>
+                <default>false</default>
+                <label>Tirage au sort / jeux concours</label>
+            </value>
+            <value>
+                <fullName>Tous beacons &lt; 20%</fullName>
+                <default>false</default>
+                <label>Tous beacons &lt; 20%</label>
+            </value>
+            <value>
+                <fullName>Tous beacons inactifs</fullName>
+                <default>false</default>
+                <label>Tous beacons inactifs</label>
+            </value>
+            <value>
+                <fullName>Tous les membres du foyer</fullName>
+                <default>false</default>
+                <label>Tous les membres du foyer</label>
+            </value>
+            <value>
+                <fullName>Tous les membres du foyer / audimètre débranché</fullName>
+                <default>false</default>
+                <label>Tous les membres du foyer / audimètre débranché</label>
+            </value>
+            <value>
+                <fullName>Transfert mail boite dédiée par le PRM mc2</fullName>
+                <default>false</default>
+                <label>Transfert mail boite dédiée par le PRM mc2</label>
+            </value>
+            <value>
+                <fullName>Travaux</fullName>
+                <default>false</default>
+                <label>Travaux</label>
+            </value>
+            <value>
+                <fullName>TV On &gt; 12h</fullName>
+                <default>false</default>
+                <label>TV On &gt; 12h</label>
+            </value>
+            <value>
+                <fullName>Une partie du foyer</fullName>
+                <default>false</default>
+                <label>Une partie du foyer</label>
+            </value>
+            <value>
+                <fullName>Une personne a quitté le foyer</fullName>
+                <default>false</default>
+                <label>Une personne a quitté le foyer</label>
+            </value>
+            <value>
+                <fullName>Utilisation du matériel</fullName>
+                <default>false</default>
+                <label>Utilisation du matériel</label>
+            </value>
+            <value>
+                <fullName>Vacances</fullName>
+                <default>false</default>
+                <label>Vacances</label>
+            </value>
+            <value>
+                <fullName>Vacances hors zone de mesure</fullName>
+                <default>false</default>
+                <label>Vacances hors zone de mesure</label>
+            </value>
+            <value>
+                <fullName>Va le rechercher</fullName>
+                <default>false</default>
+                <label>Va le rechercher</label>
+            </value>
+            <value>
+                <fullName>Vérification de contrôle</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vérification de contrôle</label>
+            </value>
+            <value>
+                <fullName>Visite de courtoisie</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Visite de courtoisie</label>
+            </value>
+            <value>
+                <fullName>Welcome call</fullName>
+                <default>false</default>
+                <label>Welcome call</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Réception/abonnement</controllingFieldValue>
+            <valueName>Foyer avec abo C+ sans audience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Réception/abonnement</controllingFieldValue>
+            <valueName>Foyer avec audience sans abo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Réception du matériel</controllingFieldValue>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <controllingFieldValue>Suivi retour matériel (Chute)</controllingFieldValue>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <controllingFieldValue>Anomalie matériel</controllingFieldValue>
+            <controllingFieldValue>Appel suite relance</controllingFieldValue>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <controllingFieldValue>Vie du foyer</controllingFieldValue>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <controllingFieldValue>Fidélisation</controllingFieldValue>
+            <controllingFieldValue>Intervention</controllingFieldValue>
+            <controllingFieldValue>Déclaration d&apos;absence</controllingFieldValue>
+            <controllingFieldValue>Modification équipement</controllingFieldValue>
+            <controllingFieldValue>Problème équipement Panéliste</controllingFieldValue>
+            <controllingFieldValue>Problème équipement Médiamétrie</controllingFieldValue>
+            <controllingFieldValue>Convention</controllingFieldValue>
+            <controllingFieldValue>Demande de renseignement</controllingFieldValue>
+            <controllingFieldValue>Erreur d&apos;orientation</controllingFieldValue>
+            <controllingFieldValue>Incident</controllingFieldValue>
+            <controllingFieldValue>Mail suite relance</controllingFieldValue>
+            <controllingFieldValue>Modification des données soci-demo du foyer</controllingFieldValue>
+            <controllingFieldValue>Pager perdu</controllingFieldValue>
+            <controllingFieldValue>Parrainage</controllingFieldValue>
+            <controllingFieldValue>Participation</controllingFieldValue>
+            <controllingFieldValue>Questions cadeaux</controllingFieldValue>
+            <valueName>Autre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Réception du matériel</controllingFieldValue>
+            <valueName>Beacon(s) Réceptionné(s)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Réception du matériel</controllingFieldValue>
+            <controllingFieldValue>Fidélisation</controllingFieldValue>
+            <valueName>Matériel non réceptionné</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Réception du matériel</controllingFieldValue>
+            <valueName>Matériel réceptionné</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Réception du matériel</controllingFieldValue>
+            <valueName>Non réceptionne suite NPAI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Réception du matériel</controllingFieldValue>
+            <valueName>Pager réceptionné</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recruté</controllingFieldValue>
+            <valueName>Dysfonctionnement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recruté</controllingFieldValue>
+            <valueName>Non réception de commande</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recruté</controllingFieldValue>
+            <valueName>Pack initial Pager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recruté</controllingFieldValue>
+            <valueName>Pack Initial Pager et Setmeter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recruté</controllingFieldValue>
+            <valueName>Pack initial ROAv3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recruté</controllingFieldValue>
+            <valueName>Pack initial ROAv3 et Setmeter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recruté</controllingFieldValue>
+            <valueName>Perte / Vol</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recruté</controllingFieldValue>
+            <valueName>Welcome call</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Remplacement de matériel</controllingFieldValue>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Enveloppe retour taille large</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Remplacement de matériel</controllingFieldValue>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Enveloppe retour taille standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Remplacement de matériel</controllingFieldValue>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Multiprise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Remplacement de matériel</controllingFieldValue>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <controllingFieldValue>Demande de renseignement</controllingFieldValue>
+            <valueName>Setmeter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Adaptateur casque</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Beacon (logement plus grand)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Beacon (tv en plus)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Beacon (vehicule supplémentaire)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Beacon casse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Beacon déchargé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Beacon perdu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Beacons injoignables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Bouton on off casse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Bracelet casse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Bracelet perdu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Cable USB casse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Cable USB perdu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Chargeur casse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Chargeur perdu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Contrôle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Cordon casse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Cordon perdu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Demande pack complet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Mousqueton HS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Mousqueton perdu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <controllingFieldValue>Non-répondant ROAV3</controllingFieldValue>
+            <controllingFieldValue>Non-répondant</controllingFieldValue>
+            <valueName>Pager casse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <controllingFieldValue>Non-répondant ROAV3</controllingFieldValue>
+            <controllingFieldValue>Non-répondant</controllingFieldValue>
+            <valueName>Pager perdu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Pince cassée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Pince perdue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Problème carte SIM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renvoi de matériel</controllingFieldValue>
+            <valueName>Renvoi suite non-réception</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suivi retour matériel (Chute)</controllingFieldValue>
+            <valueName>Demande de renvoi du matériel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suivi retour matériel (Chute)</controllingFieldValue>
+            <controllingFieldValue>Vie du foyer</controllingFieldValue>
+            <valueName>Restitution du matériel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suivi retour matériel (Chute)</controllingFieldValue>
+            <valueName>Retour complet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suivi retour matériel (Chute)</controllingFieldValue>
+            <valueName>Retour incomplet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation SetMeter</controllingFieldValue>
+            <valueName>Indice de qualité faible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <controllingFieldValue>Vie du foyer</controllingFieldValue>
+            <controllingFieldValue>Modification des données soci-demo du foyer</controllingFieldValue>
+            <valueName>Recensement annuel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Autre</controllingFieldValue>
+            <controllingFieldValue>Vie du foyer</controllingFieldValue>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <controllingFieldValue>Fidélisation</controllingFieldValue>
+            <controllingFieldValue>Déclaration d&apos;absence</controllingFieldValue>
+            <controllingFieldValue>Modification équipement</controllingFieldValue>
+            <controllingFieldValue>Problème équipement Panéliste</controllingFieldValue>
+            <controllingFieldValue>Problème équipement Médiamétrie</controllingFieldValue>
+            <controllingFieldValue>Réclamation matériel</controllingFieldValue>
+            <valueName>Reprise Panama</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demande de contacte</controllingFieldValue>
+            <valueName>Anomalie informations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demande de contacte</controllingFieldValue>
+            <controllingFieldValue>Vie du foyer</controllingFieldValue>
+            <valueName>Composition foyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demande de contacte</controllingFieldValue>
+            <valueName>Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demande de contacte</controllingFieldValue>
+            <valueName>Résolution problème</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anomalie matériel</controllingFieldValue>
+            <controllingFieldValue>Anomalie Pager</controllingFieldValue>
+            <valueName>Anomalie affichage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anomalie matériel</controllingFieldValue>
+            <controllingFieldValue>Anomalie Pager</controllingFieldValue>
+            <valueName>Anomalie batterie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anomalie matériel</controllingFieldValue>
+            <controllingFieldValue>Anomalie Pager</controllingFieldValue>
+            <valueName>Anomalie carte Sim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-répondant ROAV3</controllingFieldValue>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <controllingFieldValue>Non-répondant</controllingFieldValue>
+            <controllingFieldValue>Non-répondant SetMeter</controllingFieldValue>
+            <valueName>Absence collecte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-répondant ROAV3</controllingFieldValue>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <controllingFieldValue>Non-répondant</controllingFieldValue>
+            <valueName>Absence mouvement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-répondant ROAV3</controllingFieldValue>
+            <controllingFieldValue>Non-répondant</controllingFieldValue>
+            <valueName>Anomalie des données en base panel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-répondant ROAV3</controllingFieldValue>
+            <controllingFieldValue>Non-répondant</controllingFieldValue>
+            <valueName>Anomalie lors du traitement des données d&apos;audience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-répondant ROAV3</controllingFieldValue>
+            <controllingFieldValue>Non-répondant</controllingFieldValue>
+            <valueName>Non envoyé au Médiamat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-répondant ROAV3</controllingFieldValue>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <controllingFieldValue>Non-répondant</controllingFieldValue>
+            <valueName>Pager éteint trop longtemps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-répondant ROAV3</controllingFieldValue>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <controllingFieldValue>Non-répondant</controllingFieldValue>
+            <valueName>Pager OFF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-répondant ROAV3</controllingFieldValue>
+            <controllingFieldValue>Non-répondant</controllingFieldValue>
+            <controllingFieldValue>Présence</controllingFieldValue>
+            <valueName>Rejeté Médiamat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anomalie Pager</controllingFieldValue>
+            <controllingFieldValue>Anomalie Set Meter</controllingFieldValue>
+            <valueName>Anomalie autre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anomalie Pager</controllingFieldValue>
+            <valueName>Anomalie horloge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anomalie Set Meter</controllingFieldValue>
+            <valueName>Carte Sim absente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anomalie Set Meter</controllingFieldValue>
+            <valueName>Réseau indisponible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anomalie Set Meter</controllingFieldValue>
+            <valueName>Setmeter ne s&apos;allume plus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appel suite relance</controllingFieldValue>
+            <controllingFieldValue>Mail suite relance</controllingFieldValue>
+            <valueName>Suite relance mail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appel suite relance</controllingFieldValue>
+            <controllingFieldValue>Mail suite relance</controllingFieldValue>
+            <valueName>Suite relance sms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Avis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Problème autres</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <controllingFieldValue>Participation</controllingFieldValue>
+            <valueName>Problème de connexion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Autres usages</controllingFieldValue>
+            <valueName>Autres usages</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <valueName>A quitte la mesure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <valueName>Casque Bluetooth ko</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <valueName>Chute forcée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <valueName>Chute inactive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <valueName>Contrainte pager (lourd, gros)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <valueName>Demande de chute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <valueName>Déménage hors zone de mesure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <valueName>Hors quota</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <valueName>Injoignable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <valueName>Matériel ko (refus renvoi)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <valueName>Ne désire plus participer sans motif</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <valueName>Non réception du pager (refus renvoi)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <valueName>Port trop contraignant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <valueName>Refus convention</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <valueName>Sur sollicitation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connexion</controllingFieldValue>
+            <valueName>Audimètre non connecté</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du foyer</controllingFieldValue>
+            <valueName>Changement coordonnées</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du foyer</controllingFieldValue>
+            <valueName>Changement profession</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du foyer</controllingFieldValue>
+            <valueName>Convention</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du foyer</controllingFieldValue>
+            <valueName>Déménagement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du foyer</controllingFieldValue>
+            <valueName>Travaux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <valueName>Contrôle abonnement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <valueName>Contrôle de participation internet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <valueName>Contrôle de participations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <valueName>Contrôle des absences</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <valueName>Contrôle des connexions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <valueName>Contrôle des non connectés après collecte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <valueName>Contrôle des présences</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <valueName>Contrôle Médiacabsat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <valueName>Contrôle qualité audience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <valueName>Contrôles autres usages</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <valueName>Pager : Absence de collecte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <valueName>Pager : Absence de mouvement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <valueName>Pager : Collecte incomplète</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <valueName>Pager : Eteint trop longtemps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <valueName>Pager : OFF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <valueName>Post installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle</controllingFieldValue>
+            <valueName>Setmeter : Absence de collecte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fidélisation</controllingFieldValue>
+            <valueName>Chèques cadeau non reçu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fidélisation</controllingFieldValue>
+            <valueName>Chèques cadeaux non reçus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fidélisation</controllingFieldValue>
+            <valueName>Commande chèques cadeaux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fidélisation</controllingFieldValue>
+            <valueName>Commande de chèques cadeau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fidélisation</controllingFieldValue>
+            <valueName>Gamification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fidélisation</controllingFieldValue>
+            <valueName>Info solde de points</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fidélisation</controllingFieldValue>
+            <valueName>Modalité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fidélisation</controllingFieldValue>
+            <valueName>Réclamation incentive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fidélisation</controllingFieldValue>
+            <valueName>Régularisation solde de points</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fidélisation</controllingFieldValue>
+            <controllingFieldValue>Questions cadeaux</controllingFieldValue>
+            <valueName>Remerciement cadeau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fidélisation</controllingFieldValue>
+            <valueName>Tirage au sort / jeux concours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intervention</controllingFieldValue>
+            <valueName>Installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intervention</controllingFieldValue>
+            <valueName>Installation Nouveau Foyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Déclaration d&apos;absence</controllingFieldValue>
+            <valueName>Autre déplacement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Déclaration d&apos;absence</controllingFieldValue>
+            <valueName>Autre déplacement hors zone de mesure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Déclaration d&apos;absence</controllingFieldValue>
+            <valueName>Tous les membres du foyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Déclaration d&apos;absence</controllingFieldValue>
+            <valueName>Tous les membres du foyer / audimètre débranché</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Déclaration d&apos;absence</controllingFieldValue>
+            <valueName>Une partie du foyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Déclaration d&apos;absence</controllingFieldValue>
+            <valueName>Vacances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Déclaration d&apos;absence</controllingFieldValue>
+            <valueName>Vacances hors zone de mesure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modification équipement</controllingFieldValue>
+            <valueName>Broswer only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modification équipement</controllingFieldValue>
+            <valueName>Browser + mobile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modification équipement</controllingFieldValue>
+            <valueName>Console de jeux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modification équipement</controllingFieldValue>
+            <valueName>FAI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modification équipement</controllingFieldValue>
+            <valueName>Mobile only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modification équipement</controllingFieldValue>
+            <valueName>Mode de réception TV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modification équipement</controllingFieldValue>
+            <controllingFieldValue>Problème équipement Panéliste</controllingFieldValue>
+            <valueName>Téléviseur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problème équipement Panéliste</controllingFieldValue>
+            <valueName>Box internet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problème équipement Panéliste</controllingFieldValue>
+            <valueName>Décodeur tv</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problème équipement Médiamétrie</controllingFieldValue>
+            <valueName>Audimètre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problème équipement Médiamétrie</controllingFieldValue>
+            <valueName>Routeur Médiametrie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problème équipement Médiamétrie</controllingFieldValue>
+            <valueName>Screenwise meter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problème équipement Médiamétrie</controllingFieldValue>
+            <valueName>Télécommande</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Réclamation matériel</controllingFieldValue>
+            <valueName>Prise en charge réparation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Réclamation matériel</controllingFieldValue>
+            <valueName>Problème équipement panéliste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle Beacon</controllingFieldValue>
+            <valueName>Au moins 1 beacon batterie faible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle Beacon</controllingFieldValue>
+            <valueName>Au moins 1 beacon inactif</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle Beacon</controllingFieldValue>
+            <valueName>Au moins 1 beacon jamais détecté</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle Beacon</controllingFieldValue>
+            <valueName>Beacon longue durée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle Beacon</controllingFieldValue>
+            <valueName>Sans beacon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle Beacon</controllingFieldValue>
+            <valueName>Tous beacons &lt; 20%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrôle Beacon</controllingFieldValue>
+            <valueName>Tous beacons inactifs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Convention</controllingFieldValue>
+            <valueName>Convention non reçue (renvoi du lien)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Convention</controllingFieldValue>
+            <controllingFieldValue>Demande de renseignement</controllingFieldValue>
+            <controllingFieldValue>Participation</controllingFieldValue>
+            <valueName>Demande de renseignement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Convention</controllingFieldValue>
+            <valueName>Problème de connexion site convention</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Convention</controllingFieldValue>
+            <valueName>Réinitialisation MDP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Convention</controllingFieldValue>
+            <valueName>Relance signature convention</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demande de renseignement</controllingFieldValue>
+            <valueName>Beacon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demande de renseignement</controllingFieldValue>
+            <valueName>Bluetooth</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demande de renseignement</controllingFieldValue>
+            <valueName>Demande d&apos;attestation scolaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demande de renseignement</controllingFieldValue>
+            <valueName>Pager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demande de renseignement</controllingFieldValue>
+            <valueName>Parrainage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demande de renseignement</controllingFieldValue>
+            <valueName>Règles de participation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demande de renseignement</controllingFieldValue>
+            <valueName>Souhaite connaitre les résultats de l’étude</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demande de renseignement</controllingFieldValue>
+            <valueName>Utilisation du matériel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Erreur d&apos;orientation</controllingFieldValue>
+            <valueName>Communication ligne dédiée par le PRM mc2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Erreur d&apos;orientation</controllingFieldValue>
+            <valueName>Transfert mail boite dédiée par le PRM mc2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif Meter J+1</controllingFieldValue>
+            <valueName>Inactif browser J+1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif Meter J+1</controllingFieldValue>
+            <controllingFieldValue>Inactif meter J+14</controllingFieldValue>
+            <valueName>Inactif browser J+14</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif Meter J+1</controllingFieldValue>
+            <controllingFieldValue>Inactif meter J+180</controllingFieldValue>
+            <valueName>Inactif browser J+180</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif Meter J+1</controllingFieldValue>
+            <controllingFieldValue>Inactif meter J+60</controllingFieldValue>
+            <valueName>Inactif browser J+60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif Meter J+1</controllingFieldValue>
+            <controllingFieldValue>Inactif meter J+7</controllingFieldValue>
+            <valueName>Inactif browser J+7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif Meter J+1</controllingFieldValue>
+            <valueName>Inactif mobile et browser J+1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif Meter J+1</controllingFieldValue>
+            <controllingFieldValue>Inactif meter J+14</controllingFieldValue>
+            <valueName>Inactif mobile et browser J+14</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif Meter J+1</controllingFieldValue>
+            <controllingFieldValue>Inactif meter J+180</controllingFieldValue>
+            <valueName>Inactif mobile et browser J+180</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif Meter J+1</controllingFieldValue>
+            <controllingFieldValue>Inactif meter J+60</controllingFieldValue>
+            <valueName>Inactif mobile et browser J+60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif Meter J+1</controllingFieldValue>
+            <controllingFieldValue>Inactif meter J+7</controllingFieldValue>
+            <valueName>Inactif mobile et browser J+7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif Meter J+1</controllingFieldValue>
+            <valueName>Inactif mobile J+1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif Meter J+1</controllingFieldValue>
+            <controllingFieldValue>Inactif meter J+14</controllingFieldValue>
+            <valueName>Inactif mobile J+14</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif Meter J+1</controllingFieldValue>
+            <controllingFieldValue>Inactif meter J+180</controllingFieldValue>
+            <valueName>Inactif mobile J+180</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif Meter J+1</controllingFieldValue>
+            <controllingFieldValue>Inactif meter J+60</controllingFieldValue>
+            <valueName>Inactif mobile J+60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif Meter J+1</controllingFieldValue>
+            <controllingFieldValue>Inactif meter J+7</controllingFieldValue>
+            <valueName>Inactif mobile J+7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif meter J+90</controllingFieldValue>
+            <valueName>Foyer inactif meter J+90</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incident</controllingFieldValue>
+            <valueName>Message invitant à contacter la hotline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modification des données soci-demo du foyer</controllingFieldValue>
+            <valueName>Changement adresse email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modification des données soci-demo du foyer</controllingFieldValue>
+            <valueName>Changement coordonnées postales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modification des données soci-demo du foyer</controllingFieldValue>
+            <valueName>Correction adresse email suite erreur de saisie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modification des données soci-demo du foyer</controllingFieldValue>
+            <valueName>Correction adresse postale suite erreur de saisie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modification des données soci-demo du foyer</controllingFieldValue>
+            <valueName>Modification civilité nom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modification des données soci-demo du foyer</controllingFieldValue>
+            <valueName>Modification de la profession</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modification des données soci-demo du foyer</controllingFieldValue>
+            <valueName>Nouvelle personne dans le foyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modification des données soci-demo du foyer</controllingFieldValue>
+            <valueName>Une personne a quitté le foyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-répondant</controllingFieldValue>
+            <valueName>Autre cause technique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pager perdu</controllingFieldValue>
+            <valueName>Définitivement perdu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pager perdu</controllingFieldValue>
+            <valueName>Va le rechercher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pager retrouvé</controllingFieldValue>
+            <valueName>Par le paneliste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pager retrouvé</controllingFieldValue>
+            <valueName>PAR UN TIERS envoi enveloppe retour à une autre adresse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Participation</controllingFieldValue>
+            <valueName>Audience individuelle &gt;7h</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Participation</controllingFieldValue>
+            <valueName>Focus groupe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Participation</controllingFieldValue>
+            <valueName>Reprise de participation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Participation</controllingFieldValue>
+            <valueName>TV On &gt; 12h</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Participation Web</controllingFieldValue>
+            <valueName>Foyer sans activité routeur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Participation Web</controllingFieldValue>
+            <valueName>Foyer sans activité Web cohérente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Participation Web</controllingFieldValue>
+            <valueName>Individu sans activité Web cohérente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Présence</controllingFieldValue>
+            <valueName>Foyers sans audience depuis 6 jours ou plus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Présence</controllingFieldValue>
+            <valueName>Individus sans audience depuis 28 jours ou plus</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
